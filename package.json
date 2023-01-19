@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@aws-amplify/ui-vue": "^3.1.4",
+    "@aws-sdk/util-base64": "^3.208.0",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/vue-fontawesome": "^3.0.2",
     "@headlessui/vue": "^1.4.2",
