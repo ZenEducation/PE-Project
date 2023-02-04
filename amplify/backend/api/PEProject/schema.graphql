@@ -1,25 +1,140 @@
-type Students @model @auth(rules: [{ allow: public }]) {
+type AuthInfo @model @auth(rules: [{ allow: public }]) {
   id: ID!
   firstName: String
   middleName: String
   lastName: String
   email: AWSEmail!
   phoneNum: AWSPhone
+  createdAt: AWSDateTime
+  updatedAt: [AWSDateTime]
+}
+
+type Students @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  alt_emails: [AWSEmail]
+  phoneNum: AWSPhone
   alt_phoneNums: [AWSPhone]
   createdAt: AWSDateTime
-  updatedAt: AWSDateTime
-  alt_emails: [AWSEmail]
+  updatedAt: [AWSDateTime]
 }
 
 type Guardians @model @auth(rules: [{ allow: public }]) {
   id: ID!
-  firstName: String
+  firstName: String!
   middleName: String
-  lastName: String
+  lastName: String!
   email: AWSEmail!
+  alt_emails: [AWSEmail]
   phoneNum: AWSPhone
   alt_phoneNums: [AWSPhone]
   createdAt: AWSDateTime
-  updatedAt: AWSDateTime
+  updatedAt: [AWSDateTime]
+}
+
+type Educators @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
   alt_emails: [AWSEmail]
+  phoneNum: AWSPhone
+  alt_phoneNums: [AWSPhone]
+  createdAt: AWSDateTime
+  updatedAt: [AWSDateTime]
+}
+
+type EduCarers @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  alt_emails: [AWSEmail]
+  phoneNum: AWSPhone
+  alt_phoneNums: [AWSPhone]
+  createdAt: AWSDateTime
+  updatedAt: [AWSDateTime]
+}
+
+type InternApplicants @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  alt_emails: [AWSEmail]
+  phoneNum: AWSPhone
+  alt_phoneNums: [AWSPhone]
+  createdAt: AWSDateTime
+  updatedAt: [AWSDateTime]
+}
+
+type JobApplicants @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  alt_emails: [AWSEmail]
+  phoneNum: AWSPhone
+  alt_phoneNums: [AWSPhone]
+  createdAt: AWSDateTime
+  updatedAt: [AWSDateTime]
+}
+
+type Interns @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  alt_emails: [AWSEmail]
+  phoneNum: AWSPhone
+  alt_phoneNums: [AWSPhone]
+  createdAt: AWSDateTime
+  updatedAt: [AWSDateTime]
+}
+
+type Employees @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  alt_emails: [AWSEmail]
+  phoneNum: AWSPhone
+  alt_phoneNums: [AWSPhone]
+  createdAt: AWSDateTime
+  updatedAt: [AWSDateTime]
+}
+
+type Admins @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  alt_emails: [AWSEmail]
+  phoneNum: AWSPhone
+  alt_phoneNums: [AWSPhone]
+  createdAt: AWSDateTime
+  updatedAt: [AWSDateTime]
+}
+
+type SuperAdmins @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  alt_emails: [AWSEmail]
+  phoneNum: AWSPhone
+  alt_phoneNums: [AWSPhone]
+  createdAt: AWSDateTime
+  updatedAt: [AWSDateTime]
 }
