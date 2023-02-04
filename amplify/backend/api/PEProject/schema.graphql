@@ -1,4 +1,4 @@
-type Students @model @auth(rules: [{allow: public}]) {
+type Students @model @auth(rules: [{ allow: public }]) {
   id: ID!
   firstName: String
   middleName: String
@@ -10,4 +10,16 @@ type Students @model @auth(rules: [{allow: public}]) {
   updatedAt: AWSDateTime
   alt_emails: [AWSEmail]
 }
- 
+
+type Guardians @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String
+  middleName: String
+  lastName: String
+  email: AWSEmail!
+  phoneNum: AWSPhone
+  alt_phoneNums: [AWSPhone]
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+  alt_emails: [AWSEmail]
+}
