@@ -43,3 +43,41 @@ export declare type Students = LazyLoading extends LazyLoadingDisabled ? EagerSt
 export declare const Students: (new (init: ModelInit<Students>) => Students) & {
   copyOf(source: Students, mutator: (draft: MutableModel<Students>) => MutableModel<Students> | void): Students;
 }
+
+type EagerGuardians = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Guardians, 'id'>;
+  };
+  readonly id: string;
+  readonly firstName?: string | null;
+  readonly middleName?: string | null;
+  readonly lastName?: string | null;
+  readonly email: string;
+  readonly phoneNum?: string | null;
+  readonly alt_phoneNums?: (string | null)[] | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+  readonly alt_emails?: (string | null)[] | null;
+}
+
+type LazyGuardians = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Guardians, 'id'>;
+  };
+  readonly id: string;
+  readonly firstName?: string | null;
+  readonly middleName?: string | null;
+  readonly lastName?: string | null;
+  readonly email: string;
+  readonly phoneNum?: string | null;
+  readonly alt_phoneNums?: (string | null)[] | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+  readonly alt_emails?: (string | null)[] | null;
+}
+
+export declare type Guardians = LazyLoading extends LazyLoadingDisabled ? EagerGuardians : LazyGuardians
+
+export declare const Guardians: (new (init: ModelInit<Guardians>) => Guardians) & {
+  copyOf(source: Guardians, mutator: (draft: MutableModel<Guardians>) => MutableModel<Guardians> | void): Guardians;
+}
