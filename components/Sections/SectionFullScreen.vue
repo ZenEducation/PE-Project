@@ -10,7 +10,7 @@ import {
 const props = defineProps({
   bg: {
     type: String,
-    required: true,
+    required: false,
     validator: (value) => ["purplePink", "pinkRed"].includes(value),
   },
 });

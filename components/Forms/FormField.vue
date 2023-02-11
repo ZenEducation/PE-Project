@@ -40,7 +40,7 @@ const wrapperClass = computed(() => {
       label
     }}</label>
     <div :class="wrapperClass">
-      <slot />
+      <slot></slot>
     </div>
     <div v-if="help" class="text-xs text-gray-500 dark:text-slate-400 mt-1">
       {{ help }}

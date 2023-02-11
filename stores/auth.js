@@ -1,6 +1,61 @@
 import { Auth } from "aws-amplify";
 import { defineStore } from "pinia";
 import { ref, computed } from "vue";
+import { generateUserName } from "@/utils/random";
+
+// cognito needs username as unique field eg phone num, email
+export async function signUp({ email, username, familyName, password }) {
+  try {
+    const resp = await Auth.signUp({
+      username: email,
+      password: "Test@1234",
+      attributes: {
+        email,
+        name: username,
+        family_name: familyName,
+      },
+      autoSignIn: {
+        enabled: true,
+      },
+    });
+    if (resp.user && !resp.userConfirmed)
+      return {
+        isUserCreated: true,
+        userConfirmed: resp.userConfirmed,
+        user: resp.user,
+        mg: "User created successfully",
+        codeDeliveryDetails: resp.codeDeliveryDetails,
+      };
+  } catch (error) {
+    console.log("inside signup error ", error);
+    return {
+      isUserCreated: false,
+      msg: error.message,
+    };
+  }
+}
+
+export async function resendConfirmationCode({ username }) {
+  try {
+    await Auth.resendSignUp(username);
+  } catch (error) {
+    return {
+      msg: error,
+    };
+  }
+}
+
+export async function confirmSignUp({ username, code }) {
+  try {
+    return await Auth.confirmSignUp(username, code);
+  } catch (error) {
+    console.log("code ", error);
+    return {
+      isUserVerified: false,
+      msg: error.message,
+    };
+  }
+}
 
 export const state = () => ({
   isAuthenticated: false,
@@ -54,12 +109,17 @@ export const actions = {
 
 export const useAuthStore = defineStore("authStore", () => {
   const user = ref({});
+  const username = computed(() => user.value?.username);
 
   function setupUser(userData) {
     user.value = { ...userData };
   }
-
+  function emptyUser() {
+    setupUser({});
+  }
   return {
     setupUser,
+    username,
+    emptyUser,
   };
 });
