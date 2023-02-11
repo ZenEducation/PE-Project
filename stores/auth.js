@@ -1,5 +1,6 @@
 import { Auth } from "aws-amplify";
 import { defineStore } from "pinia";
+import { ref, computed } from "vue";
 
 export const state = () => ({
   isAuthenticated: false,
@@ -51,8 +52,14 @@ export const actions = {
   },
 };
 
-export const useAuthStore = defineStore("authStore", {
-  state,
-  getters,
-  actions,
+export const useAuthStore = defineStore("authStore", () => {
+  const user = ref({});
+
+  function setupUser(userData) {
+    user.value = { ...userData };
+  }
+
+  return {
+    setupUser,
+  };
 });

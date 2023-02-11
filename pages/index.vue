@@ -1,23 +1,12 @@
 <template>
-  <div class="bg-gray-900 text-white flex justify-center">
-    <h1>Index Page</h1>
-  </div>
+ 
 </template>
 
-<script>
-import { reactive, toRefs } from "vue";
-
-export default {
-  setup() {
-    const state = reactive({
-      count: 0,
-    });
-
-    return {
-      ...toRefs(state),
-    };
-  },
-};
+<script setup>
+// if user is logged in redirect to profile 
+// if not show the login / register page
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>
