@@ -53,6 +53,8 @@ const verifyAccount = async () => {
         if (userData) {
             if (!userData.isUserVerified) {
                 showErr(userData.msg)
+            } else {
+                navigateTo({ path: '/dashboard' })
             }
         }
     }
