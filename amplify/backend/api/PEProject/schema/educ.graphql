@@ -1,0 +1,25 @@
+type Educators @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String
+  middleName: String
+  lastName: String
+  email: AWSEmail!
+  alt_emails: [AWSEmail]
+  phoneNum: AWSPhone
+  alt_phoneNums: [AWSPhone]
+  createdAt: AWSDateTime
+  updatedAt: [AWSDateTime]
+}
+
+type EduCarers @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  alt_emails: [AWSEmail]
+  phoneNum: AWSPhone
+  alt_phoneNums: [AWSPhone]
+  createdAt: AWSDateTime
+  updatedAt: [AWSDateTime]
+}

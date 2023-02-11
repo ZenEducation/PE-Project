@@ -1,0 +1,5 @@
+{
+  "AppSyncApiName": "PEProject",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}
