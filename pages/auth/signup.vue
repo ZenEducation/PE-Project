@@ -22,10 +22,9 @@ const form = reactive({
 const authStore = useAuthStore();
 const router = useRouter();
 const validPasswordRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
-console.log('yolo');
 const verificationCodeMsg = ref('');
 const errMsg = ref('');
-
+const resendCodeMsg = ref('')
 function showErr(msg) {
     errMsg.value = msg;
 }
@@ -59,9 +58,15 @@ const verifyAccount = async () => {
     }
 }
 
-const resendCode = () => {
+const resendCode = async () => {
     emptyErr();
-    resendConfirmationCode({ username: form.email })
+    const resp = await resendConfirmationCode({ username: form.email });
+    if (resp.isCodeSent) {
+        resendCodeMsg.value = `Verification code sent on ${resp.AttributeName} to ${resp.Destination}`
+    }
+    setTimeout(() => {
+        resendCodeMsg.value = '';
+    }, 3000)
 }
 
 function resetState() {
@@ -121,6 +126,9 @@ function resetState() {
                         <FormControl v-model.trim="form.verificationCode" :icon="mdiAccount" name="code" />
                     </FormField>
 
+                    <NotificationBar v-if="resendCodeMsg" color="success">
+                        {{ resendCodeMsg }}
+                    </NotificationBar>
                     <NotificationBar v-if="errMsg" color="danger">
                         {{ errMsg }}
                     </NotificationBar>
@@ -128,7 +136,6 @@ function resetState() {
                     <BaseButtons class="flex items-center justify-center">
                         <BaseButton @click="resendCode" color="info" label="Resend code" />
                         <BaseButton @click="verifyAccount" color="info" label="Verify account" />
-
                     </BaseButtons>
                 </div>
 

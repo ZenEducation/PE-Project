@@ -37,7 +37,13 @@ export async function signUp({ email, username, familyName, password }) {
 
 export async function resendConfirmationCode({ username }) {
   try {
-    await Auth.resendSignUp(username);
+    const resp = await Auth.resendSignUp(username);
+    if (resp && resp.CodeDeliveryDetails) {
+      return {
+        isCodeSent: true,
+        ...resp.CodeDeliveryDetails,
+      };
+    }
   } catch (error) {
     return {
       msg: error,
@@ -47,12 +53,17 @@ export async function resendConfirmationCode({ username }) {
 
 export async function confirmSignUp({ username, code }) {
   try {
-    return await Auth.confirmSignUp(username, code);
+    const resp = Auth.confirmSignUp(username, code);
+    if (resp) {
+      return {
+        isUserVerified: true,
+      };
+    }
   } catch (error) {
-    console.log("code ", error);
+    console.log("error ", error);
     return {
       isUserVerified: false,
-      msg: error.message,
+      msg: error?.message ? error.message : "",
     };
   }
 }
