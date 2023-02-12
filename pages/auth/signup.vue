@@ -10,6 +10,8 @@ import BaseButton from "@/components/Buttons/BaseButton.vue";
 import BaseButtons from "@/components/Buttons/BaseButtons.vue";
 import { useAuthStore, signUp, resendConfirmationCode, confirmSignUp } from "@/stores/auth"
 import BaseDivider from "~~/components/Navbar/BaseDivider.vue";
+import { Auth } from 'aws-amplify';
+import { CognitoHostedUIIdentityProvider } from '@aws-amplify/auth';
 
 const form = reactive({
     email: "",
@@ -143,9 +145,13 @@ function resetState() {
 
                 <template #footer>
                     <BaseButtons v-if="!verificationCodeMsg" class="flex items-center justify-center mt-0">
-                        <BaseButton color="info" label="Google">
+                        <BaseButton
+                            @click="() => Auth.federatedSignIn({ provider: CognitoHostedUIIdentityProvider.Google })"
+                            color="info" label="Google">
                         </BaseButton>
-                        <BaseButton color="info" label="Facebook" />
+                        <BaseButton
+                            @click="() => Auth.federatedSignIn({ provider: CognitoHostedUIIdentityProvider.Facebook })"
+                            color="info" label="Facebook" />
                     </BaseButtons>
                     <BaseButtons v-else class="flex items-center justify-center mt-0">
                         <BaseButton @click="resetState" color="info" label="Sign up with different email" />
