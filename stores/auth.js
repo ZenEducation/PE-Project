@@ -68,6 +68,29 @@ export async function confirmSignUp({ username, code }) {
   }
 }
 
+export async function signOut() {
+  try {
+    const resp = await Auth.signOut();
+    console.log("resp ", resp);
+  } catch (error) {
+    return {
+      msg: error,
+    };
+  }
+}
+
+export async function signIn({ email, password }) {
+  try {
+    const user = await Auth.signIn(email, password);
+    return { isAuthenticated: true, user };
+  } catch (error) {
+    return {
+      isAuthenticated: false,
+      msg: error,
+    };
+  }
+}
+
 export const state = () => ({
   isAuthenticated: false,
   user: null,

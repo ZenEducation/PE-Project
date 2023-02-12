@@ -9,7 +9,7 @@ import FormField from "@/components/Forms/FormField.vue";
 import FormControl from "@/components/Forms/FormControl.vue";
 import BaseButton from "@/components/Buttons/BaseButton.vue";
 import BaseButtons from "@/components/Buttons/BaseButtons.vue";
-import { useAuthStore } from "@/stores/auth"
+import { useAuthStore, signIn } from "@/stores/auth"
 import { useGraphqlAPIStore } from "@/stores/graphqlAPI";
 
 const form = reactive({
@@ -19,23 +19,23 @@ const form = reactive({
 });
 
 const router = useRouter();
-const AuthStore = useAuthStore();
+const errMsg = ref('');
+const authStore = useAuthStore();
 const GraphqlAPIStore = useGraphqlAPIStore();
 
 const handleSubmit = async () => {
+    errMsg.value = '';
     // call the login method from the Authstore
-    const user_from_amplify = await AuthStore.login({
+    const resp = await signIn({
         email: form.loginEmail,
         password: form.password,
     });
-    console.log(user_from_amplify);
-
-    // const response = await GraphqlAPIStore.createSuperAdmin({ input: {} });
-    // console.log("response", response);
-
-    if (user_from_amplify) {
+    if (resp.isAuthenticated) {
+        authStore.setupUser(resp.user);
+        navigateTo('/dashboard')
         return;
-        // router.push("/dashboard");
+    } else if (resp.msg) {
+        errMsg.value = resp.msg.message;
     }
 };
 </script>
@@ -56,16 +56,14 @@ const handleSubmit = async () => {
                     </FormField>
 
                     <FormCheckRadio v-model="form.remember" name="remember" label="Remember" :input-value="true" />
-
+                    <NotificationBar v-if="errMsg" color="danger">{{ errMsg }} </NotificationBar>
                     <template #footer>
                         <div class="flex justify-between">
                             <BaseButtons>
                                 <BaseButton type="submit" color="info" label="Login" />
-                                <BaseButton to="/dashboard" color="info" outline label="Dashboard" />
                             </BaseButtons>
-                            <NuxtLink to="/pe/register"
+                            <NuxtLink to="/auth/signup"
                                 class="text-sm bg-gray-800 text-white p-3 rounded-md hover:bg-gray-600">
-                               
                                 Done have an account? Sign Up
                             </NuxtLink>
                         </div>
