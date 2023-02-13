@@ -51,9 +51,10 @@
     "hostedUI": true,
     "hostedUIDomainName": "h5llgypcjmtu",
     "authProvidersUserPool": [
+      "Facebook",
       "Google"
     ],
-    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"name\":\"name\",\"family_name\":\"family_name\",\"username\":\"sub\"}}]",
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"name\":\"name\",\"family_name\":\"last_name\",\"username\":\"id\"}},{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"name\":\"name\",\"family_name\":\"family_name\",\"username\":\"sub\"}}]",
     "usernameCaseSensitive": false,
     "useEnabledMfas": true,
     "authRoleArn": {
