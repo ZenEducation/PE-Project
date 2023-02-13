@@ -64,7 +64,7 @@ const handleSubmit = async () => {
                             </BaseButtons>
                             <NuxtLink to="/auth/signup"
                                 class="text-sm bg-gray-800 text-white p-3 rounded-md hover:bg-gray-600">
-                                Done have an account? Sign Up
+                                Don't have an account? Sign Up
                             </NuxtLink>
                         </div>
                     </template>
