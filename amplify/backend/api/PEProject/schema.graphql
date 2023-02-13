@@ -49,3 +49,10 @@ type EduCarers @model @auth(rules: [{ allow: public }]) {
   createdAt: AWSDateTime
   updatedAt: [AWSDateTime]
 }
+type AuthInfo @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String
+  middleName: String
+  lastName: String
+  email: String!
+}

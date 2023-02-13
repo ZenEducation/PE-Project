@@ -11,6 +11,7 @@
           ],
           "defaultAuthentication": {
             "apiKeyConfig": {
+              "apiKeyExpirationDate": "2023-03-06T19:34:41.393Z",
               "apiKeyExpirationDays": 30,
               "description": "api key description"
             },
@@ -28,9 +29,7 @@
       "dependsOn": [],
       "frontendAuthConfig": {
         "mfaConfiguration": "OFF",
-        "mfaTypes": [
-          "SMS"
-        ],
+        "mfaTypes": ["SMS"],
         "passwordProtectionSettings": {
           "passwordPolicyCharacters": [
             "REQUIRES_LOWERCASE",
@@ -38,20 +37,10 @@
           ],
           "passwordPolicyMinLength": 8
         },
-        "signupAttributes": [
-          "EMAIL",
-          "NAME",
-          "FAMILY_NAME"
-        ],
-        "socialProviders": [
-          "FACEBOOK"
-        ],
-        "usernameAttributes": [
-          "EMAIL"
-        ],
-        "verificationMechanisms": [
-          "EMAIL"
-        ]
+        "signupAttributes": ["EMAIL", "NAME", "FAMILY_NAME"],
+        "socialProviders": ["FACEBOOK", "GOOGLE"],
+        "usernameAttributes": ["EMAIL"],
+        "verificationMechanisms": ["EMAIL"]
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
