@@ -23,7 +23,8 @@
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
-    "@aws-amplify/ui-vue": "^3.0.4",
+    "@aws-amplify/ui-vue": "^3.1.4",
+    "@aws-sdk/util-base64": "^3.208.0",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/vue-fontawesome": "^3.0.2",
     "@headlessui/vue": "^1.4.2",
@@ -31,7 +32,7 @@
     "@mdi/js": "^7.0.96",
     "@rollup/plugin-inject": "^5.0.2",
     "@rollup/plugin-terser": "^0.2.0",
-    "aws-amplify": "^5.0.5",
+    "aws-amplify": "^5.0.10",
     "numeral": "^2.0.6",
     "paper": "^0.12.17",
     "pinia": "^2.0.30",
