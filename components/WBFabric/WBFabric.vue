@@ -15,9 +15,9 @@ import { storeToRefs } from "pinia";
 import { fabric } from "fabric";
 // import MainPanel from "./panel/MainPanel";
 // import HistoryPanel from "./panel/HistoryPanel";
-import { useWBFabric } from "@/stores/wbFabric";
+// import { useWBFabric } from "@/stores/wbFabric";
 
-const fabricStore = useWBFabric();
+// const fabricStore = useWBFabric();
 const rectCount = storeToRefs(fabricStore);
 
 watch(rectCount.currentRectCount, (currVal, newVal) => {
@@ -115,6 +115,7 @@ body {
   padding: 0;
   overflow: hidden;
 }
+
 /* canvas {
   height: 1000;
   width: 1000;
