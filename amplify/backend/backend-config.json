@@ -1,26 +1,18 @@
 {
-  "api": {
-    "peproject": {
-      "dependsOn": [],
-      "output": {
-        "authConfig": {
-          "additionalAuthenticationProviders": [],
-          "defaultAuthentication": {
-            "apiKeyConfig": {
-              "apiKeyExpirationDays": 7
-            },
-            "authenticationType": "API_KEY"
-          }
-        }
-      },
-      "providerPlugin": "awscloudformation",
-      "service": "AppSync"
-    }
-  },
   "auth": {
-    "peprojectba14f02e": {
+    "peprojectcognito": {
       "customAuth": false,
-      "dependsOn": [],
+      "dependsOn": [
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "peprojectcognitoCustomMessage",
+          "triggerProvider": "Cognito"
+        }
+      ],
       "frontendAuthConfig": {
         "mfaConfiguration": "OFF",
         "mfaTypes": [
@@ -38,7 +30,8 @@
           "GOOGLE"
         ],
         "usernameAttributes": [
-          "EMAIL"
+          "EMAIL",
+          "PHONE_NUMBER"
         ],
         "verificationMechanisms": [
           "EMAIL"
@@ -46,6 +39,70 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    },
+    "userPoolGroups": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId",
+            "AppClientIDWeb",
+            "AppClientID"
+          ],
+          "category": "auth",
+          "resourceName": "peprojectcognito"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito-UserPool-Groups"
+    }
+  },
+  "function": {
+    "peprojectcognitoCustomMessage": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_peprojectcognitoCustomMessage_EMAILMESSAGE": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "peprojectcognitoCustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_peprojectcognitoCustomMessage_EMAILSUBJECT": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "peprojectcognitoCustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_peprojectcognitoCustomMessage_REDIRECTURL": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "peprojectcognitoCustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_peprojectcognitoCustomMessage_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "peprojectcognitoCustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_peprojectcognitoCustomMessage_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "peprojectcognitoCustomMessage"
+        }
+      ]
     }
   }
 }
