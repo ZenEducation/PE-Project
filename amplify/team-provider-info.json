@@ -9,14 +9,22 @@
       "UnauthRoleName": "amplify-peproject-dev-90848-unauthRole",
       "StackName": "amplify-peproject-dev-90848",
       "StackId": "arn:aws:cloudformation:ap-south-1:317786172055:stack/amplify-peproject-dev-90848/b9d06430-97aa-11ed-bea5-06b72e89b078",
-      "AmplifyAppId": "d1v9clx7hlm6ms"
+      "AmplifyAppId": "d1v9clx7hlm6ms",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-peproject-dev-90848-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "auth": {
-        "PEProject": {}
+        "peprojectcognito": {},
+        "userPoolGroups": {}
       },
-      "api": {
-        "PEProject": {}
+      "function": {
+        "peprojectcognitoCustomMessage": {
+          "REDIRECTURL": "https://dev.d1v9clx7hlm6ms.amplifyapp.com/dashboard/",
+          "EMAILSUBJECT": "Email has been verified for access to PE-Project-dev",
+          "EMAILMESSAGE": "Email has been verified for access to PE-Project-dev, access it with ",
+          "deploymentBucketName": "amplify-peproject-dev-90848-deployment",
+          "s3Key": "amplify-builds/peprojectcognitoCustomMessage-2b473855753345494d79-build.zip"
+        }
       }
     }
   }

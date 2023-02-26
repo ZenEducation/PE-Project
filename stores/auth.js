@@ -12,7 +12,7 @@ export async function signUp({ email, username, familyName, password }) {
       attributes: {
         email,
         name: username,
-        family_name: familyName,
+        // family_name: familyName,
       },
       autoSignIn: {
         enabled: true,
@@ -81,7 +81,9 @@ export async function signOut() {
 
 export async function signIn({ email, password }) {
   try {
-    const user = await Auth.signIn(email, password);
+    const username = email;
+    console.log(email, password);
+    const user = await Auth.signIn(username, password);
     return { isAuthenticated: true, user };
   } catch (error) {
     return {
