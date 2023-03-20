@@ -9,12 +9,12 @@ import { useLayoutStore } from "@/stores/layout.js";
 import { useStyleStore } from "@/stores/style.js";
 import BaseIcon from "@/components/Display/BaseIcon.vue";
 import FormControl from "@/components/Forms/FormControl.vue";
-import NavBar from "@/components/Navbar/NavBar.vue";
-import PremAsideMenu from "@/components/AsideMenu/AsideMenu.vue";
-import NavBarItemPlain from "@/components/Navbar/NavBarItemPlain.vue";
+import NavBar from "@/components/NavBar/NavBar.vue";
+import PremAsideMenu from "@/components/Asidemenu/AsideMenu.vue";
+import NavBarItemPlain from "@/components/NavBar/NavBarItemPlain.vue";
 import FooterBar from "@/components/Footers/FooterBar.vue";
-import { useAuthStore } from "~~/stores/auth";
-// import { useWBFabric } from "@/stores/wbFabric";
+import { useAuthStore } from "@/stores/authStore";
+import { useWBFabric } from "@/stores/wbFabric";
 
 useMainStore().setUser({
   name: "Zenith Physics",
@@ -31,7 +31,7 @@ const styleStore = useStyleStore();
 
 const layoutStore = useLayoutStore();
 
-// const fabricStore = useWBFabric();
+const fabricStore = useWBFabric();
 
 const router = useRouter();
 
@@ -67,33 +67,58 @@ const menuClick = (event, item) => {
 
 <template>
   <div>
-    <div :class="{
-      dark: styleStore.darkMode,
-      'overflow-hidden lg:overflow-visible':
-        layoutStore.isAsideMobileExpanded,
-    }">
-      <div :class="[
-        layoutAsidePadding,
-        { 'ml-60 lg:ml-0': layoutStore.isAsideMobileExpanded },
-      ]"
-        class="pt-14 min-h-screen w-screen transition-position lg:w-auto bg-gray-50 dark:bg-slate-800 dark:text-slate-100">
-        <!-- The  Navbar -->
-        <NavBar :menu="menuNavBar" :class="[
+    <div
+      :class="{
+        dark: styleStore.darkMode,
+        'overflow-hidden lg:overflow-visible':
+          layoutStore.isAsideMobileExpanded,
+      }"
+    >
+      <div
+        :class="[
           layoutAsidePadding,
           { 'ml-60 lg:ml-0': layoutStore.isAsideMobileExpanded },
-        ]" @menu-click="menuClick">
-          <NavBarItemPlain display="flex lg:hidden" @click.prevent="layoutStore.asideMobileToggle()">
-            <BaseIcon :path="
-              layoutStore.isAsideMobileExpanded
-                ? mdiBackburger
-                : mdiForwardburger
-            " size="24" />
+        ]"
+        class="pt-14 min-h-screen w-screen transition-position lg:w-auto bg-gray-50 dark:bg-slate-800 dark:text-slate-100"
+      >
+        <!-- The  Navbar -->
+        <NavBar
+          :menu="menuNavBar"
+          :class="[
+            layoutAsidePadding,
+            { 'ml-60 lg:ml-0': layoutStore.isAsideMobileExpanded },
+          ]"
+          @menu-click="menuClick"
+        >
+          <NavBarItemPlain
+            display="flex lg:hidden"
+            @click.prevent="layoutStore.asideMobileToggle()"
+          >
+            <BaseIcon
+              :path="
+                layoutStore.isAsideMobileExpanded
+                  ? mdiBackburger
+                  : mdiForwardburger
+              "
+              size="24"
+            />
           </NavBarItemPlain>
-          <NavBarItemPlain display="hidden lg:flex xl:hidden" @click.prevent="layoutStore.asideLgToggle()">
-            <BaseIcon :path="layoutStore.isAsideLgActive ? mdiBackburger : mdiMenu" size="24" />
+          <NavBarItemPlain
+            display="hidden lg:flex xl:hidden"
+            @click.prevent="layoutStore.asideLgToggle()"
+          >
+            <BaseIcon
+              :path="layoutStore.isAsideLgActive ? mdiBackburger : mdiMenu"
+              size="24"
+            />
           </NavBarItemPlain>
           <NavBarItemPlain use-margin>
-            <FormControl placeholder="Search (ctrl+k)" ctrl-k-focus transparent borderless />
+            <FormControl
+              placeholder="Search (ctrl+k)"
+              ctrl-k-focus
+              transparent
+              borderless
+            />
           </NavBarItemPlain>
         </NavBar>
         <!-- The  Premium Aside Menu -->

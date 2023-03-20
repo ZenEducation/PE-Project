@@ -1,6 +1,8 @@
 import { getUser } from "~/src/graphql/queries";
 import { createUser } from "~/src/graphql/mutations";
 
+// Getting and Interacting with GraphQL APIs
+
 export const state = () => ({
   user: null,
 });
