@@ -28,6 +28,7 @@ useHead({
 
     return titleChunk ? `${titleChunk} - ${titleBase}` : titleBase;
   },
+  link: [{ rel: 'icon', href: 'favicon.ico' }],
 });
 </script>
 
