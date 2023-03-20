@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from "vue";
-import FormCheckRadio from "@/components/Forms/FormCheckRadio.vue";
+import FormCheckRadio from "@/components/AfterAuth/Forms/FormCheckRadio.vue";
 
 const props = defineProps({
   options: {

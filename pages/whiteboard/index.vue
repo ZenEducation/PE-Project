@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Whiteboard from "@/components/Whiteboard/WhiteBoard.vue";
+import Whiteboard from "@/components/AfterAuth/Whiteboard/WhiteBoard.vue";
 export default {
   components: {
     whiteboard: Whiteboard,

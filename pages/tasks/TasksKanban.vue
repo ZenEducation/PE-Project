@@ -142,17 +142,17 @@
 
 <script>
 import { ref } from "vue";
-import SectionMain from "@/components/Sections/SectionMain.vue";
-import TasksGroups from "@/components/Tasks/TasksGroups.vue";
-import Task01 from "@/components/Tasks/Task01.vue";
-import Task02 from "@/components/Tasks/Task02.vue";
-import Task03 from "@/components/Tasks/Task03.vue";
-import Task04 from "@/components/Tasks/Task04.vue";
-import Task05 from "@/components/Tasks/Task05.vue";
-import Task06 from "@/components/Tasks/Task06.vue";
-import Task07 from "@/components/Tasks/Task07.vue";
-import Task08 from "@/components/Tasks/Task08.vue";
-import Task09 from "@/components/Tasks/Task09.vue";
+import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
+import TasksGroups from "@/components/AfterAuth/Tasks/TasksGroups.vue";
+import Task01 from "@/components/AfterAuth/Tasks/Task01.vue";
+import Task02 from "@/components/AfterAuth/Tasks/Task02.vue";
+import Task03 from "@/components/AfterAuth/Tasks/Task03.vue";
+import Task04 from "@/components/AfterAuth/Tasks/Task04.vue";
+import Task05 from "@/components/AfterAuth/Tasks/Task05.vue";
+import Task06 from "@/components/AfterAuth/Tasks/Task06.vue";
+import Task07 from "@/components/AfterAuth/Tasks/Task07.vue";
+import Task08 from "@/components/AfterAuth/Tasks/Task08.vue";
+import Task09 from "@/components/AfterAuth/Tasks/Task09.vue";
 import { useStyleStore } from "@/stores/style";
 
 const styleStore = useStyleStore();

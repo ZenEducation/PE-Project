@@ -10,11 +10,11 @@ import {
   mdiAsterisk,
   mdiLockOff,
 } from "@mdi/js";
-import PremFormControlIcon from "@/components/Forms/FormControlIcon.vue";
-import PremFormFieldHelp from "@/components/Forms/FormFieldHelp.vue";
-import PremFormControlListbox from "@/components/Forms/FormControlListbox.vue";
-import BaseIcon from "@/components/Display/BaseIcon.vue";
-import PremTipTag from "@/components/Display/TipTag.vue";
+import PremFormControlIcon from "@/components/AfterAuth/Forms/FormControlIcon.vue";
+import PremFormFieldHelp from "@/components/AfterAuth/Forms/FormFieldHelp.vue";
+import PremFormControlListbox from "@/components/AfterAuth/Forms/FormControlListbox.vue";
+import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
+import PremTipTag from "@/components/AfterAuth/Display/TipTag.vue";
 
 const props = defineProps({
   firstAddon: Boolean,

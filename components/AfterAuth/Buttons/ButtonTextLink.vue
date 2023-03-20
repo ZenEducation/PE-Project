@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from "vue";
 import { RouterLink } from "vue-router";
-import BaseIcon from "@/components/Display/BaseIcon.vue";
+import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
 
 const props = defineProps({
   to: {

@@ -21,26 +21,26 @@ import {
   mdiEyeOff,
 } from "@mdi/js";
 import { faEyeSlash, faSlash } from "@fortawesome/free-solid-svg-icons";
-import SectionMain from "@/components/Sections/SectionMain.vue";
-import CardBox from "@/components/Cards/CardBox.vue";
-import BaseDivider from "@/components/NavBar/BaseDivider.vue";
-import FormField from "@/components/Forms/FormField.vue";
-import FormControl from "@/components/Forms/FormControl.vue";
-import FormFilePicker from "@/components/Forms/FormFilePicker.vue";
-import BaseButton from "@/components/Buttons/BaseButton.vue";
-import BaseButtons from "@/components/Buttons/BaseButtons.vue";
-import SectionTitleLineWithButton from "@/components/Sections/SectionTitleLineWithButton.vue";
-import UserAvatarCurrentUserWithUpload from "@/components/Avatars/UserAvatarCurrentUserWithUpload.vue";
-import PillTag from "@/components/Display/PillTag.vue";
-import PillTagPlain from "@/components/Display/PillTagPlain.vue";
-import BaseIcon from "@/components/Display/BaseIcon.vue";
-import FormCheckRadio from "@/components/Forms/FormCheckRadio.vue";
-import NotificationBar from "@/components/NotificationBars/NotificationBar.vue";
+import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
+import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
+import BaseDivider from "@/components/AfterAuth/NavBar/BaseDivider.vue";
+import FormField from "@/components/AfterAuth/Forms/FormField.vue";
+import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
+import FormFilePicker from "@/components/AfterAuth/Forms/FormFilePicker.vue";
+import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
+import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
+import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
+import UserAvatarCurrentUserWithUpload from "@/components/AfterAuth/Avatars/UserAvatarCurrentUserWithUpload.vue";
+import PillTag from "@/components/AfterAuth/Display/PillTag.vue";
+import PillTagPlain from "@/components/AfterAuth/Display/PillTagPlain.vue";
+import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
+import FormCheckRadio from "@/components/AfterAuth/Forms/FormCheckRadio.vue";
+import NotificationBar from "@/components/AfterAuth/NotificationBars/NotificationBar.vue";
 
-import PremCardBoxBillingItem from "@/components/Cards/CardBoxBillingItem.vue";
-import PremCardBoxPaymentMethod from "@/components/Cards/CardBoxPaymentMethod.vue";
-import PremUserCardProfileNumber from "@/components/Avatars/UserCardProfileNumber.vue";
-import PremSectionBannerProfile from "@/components/Sections/SectionBannerProfile.vue";
+import PremCardBoxBillingItem from "@/components/AfterAuth/Cards/CardBoxBillingItem.vue";
+import PremCardBoxPaymentMethod from "@/components/AfterAuth/Cards/CardBoxPaymentMethod.vue";
+import PremUserCardProfileNumber from "@/components/AfterAuth/Avatars/UserCardProfileNumber.vue";
+import PremSectionBannerProfile from "@/components/AfterAuth/Sections/SectionBannerProfile.vue";
 
 const mainStore = useMainStore();
 

@@ -11,9 +11,9 @@ import {
   gradientBgYellowRed,
   gradientBgRedYellow,
 } from "@/configs/colorsPremium.js";
-import JustboilLogo from "@/components/Display/JustboilLogo.vue";
-import BaseButtons from "@/components/Buttons/BaseButtons.vue";
-import BaseButton from "@/components/Buttons/BaseButton.vue";
+import JustboilLogo from "@/components/AfterAuth/Display/JustboilLogo.vue";
+import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
+import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
 
 onMounted(() => {
   console.log("Section Form Screen ");

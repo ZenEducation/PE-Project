@@ -6,19 +6,19 @@ import {
   mdiMail,
   mdiCreditCardOutline,
 } from "@mdi/js";
-import SectionMain from "@/components/Sections/SectionMain.vue";
-import CardBox from "@/components/Cards/CardBox.vue";
-import FormCheckRadioGroup from "@/components/Forms/FormCheckRadioGroup.vue";
-import FormFilePicker from "@/components/Forms/FormFilePicker.vue";
-import FormField from "@/components/Forms/FormField.vue";
-import FormControl from "@/components/Forms/FormControl.vue";
-import BaseDivider from "@/components/NavBar/BaseDivider.vue";
-import BaseButton from "@/components/Buttons/BaseButton.vue";
-import BaseButtons from "@/components/Buttons/BaseButtons.vue";
-import SectionTitle from "@/components/Sections/SectionTitle.vue";
+import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
+import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
+import FormCheckRadioGroup from "@/components/AfterAuth/Forms/FormCheckRadioGroup.vue";
+import FormFilePicker from "@/components/AfterAuth/Forms/FormFilePicker.vue";
+import FormField from "@/components/AfterAuth/Forms/FormField.vue";
+import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
+import BaseDivider from "@/components/AfterAuth/NavBar/BaseDivider.vue";
+import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
+import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
+import SectionTitle from "@/components/AfterAuth/Sections/SectionTitle.vue";
 
-import SectionTitleLineWithButton from "@/components/Sections/SectionTitleLineWithButton.vue";
-import NotificationBarInCard from "@/components/NotificationBars/NotificationBarInCard.vue";
+import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
+import NotificationBarInCard from "@/components/AfterAuth/NotificationBars/NotificationBarInCard.vue";
 
 const selectOptions = [
   { id: 1, label: "Business development" },

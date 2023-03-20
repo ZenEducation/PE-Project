@@ -14,7 +14,7 @@
 import { reactive, toRefs } from "vue";
 import { useTasksAPIStore } from "~~/stores/tasksAPI";
 import { computed, ref, onMounted } from "vue";
-import TableTasks from "@/components/Tables/TableTasks.vue";
+import TableTasks from "@/components/AfterAuth/Tables/TableTasks.vue";
 
 import {
   mdiAccountMultiple,

@@ -12,21 +12,21 @@ import {
   mdiReload,
   mdiTrendingUp,
 } from "@mdi/js";
-import SectionMain from "@/components/Sections/SectionMain.vue";
-import CardBox from "@/components/Cards/CardBox.vue";
-import BaseButtons from "@/components/Buttons/BaseButtons.vue";
-import BaseButton from "@/components/Buttons/BaseButton.vue";
-import NotificationBar from "@/components/NotificationBars/NotificationBar.vue";
+import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
+import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
+import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
+import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
+import NotificationBar from "@/components/AfterAuth/NotificationBars/NotificationBar.vue";
 import BaseDivider from "~~/components/NavBar/BaseDivider.vue";
-import CardBoxModal from "@/components/Cards/CardBoxModal.vue";
-import SectionTitle from "@/components/Sections/SectionTitle.vue";
-import FormField from "@/components/Forms/FormField.vue";
-import FormCheckRadioGroup from "@/components/Forms/FormCheckRadioGroup.vue";
+import CardBoxModal from "@/components/AfterAuth/Cards/CardBoxModal.vue";
+import SectionTitle from "@/components/AfterAuth/Sections/SectionTitle.vue";
+import FormField from "@/components/AfterAuth/Forms/FormField.vue";
+import FormCheckRadioGroup from "@/components/AfterAuth/Forms/FormCheckRadioGroup.vue";
 
-import SectionTitleLineWithButton from "@/components/Sections/SectionTitleLineWithButton.vue";
-import CardBoxComponentEmpty from "@/components/Cards/CardBoxComponentEmpty.vue";
-import CardBoxComponentTitle from "@/components/Cards/CardBoxComponentTitle.vue";
-import PillTag from "@/components/Display/PillTag.vue";
+import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
+import CardBoxComponentEmpty from "@/components/AfterAuth/Cards/CardBoxComponentEmpty.vue";
+import CardBoxComponentTitle from "@/components/AfterAuth/Cards/CardBoxComponentTitle.vue";
+import PillTag from "@/components/AfterAuth/Display/PillTag.vue";
 
 const modalOneActive = ref(false);
 

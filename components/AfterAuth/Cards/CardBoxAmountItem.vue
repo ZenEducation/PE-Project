@@ -1,7 +1,7 @@
 <script setup>
 import BaseDivider from "~~/components/NavBar/BaseDivider.vue";
-import PillTagTrend from "@/components/Display/PillTagTrend.vue";
-import IconRounded from "@/components/Display/IconRounded.vue";
+import PillTagTrend from "@/components/AfterAuth/Display/PillTagTrend.vue";
+import IconRounded from "@/components/AfterAuth/Display/IconRounded.vue";
 
 defineProps({
   title: {

@@ -4,9 +4,9 @@ import { RouterLink } from "vue-router";
 import { useStyleStore } from "@/stores/style.js";
 import { mdiMinus, mdiPlus, mdiChevronRight } from "@mdi/js";
 import { getButtonColor } from "@/configs/colors.js";
-import BaseIcon from "@/components/Display/BaseIcon.vue";
-import PremAsideMenuList from "@/components/WBFabric/AsideMenu/AsideMenuList.vue";
-import PremUpdateMark from "@/components/Display/UpdateMark.vue";
+import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
+import PremAsideMenuList from "@/components/AfterAuth/WBFabric/AsideMenu/AsideMenuList.vue";
+import PremUpdateMark from "@/components/AfterAuth/Display/UpdateMark.vue";
 
 const props = defineProps({
   item: {

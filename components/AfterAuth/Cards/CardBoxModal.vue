@@ -1,11 +1,11 @@
 <script setup>
 import { computed } from "vue";
 import { mdiClose } from "@mdi/js";
-import BaseButton from "@/components/Buttons/BaseButton.vue";
-import BaseButtons from "@/components/Buttons/BaseButtons.vue";
-import CardBox from "@/components/Cards/CardBox.vue";
-import OverlayLayer from "@/components/Asidemenu/OverlayLayer.vue";
-import CardBoxComponentTitle from "@/components/Cards/CardBoxComponentTitle.vue";
+import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
+import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
+import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
+import OverlayLayer from "@/components/AfterAuth/Asidemenu/OverlayLayer.vue";
+import CardBoxComponentTitle from "@/components/AfterAuth/Cards/CardBoxComponentTitle.vue";
 
 const props = defineProps({
   title: {

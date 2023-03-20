@@ -1,7 +1,7 @@
 <script setup>
 import { computed, useSlots } from "vue";
-import CardBoxComponentBody from "@/components/Cards/CardBoxComponentBody.vue";
-import CardBoxComponentFooter from "@/components/Cards/CardBoxComponentFooter.vue";
+import CardBoxComponentBody from "@/components/AfterAuth/Cards/CardBoxComponentBody.vue";
+import CardBoxComponentFooter from "@/components/AfterAuth/Cards/CardBoxComponentFooter.vue";
 
 const props = defineProps({
   rounded: {

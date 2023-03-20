@@ -3,12 +3,12 @@ import { reactive, onMounted } from "vue";
 // import { RouterLink } from "vue-router";
 import { useMainStore } from "@/stores/main.js";
 import { mdiAccount } from "@mdi/js";
-import CardBox from "@/components/Cards/CardBox.vue";
-import FormField from "@/components/Forms/FormField.vue";
-import FormControl from "@/components/Forms/FormControl.vue";
-import BaseButton from "@/components/Buttons/BaseButton.vue";
-import BaseLevel from "@/components/Buttons/BaseLevel.vue";
-import PremSectionFormScreen from "@/components/Sections/SectionFormScreen.vue";
+import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
+import FormField from "@/components/AfterAuth/Forms/FormField.vue";
+import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
+import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
+import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
+import PremSectionFormScreen from "@/components/AfterAuth/Sections/SectionFormScreen.vue";
 
 const form = reactive({
   login: "HarryPotter",

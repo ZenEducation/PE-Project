@@ -8,10 +8,10 @@ import {
   mdiChevronRightCircleOutline,
   mdiChevronLeftCircleOutline,
 } from "@mdi/js";
-import BaseIcon from "@/components/Display/BaseIcon.vue";
-import OverlayLayer from "@/components/Asidemenu/OverlayLayer.vue";
-import PremAsideMenuLayer from "@/components/Asidemenu/AsideMenuLayer.vue";
-import PremAsideMenuItem from "@/components/Asidemenu/AsideMenuItem.vue";
+import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
+import OverlayLayer from "@/components/AfterAuth/Asidemenu/OverlayLayer.vue";
+import PremAsideMenuLayer from "@/components/AfterAuth/Asidemenu/AsideMenuLayer.vue";
+import PremAsideMenuItem from "@/components/AfterAuth/Asidemenu/AsideMenuItem.vue";
 
 defineProps({
   menu: {

@@ -7,7 +7,7 @@ import {
   ListboxOptions,
   ListboxOption,
 } from "@headlessui/vue";
-import BaseIcon from "@/components/Display/BaseIcon.vue";
+import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
 
 const props = defineProps({
   options: {

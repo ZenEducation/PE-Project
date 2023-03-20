@@ -2,11 +2,11 @@
 import { computed, ref } from "vue";
 import { useMainStore } from "@/stores/main";
 import { mdiCheckDecagram } from "@mdi/js";
-import BaseLevel from "@/components/Buttons/BaseLevel.vue";
-import UserAvatarCurrentUser from "@/components/Avatars/UserAvatarCurrentUser.vue";
-import CardBox from "@/components/Cards/CardBox.vue";
-import FormCheckRadio from "@/components/Forms/FormCheckRadio.vue";
-import PillTag from "@/components/Display/PillTag.vue";
+import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
+import UserAvatarCurrentUser from "@/components/AfterAuth/Avatars/UserAvatarCurrentUser.vue";
+import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
+import FormCheckRadio from "@/components/AfterAuth/Forms/FormCheckRadio.vue";
+import PillTag from "@/components/AfterAuth/Display/PillTag.vue";
 
 const mainStore = useMainStore();
 

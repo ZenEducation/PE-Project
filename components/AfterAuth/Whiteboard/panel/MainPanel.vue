@@ -164,7 +164,7 @@
 
 <script>
 // import { mapState } from "pinia";
-import Tools from "@/components/Whiteboard/tools/tool/tools";
+import Tools from "@/components/AfterAuth/Whiteboard/tools/tool/tools";
 import { useWhiteboardStore } from "@/stores/whiteboard";
 import PanelToolIcon from "./PanelToolIcon";
 import PanelToolSettings from "./PanelToolSettings";

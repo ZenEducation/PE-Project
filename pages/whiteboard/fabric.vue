@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Whiteboard from "@/components/WBFabric/WBFabric.vue";
+import Whiteboard from "@/components/AfterAuth/WBFabric/WBFabric.vue";
 export default {
   components: {
     whiteboard: Whiteboard,

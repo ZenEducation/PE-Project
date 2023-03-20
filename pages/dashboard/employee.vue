@@ -10,8 +10,8 @@ import {
   mdiGithub,
   mdiChartPie,
 } from "@mdi/js";
-import * as chartConfig from "@/components/Charts/chart.config.js";
-import LineChart from "@/components/Charts/LineChart.vue";
+import * as chartConfig from "@/components/AfterAuth/Charts/chart.config.js";
+import LineChart from "@/components/AfterAuth/Charts/LineChart.vue";
 
 const chartData = ref(null);
 

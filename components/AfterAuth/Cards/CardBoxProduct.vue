@@ -1,13 +1,13 @@
 <script setup>
 import { buttonMenuOptions } from "@/configs/sampleButtonMenuOptions.js";
 import { mdiDotsVertical } from "@mdi/js";
-import CardBox from "@/components/Cards/CardBox.vue";
-import BaseLevel from "@/components/Buttons/BaseLevel.vue";
-import PillTag from "@/components/Display/PillTag.vue";
-import UserAvatar from "@/components/Avatars/UserAvatar.vue";
-import BaseButtons from "@/components/Buttons/BaseButtons.vue";
+import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
+import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
+import PillTag from "@/components/AfterAuth/Display/PillTag.vue";
+import UserAvatar from "@/components/AfterAuth/Avatars/UserAvatar.vue";
+import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
 
-import PremButtonMenu from "@/components/Buttons/ButtonMenu.vue";
+import PremButtonMenu from "@/components/AfterAuth/Buttons/ButtonMenu.vue";
 
 defineProps({
   product: {

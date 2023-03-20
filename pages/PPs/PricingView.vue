@@ -1,11 +1,11 @@
 <script setup>
 import { ref, computed } from "vue";
-import SectionMain from "@/components/Sections/SectionMain.vue";
-import BaseButtons from "@/components/Buttons/BaseButtons.vue";
-import BaseButton from "@/components/Buttons/BaseButton.vue";
-import SectionTitle from "@/components/Sections/SectionTitle.vue";
+import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
+import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
+import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
+import SectionTitle from "@/components/AfterAuth/Sections/SectionTitle.vue";
 
-import PremCardBoxPricing from "@/components/Cards/CardBoxPricing.vue";
+import PremCardBoxPricing from "@/components/AfterAuth/Cards/CardBoxPricing.vue";
 
 const period = ref("monthly");
 

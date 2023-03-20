@@ -18,22 +18,22 @@ import {
   mdiChartPie,
   mdiCreditCardOutline,
 } from "@mdi/js";
-import * as chartConfig from "@/components/Charts/chart.config.js";
-import LineChart from "@/components/Charts/LineChart.vue";
-import SectionMain from "@/components/Sections/SectionMain.vue";
-import SectionTitleLineWithButton from "@/components/Sections/SectionTitleLineWithButton.vue";
-import CardBoxWidget from "@/components/Cards/CardBoxWidget.vue";
-import CardBox from "@/components/Cards/CardBox.vue";
-import TableSampleClients from "@/components/Tables/TableSampleClients.vue";
-import NotificationBar from "@/components/NotificationBars/NotificationBar.vue";
-import CardBoxClient from "@/components/Cards/CardBoxClient.vue";
-import CardBoxTransaction from "@/components/Cards/CardBoxTransaction.vue";
-import BaseButtons from "@/components/Buttons/BaseButtons.vue";
-import BaseButton from "@/components/Buttons/BaseButton.vue";
+import * as chartConfig from "@/components/AfterAuth/Charts/chart.config.js";
+import LineChart from "@/components/AfterAuth/Charts/LineChart.vue";
+import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
+import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
+import CardBoxWidget from "@/components/AfterAuth/Cards/CardBoxWidget.vue";
+import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
+import TableSampleClients from "@/components/AfterAuth/Tables/TableSampleClients.vue";
+import NotificationBar from "@/components/AfterAuth/NotificationBars/NotificationBar.vue";
+import CardBoxClient from "@/components/AfterAuth/Cards/CardBoxClient.vue";
+import CardBoxTransaction from "@/components/AfterAuth/Cards/CardBoxTransaction.vue";
+import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
+import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
 
-import PremUserCard from "@/components/Cards/UserCard.vue";
-import PremCardBoxProduct from "@/components/Cards/CardBoxProduct.vue";
-import PremCardBoxAmountItem from "@/components/Cards/CardBoxAmountItem.vue";
+import PremUserCard from "@/components/AfterAuth/Cards/UserCard.vue";
+import PremCardBoxProduct from "@/components/AfterAuth/Cards/CardBoxProduct.vue";
+import PremCardBoxAmountItem from "@/components/AfterAuth/Cards/CardBoxAmountItem.vue";
 
 const mainStore = useMainStore();
 

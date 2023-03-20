@@ -1,6 +1,6 @@
 <script setup>
 import { computed, ref, onMounted } from "vue";
-import { useMainStore } from "@/stores/main";
+import { useMainStore } from "@/stores/main.js";
 import {
   mdiAccountMultiple,
   mdiCartOutline,
@@ -13,31 +13,24 @@ import {
 import * as chartConfig from "@/components/AfterAuth/Charts/chart.config.js";
 import LineChart from "@/components/AfterAuth/Charts/LineChart.vue";
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
-import CardBoxWidget from "@/components/AfterAuth/Cards/CardBoxWidget.vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import TableSampleClients from "@/components/AfterAuth/Tables/TableSampleClients.vue";
-import NotificationBar from "~~/components/NotificationBars/NotificationBar.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import CardBoxTransaction from "@/components/AfterAuth/Cards/CardBoxTransaction.vue";
-import CardBoxClient from "@/components/AfterAuth/Cards/CardBoxClient.vue";
-
 import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
 import SectionBannerStarOnGitHub from "@/components/AfterAuth/Sections/SectionBannerStarOnGitHub.vue";
+import CardBoxWidget from "@/components/AfterAuth/Cards/CardBoxWidget.vue";
+import CardBoxClient from "@/components/AfterAuth/Cards/CardBoxClient.vue";
+import CardBoxTransaction from "@/components/AfterAuth/Cards/CardBoxTransaction.vue";
+import NotificationBar from "@/components/AfterAuth/NotificationBars/NotificationBar.vue";
+import TableCardClients from "@/components/AfterAuth/Tables/TableCardClients.vue";
 
 const chartData = ref(null);
 
 const fillChartData = () => {
   chartData.value = chartConfig.sampleChartData();
 };
-
 onMounted(() => {
   fillChartData();
 });
-
 const mainStore = useMainStore();
-
 const clientBarItems = computed(() => mainStore.clients.slice(0, 4));
-
 const transactionBarItems = computed(() => mainStore.history);
 </script>
 
@@ -100,7 +93,6 @@ const transactionBarItems = computed(() => mainStore.history);
               :business="transaction.business"
               :type="transaction.type"
               :name="transaction.name"
-              :account="transaction.account"
             />
           </div>
           <div class="flex flex-col justify-between">
@@ -137,11 +129,15 @@ const transactionBarItems = computed(() => mainStore.history);
         />
 
         <NotificationBar color="info" :icon="mdiMonitorCellphone">
-          <b>Responsive table.</b> Collapses on mobile
+          <b>Responsive table!</b> Collapses on mobile
         </NotificationBar>
 
-        <CardBox has-table>
+        <CardBox has-table class="mb-6">
           <TableSampleClients />
+        </CardBox>
+
+        <CardBox has-table>
+          <TableCardClients />
         </CardBox>
       </SectionMain>
     </NuxtLayout>

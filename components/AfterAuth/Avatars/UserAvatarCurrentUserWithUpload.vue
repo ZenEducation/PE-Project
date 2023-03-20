@@ -1,7 +1,7 @@
 <script setup>
-import UserAvatarCurrentUser from "@/components/Avatars/UserAvatarCurrentUser.vue";
+import UserAvatarCurrentUser from "@/components/AfterAuth/Avatars/UserAvatarCurrentUser.vue";
 import { mdiCamera } from "@mdi/js";
-import FormFilePicker from "@/components/Forms/FormFilePicker.vue";
+import FormFilePicker from "@/components/AfterAuth/Forms/FormFilePicker.vue";
 </script>
 
 <template>

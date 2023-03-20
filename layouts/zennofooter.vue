@@ -7,12 +7,12 @@ import menuNavBar from "@/configs/menuNavBar.js";
 import { useMainStore } from "@/stores/main.js";
 import { useLayoutStore } from "@/stores/layout.js";
 import { useStyleStore } from "@/stores/style.js";
-import BaseIcon from "@/components/Display/BaseIcon.vue";
-import FormControl from "@/components/Forms/FormControl.vue";
-import NavBar from "@/components/NavBar/NavBar.vue";
-import PremAsideMenu from "@/components/Asidemenu/AsideMenu.vue";
-import NavBarItemPlain from "@/components/NavBar/NavBarItemPlain.vue";
-// import FooterBar from "@/components/Footers/FooterBar.vue";
+import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
+import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
+import NavBar from "@/components/AfterAuth/NavBar/NavBar.vue";
+import PremAsideMenu from "@/components/AfterAuth/Asidemenu/AsideMenu.vue";
+import NavBarItemPlain from "@/components/AfterAuth/NavBar/NavBarItemPlain.vue";
+// import FooterBar from "@/components/AfterAuth/Footers/FooterBar.vue";
 import { useAuthStore } from "@/stores/authStore";
 
 useMainStore().setUser({

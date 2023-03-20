@@ -8,18 +8,18 @@ import {
   mdiFormTextboxPassword,
   mdiCreditCardOutline,
 } from "@mdi/js";
-import SectionMain from "@/components/Sections/SectionMain.vue";
-import CardBox from "@/components/Cards/CardBox.vue";
+import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
+import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
 import BaseDivider from "~~/components/NavBar/BaseDivider.vue";
-import FormField from "@/components/Forms/FormField.vue";
-import FormControl from "@/components/Forms/FormControl.vue";
-import FormFilePicker from "@/components/Forms/FormFilePicker.vue";
-import BaseButton from "@/components/Buttons/BaseButton.vue";
-import BaseButtons from "@/components/Buttons/BaseButtons.vue";
-import UserCard from "@/components/Avatars/UserCard.vue";
+import FormField from "@/components/AfterAuth/Forms/FormField.vue";
+import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
+import FormFilePicker from "@/components/AfterAuth/Forms/FormFilePicker.vue";
+import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
+import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
+import UserCard from "@/components/AfterAuth/Avatars/UserCard.vue";
 import { Storage } from "@aws-amplify/storage";
 
-import SectionTitleLineWithButton from "@/components/Sections/SectionTitleLineWithButton.vue";
+import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
 
 const mainStore = useMainStore();
 

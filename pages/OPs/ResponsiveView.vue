@@ -1,6 +1,6 @@
 <script setup>
-import SectionTitle from "@/components/Sections/SectionTitle.vue";
-import SectionMain from "@/components/Sections/SectionMain.vue";
+import SectionTitle from "@/components/AfterAuth/Sections/SectionTitle.vue";
+import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
 </script>
 
 <template>

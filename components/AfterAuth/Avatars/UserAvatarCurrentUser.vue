@@ -1,6 +1,6 @@
 <script setup>
 import { useMainStore } from "@/stores/main";
-import UserAvatar from "@/components/Avatars/UserAvatar.vue";
+import UserAvatar from "@/components/AfterAuth/Avatars/UserAvatar.vue";
 
 const mainStore = useMainStore();
 </script>

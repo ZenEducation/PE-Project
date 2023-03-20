@@ -4,9 +4,9 @@ import { RouterLink } from "vue-router";
 import { computed, ref, onMounted, onBeforeUnmount } from "vue";
 import { useStyleStore } from "@/stores/style.js";
 import { useMainStore } from "@/stores/main.js";
-import BaseIcon from "@/components/Display/BaseIcon.vue";
-import UserAvatarCurrentUser from "@/components/Avatars/UserAvatarCurrentUser.vue";
-import NavBarMenuList from "@/components/NavBar/NavBarMenuList.vue";
+import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
+import UserAvatarCurrentUser from "@/components/AfterAuth/Avatars/UserAvatarCurrentUser.vue";
+import NavBarMenuList from "@/components/AfterAuth/NavBar/NavBarMenuList.vue";
 import BaseDivider from "~~/components/NavBar/BaseDivider.vue";
 
 const props = defineProps({

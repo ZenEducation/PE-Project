@@ -1,8 +1,8 @@
 <script setup>
-import SectionFullScreen from "@/components/Sections/SectionFullScreen.vue";
-import CardBox from "@/components/Cards/CardBox.vue";
-import BaseButton from "@/components/Buttons/BaseButton.vue";
-import BaseButtons from "@/components/Buttons/BaseButtons.vue";
+import SectionFullScreen from "@/components/AfterAuth/Sections/SectionFullScreen.vue";
+import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
+import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
+import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
 </script>
 
 <template>

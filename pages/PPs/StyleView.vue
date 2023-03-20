@@ -2,11 +2,11 @@
 import { useStyleStore } from "@/stores/style.js";
 import { mdiThemeLightDark } from "@mdi/js";
 
-import CardBox from "@/components/Cards/CardBox.vue";
-import SectionTitle from "@/components/Sections/SectionTitle.vue";
-import SectionMain from "@/components/Sections/SectionMain.vue";
-import BaseButton from "@/components/Buttons/BaseButton.vue";
-import BaseButtons from "@/components/Buttons/BaseButtons.vue";
+import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
+import SectionTitle from "@/components/AfterAuth/Sections/SectionTitle.vue";
+import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
+import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
+import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
 
 const styleStore = useStyleStore();
 

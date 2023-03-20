@@ -1,5 +1,5 @@
 <script setup>
-import NumberDynamic from "@/components/Display/NumberDynamic.vue";
+import NumberDynamic from "@/components/AfterAuth/Display/NumberDynamic.vue";
 
 defineProps({
   number: {

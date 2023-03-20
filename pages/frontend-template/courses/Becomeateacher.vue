@@ -12,8 +12,8 @@
   </div>
 </template>
 <script setup>
-import Footerheader from "@/components/FrontEndTemplate/Footerheader.vue";
-import Footer from "@/components/FrontEndTemplate/Footer.vue";
+import Footerheader from "@/components/AfterAuth/FrontEndTemplate/Footerheader.vue";
+import Footer from "@/components/AfterAuth/FrontEndTemplate/Footer.vue";
 
 definePageMeta({
   layout: "frontend",

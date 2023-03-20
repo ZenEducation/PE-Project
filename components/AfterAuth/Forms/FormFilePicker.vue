@@ -1,7 +1,7 @@
 <script setup>
 import { mdiUpload } from "@mdi/js";
 import { computed, ref, watch } from "vue";
-import BaseButton from "@/components/Buttons/BaseButton.vue";
+import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
 
 const props = defineProps({
   modelValue: {

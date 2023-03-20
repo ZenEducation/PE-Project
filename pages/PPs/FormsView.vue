@@ -12,18 +12,18 @@ import {
   mdiCreditCardOutline,
 } from "@mdi/js";
 import { buttonMenuOptions } from "@/configs/sampleButtonMenuOptions.js";
-import SectionMain from "@/components/Sections/SectionMain.vue";
-import SectionTitleLineWithButton from "@/components/Sections/SectionTitleLineWithButton.vue";
-import CardBox from "@/components/Cards/CardBox.vue";
-import FormCheckRadioGroup from "@/components/Forms/FormCheckRadioGroup.vue";
-import FormFilePicker from "@/components/Forms/FormFilePicker.vue";
-import PremFormField from "@/components/Forms/FormField.vue";
-import PremFormControl from "@/components/Forms/FormControl.vue";
-import PremButtonMenu from "@/components/Buttons/ButtonMenu.vue";
-import BaseDivider from "@/components/NavBar/BaseDivider.vue";
-import BaseButton from "@/components/Buttons/BaseButton.vue";
-import SectionTitle from "@/components/Sections/SectionTitle.vue";
-import CardBoxComponentTitle from "@/components/Cards/CardBoxComponentTitle.vue";
+import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
+import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
+import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
+import FormCheckRadioGroup from "@/components/AfterAuth/Forms/FormCheckRadioGroup.vue";
+import FormFilePicker from "@/components/AfterAuth/Forms/FormFilePicker.vue";
+import PremFormField from "@/components/AfterAuth/Forms/FormField.vue";
+import PremFormControl from "@/components/AfterAuth/Forms/FormControl.vue";
+import PremButtonMenu from "@/components/AfterAuth/Buttons/ButtonMenu.vue";
+import BaseDivider from "@/components/AfterAuth/NavBar/BaseDivider.vue";
+import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
+import SectionTitle from "@/components/AfterAuth/Sections/SectionTitle.vue";
+import CardBoxComponentTitle from "@/components/AfterAuth/Cards/CardBoxComponentTitle.vue";
 
 const selectFieldOptions = [
   { id: 1, label: "Business development" },

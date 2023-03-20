@@ -7,7 +7,7 @@
 
 <script>
 import PanelToolIcon from "./PanelToolIcon";
-import history from "@/components/Whiteboard/tools/history";
+import history from "@/components/AfterAuth/Whiteboard/tools/history";
 export default {
   components: {
     panelToolIcon: PanelToolIcon,
