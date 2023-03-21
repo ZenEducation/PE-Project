@@ -52,12 +52,7 @@
         Demo</span>
     </div>
 
-    <div class="flex flex-col sm:flex-row items-center justify-start sm:justify-center min-h-[52px]">
-      <input
-        class="border-1 border-[#20AD96] focus:ring-0 focus:border-[#20AD96] h-[56px] dark:bg-black text-[#696969] bg-[#f5f5f5] w-10/12 sm:w-8/12 md:w-4/12"
-        placeholder="Your E-mail" type="email" name="" id="" />
-      <button class="subscribe">Subscribe</button>
-    </div>
+    
   </div>
 </template>
 
