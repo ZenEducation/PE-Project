@@ -1,6 +1,5 @@
 <template>
   <div class="dark:blue py-[100px] font-body px-5 ">
-
     <div class="container">
       <div class="flex flex-col">
         <div class="mb-[40px]">

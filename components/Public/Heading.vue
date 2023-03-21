@@ -3,8 +3,12 @@
     <div
       class="header-inner flex items-center py-[19px] xl:py-0 z-50 transition-all left-0 top-0 w-full h-auto absolute bg-white dark:bg-[#161821]">
       <div class="container grid grid-flow-col xl:grid-cols-[22%_minmax(56%,_1fr)_22%] items-center px-3.8 3xl:px-37">
-        <a href="/" >
-          <img class="w-full h-auto max-h-20" :src="darkMode ? '/images/logo/dark-logo.png' : '/images/logo/light-logo.png'" alt="Logo"  />
+        <a href="/">
+          <img class="w-full h-auto max-h-20" :src="
+            darkMode
+              ? '/images/logo/dark-logo.png'
+              : '/images/logo/light-logo.png'
+          " alt="Logo" />
         </a>
         <nav aria-label="Main Menu" class="relative mx-auto hidden xl:block">
           <ul aria-label="Main Menu" role="menubar">
@@ -104,18 +108,7 @@
                 <li role="none" class="relative">
                   <a class="flex items-center px-7.5 py-2" role="menuitem" href="/about/aboutme">About me</a>
                 </li>
-                <li role="none" class="relative">
-                  <a class="flex items-center px-7.5 py-2" role="menuitem" href="/about/aboutusone">About us 01</a>
-                </li>
-                <li role="none" class="relative">
-                  <a class="flex items-center px-7.5 py-2" role="menuitem" href="/about/aboutustwo">About us 02</a>
-                </li>
-                <li role="none" class="relative">
-                  <a class="flex items-center px-7.5 py-2" role="menuitem" href="/about/contactme">Contact me</a>
-                </li>
-                <li role="none" class="relative">
-                  <a class="flex items-center px-7.5 py-2" role="menuitem" href="/about/contactus">Contact us</a>
-                </li>
+                
               </ul>
             </li>
             <li class="inline-block px-2.5 2xl:px-[17px] py-[29px] group relative" role="none">
@@ -127,59 +120,20 @@
                 class="absolute z-20 top-full left-0 w-60 mt-5 py-4 transition-all duration-400 bg-white border-b-4 border-b-primary shadow-2md shadow-black/5 visible opacity-0 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:mt-0 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:mt-0 group-focus-within:pointer-events-auto dark:bg-[#161821] dark:text-white"
                 role="menu">
                 <li role="none" class="relative">
-                  <a class="flex items-center px-7.5 py-2" role="menuitem" href="/courses/coursegridone">Courses Grid
-                    01</a>
+                  <a class="flex items-center px-7.5 py-2" role="menuitem" href="/courses/coursegridone">All Courses</a>
                 </li>
                 <li role="none" class="relative">
-                  <a class="flex items-center px-7.5 py-2" role="menuitem" href="/courses/coursegridtwo">Courses Grid
-                    02</a>
+                  <a class="flex items-center text-secondary px-7.5 py-2" role="menuitem"
+                    href="/courses/membership">Membership Levels</a>
                 </li>
                 <li role="none" class="relative">
-                  <a class="flex items-center px-7.5 py-2" role="menuitem" href="/courses/coursegridthree">Courses Grid
-                    03</a>
-                </li>
-                <!-- <li role="none" class="relative">
-                  <a
-                    class="
-                      flex
-                      items-center
-                      text-secondary
-                      px-7.5
-                      py-2
-                    "
-                    role="menuitem"
-                    href="/membership-levels"
-                    >Membership Levels</a
-                  >
+                  <a class="flex items-center text-secondary px-7.5 py-2" role="menuitem"
+                    href="/courses/becomeateacher">Become a Teacher</a>
                 </li>
                 <li role="none" class="relative">
-                  <a
-                    class="
-                      flex
-                      items-center
-                      text-secondary
-                      px-7.5
-                      py-2
-                    "
-                    role="menuitem"
-                    href="/become-a-teacher"
-                    >Become a Teacher</a
-                  >
+                  <a class="flex items-center text-secondary px-7.5 py-2" role="menuitem"
+                    href="/courses/profile">Profile</a>
                 </li>
-                <li role="none" class="relative">
-                  <a
-                    class="
-                      flex
-                      items-center
-                      text-secondary
-                      px-7.5
-                      py-2
-                    "
-                    role="menuitem"
-                    href="/profile"
-                    >Profile</a
-                  >
-                </li> -->
               </ul>
             </li>
             <li class="inline-block px-2.5 2xl:px-[17px] py-[29px] group relative" role="none">
@@ -244,7 +198,7 @@
             </li>
             <li class="inline-block px-2.5 2xl:px-[17px] py-[29px] group" role="none">
               <a class="font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white"
-                id="nav-6" role="menuitem" tabindex="0" href="/contact-us">Contact Us</a>
+                id="nav-6" role="menuitem" tabindex="0" href="/contactus">Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -300,6 +254,7 @@
     <div class="h-20"></div>
   </header>
 </template>
+
 <script setup>
 import { useStyleStore } from "@/stores/style";
 import { storeToRefs } from "pinia";
