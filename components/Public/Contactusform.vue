@@ -37,6 +37,28 @@
       </div>
     </div>
   </div>
+  <div class="py-5 ">
+    <headers class="flex flex-col items-center justify-center text-center">
+      <template v-slot:headertwo>
+        Whatsapp us
+        <span class="border-2 border-[#20AD96] rounded-md px-2 py-3 text-[#20AD96] font-[400]">Send Message</span>
+      </template>
+    </headers>
+
+    <div class="text-[18px] text-center mb-14 bg:text-[#ddd] text-[#696969]">
+      <span>Interested in getting 1-on-1 classes with a personal Tutor? </span><br />
+      For Students Studying in CBSE, ICSE, IGCSE, IB & State Boards<br>
+      <span class="border-2 border-[#20AD96] rounded-md mt-8 px-2 py-3 bg-[#20AD96] text-white font-[400]">Book a Free
+        Demo</span>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-center justify-start sm:justify-center min-h-[52px]">
+      <input
+        class="border-1 border-[#20AD96] focus:ring-0 focus:border-[#20AD96] h-[56px] dark:bg-black text-[#696969] bg-[#f5f5f5] w-10/12 sm:w-8/12 md:w-4/12"
+        placeholder="Your E-mail" type="email" name="" id="" />
+      <button class="subscribe">Subscribe</button>
+    </div>
+  </div>
 </template>
 
 <script>
