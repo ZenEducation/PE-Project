@@ -1,0 +1,148 @@
+<template>
+  <div class="blue padding-responsive">
+    <div>
+      <headers class="text-center">
+        <template v-slot:headerone
+          ><div class="text-[#6ac5f1] normal-case">
+            Upcoming events
+          </div></template
+        >
+        <template v-slot:headertwo>
+          <div>Stimulated to take part in?</div>
+        </template>
+      </headers>
+    </div>
+
+    <!-- bg-[#ef6f31] hover:bg-[#6ac5f1] -->
+
+    <div class="w-full four-grid justify-center gap-4 py-10">
+      <div
+        v-for="event in events"
+        :key="event.id"
+        class="hover w-full md:max-w-[271px] mb-[30px] rounded-md overflow-hidden min-w-[271px] text-white"
+      >
+        <div class="">
+          <div class="relative h-[inherit]">
+            <img
+              class="w-full"
+              src="/images/event/370/event1.jpg"
+              alt="event image"
+            />
+            <div
+              class="event-overlay-background flex items-center justify-center"
+            >
+              <button
+                class="bg-white rounded-md text-[14px] font-bold text-[#ef6f31] py-4 px-8"
+              >
+                Get ticket
+              </button>
+            </div>
+          </div>
+
+          <div class="pad flex flex-col justify-center items-center bg-[#111]">
+            <h2
+              class="text-center text-[#ef6f31] text-[15px] font-[500] my-3 leading-[2px] uppercase"
+            >
+              {{ event.date }}
+            </h2>
+
+            <h4 class="text-center text-white text-[20px] font-bold">
+              {{ event.title }}
+            </h4>
+
+            <div
+              class="flex justify-start items-center mt-5 text-[14px] font-light"
+            >
+              <span class="flex justify-centere items-center">
+                <icon class="w-4 h-4 mr-2" name="uil:map-marker" />
+                {{ event.location }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center mt-[50px]">
+      <div
+        class="flex flex-col sm:flex-row items-center justify-center md:justify-start text-[#8C89A2] text-center"
+      >
+        We love to see you at our events.
+        <div
+          class="flex flex-row items-center mt-4 sm:mt-0 text-[#ef6f31] font-bold border-b-[1px] ml-2 border-b-[white]"
+        >
+          Check out events
+          <Icon class="text-[#ef6f31]" name="uil:arrow-right" />
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+
+export default {
+data(){
+return {
+events: [
+    {
+        id: 1,
+        image: "/images/courses/370/course-1.jpg",
+        date: 'Nov 22, 2020',
+        title: 'Storytelling Workshop 2020',
+        location: 'Texas, US',
+
+    },
+
+        {
+        id: 2,
+        image: "/images/courses/370/course-1.jpg",
+        date: 'Oct 10, 2020',
+        title: 'Painting Art Contest 2020',
+        location: 'New York, US',
+    },
+            {
+        id: 3,
+        image: "/images/courses/370/course-1.jpg",
+        date: 'Dec 25, 2020',
+        title: 'International Art Fair 2020',
+        location: 'Hamburg, Germany',
+    },
+
+        {
+        id: 4,
+        image: "/images/courses/370/course-1.jpg",
+        date: 'Jan 20, 2020',
+        title: 'Consumer Food Safety Education',
+        location: 'Illinois, US',
+    },
+
+
+]
+}
+}
+}
+</script>
+
+<style>
+.pad {
+  padding: 20px 20px 60px;
+}
+
+.event-overlay-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #6ac4f186;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.hover:hover .event-overlay-background {
+  opacity: 1;
+  visibility: visible;
+}
+</style>

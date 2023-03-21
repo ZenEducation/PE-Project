@@ -1,6 +1,28 @@
 export default defineNuxtConfig({
+  ssr: false,
   srcDir: "./",
-  css: ["@/assets/css/main.css"],
+  css: ["@/assets/css/main.css","@/assets/css/font-awesome-pro.min.css"],
+
+  experimental: { payloadExtraction: false },
+
+  runtimeConfig: {
+    process: {
+      browser: true,
+      client: true,
+    },
+    browser: {},
+    client: {},
+    public: {
+      isClient: true,
+    },
+  },
+
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
 
   modules: [
     // ...
@@ -15,6 +37,7 @@ export default defineNuxtConfig({
         ],
       },
     ],
+    ["@vueuse/nuxt"]
   ],
   //buildModules: ["@pinia/nuxt"],
   alias: {
@@ -39,4 +62,7 @@ export default defineNuxtConfig({
   },
 
   build: {},
+
+  // target: "static"
 });
+
