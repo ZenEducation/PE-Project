@@ -19,7 +19,11 @@ import {
   mdiBook,
 } from "@mdi/js";
 
-export default [
+
+
+
+
+const allLinks = [
   {
     to: "/",
     icon: mdiMonitor,
@@ -152,4 +156,16 @@ export default [
     label: "About",
     icon: mdiHelpCircle,
   },
-];
+]
+
+// todo implement aside menu list
+// get profile from store
+// userprofile = useUserstor();
+// let links = [];
+// based on type populate links array and then export that array
+// if(userprofile === 's'){
+//  links = [...]
+// }
+
+
+export default allLinks;
