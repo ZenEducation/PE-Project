@@ -42,7 +42,7 @@ const handleSubmit = async () => {
 
 <template>
     <div>
-        <NuxtLayout>
+        <NuxtLayout name="frontend">
             <SectionFullScreen v-slot="{ cardClass }" bg="purplePink">
                 <CardBox :class="cardClass" is-form @submit.prevent="handleSubmit">
                     <FormField label="Login" help="Please enter your login">

@@ -79,7 +79,7 @@ function resetState() {
 </script>
 
 <template>
-    <NuxtLayout>
+    <NuxtLayout name="frontend">
         <SectionFullScreen v-slot="{ cardClass }">
             <CardBox :class="cardClass" is-form @submit="createAccount">
                 <div class="-mb-6" v-if="!verificationCodeMsg">

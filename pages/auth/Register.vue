@@ -79,7 +79,7 @@ const reattemptSignup = () => {
 
 <template>
   <div>
-    <NuxtLayout>
+    <NuxtLayout name="frontend">
       <PremSectionFormScreen v-slot="{ cardClass }" bg="yellowRed" has-promo>
         <CardBox :class="cardClass" is-form @submit.prevent="handleSubmit">
           <FormField
