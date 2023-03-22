@@ -10,6 +10,7 @@ module.exports = {
     "./nuxt.config.{js,ts}",
     "./configs/**.{vue,js,ts,jsx,tsx}",
     "./app.vue",
+    "./node_modules/flowbite.{js,ts}"
   ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
@@ -269,5 +270,6 @@ module.exports = {
       );
     }),
     require("tailwind-scrollbar")({ nocompatible: true }),
+    require('flowbite')
   ],
 };
