@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     "@/assets/css/main.css",
     "@/assets/css/font-awesome-pro.min.css",
     "@/assets/css/vue-multiselect.css",
-    "@/assets/css/v-calendar.css"
+    "@/assets/css/v-calendar.css",
+    '@fortawesome/fontawesome-free/css/all.css'
   ],
 
   experimental: { payloadExtraction: false },
@@ -50,7 +51,7 @@ export default defineNuxtConfig({
   },
 
   //
-  plugins: [{ src: "@/plugins/amplify.ts", mode: "client" }, { src: "@/plugins/v-calendar.ts", mode: "client" }],
+  plugins: [{ src: "@/plugins/amplify.ts", mode: "client" }, { src: "@/plugins/v-calendar.ts", mode: "client" },],
   vite: {
     // temp-fix for dev, it breaks build for now (see: https://github.com/nuxt/framework/issues/4916)
     define: {

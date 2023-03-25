@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-[70px] pb-[50px] bg-[#171621]">
+  <div class="pt-[70px] pb-[50px] dark:bg-[#171621] bg-[#f8f8f8]">
     <div class="flex justify-center items-start">
       <div class="mb-8 w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2">
         <div class="flex flex-col">
@@ -26,16 +26,16 @@
             </footerheader>
 
             <div class="my-[17px] flex flex-col justify-start items-start">
-              <p>Start here</p>
-              <p>Blog</p>
-              <p>About us</p>
+              <p class="text-[#ababab] text-sm font-medium mb-[11px]">Start here</p>
+              <p class="text-[#ababab] text-sm font-medium mb-[11px]">Blog</p>
+              <p class="text-[#ababab] text-sm font-medium mb-[11px]">About us</p>
             </div>
           </div>
           <div>
             <div class="my-[17px] flex flex-col justify-start items-start">
-              <p>Success story</p>
-              <p>Courses</p>
-              <p>Contact us</p>
+              <p class="text-[#ababab] text-sm font-medium mb-[11px]">Success story</p>
+              <p class="text-[#ababab] text-sm font-medium mb-[11px]">Courses</p>
+              <p class="text-[#ababab] text-sm font-medium mb-[11px]">Contact us</p>
             </div>
           </div>
           <div>
@@ -44,10 +44,10 @@
             </footerheader>
 
             <div class="my-[17px] flex flex-col justify-start items-start">
-              <p>Membership</p>
-              <p>Purchase guide</p>
-              <p>Privacy policy</p>
-              <p>terms of service</p>
+              <p class="text-[#ababab] text-sm font-medium mb-[11px]">Membership</p>
+              <p class="text-[#ababab] text-sm font-medium mb-[11px]">Purchase guide</p>
+              <p class="text-[#ababab] text-sm font-medium mb-[11px]">Privacy policy</p>
+              <p class="text-[#ababab] text-sm font-medium mb-[11px]">terms of service</p>
             </div>
           </div>
         </div>
