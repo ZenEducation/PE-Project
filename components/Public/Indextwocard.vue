@@ -1,22 +1,8 @@
 <template>
-  <div
-    id="trans"
-    class="
-      px-[20px]
-      pt-[40px]
-      pb-[30px]
-      w-12/12
-      md:max-w-[300px]
-      m-[4px]
-      dark:bg-[#161821]
-      rounded-md
-      flex flex-col
-      justify-center
-      items-center
-      text-center
-    "
-  >
-    <span class="mb-[24px] w-full bg-secondary p-2 flex justify-center">
+  <div id="trans"
+    class="px-[20px] pt-[40px] pb-[30px] w-12/12 md:max-w-[300px] m-[4px] dark:bg-[#161821] rounded-md flex flex-col items-center text-center">
+    <div class="h-[20rem]">
+      <span class="mb-[24px] w-full p-1 flex justify-center">
       <slot name="cardIcon"></slot>
     </span>
 
@@ -27,18 +13,19 @@
     <p class="font-[400] text-[15px] font-extralight font-body dark:text-[#ddd] leading-[1.6]">
       <slot name="cardP"></slot>
     </p>
+    </div>
 
-    <span class="flex items-center p-[5px] text-secondary dark:text-[#ddd] mt-[25px]">
-      <h4 class="font-[700] text-[14px] mr-2">Start Here</h4>
-      <icon name="uil:arrow-right" />
+    <div class="group">
+      <span class="flex items-center p-[5px] text-secondary dark:text-[#ddd] mt-[25px]  group-hover:text-[#ddd] group-hover:bg-[#20ad96] transition-all ease-in-out duration-500 group-hover:cursor-pointer group-hover:rounded-xl ">
+      <h4 class="font-[700] text-[14px] mr-2  transition-all ease-in-out duration-500">Know More</h4>
+      <i class="fa-solid fa-arrow-right group-hover:pl-4 transition-all ease-in-out duration-500"></i>
     </span>
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>

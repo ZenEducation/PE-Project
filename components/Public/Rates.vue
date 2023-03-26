@@ -1,13 +1,13 @@
 <template>
   <div class="grid md:grid-cols-3 lg:w-3/4 mx-auto gap-[30px]">
     <div class="rate">
-      <h2 class="text-[48px] text-[#20AD96] font-extrabold">3.092 +</h2>
-      <h4 class="title text-secondary dark:text-white">Registered enrolls</h4>
+      <h2 class="text-[48px] text-[#20AD96] font-extrabold">100 +</h2>
+      <h4 class="title text-secondary dark:text-white">Students Taught</h4>
     </div>
 
     <div class="rate">
-      <h2 class="text-[48px] text-[#20AD96] font-extrabold">1.926</h2>
-      <h4 class="title text-secondary dark:text-white">Finished Sessions</h4>
+      <h2 class="text-[48px] text-[#20AD96] font-extrabold">50 +</h2>
+      <h4 class="title text-secondary dark:text-white">kinds of exams</h4>
     </div>
 
     <div class="rate">

@@ -6,7 +6,8 @@ export default defineNuxtConfig({
     "@/assets/css/font-awesome-pro.min.css",
     "@/assets/css/vue-multiselect.css",
     "@/assets/css/v-calendar.css",
-    '@fortawesome/fontawesome-free/css/all.css'
+    '@fortawesome/fontawesome-free/css/all.css',
+    
   ],
 
   experimental: { payloadExtraction: false },
