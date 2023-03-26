@@ -1,3 +1,7 @@
-<template></template>
+<template>
+    <OnboardLayout></OnboardLayout>
+</template>
 
-<script setup></script>
+<script setup>
+import OnboardLayout from './-component/onboardLayout.vue';
+</script>
