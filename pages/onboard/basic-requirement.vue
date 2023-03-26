@@ -24,11 +24,22 @@
                         </div>
 
                         <p class="text-[#ddd] mt-[30px] text-left">
+                            <span>Subjects<span class="required">*</span></span>
+                        </p>
+                        <multiselect :multiple="true" v-model="subject" :options="subjects"></multiselect>
+
+                        <p class="text-[#ddd] mt-[30px] text-left">
+                            <span>Curriculum/Board<span class="required">*</span></span>
+                        </p>
+                        <multiselect v-model="board" :options="boards"></multiselect>
+
+
+                        <p class="text-[#ddd] mt-[30px] text-left">
                             <span>Requirement details<span class="required">*</span></span>
                         </p>
                         <textarea class="w-full text-white my-2 min-h-[220px] mb-3"
                             placeholder="A brief description of the requirements" v-model="thought.message">
-                        </textarea>
+                                                    </textarea>
 
                         <div class="flex items-center my-5">
                             <input type="checkbox" v-model="thought.savemyname" name="" id="savemyname" />
@@ -52,8 +63,9 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue';
+import { reactive, ref } from 'vue';
 import OnboardLayout from './-component/onboardLayout.vue';
+import Multiselect from 'vue-multiselect'
 definePageMeta({
     layout: 'frontend',
 })
@@ -63,5 +75,14 @@ const thought = reactive({
     message: '',
     savemyname: false,
 })
-function submitform() { }
+const router = useRouter();
+
+const subject = ref();
+const subjects = ['Maths', 'Physics', 'Chemistry'];
+const board = ref();
+const boards = ['CBSE', 'ICSE']
+function submitform() {
+    router.push({ path: '/onboard/signup' })
+}
+//  todo add location city and area field
 </script>
