@@ -1,66 +1,66 @@
 <script setup>
-import { computed } from "vue";
-import {
-  mdiCashMinus,
-  mdiCashPlus,
-  mdiReceipt,
-  mdiCreditCardOutline,
-} from "@mdi/js";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
-import PillTag from "@/components/AfterAuth/Display/PillTag.vue";
-import IconRounded from "@/components/AfterAuth/Display/IconRounded.vue";
+  import { computed } from 'vue'
+  import {
+    mdiCashMinus,
+    mdiCashPlus,
+    mdiReceipt,
+    mdiCreditCardOutline,
+  } from '@mdi/js'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import BaseLevel from '@/components/AfterAuth/Buttons/BaseLevel.vue'
+  import PillTag from '@/components/AfterAuth/Display/PillTag.vue'
+  import IconRounded from '@/components/AfterAuth/Display/IconRounded.vue'
 
-const props = defineProps({
-  amount: {
-    type: Number,
-    required: true,
-  },
-  date: {
-    type: String,
-    required: true,
-  },
-  business: {
-    type: String,
-    required: true,
-  },
-  type: {
-    type: String,
-    required: true,
-  },
-  name: {
-    type: String,
-    required: true,
-  },
-  account: {
-    type: String,
-    required: false,
-  },
-});
+  const props = defineProps({
+    amount: {
+      type: Number,
+      required: true,
+    },
+    date: {
+      type: String,
+      required: true,
+    },
+    business: {
+      type: String,
+      required: true,
+    },
+    type: {
+      type: String,
+      required: true,
+    },
+    name: {
+      type: String,
+      required: true,
+    },
+    account: {
+      type: String,
+      required: false,
+    },
+  })
 
-const icon = computed(() => {
-  if (props.type === "withdrawal") {
-    return {
-      icon: mdiCashMinus,
-      type: "danger",
-    };
-  } else if (props.type === "deposit") {
-    return {
-      icon: mdiCashPlus,
-      type: "success",
-    };
-  } else if (props.type === "invoice") {
-    return {
-      icon: mdiReceipt,
-      type: "warning",
-    };
-  }
+  const icon = computed(() => {
+    if (props.type === 'withdrawal') {
+      return {
+        icon: mdiCashMinus,
+        type: 'danger',
+      }
+    } else if (props.type === 'deposit') {
+      return {
+        icon: mdiCashPlus,
+        type: 'success',
+      }
+    } else if (props.type === 'invoice') {
+      return {
+        icon: mdiReceipt,
+        type: 'warning',
+      }
+    }
 
-  return {
-    icon: mdiCreditCardOutline,
-    type: "info",
-  };
-});
+    return {
+      icon: mdiCreditCardOutline,
+      type: 'info',
+    }
+  })
 </script>
 
 <template>

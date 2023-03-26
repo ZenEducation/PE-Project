@@ -38,35 +38,35 @@
 </template>
 
 <script>
-import { ref, onMounted, watch } from "vue";
-import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
+  import { ref, onMounted, watch } from 'vue'
+  import SectionMain from '@/components/AfterAuth/Sections/SectionMain.vue'
 
-export default {
-  components: {
-    SectionMain,
-  },
-  setup() {
-    const sidebarOpen = ref(false);
-    const msgSidebarOpen = ref(true);
-    const contentArea = ref(null);
+  export default {
+    components: {
+      SectionMain,
+    },
+    setup() {
+      const sidebarOpen = ref(false)
+      const msgSidebarOpen = ref(true)
+      const contentArea = ref(null)
 
-    const handleScroll = () => {
-      contentArea.value.scrollTop = 99999999;
-    };
+      const handleScroll = () => {
+        contentArea.value.scrollTop = 99999999
+      }
 
-    onMounted(() => {
-      handleScroll();
-    });
+      onMounted(() => {
+        handleScroll()
+      })
 
-    watch(msgSidebarOpen, () => {
-      handleScroll();
-    });
+      watch(msgSidebarOpen, () => {
+        handleScroll()
+      })
 
-    return {
-      sidebarOpen,
-      msgSidebarOpen,
-      contentArea,
-    };
-  },
-};
+      return {
+        sidebarOpen,
+        msgSidebarOpen,
+        contentArea,
+      }
+    },
+  }
 </script>

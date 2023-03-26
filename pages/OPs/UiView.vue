@@ -1,76 +1,76 @@
 <script setup>
-import { ref, computed } from "vue";
-import {
-  mdiContrastCircle,
-  mdiInformation,
-  mdiCheckCircle,
-  mdiAlert,
-  mdiAlertCircle,
-  mdiOpenInNew,
-  mdiClose,
-  mdiReload,
-  mdiTrendingUp,
-} from "@mdi/js";
-import { useStyleStore } from "@/stores/style.js";
-import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import NotificationBar from "@/components/AfterAuth/NotificationBars/NotificationBar.vue";
-import BaseDivider from "~~/components/NavBar/BaseDivider.vue";
-import CardBoxModal from "@/components/AfterAuth/Cards/CardBoxModal.vue";
-import SectionTitle from "@/components/AfterAuth/Sections/SectionTitle.vue";
-import FormField from "@/components/AfterAuth/Forms/FormField.vue";
-import FormCheckRadioGroup from "@/components/AfterAuth/Forms/FormCheckRadioGroup.vue";
+  import { ref, computed } from 'vue'
+  import {
+    mdiContrastCircle,
+    mdiInformation,
+    mdiCheckCircle,
+    mdiAlert,
+    mdiAlertCircle,
+    mdiOpenInNew,
+    mdiClose,
+    mdiReload,
+    mdiTrendingUp,
+  } from '@mdi/js'
+  import { useStyleStore } from '@/stores/style.js'
+  import SectionMain from '@/components/AfterAuth/Sections/SectionMain.vue'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import NotificationBar from '@/components/AfterAuth/NotificationBars/NotificationBar.vue'
+  import BaseDivider from '~~/components/NavBar/BaseDivider.vue'
+  import CardBoxModal from '@/components/AfterAuth/Cards/CardBoxModal.vue'
+  import SectionTitle from '@/components/AfterAuth/Sections/SectionTitle.vue'
+  import FormField from '@/components/AfterAuth/Forms/FormField.vue'
+  import FormCheckRadioGroup from '@/components/AfterAuth/Forms/FormCheckRadioGroup.vue'
 
-import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
-import CardBoxComponentEmpty from "@/components/AfterAuth/Cards/CardBoxComponentEmpty.vue";
-import CardBoxComponentTitle from "@/components/AfterAuth/Cards/CardBoxComponentTitle.vue";
-import PillTag from "@/components/AfterAuth/Display/PillTag.vue";
+  import SectionTitleLineWithButton from '@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue'
+  import CardBoxComponentEmpty from '@/components/AfterAuth/Cards/CardBoxComponentEmpty.vue'
+  import CardBoxComponentTitle from '@/components/AfterAuth/Cards/CardBoxComponentTitle.vue'
+  import PillTag from '@/components/AfterAuth/Display/PillTag.vue'
 
-const modalOneActive = ref(false);
+  const modalOneActive = ref(false)
 
-const modalTwoActive = ref(false);
+  const modalTwoActive = ref(false)
 
-const modalThreeActive = ref(false);
+  const modalThreeActive = ref(false)
 
-const notificationSettingsModel = ref([]);
+  const notificationSettingsModel = ref([])
 
-const notificationsOutline = computed(() =>
-  notificationSettingsModel.value.includes("outline")
-);
+  const notificationsOutline = computed(() =>
+    notificationSettingsModel.value.includes('outline')
+  )
 
-const buttonSettingsModel = ref([]);
+  const buttonSettingsModel = ref([])
 
-const buttonsOutline = computed(() =>
-  buttonSettingsModel.value.includes("outline")
-);
+  const buttonsOutline = computed(() =>
+    buttonSettingsModel.value.includes('outline')
+  )
 
-const buttonsSmall = computed(() =>
-  buttonSettingsModel.value.includes("small")
-);
+  const buttonsSmall = computed(() =>
+    buttonSettingsModel.value.includes('small')
+  )
 
-const buttonsDisabled = computed(() =>
-  buttonSettingsModel.value.includes("disabled")
-);
+  const buttonsDisabled = computed(() =>
+    buttonSettingsModel.value.includes('disabled')
+  )
 
-const buttonsRounded = computed(() =>
-  buttonSettingsModel.value.includes("rounded")
-);
+  const buttonsRounded = computed(() =>
+    buttonSettingsModel.value.includes('rounded')
+  )
 
-const pillsSettingsModel = ref(["icon"]);
+  const pillsSettingsModel = ref(['icon'])
 
-const pillsOutline = computed(() =>
-  pillsSettingsModel.value.includes("outline")
-);
+  const pillsOutline = computed(() =>
+    pillsSettingsModel.value.includes('outline')
+  )
 
-const pillsSmall = computed(() => pillsSettingsModel.value.includes("small"));
+  const pillsSmall = computed(() => pillsSettingsModel.value.includes('small'))
 
-const pillsIcon = computed(() =>
-  pillsSettingsModel.value.includes("icon") ? mdiTrendingUp : null
-);
+  const pillsIcon = computed(() =>
+    pillsSettingsModel.value.includes('icon') ? mdiTrendingUp : null
+  )
 
-const styleStore = useStyleStore();
+  const styleStore = useStyleStore()
 </script>
 
 <template>

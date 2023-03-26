@@ -1,26 +1,26 @@
-import paper from "paper";
+import paper from 'paper'
 
-import history from "../history";
-import { createLayer } from "../shared";
-import { DrawAction } from "../action";
-import { useWhiteboardStore } from "@/stores/whiteboard";
+import history from '../history'
+import { createLayer } from '../shared'
+import { DrawAction } from '../action'
+import { useWhiteboardStore } from '@/stores/whiteboard'
 
-const whiteboardStore = useWhiteboardStore();
+const whiteboardStore = useWhiteboardStore()
 
 const local = {
   path: null,
   center: null,
   layer: null,
-};
+}
 
 function onMouseDown(event) {
-  local.layer = createLayer();
-  local.center = event.point;
+  local.layer = createLayer()
+  local.center = event.point
 }
 
 function onMouseDrag(event) {
   if (local.path) {
-    local.path.remove();
+    local.path.remove()
   }
   local.path = new paper.Path.RegularPolygon(
     local.center,
@@ -29,13 +29,13 @@ function onMouseDrag(event) {
       (event.point.x - local.center.x) * (event.point.x - local.center.x) +
         (event.point.y - local.center.y) * (event.point.y - local.center.y)
     )
-  );
-  local.path.strokeColor = whiteboardStore.shapeArgs.color;
-  local.path.strokeWidth = whiteboardStore.shapeArgs.size;
+  )
+  local.path.strokeColor = whiteboardStore.shapeArgs.color
+  local.path.strokeWidth = whiteboardStore.shapeArgs.size
 }
 
 function onMouseUp() {
-  local.layer.addChild(local.path);
+  local.layer.addChild(local.path)
   const action = new DrawAction({
     layer: local.path.layer.name,
     tool: whiteboardStore.tool,
@@ -43,14 +43,14 @@ function onMouseUp() {
       return {
         x: seg._point._x,
         y: seg._point._y,
-      };
+      }
     }),
-  });
-  history.add(action);
-  local.path = null;
+  })
+  history.add(action)
+  local.path = null
 }
 
-export const tool = new paper.Tool();
-tool.onMouseDown = onMouseDown;
-tool.onMouseDrag = onMouseDrag;
-tool.onMouseUp = onMouseUp;
+export const tool = new paper.Tool()
+tool.onMouseDown = onMouseDown
+tool.onMouseDrag = onMouseDrag
+tool.onMouseUp = onMouseUp

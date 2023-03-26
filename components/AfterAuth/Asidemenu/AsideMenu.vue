@@ -1,99 +1,99 @@
 <script setup>
-import { computed, ref } from "vue";
-import { useRouter } from "vue-router";
-import {
-  mdiClose,
-  mdiChevronRightCircleOutline,
-  mdiChevronLeftCircleOutline,
-} from "@mdi/js";
-import { useLayoutStore } from "@/stores/layout.js";
-import { useStyleStore } from "@/stores/style.js";
-import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
-import OverlayLayer from "@/components/AfterAuth/Asidemenu/OverlayLayer.vue";
-import PremAsideMenuLayer from "@/components/AfterAuth/Asidemenu/AsideMenuLayer.vue";
-import PremAsideMenuItem from "@/components/AfterAuth/Asidemenu/AsideMenuItem.vue";
+  import { computed, ref } from 'vue'
+  import { useRouter } from 'vue-router'
+  import {
+    mdiClose,
+    mdiChevronRightCircleOutline,
+    mdiChevronLeftCircleOutline,
+  } from '@mdi/js'
+  import { useLayoutStore } from '@/stores/layout.js'
+  import { useStyleStore } from '@/stores/style.js'
+  import BaseIcon from '@/components/AfterAuth/Display/BaseIcon.vue'
+  import OverlayLayer from '@/components/AfterAuth/Asidemenu/OverlayLayer.vue'
+  import PremAsideMenuLayer from '@/components/AfterAuth/Asidemenu/AsideMenuLayer.vue'
+  import PremAsideMenuItem from '@/components/AfterAuth/Asidemenu/AsideMenuItem.vue'
 
-defineProps({
-  menu: {
-    type: Array,
-    required: true,
-  },
-});
+  defineProps({
+    menu: {
+      type: Array,
+      required: true,
+    },
+  })
 
-const emit = defineEmits(["menu-click"]);
+  const emit = defineEmits(['menu-click'])
 
-const layoutStore = useLayoutStore();
-const styleStore = useStyleStore();
-const isPrimaryMenuCompact = ref(true);
+  const layoutStore = useLayoutStore()
+  const styleStore = useStyleStore()
+  const isPrimaryMenuCompact = ref(true)
 
-const secondaryMenuItem = ref(null);
+  const secondaryMenuItem = ref(null)
 
-const overlayLayerDisplayType = computed(() => {
-  if (secondaryMenuItem.value) {
-    return "flex";
+  const overlayLayerDisplayType = computed(() => {
+    if (secondaryMenuItem.value) {
+      return 'flex'
+    }
+
+    if (!isPrimaryMenuCompact.value) {
+      return 'hidden lg:flex'
+    }
+
+    return 'hidden'
+  })
+
+  const closeSecondaryMenu = () => {
+    secondaryMenuItem.value = null
   }
 
-  if (!isPrimaryMenuCompact.value) {
-    return "hidden lg:flex";
-  }
+  const menuClickPrimaryMenu = (event, item) => {
+    emit('menu-click', event, item)
 
-  return "hidden";
-});
+    if (item.menu) {
+      isPrimaryMenuCompact.value = false
+    }
 
-const closeSecondaryMenu = () => {
-  secondaryMenuItem.value = null;
-};
-
-const menuClickPrimaryMenu = (event, item) => {
-  emit("menu-click", event, item);
-
-  if (item.menu) {
-    isPrimaryMenuCompact.value = false;
-  }
-
-  if (item.menuSecondary) {
-    if (secondaryMenuItem.value && item.key === secondaryMenuItem.value.key) {
-      closeSecondaryMenu();
-    } else {
-      secondaryMenuItem.value = item;
+    if (item.menuSecondary) {
+      if (secondaryMenuItem.value && item.key === secondaryMenuItem.value.key) {
+        closeSecondaryMenu()
+      } else {
+        secondaryMenuItem.value = item
+      }
     }
   }
-};
 
-const menuClickSecondaryMenu = (event, item) => {
-  emit("menu-click", event, item);
-};
-
-const overlayClick = () => {
-  if (secondaryMenuItem.value) {
-    closeSecondaryMenu();
-  } else if (!isPrimaryMenuCompact.value) {
-    isPrimaryMenuCompact.value = true;
+  const menuClickSecondaryMenu = (event, item) => {
+    emit('menu-click', event, item)
   }
-};
 
-window.addEventListener("keydown", (e) => {
-  if (
-    e.key === "Escape" &&
-    (secondaryMenuItem.value || !isPrimaryMenuCompact.value)
-  ) {
-    overlayClick();
+  const overlayClick = () => {
+    if (secondaryMenuItem.value) {
+      closeSecondaryMenu()
+    } else if (!isPrimaryMenuCompact.value) {
+      isPrimaryMenuCompact.value = true
+    }
   }
-});
 
-const router = useRouter();
+  window.addEventListener('keydown', (e) => {
+    if (
+      e.key === 'Escape' &&
+      (secondaryMenuItem.value || !isPrimaryMenuCompact.value)
+    ) {
+      overlayClick()
+    }
+  })
 
-router.afterEach(() => {
-  isPrimaryMenuCompact.value = true;
-});
+  const router = useRouter()
 
-const expandCollapseItem = computed(() => ({
-  label: isPrimaryMenuCompact.value ? "Exapand" : "Collapse",
-  icon: isPrimaryMenuCompact.value
-    ? mdiChevronRightCircleOutline
-    : mdiChevronLeftCircleOutline,
-  color: "",
-}));
+  router.afterEach(() => {
+    isPrimaryMenuCompact.value = true
+  })
+
+  const expandCollapseItem = computed(() => ({
+    label: isPrimaryMenuCompact.value ? 'Exapand' : 'Collapse',
+    icon: isPrimaryMenuCompact.value
+      ? mdiChevronRightCircleOutline
+      : mdiChevronLeftCircleOutline,
+    color: '',
+  }))
 </script>
 
 <template>

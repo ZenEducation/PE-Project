@@ -17,142 +17,142 @@ import {
   mdiMessage,
   mdiFastForwardOutline,
   mdiBook,
-} from "@mdi/js";
+} from '@mdi/js'
 
 const allLinks = [
   {
-    to: "/",
+    to: '/',
     icon: mdiMonitor,
-    label: "Home",
+    label: 'Home',
   },
   {
-    to: "/dashboard",
-    label: "UI Base",
+    to: '/dashboard',
+    label: 'UI Base',
     icon: mdiTelevisionGuide,
   },
   {
-    to: "/pps/tablesListsView",
-    label: "Tables & Lists",
+    to: '/pps/tablesListsView',
+    label: 'Tables & Lists',
     icon: mdiTable,
-    updateMark: "warning",
+    updateMark: 'warning',
   },
 
   {
-    to: "/pps/FormsView",
-    label: "Forms Advanced",
+    to: '/pps/FormsView',
+    label: 'Forms Advanced',
     icon: mdiBallot,
   },
 
   {
-    to: "/pps/uiView",
-    label: "UI Advanced",
+    to: '/pps/uiView',
+    label: 'UI Advanced',
     icon: mdiViewQuilt,
   },
   {
-    to: "/pps/styleView",
-    label: "Stylize",
+    to: '/pps/styleView',
+    label: 'Stylize',
     icon: mdiPalette,
   },
   {
-    to: "/pps/pricingView",
-    label: "Pricing layout",
+    to: '/pps/pricingView',
+    label: 'Pricing layout',
     icon: mdiBarcode,
   },
   {
-    label: "Dropdown",
+    label: 'Dropdown',
     icon: mdiFormDropdown,
     menu: [
       {
-        label: "Dropdown item Uno",
+        label: 'Dropdown item Uno',
       },
       {
-        label: "Dropdown item Dos",
+        label: 'Dropdown item Dos',
       },
     ],
   },
   {
-    to: "/pps/profileView",
-    label: "Profile",
+    to: '/pps/profileView',
+    label: 'Profile',
     icon: mdiAccountCircle,
   },
   {
-    to: "/auth/login",
-    label: "Login",
+    to: '/auth/login',
+    label: 'Login',
     icon: mdiLock,
   },
   {
-    to: "/auth/register",
-    label: "Register",
+    to: '/auth/register',
+    label: 'Register',
     icon: mdiSquareEditOutline,
   },
   {
     // Key should be unique for each submenus object
     // It is required for open/close logic
-    key: "submenus-1",
-    label: "Sub",
+    key: 'submenus-1',
+    label: 'Sub',
     icon: mdiMenuOpen,
     menuSecondary: [
       {
-        to: "/profile/profileView",
-        label: "Sample RouterLink",
+        to: '/profile/profileView',
+        label: 'Sample RouterLink',
         icon: mdiCardAccountDetailsOutline,
       },
       {
-        label: "External link",
-        href: "",
+        label: 'External link',
+        href: '',
         icon: mdiOpenInNew,
-        target: "_blank",
+        target: '_blank',
       },
       {
-        label: "Dropdown",
+        label: 'Dropdown',
         icon: mdiFormDropdown,
         menu: [
           {
-            label: "Dropdown item One",
+            label: 'Dropdown item One',
           },
           {
-            label: "Dropdown item Two",
+            label: 'Dropdown item Two',
           },
         ],
       },
       {
-        to: "/whiteboard",
-        label: "Whiteboard",
+        to: '/whiteboard',
+        label: 'Whiteboard',
         icon: mdiOpenInNew,
       },
     ],
   },
   {
-    to: "/profile/messages",
-    label: "Messages",
+    to: '/profile/messages',
+    label: 'Messages',
     icon: mdiMessage,
   },
   {
-    to: "/auth/auth",
-    label: "Authenticator",
+    to: '/auth/auth',
+    label: 'Authenticator',
     icon: mdiHelpCircle,
   },
   {
-    to: "/admin/tasks",
-    label: "AdminTasks",
+    to: '/admin/tasks',
+    label: 'AdminTasks',
     icon: mdiFastForwardOutline,
   },
   {
-    to: "/pe/syllabus",
-    label: "Syllabus",
+    to: '/pe/syllabus',
+    label: 'Syllabus',
     icon: mdiBook,
   },
   {
-    to: "/pe/tasks",
-    label: "PE Tasks",
+    to: '/pe/tasks',
+    label: 'PE Tasks',
     icon: mdiHelpCircle,
   },
   {
-    href: "",
-    label: "About",
+    href: '',
+    label: 'About',
     icon: mdiHelpCircle,
   },
-];
+]
 
 // todo implement aside menu list
 // get profile from store
@@ -163,4 +163,4 @@ const allLinks = [
 //  links = [...]
 // }
 
-export default allLinks;
+export default allLinks

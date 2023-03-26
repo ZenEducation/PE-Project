@@ -1,25 +1,25 @@
 <script setup>
-import { ref } from "vue";
-import { colorsBgLight } from "@/configs/colors.js";
+  import { ref } from 'vue'
+  import { colorsBgLight } from '@/configs/colors.js'
 
-defineProps({
-  color: {
-    type: String,
-    required: true,
-    validator: (value) =>
-      ["info", "danger", "success", "warning"].includes(value),
-  },
-  position: {
-    type: String,
-    default: "top-0 right-0",
-  },
-});
+  defineProps({
+    color: {
+      type: String,
+      required: true,
+      validator: (value) =>
+        ['info', 'danger', 'success', 'warning'].includes(value),
+    },
+    position: {
+      type: String,
+      default: 'top-0 right-0',
+    },
+  })
 
-const hasPing = ref(true);
+  const hasPing = ref(true)
 
-setTimeout(() => {
-  hasPing.value = false;
-}, 3000);
+  setTimeout(() => {
+    hasPing.value = false
+  }, 3000)
 </script>
 
 <template>

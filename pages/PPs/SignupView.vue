@@ -1,26 +1,26 @@
 <script setup>
-import { reactive } from "vue";
-// import { RouterLink } from "vue-router";
-import { mdiAccount, mdiEmail } from "@mdi/js";
-import { useMainStore } from "@/stores/main.js";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import FormField from "@/components/AfterAuth/Forms/FormField.vue";
-import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
-import PremSectionFormScreen from "@/components/AfterAuth/Sections/SectionFormScreen.vue";
+  import { reactive } from 'vue'
+  // import { RouterLink } from "vue-router";
+  import { mdiAccount, mdiEmail } from '@mdi/js'
+  import { useMainStore } from '@/stores/main.js'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import FormField from '@/components/AfterAuth/Forms/FormField.vue'
+  import FormControl from '@/components/AfterAuth/Forms/FormControl.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import BaseLevel from '@/components/AfterAuth/Buttons/BaseLevel.vue'
+  import PremSectionFormScreen from '@/components/AfterAuth/Sections/SectionFormScreen.vue'
 
-const form = reactive({
-  login: "johndoe",
-  email: "john.doe@example.com",
-  pass: "secret",
-});
+  const form = reactive({
+    login: 'johndoe',
+    email: 'john.doe@example.com',
+    pass: 'secret',
+  })
 
-const mainStore = useMainStore();
+  const mainStore = useMainStore()
 
-const submit = () => {
-  mainStore.pushMessage("Submitted. Demo only", "contrast");
-};
+  const submit = () => {
+    mainStore.pushMessage('Submitted. Demo only', 'contrast')
+  }
 </script>
 
 <template>

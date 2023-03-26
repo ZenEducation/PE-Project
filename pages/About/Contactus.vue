@@ -33,25 +33,25 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>
 
 <style scoped>
-.sub-title {
-  display: inline-block;
-  font-size: 18px;
-  line-height: 1;
-  font-weight: 500;
-  color: #ddd;
-  margin-bottom: 10px;
-}
+  .sub-title {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 500;
+    color: #ddd;
+    margin-bottom: 10px;
+  }
 
-.title {
-  font-size: 34px;
-  line-height: 1;
-  font-weight: 700;
-  margin-bottom: 0;
-}
+  .title {
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
 </style>

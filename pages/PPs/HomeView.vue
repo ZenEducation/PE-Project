@@ -1,89 +1,89 @@
 <script setup>
-import { ref, computed, watch, onMounted } from "vue";
-import {
-  mdiAccountMultiple,
-  mdiCartOutline,
-  mdiChartTimelineVariant,
-  mdiMonitorCellphone,
-  mdiReload,
-  mdiBell,
-  mdiPlusCircle,
-  mdiBroadcast,
-  mdiBriefcaseVariant,
-  mdiCalendarToday,
-  mdiCameraSwitch,
-  mdiChartPie,
-  mdiCreditCardOutline,
-} from "@mdi/js";
-import { useMainStore } from "@/stores/main.js";
-import { useSnackBarStore } from "@/stores/snackBar.js";
-import { useLayoutStore } from "@/stores/layout.js";
-import * as chartConfig from "@/components/AfterAuth/Charts/chart.config.js";
-import LineChart from "@/components/AfterAuth/Charts/LineChart.vue";
-import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
-import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
-import CardBoxWidget from "@/components/AfterAuth/Cards/CardBoxWidget.vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import TableSampleClients from "@/components/AfterAuth/Tables/TableSampleClients.vue";
-import NotificationBar from "@/components/AfterAuth/NotificationBars/NotificationBar.vue";
-import CardBoxClient from "@/components/AfterAuth/Cards/CardBoxClient.vue";
-import CardBoxTransaction from "@/components/AfterAuth/Cards/CardBoxTransaction.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
+  import { ref, computed, watch, onMounted } from 'vue'
+  import {
+    mdiAccountMultiple,
+    mdiCartOutline,
+    mdiChartTimelineVariant,
+    mdiMonitorCellphone,
+    mdiReload,
+    mdiBell,
+    mdiPlusCircle,
+    mdiBroadcast,
+    mdiBriefcaseVariant,
+    mdiCalendarToday,
+    mdiCameraSwitch,
+    mdiChartPie,
+    mdiCreditCardOutline,
+  } from '@mdi/js'
+  import { useMainStore } from '@/stores/main.js'
+  import { useSnackBarStore } from '@/stores/snackBar.js'
+  import { useLayoutStore } from '@/stores/layout.js'
+  import * as chartConfig from '@/components/AfterAuth/Charts/chart.config.js'
+  import LineChart from '@/components/AfterAuth/Charts/LineChart.vue'
+  import SectionMain from '@/components/AfterAuth/Sections/SectionMain.vue'
+  import SectionTitleLineWithButton from '@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue'
+  import CardBoxWidget from '@/components/AfterAuth/Cards/CardBoxWidget.vue'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import TableSampleClients from '@/components/AfterAuth/Tables/TableSampleClients.vue'
+  import NotificationBar from '@/components/AfterAuth/NotificationBars/NotificationBar.vue'
+  import CardBoxClient from '@/components/AfterAuth/Cards/CardBoxClient.vue'
+  import CardBoxTransaction from '@/components/AfterAuth/Cards/CardBoxTransaction.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
 
-import PremUserCard from "@/components/AfterAuth/Cards/UserCard.vue";
-import PremCardBoxProduct from "@/components/AfterAuth/Cards/CardBoxProduct.vue";
-import PremCardBoxAmountItem from "@/components/AfterAuth/Cards/CardBoxAmountItem.vue";
+  import PremUserCard from '@/components/AfterAuth/Cards/UserCard.vue'
+  import PremCardBoxProduct from '@/components/AfterAuth/Cards/CardBoxProduct.vue'
+  import PremCardBoxAmountItem from '@/components/AfterAuth/Cards/CardBoxAmountItem.vue'
 
-const mainStore = useMainStore();
+  const mainStore = useMainStore()
 
-const snackBarStore = useSnackBarStore();
+  const snackBarStore = useSnackBarStore()
 
-snackBarStore.pushMessage("Welcome back. This is demo", "contrast");
+  snackBarStore.pushMessage('Welcome back. This is demo', 'contrast')
 
-const userSwitchVal = ref(true);
+  const userSwitchVal = ref(true)
 
-watch(userSwitchVal, (value) => {
-  if (value) {
-    snackBarStore.pushMessage("Success! Now active", "success");
-  } else {
-    snackBarStore.pushMessage("Done! Now inactive", "danger");
+  watch(userSwitchVal, (value) => {
+    if (value) {
+      snackBarStore.pushMessage('Success! Now active', 'success')
+    } else {
+      snackBarStore.pushMessage('Done! Now inactive', 'danger')
+    }
+  })
+
+  const layoutStore = useLayoutStore()
+
+  const isLg = computed(() => layoutStore.isLg)
+
+  const isMd = computed(() => layoutStore.isMd)
+
+  watch([isLg, isMd], () => {
+    fillChartData()
+  })
+
+  const chartData = ref(null)
+
+  const fillChartData = () => {
+    let points = 4
+
+    if (isLg.value) {
+      points = 9
+    } else if (isMd.value) {
+      points = 6
+    }
+
+    chartData.value = chartConfig.sampleChartData(points)
   }
-});
 
-const layoutStore = useLayoutStore();
+  onMounted(() => {
+    fillChartData()
+  })
 
-const isLg = computed(() => layoutStore.isLg);
+  const clientBarItems = computed(() => mainStore.clients.slice(0, 3))
 
-const isMd = computed(() => layoutStore.isMd);
+  const transactionBarItems = computed(() => mainStore.history)
 
-watch([isLg, isMd], () => {
-  fillChartData();
-});
-
-const chartData = ref(null);
-
-const fillChartData = () => {
-  let points = 4;
-
-  if (isLg.value) {
-    points = 9;
-  } else if (isMd.value) {
-    points = 6;
-  }
-
-  chartData.value = chartConfig.sampleChartData(points);
-};
-
-onMounted(() => {
-  fillChartData();
-});
-
-const clientBarItems = computed(() => mainStore.clients.slice(0, 3));
-
-const transactionBarItems = computed(() => mainStore.history);
-
-const productBarItems = computed(() => mainStore.products);
+  const productBarItems = computed(() => mainStore.products)
 </script>
 
 <template>

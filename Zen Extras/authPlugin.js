@@ -1,8 +1,8 @@
 // import Vue from "vue";
-import { defineNuxtPlugin } from "#app";
+import { defineNuxtPlugin } from '#app'
 // import { Amplify, Auth } from "aws-amplify";
 
-import { useAuthStore } from "@/stores/authStore.js";
+import { useAuthStore } from '@/stores/authStore.js'
 
 // class AuthService {
 //   constructor(store) {
@@ -24,14 +24,14 @@ import { useAuthStore } from "@/stores/authStore.js";
 // }
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const store = useAuthStore();
+  const store = useAuthStore()
   // nuxtApp.provide("authStore", store);
 
   return {
     provide: {
       authStore: store,
     },
-  };
+  }
 
   // return {
   //   async authServiceFunction({}) {
@@ -47,7 +47,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   //     await store.load();
   //   },
   // };
-});
+})
 
 // export default async ({ store }) => {
 //   const authService = new AuthService(store);

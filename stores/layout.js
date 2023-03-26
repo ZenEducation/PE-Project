@@ -1,6 +1,6 @@
-import { defineStore } from "pinia";
+import { defineStore } from 'pinia'
 
-export const useLayoutStore = defineStore("layout", {
+export const useLayoutStore = defineStore('layout', {
   state: () => ({
     isAsideMobileExpanded: false,
     isAsideLgActive: true,
@@ -13,17 +13,17 @@ export const useLayoutStore = defineStore("layout", {
 
   actions: {
     asideMobileToggle() {
-      this.isAsideMobileExpanded = !this.isAsideMobileExpanded;
+      this.isAsideMobileExpanded = !this.isAsideMobileExpanded
     },
 
     asideLgToggle() {
-      this.isAsideLgActive = !this.isAsideLgActive;
+      this.isAsideLgActive = !this.isAsideLgActive
     },
 
     responsiveLayoutControl() {
-      this.isXl = window.innerWidth >= 1280;
-      this.isLg = window.innerWidth >= 1024;
-      this.isMd = window.innerWidth >= 768;
+      this.isXl = window.innerWidth >= 1280
+      this.isLg = window.innerWidth >= 1024
+      this.isMd = window.innerWidth >= 768
     },
   },
-});
+})

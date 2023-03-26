@@ -1,58 +1,58 @@
 <script setup>
-import { ref } from "vue";
-import { getButtonColor } from "@/configs/colors.js";
+  import { ref } from 'vue'
+  import { getButtonColor } from '@/configs/colors.js'
 
-const props = defineProps({
-  lifetime: {
-    type: Number,
-    required: true,
-    validator: (value) => value >= 0,
-  },
-  timestamp: {
-    type: Number,
-    required: true,
-  },
-  text: {
-    type: String,
-    required: true,
-  },
-  color: {
-    type: String,
-    required: true,
-    validator: (value) =>
-      ["contrast", "info", "success", "warning", "danger"].includes(value),
-  },
-});
+  const props = defineProps({
+    lifetime: {
+      type: Number,
+      required: true,
+      validator: (value) => value >= 0,
+    },
+    timestamp: {
+      type: Number,
+      required: true,
+    },
+    text: {
+      type: String,
+      required: true,
+    },
+    color: {
+      type: String,
+      required: true,
+      validator: (value) =>
+        ['contrast', 'info', 'success', 'warning', 'danger'].includes(value),
+    },
+  })
 
-const emit = defineEmits(["cancel"]);
+  const emit = defineEmits(['cancel'])
 
-const isActive = ref(false);
+  const isActive = ref(false)
 
-setTimeout(() => {
-  isActive.value = true;
-});
-
-if (props.lifetime) {
   setTimeout(() => {
-    isActive.value = false;
+    isActive.value = true
+  })
 
-    cancelEmit();
-  }, props.lifetime);
-}
+  if (props.lifetime) {
+    setTimeout(() => {
+      isActive.value = false
 
-const cancelEmit = () => {
-  setTimeout(() => {
-    emit("cancel", props.timestamp);
-  }, 250);
-};
-
-const cancelClick = () => {
-  isActive.value = false;
-
-  if (!props.lifetime) {
-    cancelEmit();
+      cancelEmit()
+    }, props.lifetime)
   }
-};
+
+  const cancelEmit = () => {
+    setTimeout(() => {
+      emit('cancel', props.timestamp)
+    }, 250)
+  }
+
+  const cancelClick = () => {
+    isActive.value = false
+
+    if (!props.lifetime) {
+      cancelEmit()
+    }
+  }
 </script>
 
 <template>

@@ -1,39 +1,39 @@
-import paper from "paper";
-import { createLayer } from "../shared";
-import history from "../history";
-import { DrawAction } from "../action";
-import { useWhiteboardStore } from "@/stores/whiteboard";
+import paper from 'paper'
+import { createLayer } from '../shared'
+import history from '../history'
+import { DrawAction } from '../action'
+import { useWhiteboardStore } from '@/stores/whiteboard'
 
-const whiteboardStore = useWhiteboardStore();
+const whiteboardStore = useWhiteboardStore()
 
 const local = {
   path: null,
-};
+}
 
 function onMouseDown() {
-  const layer = createLayer();
-  local.path = new paper.Path();
-  const rgb = hexToRgb(whiteboardStore.brushArgs.color || "#FFFFFF");
-  local.path.fillColor = `rgba(${rgb.r},${rgb.g},${rgb.b},0.4)`;
-  layer.addChild(local.path);
+  const layer = createLayer()
+  local.path = new paper.Path()
+  const rgb = hexToRgb(whiteboardStore.brushArgs.color || '#FFFFFF')
+  local.path.fillColor = `rgba(${rgb.r},${rgb.g},${rgb.b},0.4)`
+  layer.addChild(local.path)
 }
 
 function onMouseDrag(event) {
-  if (!local.path) return;
-  const step = event.delta;
-  step.x *= whiteboardStore.brushArgs.size / 2.8;
-  step.y *= whiteboardStore.brushArgs.size / 2.8;
-  step.angle += 90;
+  if (!local.path) return
+  const step = event.delta
+  step.x *= whiteboardStore.brushArgs.size / 2.8
+  step.y *= whiteboardStore.brushArgs.size / 2.8
+  step.angle += 90
 
-  const top = event.middlePoint.add(step);
-  const bottom = event.middlePoint.subtract(step);
+  const top = event.middlePoint.add(step)
+  const bottom = event.middlePoint.subtract(step)
   // local.path.selected = true; // This removes the hilighting of the points as we are dwaring the path
-  local.path.add(top);
-  local.path.insert(0, bottom);
+  local.path.add(top)
+  local.path.insert(0, bottom)
 }
 
 function onMouseUp() {
-  local.path.simplify();
+  local.path.simplify()
   const action = new DrawAction({
     layer: local.path.layer.name,
     tool: whiteboardStore.tool,
@@ -41,28 +41,28 @@ function onMouseUp() {
       return {
         x: seg._point._x,
         y: seg._point._y,
-      };
+      }
     }),
-  });
-  history.add(action);
-  local.path.selected = false;
-  local.path = null;
+  })
+  history.add(action)
+  local.path.selected = false
+  local.path = null
 }
 
-export const tool = new paper.Tool();
-tool.minDistance = 7;
-tool.maxDistance = 7;
-tool.onMouseDown = onMouseDown;
-tool.onMouseDrag = onMouseDrag;
-tool.onMouseUp = onMouseUp;
+export const tool = new paper.Tool()
+tool.minDistance = 7
+tool.maxDistance = 7
+tool.onMouseDown = onMouseDown
+tool.onMouseDrag = onMouseDrag
+tool.onMouseUp = onMouseUp
 
 function hexToRgb(hex) {
-  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
   return result
     ? {
         r: parseInt(result[1], 16),
         g: parseInt(result[2], 16),
         b: parseInt(result[3], 16),
       }
-    : null;
+    : null
 }

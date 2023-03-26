@@ -179,143 +179,143 @@
 </template>
 
 <script>
-export default {
-  layout: "frontend",
-  data() {
-    return {
-      registration: { name: "", email: "", message: "" },
+  export default {
+    layout: 'frontend',
+    data() {
+      return {
+        registration: { name: '', email: '', message: '' },
 
-      speakers: [
-        {
-          image: "",
-          name: "Solomon",
-          description: "/Designer",
-        },
-        {
-          image: "",
-          name: "Emerson",
-          description: "/Developer",
-        },
-        {
-          image: "",
-          name: "Bellezza",
-          description: "/Content Writer",
-        },
-        {
-          image: "",
-          name: "Lilybelle",
-          description: "/Office Manager",
-        },
-        {
-          image: "",
-          name: "Lucinda",
-          description: "/Manager",
-        },
-      ],
-    };
-  },
-
-  mounted() {
-    const sec = 1000;
-    const min = sec * 60;
-    const hour = min * 60;
-    const day = hour * 24;
-    const end = new Date("Dec 25, 2023").getTime();
-    setInterval(() => {
-      const current = new Date().getTime();
-      const remaining = end - current;
-      const day2 = Math.floor(remaining / day);
-      const hour2 = Math.floor((remaining % day) / hour);
-      const minute = Math.floor((remaining % hour) / min);
-      const second = Math.floor((remaining % min) / sec);
-      document.getElementById("days").innerText = day2 > 9 ? day2 : `0${day2}`;
-      document.getElementById("hours").innerText =
-        hour2 > 9 ? hour2 : `0${hour2}`;
-      document.getElementById("minutes").innerText =
-        minute > 9 ? minute : `0${minute}`;
-      document.getElementById("seconds").innerText =
-        second > 9 ? second : `0${second}`;
-    }, 1000);
-  },
-
-  methods: {
-    submitform() {
-      console.log("Registration", this.registration);
+        speakers: [
+          {
+            image: '',
+            name: 'Solomon',
+            description: '/Designer',
+          },
+          {
+            image: '',
+            name: 'Emerson',
+            description: '/Developer',
+          },
+          {
+            image: '',
+            name: 'Bellezza',
+            description: '/Content Writer',
+          },
+          {
+            image: '',
+            name: 'Lilybelle',
+            description: '/Office Manager',
+          },
+          {
+            image: '',
+            name: 'Lucinda',
+            description: '/Manager',
+          },
+        ],
+      }
     },
-  },
-};
+
+    mounted() {
+      const sec = 1000
+      const min = sec * 60
+      const hour = min * 60
+      const day = hour * 24
+      const end = new Date('Dec 25, 2023').getTime()
+      setInterval(() => {
+        const current = new Date().getTime()
+        const remaining = end - current
+        const day2 = Math.floor(remaining / day)
+        const hour2 = Math.floor((remaining % day) / hour)
+        const minute = Math.floor((remaining % hour) / min)
+        const second = Math.floor((remaining % min) / sec)
+        document.getElementById('days').innerText = day2 > 9 ? day2 : `0${day2}`
+        document.getElementById('hours').innerText =
+          hour2 > 9 ? hour2 : `0${hour2}`
+        document.getElementById('minutes').innerText =
+          minute > 9 ? minute : `0${minute}`
+        document.getElementById('seconds').innerText =
+          second > 9 ? second : `0${second}`
+      }, 1000)
+    },
+
+    methods: {
+      submitform() {
+        console.log('Registration', this.registration)
+      },
+    },
+  }
 </script>
 
 <style scoped>
-.check {
-  margin-top: 30px;
-  color: #ddd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.speakertext {
-  color: #dddddd;
-  width: 80%;
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.67;
-  width: 630px;
-  max-width: 100%;
-  text-align: center;
-  margin: 54px auto 0;
-}
+  .check {
+    margin-top: 30px;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .speakertext {
+    color: #dddddd;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.67;
+    width: 630px;
+    max-width: 100%;
+    text-align: center;
+    margin: 54px auto 0;
+  }
 
-ul li {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 0;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #fff;
-  padding: 10px;
-}
+  ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    padding: 10px;
+  }
 
-ul li #days,
-ul li #hours,
-ul li #minutes,
-ul li #seconds {
-  line-height: 1.15;
-  font-weight: 400;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
+  ul li #days,
+  ul li #hours,
+  ul li #minutes,
+  ul li #seconds {
+    line-height: 1.15;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
 
-.overlay {
-  background-image: url("/images/page-banner/artist-event.jpg");
-}
+  .overlay {
+    background-image: url('/images/page-banner/artist-event.jpg');
+  }
 
-.overlay::before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
+  .overlay::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
 
-.detail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #dddddd;
-  margin: 0px 10px;
-  font-size: 15px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.74;
-}
+  .detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dddddd;
+    margin: 0px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.74;
+  }
 
-.icon {
-  color: #20ad96;
-}
+  .icon {
+    color: #20ad96;
+  }
 </style>

@@ -74,7 +74,7 @@
 </template>
 
 <script>
-export default {
-  name: "Task09",
-};
+  export default {
+    name: 'Task09',
+  }
 </script>

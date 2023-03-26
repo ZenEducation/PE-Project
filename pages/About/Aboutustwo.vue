@@ -227,65 +227,65 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>
 
 <script>
-export default {
-  data() {
-    return {
-      learningrates: [
-        {
-          number: 1.926,
-          title: "Finished sessions",
-        },
-        {
-          number: 3.092,
-          title: "online enrollment",
-        },
-        {
-          number: 200,
-          title: "Subjects taught",
-        },
-        {
-          number: 150,
-          title: "Satisfaction rate",
-        },
-      ],
-    };
-  },
-};
+  export default {
+    data() {
+      return {
+        learningrates: [
+          {
+            number: 1.926,
+            title: 'Finished sessions',
+          },
+          {
+            number: 3.092,
+            title: 'online enrollment',
+          },
+          {
+            number: 200,
+            title: 'Subjects taught',
+          },
+          {
+            number: 150,
+            title: 'Satisfaction rate',
+          },
+        ],
+      }
+    },
+  }
 </script>
 
 <style scoped>
-.fronttext {
-  background-size: cover;
-  background-position: center;
-  font-size: 34px;
-  font-weight: bold;
-  line-height: 48px;
-  color: #ffffff;
-  margin-bottom: 0;
-}
+  .fronttext {
+    background-size: cover;
+    background-position: center;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 48px;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
 
-.title {
-  margin-top: 14px;
-  color: white;
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 1.34;
-}
+  .title {
+    margin-top: 14px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.34;
+  }
 
-.rate {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  padding: 0 12px;
-}
+  .rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 12px;
+  }
 </style>

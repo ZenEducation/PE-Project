@@ -44,5 +44,5 @@
 </template>
 
 <script setup>
-const props = defineProps(["color"]);
+  const props = defineProps(['color'])
 </script>

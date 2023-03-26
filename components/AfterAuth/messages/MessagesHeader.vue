@@ -71,8 +71,8 @@
 </template>
 
 <script>
-export default {
-  name: "MessagesHeader",
-  props: ["msgSidebarOpen"],
-};
+  export default {
+    name: 'MessagesHeader',
+    props: ['msgSidebarOpen'],
+  }
 </script>

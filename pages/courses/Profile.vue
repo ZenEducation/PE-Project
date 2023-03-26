@@ -7,9 +7,9 @@
 </template>
 
 <script setup>
-import CourseMembershipTable from "@/components/Public/Coursemembershiptable.vue";
+  import CourseMembershipTable from '@/components/Public/Coursemembershiptable.vue'
 
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>

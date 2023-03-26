@@ -1,90 +1,90 @@
 <script setup>
-import { reactive } from "vue";
-import { useRouter } from "vue-router";
-import { mdiAccount, mdiAsterisk } from "@mdi/js";
-import { Auth } from "aws-amplify";
-import { CognitoHostedUIIdentityProvider } from "@aws-amplify/auth";
-import SectionFullScreen from "@/components/AfterAuth/Sections/SectionFullScreen.vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import FormField from "@/components/AfterAuth/Forms/FormField.vue";
-import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
-import {
-  useAuthStore,
-  signUp,
-  resendConfirmationCode,
-  confirmSignUp,
-} from "@/stores/auth";
-import BaseDivider from "@/components/AfterAuth/Navbar/BaseDivider.vue";
+  import { reactive } from 'vue'
+  import { useRouter } from 'vue-router'
+  import { mdiAccount, mdiAsterisk } from '@mdi/js'
+  import { Auth } from 'aws-amplify'
+  import { CognitoHostedUIIdentityProvider } from '@aws-amplify/auth'
+  import SectionFullScreen from '@/components/AfterAuth/Sections/SectionFullScreen.vue'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import FormField from '@/components/AfterAuth/Forms/FormField.vue'
+  import FormControl from '@/components/AfterAuth/Forms/FormControl.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
+  import {
+    useAuthStore,
+    signUp,
+    resendConfirmationCode,
+    confirmSignUp,
+  } from '@/stores/auth'
+  import BaseDivider from '@/components/AfterAuth/Navbar/BaseDivider.vue'
 
-const form = reactive({
-  email: "",
-  username: "",
-  familyName: "",
-  remember: true,
-  verificationCode: "",
-});
+  const form = reactive({
+    email: '',
+    username: '',
+    familyName: '',
+    remember: true,
+    verificationCode: '',
+  })
 
-const authStore = useAuthStore();
-const router = useRouter();
-const validPasswordRegex =
-  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
-const verificationCodeMsg = ref("");
-const errMsg = ref("");
-const resendCodeMsg = ref("");
-function showErr(msg) {
-  errMsg.value = msg;
-}
-function emptyErr() {
-  errMsg.value = "";
-}
-
-const createAccount = async () => {
-  emptyErr();
-  console.log("inside create account");
-  resetState();
-  authStore.emptyUser();
-  const userData = await signUp({ ...form });
-  if (userData.isUserCreated) {
-    verificationCodeMsg.value = `Verification code sent to ${userData.codeDeliveryDetails.AttributeName} ${userData.codeDeliveryDetails.Destination}`;
-    authStore.setupUser(userData);
-  } else {
-    showErr(userData.msg);
+  const authStore = useAuthStore()
+  const router = useRouter()
+  const validPasswordRegex =
+    /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/
+  const verificationCodeMsg = ref('')
+  const errMsg = ref('')
+  const resendCodeMsg = ref('')
+  function showErr(msg) {
+    errMsg.value = msg
   }
-};
+  function emptyErr() {
+    errMsg.value = ''
+  }
 
-const verifyAccount = async () => {
-  emptyErr();
-  if (form.verificationCode) {
-    const userData = await confirmSignUp({
-      username: form.email,
-      code: form.verificationCode,
-    });
-    if (userData) {
-      if (!userData.isUserVerified) {
-        showErr(userData.msg);
-      } else {
-        navigateTo({ path: "/dashboard" });
+  const createAccount = async () => {
+    emptyErr()
+    console.log('inside create account')
+    resetState()
+    authStore.emptyUser()
+    const userData = await signUp({ ...form })
+    if (userData.isUserCreated) {
+      verificationCodeMsg.value = `Verification code sent to ${userData.codeDeliveryDetails.AttributeName} ${userData.codeDeliveryDetails.Destination}`
+      authStore.setupUser(userData)
+    } else {
+      showErr(userData.msg)
+    }
+  }
+
+  const verifyAccount = async () => {
+    emptyErr()
+    if (form.verificationCode) {
+      const userData = await confirmSignUp({
+        username: form.email,
+        code: form.verificationCode,
+      })
+      if (userData) {
+        if (!userData.isUserVerified) {
+          showErr(userData.msg)
+        } else {
+          navigateTo({ path: '/dashboard' })
+        }
       }
     }
   }
-};
 
-const resendCode = async () => {
-  emptyErr();
-  const resp = await resendConfirmationCode({ username: form.email });
-  if (resp.isCodeSent) {
-    resendCodeMsg.value = `Verification code sent on ${resp.AttributeName} to ${resp.Destination}`;
+  const resendCode = async () => {
+    emptyErr()
+    const resp = await resendConfirmationCode({ username: form.email })
+    if (resp.isCodeSent) {
+      resendCodeMsg.value = `Verification code sent on ${resp.AttributeName} to ${resp.Destination}`
+    }
+    setTimeout(() => {
+      resendCodeMsg.value = ''
+    }, 3000)
   }
-  setTimeout(() => {
-    resendCodeMsg.value = "";
-  }, 3000);
-};
 
-function resetState() {
-  verificationCodeMsg.value = "";
-}
+  function resetState() {
+    verificationCodeMsg.value = ''
+  }
 </script>
 
 <template>

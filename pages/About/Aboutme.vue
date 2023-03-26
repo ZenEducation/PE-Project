@@ -68,44 +68,44 @@
 </template>
 
 <script setup>
-import { KinesisContainer, KinesisElement } from "vue-kinesis";
-import DottedCircle from "../HoverImages/DottedCircle.vue";
-import YellowCloud from "../HoverImages/YellowCloud.vue";
+  import { KinesisContainer, KinesisElement } from 'vue-kinesis'
+  import DottedCircle from '../HoverImages/DottedCircle.vue'
+  import YellowCloud from '../HoverImages/YellowCloud.vue'
 
-definePageMeta({
-  layout: "frontend",
-});
-const show = ref(false);
+  definePageMeta({
+    layout: 'frontend',
+  })
+  const show = ref(false)
 
-onMounted(() => {
-  setTimeout(() => {
-    show.value = true;
-  }, 2000);
-});
+  onMounted(() => {
+    setTimeout(() => {
+      show.value = true
+    }, 2000)
+  })
 </script>
 
 <style>
-.youtube {
-  position: absolute;
-  z-index: 9;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  .youtube {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-/* .image {
+  /* .image {
   margin-bottom: -140px !important;
 } */
 
-.image {
-  width: 100%;
-  transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
-  transform: scale(1);
-}
+  .image {
+    width: 100%;
+    transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+    transform: scale(1);
+  }
 
-.image::hover {
-  transform: scale(1.1);
-}
+  .image::hover {
+    transform: scale(1.1);
+  }
 </style>
 
 <!-- <div class="shape scene shape-1" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;"><span data-depth="3" style="transform: translate3d(-8.7px, -66.6px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;"><img src="/images/shape-animation/shape-2.svg" alt="shape image"></span></div> <div class="shape scene shape-2" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;"><span data-depth="-3" style="transform: translate3d(6.8px, 52.4px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;"><img src="/images/shape-animation/shape-3.png" alt="shape image"></span></div> <div class="shape scene shape-3" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;"><span data-depth="3" style="transform: translate3d(-3.5px, -26.5px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;"><img alt="shape image"></span></div> <div class="shape scene shape-4" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;"><span data-depth="4" style="transform: translate3d(-8.7px, -66.8px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;"><img src="/images/shape-animation/shape-1.png" alt="shape image"></span></div> -->

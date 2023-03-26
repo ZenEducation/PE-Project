@@ -1,42 +1,42 @@
 <script setup>
-import { reactive } from "vue";
-import { useRouter } from "vue-router";
-import { mdiAccount, mdiAsterisk } from "@mdi/js";
-import SectionFullScreen from "@/components/AfterAuth/Sections/SectionFullScreen.vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import FormCheckRadio from "@/components/AfterAuth/Forms/FormCheckRadio.vue";
-import FormField from "@/components/AfterAuth/Forms/FormField.vue";
-import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
-import { useAuthStore, signIn } from "@/stores/auth";
-import { useGraphqlAPIStore } from "@/stores/graphqlAPI";
+  import { reactive } from 'vue'
+  import { useRouter } from 'vue-router'
+  import { mdiAccount, mdiAsterisk } from '@mdi/js'
+  import SectionFullScreen from '@/components/AfterAuth/Sections/SectionFullScreen.vue'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import FormCheckRadio from '@/components/AfterAuth/Forms/FormCheckRadio.vue'
+  import FormField from '@/components/AfterAuth/Forms/FormField.vue'
+  import FormControl from '@/components/AfterAuth/Forms/FormControl.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
+  import { useAuthStore, signIn } from '@/stores/auth'
+  import { useGraphqlAPIStore } from '@/stores/graphqlAPI'
 
-const form = reactive({
-  loginEmail: "",
-  password: "",
-  remember: true,
-});
+  const form = reactive({
+    loginEmail: '',
+    password: '',
+    remember: true,
+  })
 
-const router = useRouter();
-const errMsg = ref("");
-const authStore = useAuthStore();
-const GraphqlAPIStore = useGraphqlAPIStore();
+  const router = useRouter()
+  const errMsg = ref('')
+  const authStore = useAuthStore()
+  const GraphqlAPIStore = useGraphqlAPIStore()
 
-const handleSubmit = async () => {
-  errMsg.value = "";
-  // call the login method from the Authstore
-  const resp = await signIn({
-    email: form.loginEmail,
-    password: form.password,
-  });
-  if (resp.isAuthenticated) {
-    authStore.setupUser(resp.user);
-    navigateTo("/dashboard");
-  } else if (resp.msg) {
-    errMsg.value = resp.msg.message;
+  const handleSubmit = async () => {
+    errMsg.value = ''
+    // call the login method from the Authstore
+    const resp = await signIn({
+      email: form.loginEmail,
+      password: form.password,
+    })
+    if (resp.isAuthenticated) {
+      authStore.setupUser(resp.user)
+      navigateTo('/dashboard')
+    } else if (resp.msg) {
+      errMsg.value = resp.msg.message
+    }
   }
-};
 </script>
 
 <template>

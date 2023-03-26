@@ -1,29 +1,29 @@
 <script setup>
-import { computed, ref, onMounted } from "vue";
-import {
-  mdiAccountMultiple,
-  mdiCartOutline,
-  mdiChartTimelineVariant,
-  mdiMonitorCellphone,
-  mdiReload,
-  mdiGithub,
-  mdiChartPie,
-} from "@mdi/js";
-import { useMainStore } from "@/stores/main.js";
-import * as chartConfig from "@/components/AfterAuth/Charts/chart.config.js";
-import LineChart from "@/components/AfterAuth/Charts/LineChart.vue";
+  import { computed, ref, onMounted } from 'vue'
+  import {
+    mdiAccountMultiple,
+    mdiCartOutline,
+    mdiChartTimelineVariant,
+    mdiMonitorCellphone,
+    mdiReload,
+    mdiGithub,
+    mdiChartPie,
+  } from '@mdi/js'
+  import { useMainStore } from '@/stores/main.js'
+  import * as chartConfig from '@/components/AfterAuth/Charts/chart.config.js'
+  import LineChart from '@/components/AfterAuth/Charts/LineChart.vue'
 
-const chartData = ref(null);
+  const chartData = ref(null)
 
-const fillChartData = () => {
-  chartData.value = chartConfig.sampleChartData();
-};
-onMounted(() => {
-  fillChartData();
-});
-const mainStore = useMainStore();
-const clientBarItems = computed(() => mainStore.clients.slice(0, 4));
-const transactionBarItems = computed(() => mainStore.history);
+  const fillChartData = () => {
+    chartData.value = chartConfig.sampleChartData()
+  }
+  onMounted(() => {
+    fillChartData()
+  })
+  const mainStore = useMainStore()
+  const clientBarItems = computed(() => mainStore.clients.slice(0, 4))
+  const transactionBarItems = computed(() => mainStore.history)
 </script>
 
 <template>

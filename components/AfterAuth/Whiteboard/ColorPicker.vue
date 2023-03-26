@@ -22,32 +22,32 @@
 </template>
 
 <script>
-export default {
-  props: ["vividColors", "darkColors", "onSelectColor"],
-  methods: {
-    selectColor: function (color) {
-      this.onSelectColor(color);
+  export default {
+    props: ['vividColors', 'darkColors', 'onSelectColor'],
+    methods: {
+      selectColor: function (color) {
+        this.onSelectColor(color)
+      },
     },
-  },
-};
+  }
 </script>
 
 <style scoped>
-.colorPicker {
-  justify-content: space-between;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.colorPicker .color {
-  width: 30px;
-  height: 30px;
-  margin: 5px;
-  border-radius: 15px;
-  transition: opacity 0.2s;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.colorPicker .color:not(.active):hover {
-  cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-}
+  .colorPicker {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .colorPicker .color {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 15px;
+    transition: opacity 0.2s;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .colorPicker .color:not(.active):hover {
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
 </style>

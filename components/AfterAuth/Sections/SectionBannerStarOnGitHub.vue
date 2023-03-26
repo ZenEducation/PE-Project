@@ -1,8 +1,8 @@
 <script setup>
-import { mdiGithub, mdiAbugidaDevanagari } from "@mdi/js";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import SectionBanner from "@/components/AfterAuth/Sections/SectionBanner.vue";
-import { gradientBgPinkRed } from "@/configs/colors";
+  import { mdiGithub, mdiAbugidaDevanagari } from '@mdi/js'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import SectionBanner from '@/components/AfterAuth/Sections/SectionBanner.vue'
+  import { gradientBgPinkRed } from '@/configs/colors'
 </script>
 
 <template>

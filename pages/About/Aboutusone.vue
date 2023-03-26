@@ -54,20 +54,20 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>
 
 <style scoped>
-.fronttext {
-  background: url("/images/page-banner/about-us-01-hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  font-size: 34px;
-  font-weight: bold;
-  line-height: 48px;
-  color: #ffffff;
-  margin-bottom: 0;
-}
+  .fronttext {
+    background: url('/images/page-banner/about-us-01-hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 48px;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
 </style>

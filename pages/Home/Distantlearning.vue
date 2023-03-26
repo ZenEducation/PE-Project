@@ -52,31 +52,31 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>
 s
 
 <style scoped>
-.sub-title {
-  font-size: 34px;
-  line-height: 1;
-  font-weight: 700;
-  color: #ffffff;
-  display: block;
-  margin-bottom: 10px;
-}
+  .sub-title {
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 700;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+  }
 
-.title {
-  font-size: 64px;
-  line-height: 1;
-  font-weight: 400;
-  color: #ffffff;
-  margin-bottom: 28px;
-}
+  .title {
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 28px;
+  }
 
-.back {
-  background-image: url("/images/intro/intro3/bg-1.jpg");
-}
+  .back {
+    background-image: url('/images/intro/intro3/bg-1.jpg');
+  }
 </style>

@@ -1,13 +1,13 @@
 <script setup>
-defineProps({
-  tip: {
-    type: String,
-    default: null,
-  },
-  left: Boolean,
-  right: Boolean,
-  top: Boolean,
-});
+  defineProps({
+    tip: {
+      type: String,
+      default: null,
+    },
+    left: Boolean,
+    right: Boolean,
+    top: Boolean,
+  })
 </script>
 
 <template>

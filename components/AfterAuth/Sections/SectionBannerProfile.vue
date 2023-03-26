@@ -1,7 +1,7 @@
 <script setup>
-import { mdiGithub, mdiAccountChildCircle } from "@mdi/js";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import SectionBanner from "@/components/AfterAuth/Sections/SectionBanner.vue";
+  import { mdiGithub, mdiAccountChildCircle } from '@mdi/js'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import SectionBanner from '@/components/AfterAuth/Sections/SectionBanner.vue'
 </script>
 
 <template>

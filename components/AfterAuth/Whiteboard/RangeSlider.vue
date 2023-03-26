@@ -16,27 +16,27 @@
 </template>
 
 <script>
-import VueSlider from "vue-3-slider-component";
-// import { reactive, toRefs } from "vue";
+  import VueSlider from 'vue-3-slider-component'
+  // import { reactive, toRefs } from "vue";
 
-export default {
-  // setup() {
-  //   const data = reactive({ value: 0 });
-  //   return toRefs(data);
-  // },
-  components: {
-    VueSlider,
-  },
-  props: ["min", "max", "value", "onChange"],
-  data() {
-    return {
-      sliderValue: this.value,
-    };
-  },
-  watch: {
-    sliderValue: function (size) {
-      this.onChange(size);
+  export default {
+    // setup() {
+    //   const data = reactive({ value: 0 });
+    //   return toRefs(data);
+    // },
+    components: {
+      VueSlider,
     },
-  },
-};
+    props: ['min', 'max', 'value', 'onChange'],
+    data() {
+      return {
+        sliderValue: this.value,
+      }
+    },
+    watch: {
+      sliderValue: function (size) {
+        this.onChange(size)
+      },
+    },
+  }
 </script>

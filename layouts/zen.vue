@@ -1,56 +1,56 @@
 <script setup>
-import { computed } from "vue";
-import { mdiForwardburger, mdiBackburger, mdiMenu } from "@mdi/js";
-import { useRouter } from "vue-router";
-import menuAside from "@/configs/menuAside.js";
-import menuNavBar from "@/configs/menuNavBar.js";
-import { useMainStore } from "@/stores/main.js";
-import { useLayoutStore } from "@/stores/layout.js";
-import { useStyleStore } from "@/stores/style.js";
-import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
-import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
-import NavBar from "@/components/AfterAuth/NavBar/NavBar.vue";
-import PremAsideMenu from "@/components/AfterAuth/Asidemenu/AsideMenu.vue";
-import NavBarItemPlain from "@/components/AfterAuth/NavBar/NavBarItemPlain.vue";
-import FooterBar from "@/components/AfterAuth/Footers/FooterBar.vue";
-import { useAuthStore } from "@/stores/authStore";
+  import { computed } from 'vue'
+  import { mdiForwardburger, mdiBackburger, mdiMenu } from '@mdi/js'
+  import { useRouter } from 'vue-router'
+  import menuAside from '@/configs/menuAside.js'
+  import menuNavBar from '@/configs/menuNavBar.js'
+  import { useMainStore } from '@/stores/main.js'
+  import { useLayoutStore } from '@/stores/layout.js'
+  import { useStyleStore } from '@/stores/style.js'
+  import BaseIcon from '@/components/AfterAuth/Display/BaseIcon.vue'
+  import FormControl from '@/components/AfterAuth/Forms/FormControl.vue'
+  import NavBar from '@/components/AfterAuth/NavBar/NavBar.vue'
+  import PremAsideMenu from '@/components/AfterAuth/Asidemenu/AsideMenu.vue'
+  import NavBarItemPlain from '@/components/AfterAuth/NavBar/NavBarItemPlain.vue'
+  import FooterBar from '@/components/AfterAuth/Footers/FooterBar.vue'
+  import { useAuthStore } from '@/stores/authStore'
 
-useMainStore().setUser({
-  name: "Zenith Physics",
-  email: "zenith@physics.com",
-  avatar:
-    "https://avatars.dicebear.com/api/avataaars/example.svg?options[top][]=shortHair&options[accessoriesChance]=93",
-});
+  useMainStore().setUser({
+    name: 'Zenith Physics',
+    email: 'zenith@physics.com',
+    avatar:
+      'https://avatars.dicebear.com/api/avataaars/example.svg?options[top][]=shortHair&options[accessoriesChance]=93',
+  })
 
-const layoutAsidePadding = computed(() =>
-  layoutStore.isAsideLgActive ? "lg:pl-20" : "xl:pl-20"
-);
+  const layoutAsidePadding = computed(() =>
+    layoutStore.isAsideLgActive ? 'lg:pl-20' : 'xl:pl-20'
+  )
 
-const styleStore = useStyleStore();
+  const styleStore = useStyleStore()
 
-const layoutStore = useLayoutStore();
+  const layoutStore = useLayoutStore()
 
-const router = useRouter();
+  const router = useRouter()
 
-const AuthStore = useAuthStore();
+  const AuthStore = useAuthStore()
 
-// const GraphqlAPIStore = useGraphqlAPIStore();
+  // const GraphqlAPIStore = useGraphqlAPIStore();
 
-router.beforeEach(() => {
-  layoutStore.isAsideMobileExpanded = false;
-});
+  router.beforeEach(() => {
+    layoutStore.isAsideMobileExpanded = false
+  })
 
-const menuClick = (event, item) => {
-  if (item.isToggleLightDark) {
-    styleStore.setDarkMode();
+  const menuClick = (event, item) => {
+    if (item.isToggleLightDark) {
+      styleStore.setDarkMode()
+    }
+
+    if (item.isLogout) {
+      AuthStore.logout()
+      // console.log("Clicked On Logout");
+      router.push('/auth/login')
+    }
   }
-
-  if (item.isLogout) {
-    AuthStore.logout();
-    // console.log("Clicked On Logout");
-    router.push("/auth/login");
-  }
-};
 </script>
 
 <template>

@@ -1,32 +1,32 @@
-import paper from "paper";
+import paper from 'paper'
 
-import { createLayer } from "../shared";
-import history from "../history";
-import { DrawAction } from "../action";
-import { useWhiteboardStore } from "@/stores/whiteboard";
+import { createLayer } from '../shared'
+import history from '../history'
+import { DrawAction } from '../action'
+import { useWhiteboardStore } from '@/stores/whiteboard'
 
-const whiteboardStore = useWhiteboardStore();
+const whiteboardStore = useWhiteboardStore()
 
 const local = {
   path: null,
-};
+}
 
 function onMouseDrag(event) {
   if (local.path) {
-    local.path.remove();
+    local.path.remove()
   }
   local.path = new paper.Path.Line({
     from: event.downPoint,
     to: event.point,
     strokeColor: whiteboardStore.shapeArgs.color,
-  });
-  local.path.strokeColor = whiteboardStore.shapeArgs.color;
-  local.path.strokeWidth = whiteboardStore.shapeArgs.size;
+  })
+  local.path.strokeColor = whiteboardStore.shapeArgs.color
+  local.path.strokeWidth = whiteboardStore.shapeArgs.size
 }
 
 function onMouseUp() {
-  const layer = createLayer();
-  layer.addChild(local.path);
+  const layer = createLayer()
+  layer.addChild(local.path)
 
   const action = new DrawAction({
     layer: local.path.layer.name,
@@ -35,13 +35,13 @@ function onMouseUp() {
       return {
         x: seg._point._x,
         y: seg._point._y,
-      };
+      }
     }),
-  });
-  history.add(action);
-  local.path = null;
+  })
+  history.add(action)
+  local.path = null
 }
 
-export const tool = new paper.Tool();
-tool.onMouseDrag = onMouseDrag;
-tool.onMouseUp = onMouseUp;
+export const tool = new paper.Tool()
+tool.onMouseDrag = onMouseDrag
+tool.onMouseUp = onMouseUp

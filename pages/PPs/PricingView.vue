@@ -1,105 +1,105 @@
 <script setup>
-import { ref, computed } from "vue";
-import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import SectionTitle from "@/components/AfterAuth/Sections/SectionTitle.vue";
+  import { ref, computed } from 'vue'
+  import SectionMain from '@/components/AfterAuth/Sections/SectionMain.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import SectionTitle from '@/components/AfterAuth/Sections/SectionTitle.vue'
 
-import PremCardBoxPricing from "@/components/AfterAuth/Cards/CardBoxPricing.vue";
+  import PremCardBoxPricing from '@/components/AfterAuth/Cards/CardBoxPricing.vue'
 
-const period = ref("monthly");
+  const period = ref('monthly')
 
-const pricing = {
-  monthly: {
-    beginner: 19,
-    standard: 29,
-    pro: 39,
-  },
-  yearly: {
-    beginner: 199,
-    standard: 299,
-    pro: 399,
-  },
-};
+  const pricing = {
+    monthly: {
+      beginner: 19,
+      standard: 29,
+      pro: 39,
+    },
+    yearly: {
+      beginner: 199,
+      standard: 299,
+      pro: 399,
+    },
+  }
 
-const periodStr = computed(() => (period.value === "monthly" ? "mo" : "yr"));
+  const periodStr = computed(() => (period.value === 'monthly' ? 'mo' : 'yr'))
 
-const pricingCurrent = computed(() => pricing[period.value]);
+  const pricingCurrent = computed(() => pricing[period.value])
 
-const itemBeginner = {
-  title: "Beginner",
-  subTitle: "Essentials",
-  label: "Good start",
-  labelType: "contrast",
-  options: [
-    {
-      main: "5",
-      sub: "units",
-    },
-    {
-      main: "100",
-      sub: "minutes",
-    },
-    {
-      main: "1",
-      sub: "user",
-    },
-  ],
-};
+  const itemBeginner = {
+    title: 'Beginner',
+    subTitle: 'Essentials',
+    label: 'Good start',
+    labelType: 'contrast',
+    options: [
+      {
+        main: '5',
+        sub: 'units',
+      },
+      {
+        main: '100',
+        sub: 'minutes',
+      },
+      {
+        main: '1',
+        sub: 'user',
+      },
+    ],
+  }
 
-const itemStandard = {
-  title: "Standard",
-  subTitle: "Basic options",
-  label: "Most popular",
-  labelType: "info",
-  options: [
-    {
-      main: "25",
-      sub: "units",
-    },
-    {
-      main: "1,000",
-      sub: "minutes",
-    },
-    {
-      main: "10",
-      sub: "users",
-    },
-    {
-      main: "Hosted",
-      sub: "runners",
-    },
-  ],
-};
+  const itemStandard = {
+    title: 'Standard',
+    subTitle: 'Basic options',
+    label: 'Most popular',
+    labelType: 'info',
+    options: [
+      {
+        main: '25',
+        sub: 'units',
+      },
+      {
+        main: '1,000',
+        sub: 'minutes',
+      },
+      {
+        main: '10',
+        sub: 'users',
+      },
+      {
+        main: 'Hosted',
+        sub: 'runners',
+      },
+    ],
+  }
 
-const itemPro = {
-  title: "Pro",
-  subTitle: "All options",
-  label: "For large projects",
-  labelType: "contrast",
-  options: [
-    {
-      main: "100",
-      sub: "units",
-    },
-    {
-      main: "10,000",
-      sub: "minutes",
-    },
-    {
-      main: "Unlimited",
-      sub: "users",
-    },
-    {
-      main: "Hosted",
-      sub: "runners",
-    },
-    {
-      main: "SLA",
-      sub: "guaranteed",
-    },
-  ],
-};
+  const itemPro = {
+    title: 'Pro',
+    subTitle: 'All options',
+    label: 'For large projects',
+    labelType: 'contrast',
+    options: [
+      {
+        main: '100',
+        sub: 'units',
+      },
+      {
+        main: '10,000',
+        sub: 'minutes',
+      },
+      {
+        main: 'Unlimited',
+        sub: 'users',
+      },
+      {
+        main: 'Hosted',
+        sub: 'runners',
+      },
+      {
+        main: 'SLA',
+        sub: 'guaranteed',
+      },
+    ],
+  }
 </script>
 
 <template>

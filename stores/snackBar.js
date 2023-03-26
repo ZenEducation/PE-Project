@@ -1,6 +1,6 @@
-import { defineStore } from "pinia";
+import { defineStore } from 'pinia'
 
-export const useSnackBarStore = defineStore("snackBar", {
+export const useSnackBarStore = defineStore('snackBar', {
   state: () => ({
     messages: [],
   }),
@@ -11,19 +11,19 @@ export const useSnackBarStore = defineStore("snackBar", {
         text,
         color,
         lifetime: parseInt(lifetime),
-      });
+      })
     },
 
     cancelMessage(timestamp) {
-      const newMessages = [];
+      const newMessages = []
 
       this.messages.forEach((message) => {
         if (timestamp !== message.timestamp) {
-          newMessages.push(message);
+          newMessages.push(message)
         }
-      });
+      })
 
-      this.messages = newMessages;
+      this.messages = newMessages
     },
   },
-});
+})

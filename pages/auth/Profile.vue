@@ -1,46 +1,46 @@
 <script setup>
-import { reactive } from "vue";
-import {
-  mdiAccount,
-  mdiMail,
-  mdiAsterisk,
-  mdiFormTextboxPassword,
-  mdiCreditCardOutline,
-} from "@mdi/js";
-import { useMainStore } from "@/stores/main";
-import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
+  import { reactive } from 'vue'
+  import {
+    mdiAccount,
+    mdiMail,
+    mdiAsterisk,
+    mdiFormTextboxPassword,
+    mdiCreditCardOutline,
+  } from '@mdi/js'
+  import { useMainStore } from '@/stores/main'
+  import SectionMain from '@/components/AfterAuth/Sections/SectionMain.vue'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
 
-import BaseDivider from "~~/components/NavBar/BaseDivider.vue";
-import FormField from "@/components/AfterAuth/Forms/FormField.vue";
-import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
-import FormFilePicker from "@/components/AfterAuth/Forms/FormFilePicker.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
-import UserCard from "~~/components/Cards/UserCard.vue";
+  import BaseDivider from '~~/components/NavBar/BaseDivider.vue'
+  import FormField from '@/components/AfterAuth/Forms/FormField.vue'
+  import FormControl from '@/components/AfterAuth/Forms/FormControl.vue'
+  import FormFilePicker from '@/components/AfterAuth/Forms/FormFilePicker.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
+  import UserCard from '~~/components/Cards/UserCard.vue'
 
-import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
+  import SectionTitleLineWithButton from '@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue'
 
-const mainStore = useMainStore();
+  const mainStore = useMainStore()
 
-const profileForm = reactive({
-  name: mainStore.userName,
-  email: mainStore.userEmail,
-});
+  const profileForm = reactive({
+    name: mainStore.userName,
+    email: mainStore.userEmail,
+  })
 
-const passwordForm = reactive({
-  password_current: "",
-  password: "",
-  password_confirmation: "",
-});
+  const passwordForm = reactive({
+    password_current: '',
+    password: '',
+    password_confirmation: '',
+  })
 
-const submitProfile = () => {
-  mainStore.setUser(profileForm);
-};
+  const submitProfile = () => {
+    mainStore.setUser(profileForm)
+  }
 
-const submitPass = () => {
-  //
-};
+  const submitPass = () => {
+    //
+  }
 </script>
 
 <template>

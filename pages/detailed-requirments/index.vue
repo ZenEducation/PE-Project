@@ -5,5 +5,5 @@
 </template>
 
 <script setup>
-import DetailedRequirements from "@/components/Public/DetailedRequirements.vue";
+  import DetailedRequirements from '@/components/Public/DetailedRequirements.vue'
 </script>

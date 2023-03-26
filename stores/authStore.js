@@ -1,22 +1,22 @@
-import { Auth } from "aws-amplify";
-import { defineStore } from "pinia";
+import { Auth } from 'aws-amplify'
+import { defineStore } from 'pinia'
 
 export const state = () => ({
   isAuthenticated: false,
   user: null,
-});
+})
 
-const getters = {};
+const getters = {}
 
 export const actions = {
   async loadAmplifyUser() {
     try {
-      const userfromAmplify = await Auth.currentAuthenticatedUser();
-      this.user = userfromAmplify;
-      return user;
+      const userfromAmplify = await Auth.currentAuthenticatedUser()
+      this.user = userfromAmplify
+      return user
     } catch (error) {
-      console.log(error);
-      this.user = null;
+      console.log(error)
+      this.user = null
     }
   },
 
@@ -24,35 +24,35 @@ export const actions = {
     const user = await Auth.signUp({
       username: email,
       password,
-    });
-    return user;
+    })
+    return user
   },
 
   async confirmRegistration({ email, code }) {
-    return await Auth.confirmSignUp(email, code);
+    return await Auth.confirmSignUp(email, code)
   },
 
   async login({ email, password }) {
-    const userfromAmplify = await Auth.signIn(email, password);
-    this.user = userfromAmplify;
-    this.isAuthenticated = true;
-    return this.user;
+    const userfromAmplify = await Auth.signIn(email, password)
+    this.user = userfromAmplify
+    this.isAuthenticated = true
+    return this.user
   },
 
   async logout() {
-    await Auth.signOut();
+    await Auth.signOut()
     if (this.isAuthenticated === true) {
-      this.isAuthenticated = false;
+      this.isAuthenticated = false
     }
-    this.user = null;
+    this.user = null
     if (!user) {
-      console.log("User successfully logged out");
+      console.log('User successfully logged out')
     }
   },
-};
+}
 
-export const useAuthStore = defineStore("authStore", {
+export const useAuthStore = defineStore('authStore', {
   state,
   getters,
   actions,
-});
+})

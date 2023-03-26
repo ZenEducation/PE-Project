@@ -1,28 +1,28 @@
 <script setup>
-import { reactive, onMounted } from "vue";
-// import { RouterLink } from "vue-router";
-import { mdiAccount } from "@mdi/js";
-import { useMainStore } from "@/stores/main.js";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import FormField from "@/components/AfterAuth/Forms/FormField.vue";
-import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
-import PremSectionFormScreen from "@/components/AfterAuth/Sections/SectionFormScreen.vue";
+  import { reactive, onMounted } from 'vue'
+  // import { RouterLink } from "vue-router";
+  import { mdiAccount } from '@mdi/js'
+  import { useMainStore } from '@/stores/main.js'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import FormField from '@/components/AfterAuth/Forms/FormField.vue'
+  import FormControl from '@/components/AfterAuth/Forms/FormControl.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import BaseLevel from '@/components/AfterAuth/Buttons/BaseLevel.vue'
+  import PremSectionFormScreen from '@/components/AfterAuth/Sections/SectionFormScreen.vue'
 
-const form = reactive({
-  login: "HarryPotter",
-});
+  const form = reactive({
+    login: 'HarryPotter',
+  })
 
-const mainStore = useMainStore();
+  const mainStore = useMainStore()
 
-onMounted(() => {
-  console.log();
-});
+  onMounted(() => {
+    console.log()
+  })
 
-const submit = () => {
-  mainStore.pushMessage("Submitted. Demo only", "contrast");
-};
+  const submit = () => {
+    mainStore.pushMessage('Submitted. Demo only', 'contrast')
+  }
 </script>
 
 <template>

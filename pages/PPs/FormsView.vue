@@ -1,95 +1,95 @@
 <script setup>
-import { ref, reactive } from "vue";
-import {
-  mdiBallot,
-  mdiBallotOutline,
-  mdiAccount,
-  mdiMail,
-  mdiCheck,
-  mdiProgressCheck,
-  mdiReload,
-  mdiCreditCardOutline,
-} from "@mdi/js";
-import { useMainStore } from "@/stores/main.js";
-import { buttonMenuOptions } from "@/configs/sampleButtonMenuOptions.js";
-import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
-import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import FormCheckRadioGroup from "@/components/AfterAuth/Forms/FormCheckRadioGroup.vue";
-import FormFilePicker from "@/components/AfterAuth/Forms/FormFilePicker.vue";
-import PremFormField from "@/components/AfterAuth/Forms/FormField.vue";
-import PremFormControl from "@/components/AfterAuth/Forms/FormControl.vue";
-import PremButtonMenu from "@/components/AfterAuth/Buttons/ButtonMenu.vue";
-import BaseDivider from "@/components/AfterAuth/NavBar/BaseDivider.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import SectionTitle from "@/components/AfterAuth/Sections/SectionTitle.vue";
-import CardBoxComponentTitle from "@/components/AfterAuth/Cards/CardBoxComponentTitle.vue";
+  import { ref, reactive } from 'vue'
+  import {
+    mdiBallot,
+    mdiBallotOutline,
+    mdiAccount,
+    mdiMail,
+    mdiCheck,
+    mdiProgressCheck,
+    mdiReload,
+    mdiCreditCardOutline,
+  } from '@mdi/js'
+  import { useMainStore } from '@/stores/main.js'
+  import { buttonMenuOptions } from '@/configs/sampleButtonMenuOptions.js'
+  import SectionMain from '@/components/AfterAuth/Sections/SectionMain.vue'
+  import SectionTitleLineWithButton from '@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import FormCheckRadioGroup from '@/components/AfterAuth/Forms/FormCheckRadioGroup.vue'
+  import FormFilePicker from '@/components/AfterAuth/Forms/FormFilePicker.vue'
+  import PremFormField from '@/components/AfterAuth/Forms/FormField.vue'
+  import PremFormControl from '@/components/AfterAuth/Forms/FormControl.vue'
+  import PremButtonMenu from '@/components/AfterAuth/Buttons/ButtonMenu.vue'
+  import BaseDivider from '@/components/AfterAuth/NavBar/BaseDivider.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import SectionTitle from '@/components/AfterAuth/Sections/SectionTitle.vue'
+  import CardBoxComponentTitle from '@/components/AfterAuth/Cards/CardBoxComponentTitle.vue'
 
-const selectFieldOptions = [
-  { id: 1, label: "Business development" },
-  { id: 2, label: "Marketing" },
-  { id: 3, label: "Sales" },
-];
+  const selectFieldOptions = [
+    { id: 1, label: 'Business development' },
+    { id: 2, label: 'Marketing' },
+    { id: 3, label: 'Sales' },
+  ]
 
-const listBoxOptions = [
-  { id: 1, label: "Howell Hand", unavailable: false },
-  { id: 2, label: "Hope Howe", unavailable: false },
-  { id: 3, label: "Nelson Jerde", unavailable: false },
-  { id: 4, label: "Kim Weimann (disabled)", unavailable: true },
-  { id: 5, label: "Lenna Smitham", unavailable: false },
-];
+  const listBoxOptions = [
+    { id: 1, label: 'Howell Hand', unavailable: false },
+    { id: 2, label: 'Hope Howe', unavailable: false },
+    { id: 3, label: 'Nelson Jerde', unavailable: false },
+    { id: 4, label: 'Kim Weimann (disabled)', unavailable: true },
+    { id: 5, label: 'Lenna Smitham', unavailable: false },
+  ]
 
-const checkboxOptions = { lorem: "Lorem", ipsum: "Ipsum", dolore: "Dolore" };
-const radioOptions = { one: "One", two: "Two" };
-const switchOptions = { one: "One", two: "Two" };
+  const checkboxOptions = { lorem: 'Lorem', ipsum: 'Ipsum', dolore: 'Dolore' }
+  const radioOptions = { one: 'One', two: 'Two' }
+  const switchOptions = { one: 'One', two: 'Two' }
 
-const form = reactive({
-  name: "John Doe",
-  email: "john.doe@example.com",
-  pass: "secret",
-  phone: "",
-  amount: 1024,
-  ipv6: "fe80::/10",
-  ipv4: "127.0.0.1",
-  currency: "USD",
-  department: selectFieldOptions[0],
-  person: listBoxOptions[0],
-  question: "Textarea",
-  subject: "",
-  checkboxOne: ["lorem"],
-  checkboxTwo: ["lorem"],
-  radioOne: "one",
-  radioTwo: "one",
-  switchOne: ["one"],
-  switchTwo: ["one"],
-  file: null,
-});
+  const form = reactive({
+    name: 'John Doe',
+    email: 'john.doe@example.com',
+    pass: 'secret',
+    phone: '',
+    amount: 1024,
+    ipv6: 'fe80::/10',
+    ipv4: '127.0.0.1',
+    currency: 'USD',
+    department: selectFieldOptions[0],
+    person: listBoxOptions[0],
+    question: 'Textarea',
+    subject: '',
+    checkboxOne: ['lorem'],
+    checkboxTwo: ['lorem'],
+    radioOne: 'one',
+    radioTwo: 'one',
+    switchOne: ['one'],
+    switchTwo: ['one'],
+    file: null,
+  })
 
-const formLower = reactive({
-  name: "John Doe",
-  email: "john.doe@example.com",
-  department: selectFieldOptions[0],
-  person: listBoxOptions[0],
-  question: "Error state",
-});
+  const formLower = reactive({
+    name: 'John Doe',
+    email: 'john.doe@example.com',
+    department: selectFieldOptions[0],
+    person: listBoxOptions[0],
+    question: 'Error state',
+  })
 
-const passShowHideClicked = ref(false);
+  const passShowHideClicked = ref(false)
 
-const mainStore = useMainStore();
+  const mainStore = useMainStore()
 
-const submit = () => {
-  mainStore.pushMessage("Done! Demo only...", "contrast");
-};
+  const submit = () => {
+    mainStore.pushMessage('Done! Demo only...', 'contrast')
+  }
 
-const formErrorHasError = ref(false);
+  const formErrorHasError = ref(false)
 
-const formErrorSubmit = () => {
-  formErrorHasError.value = true;
+  const formErrorSubmit = () => {
+    formErrorHasError.value = true
 
-  setTimeout(() => {
-    formErrorHasError.value = false;
-  }, 2000);
-};
+    setTimeout(() => {
+      formErrorHasError.value = false
+    }, 2000)
+  }
 </script>
 
 <template>

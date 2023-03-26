@@ -82,7 +82,7 @@
 </template>
 
 <script>
-export default {
-  name: "Task04",
-};
+  export default {
+    name: 'Task04',
+  }
 </script>

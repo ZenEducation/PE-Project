@@ -1,37 +1,37 @@
 <script setup>
-import { computed } from "vue";
-import { mdiCheck } from "@mdi/js";
-import {
-  Listbox,
-  ListboxButton,
-  ListboxOptions,
-  ListboxOption,
-} from "@headlessui/vue";
-import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
+  import { computed } from 'vue'
+  import { mdiCheck } from '@mdi/js'
+  import {
+    Listbox,
+    ListboxButton,
+    ListboxOptions,
+    ListboxOption,
+  } from '@headlessui/vue'
+  import BaseIcon from '@/components/AfterAuth/Display/BaseIcon.vue'
 
-const props = defineProps({
-  options: {
-    type: Array,
-    required: true,
-  },
-  modelValue: {
-    type: Object,
-    default: null,
-  },
-  buttonClass: {
-    type: [String, Array],
-    required: true,
-  },
-});
+  const props = defineProps({
+    options: {
+      type: Array,
+      required: true,
+    },
+    modelValue: {
+      type: Object,
+      default: null,
+    },
+    buttonClass: {
+      type: [String, Array],
+      required: true,
+    },
+  })
 
-const emit = defineEmits(["update:modelValue"]);
+  const emit = defineEmits(['update:modelValue'])
 
-const computedValue = computed({
-  get: () => props.modelValue,
-  set: (value) => {
-    emit("update:modelValue", value);
-  },
-});
+  const computedValue = computed({
+    get: () => props.modelValue,
+    set: (value) => {
+      emit('update:modelValue', value)
+    },
+  })
 </script>
 
 <template>
@@ -43,7 +43,7 @@ const computedValue = computed({
           class="text-left ring-blue-700"
         >
           <span class="truncate">{{
-            computedValue ? computedValue.label : "Select"
+            computedValue ? computedValue.label : 'Select'
           }}</span>
         </ListboxButton>
 

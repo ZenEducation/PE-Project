@@ -1,143 +1,143 @@
 <script setup>
-import { reactive, ref } from "vue";
-import {
-  mdiAccount,
-  mdiMail,
-  mdiAsterisk,
-  mdiFormTextboxPassword,
-  mdiCreditCardOutline,
-  mdiCreditCard,
-  mdiCheckDecagram,
-  mdiMapMarker,
-  mdiAccountCircle,
-  mdiDomain,
-  mdiPencil,
-  mdiInformation,
-  mdiPlusCircle,
-  mdiAccountCreditCard,
-  mdiCloudLock,
-  mdiEye,
-  mdiEyeOff,
-} from "@mdi/js";
-import { faEyeSlash, faSlash } from "@fortawesome/free-solid-svg-icons";
-import { useMainStore } from "@/stores/main";
-import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import BaseDivider from "@/components/AfterAuth/NavBar/BaseDivider.vue";
-import FormField from "@/components/AfterAuth/Forms/FormField.vue";
-import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
-import FormFilePicker from "@/components/AfterAuth/Forms/FormFilePicker.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
-import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
-import UserAvatarCurrentUserWithUpload from "@/components/AfterAuth/Avatars/UserAvatarCurrentUserWithUpload.vue";
-import PillTag from "@/components/AfterAuth/Display/PillTag.vue";
-import PillTagPlain from "@/components/AfterAuth/Display/PillTagPlain.vue";
-import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
-import FormCheckRadio from "@/components/AfterAuth/Forms/FormCheckRadio.vue";
-import NotificationBar from "@/components/AfterAuth/NotificationBars/NotificationBar.vue";
+  import { reactive, ref } from 'vue'
+  import {
+    mdiAccount,
+    mdiMail,
+    mdiAsterisk,
+    mdiFormTextboxPassword,
+    mdiCreditCardOutline,
+    mdiCreditCard,
+    mdiCheckDecagram,
+    mdiMapMarker,
+    mdiAccountCircle,
+    mdiDomain,
+    mdiPencil,
+    mdiInformation,
+    mdiPlusCircle,
+    mdiAccountCreditCard,
+    mdiCloudLock,
+    mdiEye,
+    mdiEyeOff,
+  } from '@mdi/js'
+  import { faEyeSlash, faSlash } from '@fortawesome/free-solid-svg-icons'
+  import { useMainStore } from '@/stores/main'
+  import SectionMain from '@/components/AfterAuth/Sections/SectionMain.vue'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import BaseDivider from '@/components/AfterAuth/NavBar/BaseDivider.vue'
+  import FormField from '@/components/AfterAuth/Forms/FormField.vue'
+  import FormControl from '@/components/AfterAuth/Forms/FormControl.vue'
+  import FormFilePicker from '@/components/AfterAuth/Forms/FormFilePicker.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
+  import SectionTitleLineWithButton from '@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue'
+  import UserAvatarCurrentUserWithUpload from '@/components/AfterAuth/Avatars/UserAvatarCurrentUserWithUpload.vue'
+  import PillTag from '@/components/AfterAuth/Display/PillTag.vue'
+  import PillTagPlain from '@/components/AfterAuth/Display/PillTagPlain.vue'
+  import BaseIcon from '@/components/AfterAuth/Display/BaseIcon.vue'
+  import FormCheckRadio from '@/components/AfterAuth/Forms/FormCheckRadio.vue'
+  import NotificationBar from '@/components/AfterAuth/NotificationBars/NotificationBar.vue'
 
-import PremCardBoxBillingItem from "@/components/AfterAuth/Cards/CardBoxBillingItem.vue";
-import PremCardBoxPaymentMethod from "@/components/AfterAuth/Cards/CardBoxPaymentMethod.vue";
-import PremUserCardProfileNumber from "@/components/AfterAuth/Avatars/UserCardProfileNumber.vue";
-import PremSectionBannerProfile from "@/components/AfterAuth/Sections/SectionBannerProfile.vue";
+  import PremCardBoxBillingItem from '@/components/AfterAuth/Cards/CardBoxBillingItem.vue'
+  import PremCardBoxPaymentMethod from '@/components/AfterAuth/Cards/CardBoxPaymentMethod.vue'
+  import PremUserCardProfileNumber from '@/components/AfterAuth/Avatars/UserCardProfileNumber.vue'
+  import PremSectionBannerProfile from '@/components/AfterAuth/Sections/SectionBannerProfile.vue'
 
-const mainStore = useMainStore();
+  const mainStore = useMainStore()
 
-const profileForm = reactive({
-  name: mainStore.userName,
-  email: mainStore.userEmail,
-});
+  const profileForm = reactive({
+    name: mainStore.userName,
+    email: mainStore.userEmail,
+  })
 
-const passwordForm = reactive({
-  password_current: "",
-  password: "",
-  password_confirmation: "",
-  show_password_current: false,
-  show_password: false,
-  show_password_confirmation: false,
-});
+  const passwordForm = reactive({
+    password_current: '',
+    password: '',
+    password_confirmation: '',
+    show_password_current: false,
+    show_password: false,
+    show_password_confirmation: false,
+  })
 
-const submitProfile = () => {
-  mainStore.setUser(profileForm);
-};
+  const submitProfile = () => {
+    mainStore.setUser(profileForm)
+  }
 
-const submitPass = () => {
-  //
-};
-const toggleShow = () => {
-  this.passwordForm.showPassword = !this.passwordForm.showPassword;
-  alert(passwordForm.showPassword);
-};
-const date = new Date();
+  const submitPass = () => {
+    //
+  }
+  const toggleShow = () => {
+    this.passwordForm.showPassword = !this.passwordForm.showPassword
+    alert(passwordForm.showPassword)
+  }
+  const date = new Date()
 
-const dateOptions = {
-  weekday: "short",
-  year: "numeric",
-  month: "short",
-  day: "numeric",
-};
+  const dateOptions = {
+    weekday: 'short',
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  }
 
-const firstDayOfNextMonth = new Date(
-  date.getFullYear(),
-  date.getMonth() + 1,
-  1
-).toLocaleDateString("en-US", dateOptions);
+  const firstDayOfNextMonth = new Date(
+    date.getFullYear(),
+    date.getMonth() + 1,
+    1
+  ).toLocaleDateString('en-US', dateOptions)
 
-const firstDayOfThisMonth = new Date(
-  date.getFullYear(),
-  date.getMonth(),
-  1
-).toLocaleDateString("en-US", dateOptions);
+  const firstDayOfThisMonth = new Date(
+    date.getFullYear(),
+    date.getMonth(),
+    1
+  ).toLocaleDateString('en-US', dateOptions)
 
-const billingHistory = [
-  {
-    id: 1,
-    amount: 24.99,
-    date: firstDayOfThisMonth,
-  },
-  {
-    id: 2,
-    amount: 24.99,
-    date: new Date(
-      date.getFullYear(),
-      date.getMonth() - 1,
-      1
-    ).toLocaleDateString("en-US", dateOptions),
-  },
-  {
-    id: 3,
-    amount: 24.99,
-    date: new Date(
-      date.getFullYear(),
-      date.getMonth() - 2,
-      1
-    ).toLocaleDateString("en-US", dateOptions),
-  },
-];
+  const billingHistory = [
+    {
+      id: 1,
+      amount: 24.99,
+      date: firstDayOfThisMonth,
+    },
+    {
+      id: 2,
+      amount: 24.99,
+      date: new Date(
+        date.getFullYear(),
+        date.getMonth() - 1,
+        1
+      ).toLocaleDateString('en-US', dateOptions),
+    },
+    {
+      id: 3,
+      amount: 24.99,
+      date: new Date(
+        date.getFullYear(),
+        date.getMonth() - 2,
+        1
+      ).toLocaleDateString('en-US', dateOptions),
+    },
+  ]
 
-const paymentMethods = [
-  {
-    id: 1,
-    cardType: "mc",
-    cardNumber: "4575",
-    cardExpires: "04/24",
-    cardOwner: "john doe",
-    isPrimary: true,
-  },
-  {
-    id: 2,
-    cardType: "visa",
-    cardNumber: "0785",
-    cardExpires: "06/26",
-    cardOwner: "john doe",
-    isPrimary: false,
-  },
-];
+  const paymentMethods = [
+    {
+      id: 1,
+      cardType: 'mc',
+      cardNumber: '4575',
+      cardExpires: '04/24',
+      cardOwner: 'john doe',
+      isPrimary: true,
+    },
+    {
+      id: 2,
+      cardType: 'visa',
+      cardNumber: '0785',
+      cardExpires: '06/26',
+      cardOwner: 'john doe',
+      isPrimary: false,
+    },
+  ]
 
-const apiStatusEnabled = ref(true);
+  const apiStatusEnabled = ref(true)
 
-const twoFactorEnabled = ref(true);
+  const twoFactorEnabled = ref(true)
 </script>
 
 <template>
@@ -279,7 +279,7 @@ const twoFactorEnabled = ref(true);
           <BaseDivider />
           <div class="flex items-center justify-between">
             <p class="mr-3 leading-none">
-              API status <b>{{ apiStatusEnabled ? "enabled" : "disabled" }}</b>
+              API status <b>{{ apiStatusEnabled ? 'enabled' : 'disabled' }}</b>
             </p>
             <FormCheckRadio
               v-model="apiStatusEnabled"

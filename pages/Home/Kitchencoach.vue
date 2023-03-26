@@ -52,24 +52,24 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>
 
 <style scoped>
-.sub-title {
-  display: block;
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 500;
-  color: #333333;
-  margin-bottom: 20px;
-}
+  .sub-title {
+    display: block;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 20px;
+  }
 
-.title {
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #333333;
-}
+  .title {
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #333333;
+  }
 </style>

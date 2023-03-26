@@ -1,53 +1,53 @@
 <script setup>
-import { computed } from "vue";
-import { mdiClose } from "@mdi/js";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import OverlayLayer from "@/components/AfterAuth/Asidemenu/OverlayLayer.vue";
-import CardBoxComponentTitle from "@/components/AfterAuth/Cards/CardBoxComponentTitle.vue";
+  import { computed } from 'vue'
+  import { mdiClose } from '@mdi/js'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import OverlayLayer from '@/components/AfterAuth/Asidemenu/OverlayLayer.vue'
+  import CardBoxComponentTitle from '@/components/AfterAuth/Cards/CardBoxComponentTitle.vue'
 
-const props = defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  button: {
-    type: String,
-    default: "info",
-  },
-  buttonLabel: {
-    type: String,
-    default: "Done",
-  },
-  hasCancel: Boolean,
-  modelValue: {
-    type: [String, Number, Boolean],
-    default: null,
-  },
-});
+  const props = defineProps({
+    title: {
+      type: String,
+      required: true,
+    },
+    button: {
+      type: String,
+      default: 'info',
+    },
+    buttonLabel: {
+      type: String,
+      default: 'Done',
+    },
+    hasCancel: Boolean,
+    modelValue: {
+      type: [String, Number, Boolean],
+      default: null,
+    },
+  })
 
-const emit = defineEmits(["update:modelValue", "cancel", "confirm"]);
+  const emit = defineEmits(['update:modelValue', 'cancel', 'confirm'])
 
-const value = computed({
-  get: () => props.modelValue,
-  set: (value) => emit("update:modelValue", value),
-});
+  const value = computed({
+    get: () => props.modelValue,
+    set: (value) => emit('update:modelValue', value),
+  })
 
-const confirmCancel = (mode) => {
-  value.value = false;
-  emit(mode);
-};
-
-const confirm = () => confirmCancel("confirm");
-
-const cancel = () => confirmCancel("cancel");
-
-window.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && value.value) {
-    cancel();
+  const confirmCancel = (mode) => {
+    value.value = false
+    emit(mode)
   }
-});
+
+  const confirm = () => confirmCancel('confirm')
+
+  const cancel = () => confirmCancel('cancel')
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && value.value) {
+      cancel()
+    }
+  })
 </script>
 
 <template>

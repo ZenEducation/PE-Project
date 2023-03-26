@@ -1,26 +1,26 @@
 <script setup>
-import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
+  import BaseIcon from '@/components/AfterAuth/Display/BaseIcon.vue'
 
-defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  icon: {
-    type: String,
-    default: null,
-  },
-  buttonIcon: {
-    type: String,
-    default: null,
-  },
-});
+  defineProps({
+    title: {
+      type: String,
+      required: true,
+    },
+    icon: {
+      type: String,
+      default: null,
+    },
+    buttonIcon: {
+      type: String,
+      default: null,
+    },
+  })
 
-const emit = defineEmits(["button-click"]);
+  const emit = defineEmits(['button-click'])
 
-const buttonClick = (event) => {
-  emit("button-click", event);
-};
+  const buttonClick = (event) => {
+    emit('button-click', event)
+  }
 </script>
 
 <template>

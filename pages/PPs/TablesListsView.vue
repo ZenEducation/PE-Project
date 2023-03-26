@@ -1,32 +1,32 @@
 <script setup>
-import { computed } from "vue";
-import {
-  mdiMonitorCellphone,
-  mdiTableOff,
-  mdiPackageVariant,
-  mdiBank,
-  mdiCreditCardOutline,
-} from "@mdi/js";
-import { useMainStore } from "@/stores/main.js";
-import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
-import NotificationBar from "@/components/AfterAuth/NotificationBars/NotificationBar.vue";
-import TableSampleClients from "@/components/AfterAuth/Tables/TableSampleClients.vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
-import CardBoxClient from "@/components/AfterAuth/Cards/CardBoxClient.vue";
-import CardBoxTransaction from "@/components/AfterAuth/Cards/CardBoxTransaction.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import CardBoxComponentEmpty from "@/components/AfterAuth/Cards/CardBoxComponentEmpty.vue";
+  import { computed } from 'vue'
+  import {
+    mdiMonitorCellphone,
+    mdiTableOff,
+    mdiPackageVariant,
+    mdiBank,
+    mdiCreditCardOutline,
+  } from '@mdi/js'
+  import { useMainStore } from '@/stores/main.js'
+  import SectionMain from '@/components/AfterAuth/Sections/SectionMain.vue'
+  import NotificationBar from '@/components/AfterAuth/NotificationBars/NotificationBar.vue'
+  import TableSampleClients from '@/components/AfterAuth/Tables/TableSampleClients.vue'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import SectionTitleLineWithButton from '@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue'
+  import CardBoxClient from '@/components/AfterAuth/Cards/CardBoxClient.vue'
+  import CardBoxTransaction from '@/components/AfterAuth/Cards/CardBoxTransaction.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import CardBoxComponentEmpty from '@/components/AfterAuth/Cards/CardBoxComponentEmpty.vue'
 
-import PremCardBoxProduct from "@/components/AfterAuth/Cards/CardBoxProduct.vue";
+  import PremCardBoxProduct from '@/components/AfterAuth/Cards/CardBoxProduct.vue'
 
-const mainStore = useMainStore();
+  const mainStore = useMainStore()
 
-const clientBarItems = computed(() => mainStore.clients.slice(0, 3));
+  const clientBarItems = computed(() => mainStore.clients.slice(0, 3))
 
-const transactionBarItems = computed(() => mainStore.history.slice(0, 3));
+  const transactionBarItems = computed(() => mainStore.history.slice(0, 3))
 
-const productBarItems = computed(() => (mainStore.products || []).slice(0, 4));
+  const productBarItems = computed(() => (mainStore.products || []).slice(0, 4))
 </script>
 
 <template>

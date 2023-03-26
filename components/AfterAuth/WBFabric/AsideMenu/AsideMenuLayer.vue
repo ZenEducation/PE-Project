@@ -1,30 +1,30 @@
 <script setup>
-import { useStyleStore } from "@/stores/style.js";
-import PremAsideMenuList from "@/components/AfterAuth/WBFabric/AsideMenu/AsideMenuList.vue";
+  import { useStyleStore } from '@/stores/style.js'
+  import PremAsideMenuList from '@/components/AfterAuth/WBFabric/AsideMenu/AsideMenuList.vue'
 
-defineProps({
-  menu: {
-    type: Array,
-    default: () => [],
-  },
-  activeSecondaryMenuKey: {
-    type: String,
-    default: null,
-  },
-  zIndex: {
-    type: String,
-    default: "z-50",
-  },
-  isCompact: Boolean,
-});
+  defineProps({
+    menu: {
+      type: Array,
+      default: () => [],
+    },
+    activeSecondaryMenuKey: {
+      type: String,
+      default: null,
+    },
+    zIndex: {
+      type: String,
+      default: 'z-50',
+    },
+    isCompact: Boolean,
+  })
 
-const emit = defineEmits(["menu-click"]);
+  const emit = defineEmits(['menu-click'])
 
-const styleStore = useStyleStore();
+  const styleStore = useStyleStore()
 
-const menuClick = (event, item) => {
-  emit("menu-click", event, item);
-};
+  const menuClick = (event, item) => {
+    emit('menu-click', event, item)
+  }
 </script>
 
 <template>
@@ -68,8 +68,8 @@ const menuClick = (event, item) => {
 </template>
 
 <style scoped>
-.dark_scrollbars_compact {
-  scrollbar-width: thin;
-  scrollbar-color: rgb(2, 7, 14) rgb(30, 41, 59) !important;
-}
+  .dark_scrollbars_compact {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(2, 7, 14) rgb(30, 41, 59) !important;
+  }
 </style>

@@ -1,31 +1,31 @@
 <script setup>
-import { ref } from "vue";
-import { mdiMessageBadge } from "@mdi/js";
-import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import SectionTitle from "@/components/AfterAuth/Sections/SectionTitle.vue";
-import FormCheckRadioGroup from "@/components/AfterAuth/Forms/FormCheckRadioGroup.vue";
+  import { ref } from 'vue'
+  import { mdiMessageBadge } from '@mdi/js'
+  import SectionMain from '@/components/AfterAuth/Sections/SectionMain.vue'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import SectionTitle from '@/components/AfterAuth/Sections/SectionTitle.vue'
+  import FormCheckRadioGroup from '@/components/AfterAuth/Forms/FormCheckRadioGroup.vue'
 
-import PremFormField from "@/components/AfterAuth/Forms/FormField.vue";
-import PremFormControl from "@/components/AfterAuth/Forms/FormControl.vue";
-// import NuxtLayout from "@/layouts/NuxtLayout.vue"
-import { useSnackBarStore } from "@/stores/snackBar";
+  import PremFormField from '@/components/AfterAuth/Forms/FormField.vue'
+  import PremFormControl from '@/components/AfterAuth/Forms/FormControl.vue'
+  // import NuxtLayout from "@/layouts/NuxtLayout.vue"
+  import { useSnackBarStore } from '@/stores/snackBar'
 
-const snackBarColor = ref("info");
+  const snackBarColor = ref('info')
 
-const snackBarMessage = ref("Hello! This is demo message...");
+  const snackBarMessage = ref('Hello! This is demo message...')
 
-const snackBarLifetime = ref(3000);
+  const snackBarLifetime = ref(3000)
 
-const snackBarPush = () => {
-  useSnackBarStore().pushMessage(
-    snackBarMessage.value,
-    snackBarColor.value,
-    snackBarLifetime.value
-  );
-};
+  const snackBarPush = () => {
+    useSnackBarStore().pushMessage(
+      snackBarMessage.value,
+      snackBarColor.value,
+      snackBarLifetime.value
+    )
+  }
 </script>
 
 <template>

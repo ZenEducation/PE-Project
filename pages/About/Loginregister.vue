@@ -14,18 +14,18 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>
 
 <style scoped>
-.title {
-  font-size: 48px;
-  margin: 0;
-  padding-bottom: 80px;
-  text-align: center;
-  font-weight: 700;
-  line-height: 1.3;
-}
+  .title {
+    font-size: 48px;
+    margin: 0;
+    padding-bottom: 80px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.3;
+  }
 </style>
