@@ -57,6 +57,7 @@
     "vue-advanced-chat": "^2.0.6",
     "vue-kinesis": "^2.0.5",
     "vue-multiselect": "^3.0.0-beta.1",
-    "vue-split-carousel": "^2.2.3"
+    "vue-split-carousel": "^2.2.3",
+    "vuejs-paginate": "^2.1.0"
   }
 }
