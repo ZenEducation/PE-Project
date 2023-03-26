@@ -8,7 +8,7 @@ console.log(paper);
 
 const whiteboardStore = useWhiteboardStore();
 
-let local = {
+const local = {
   path: null,
   group: null,
 };
@@ -17,7 +17,7 @@ function onMouseDown(event) {
   console.log("Inside onMouseDown");
   // const whiteboardStore = useWhiteboardStore();
 
-  let layer = createLayer();
+  const layer = createLayer();
   local.path = new paper.Path();
 
   local.path.strokeColor = whiteboardStore.pencilArgs.color;

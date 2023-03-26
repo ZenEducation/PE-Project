@@ -12,7 +12,7 @@
           DECEMBER 25
         </h2>
         <courseheader class="mb-5">
-          <template v-slot:title>International Art Fair 2023</template>
+          <template #title>International Art Fair 2023</template>
         </courseheader>
 
         <div class="w-full flex justify-center items-center">
@@ -41,7 +41,7 @@
     <div class="px-5 py-24 lg:px-[100px]">
       <div class="pb-[60px]">
         <courseheader class="mb-5">
-          <template v-slot:title>About The Event</template>
+          <template #title>About The Event</template>
         </courseheader>
 
         <div
@@ -88,7 +88,7 @@
     <div class="px-5 py-24 lg:mx-[100px] border-y-[0.3px] border-[#696969]">
       <div class="">
         <courseheader class="mb-5">
-          <template v-slot:title>Our Speakers</template>
+          <template #title>Our Speakers</template>
         </courseheader>
 
         <div
@@ -122,39 +122,39 @@
       class="px-5 py-24 lg:mx-[100px] w-12/12 flex flex-col justify-center items-center"
     >
       <courseheader class="mb-20">
-        <template v-slot:title>Leave your thought here</template>
+        <template #title>Leave your thought here</template>
       </courseheader>
 
-      <form @submit.prevent="submitform" class="w-12/12 md:w-8/12">
+      <form class="w-12/12 md:w-8/12" @submit.prevent="submitform">
         <div
           class="flex flex-col md:flex-row justify-between items-center w-12/12 mb-2"
         >
           <input
+            id=""
+            v-model="registration.name"
             class="inputstyle w-full md:w-6/12 mb-4 md:mb-0 md:mr-2"
             type="text"
             placeholder="Your Name"
-            id=""
-            v-model="registration.name"
           />
           <input
+            id=""
+            v-model="registration.email"
             class="inputstyle w-full md:w-6/12 md:ml-2"
             type="email"
             placeholder="Email"
-            id=""
-            v-model="registration.email"
           />
         </div>
 
         <textarea
+          v-model="registration.message"
           class="inputstyle w-full text-white my-2 min-h-[220px]"
           placeholder="Your Mesage"
-          v-model="registration.message"
         ></textarea>
 
         <div class="check">
           <input
-            class="w-4 h-4 bg-white mr-1"
             id="comment-cookies-consent"
+            class="w-4 h-4 bg-white mr-1"
             name="comment-cookies-consent"
             type="checkbox"
             value="yes"
@@ -180,67 +180,70 @@
 
 <script>
 export default {
-  layout: 'frontend',
-    data(){
-        return{
-                registration: {name: '',email: '',message: ''},
+  layout: "frontend",
+  data() {
+    return {
+      registration: { name: "", email: "", message: "" },
 
-            speakers: [
-                {
-                    image: '',
-                    name: 'Solomon',
-                    description: '/Designer'
-                },
-                                {
-                    image: '',
-                    name: 'Emerson',
-                    description: '/Developer'
-                },
-                                {
-                    image: '',
-                    name: 'Bellezza',
-                    description: '/Content Writer'
-                },
-                                {
-                    image: '',
-                    name: 'Lilybelle',
-                    description: '/Office Manager'
-                },
-                                {
-                    image: '',
-                    name: 'Lucinda',
-                    description: '/Manager'
-                },
-            ]
-        }
-    },
-
-    methods: {
-    submitform(){
-        console.log('Registration', this.registration);
-    }
-},
-
-    mounted () {
-    const sec = 1000,
-        min = sec * 60,
-        hour = min * 60,
-        day = hour * 24
-    const end = new Date("Dec 25, 2023").getTime()
-    setInterval(() => {
-        const current = new Date().getTime();
-        const remaining = end - current
-        const day2 = Math.floor(remaining / day);
-        const hour2 = Math.floor( (remaining % day) / hour );
-        const minute = Math.floor( (remaining % hour) / min );
-        const second = Math.floor( (remaining % min) / sec )
-        document.getElementById("days").innerText = day2 > 9 ? day2 : `0${day2}`;
-        document.getElementById("hours").innerText = hour2 > 9 ? hour2 : `0${hour2}`;
-        document.getElementById("minutes").innerText = minute > 9 ? minute : `0${minute}`;
-        document.getElementById("seconds").innerText = second > 9 ? second : `0${second}`;
-    }, 1000);
+      speakers: [
+        {
+          image: "",
+          name: "Solomon",
+          description: "/Designer",
         },
-}
+        {
+          image: "",
+          name: "Emerson",
+          description: "/Developer",
+        },
+        {
+          image: "",
+          name: "Bellezza",
+          description: "/Content Writer",
+        },
+        {
+          image: "",
+          name: "Lilybelle",
+          description: "/Office Manager",
+        },
+        {
+          image: "",
+          name: "Lucinda",
+          description: "/Manager",
+        },
+      ],
+    };
+  },
+
+  mounted() {
+    const sec = 1000;
+    const min = sec * 60;
+    const hour = min * 60;
+    const day = hour * 24;
+    const end = new Date("Dec 25, 2023").getTime();
+    setInterval(() => {
+      const current = new Date().getTime();
+      const remaining = end - current;
+      const day2 = Math.floor(remaining / day);
+      const hour2 = Math.floor((remaining % day) / hour);
+      const minute = Math.floor((remaining % hour) / min);
+      const second = Math.floor((remaining % min) / sec);
+      document.getElementById("days").innerText = day2 > 9 ? day2 : `0${day2}`;
+      document.getElementById("hours").innerText =
+        hour2 > 9 ? hour2 : `0${hour2}`;
+      document.getElementById("minutes").innerText =
+        minute > 9 ? minute : `0${minute}`;
+      document.getElementById("seconds").innerText =
+        second > 9 ? second : `0${second}`;
+    }, 1000);
+  },
+
+  methods: {
+    submitform() {
+      console.log("Registration", this.registration);
+    },
+  },
+};
 </script>
 
 <style scoped>

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="py-[100px]">
         <courseheader>
-          <template v-slot:title>Courses Grid 01</template>
+          <template #title>Courses Grid 01</template>
         </courseheader>
       </div>
       <div>

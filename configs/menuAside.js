@@ -19,10 +19,6 @@ import {
   mdiBook,
 } from "@mdi/js";
 
-
-
-
-
 const allLinks = [
   {
     to: "/",
@@ -156,7 +152,7 @@ const allLinks = [
     label: "About",
     icon: mdiHelpCircle,
   },
-]
+];
 
 // todo implement aside menu list
 // get profile from store
@@ -166,6 +162,5 @@ const allLinks = [
 // if(userprofile === 's'){
 //  links = [...]
 // }
-
 
 export default allLinks;

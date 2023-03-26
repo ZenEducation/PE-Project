@@ -2,7 +2,7 @@
   <div class="bg-[#161821] w-12/12 px-24">
     <div class="py-[100px]">
       <courseheader>
-        <template v-slot:title>Courses Grid 02</template>
+        <template #title>Courses Grid 02</template>
       </courseheader>
     </div>
     <div>
@@ -13,17 +13,7 @@
 
         <div class="select relative">
           <span
-            class="
-              absolute
-              top-0
-              bottom-0
-              right-0
-              w-[54px]
-              bg-white
-              flex
-              justify-center
-              items-center
-            "
+            class="absolute top-0 bottom-0 right-0 w-[54px] bg-white flex justify-center items-center"
           >
             <icon class="w-10 h-10 text-gray-400" name="uil:angle-down" />
           </span>

@@ -1,7 +1,7 @@
 <script setup>
 import { computed, ref } from "vue";
-import { useMainStore } from "@/stores/main";
 import { mdiEye, mdiTrashCan } from "@mdi/js";
+import { useMainStore } from "@/stores/main";
 import CardBoxModal from "@/components/AfterAuth/Cards/CardBoxModal.vue";
 import TableCheckboxCell from "@/components/AfterAuth/Tables/TableCheckboxCell.vue";
 import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";

@@ -55,7 +55,8 @@
 definePageMeta({
   layout: "frontend",
 });
-</script>s
+</script>
+s
 
 <style scoped>
 .sub-title {
@@ -79,6 +80,3 @@ definePageMeta({
   background-image: url("/images/intro/intro3/bg-1.jpg");
 }
 </style>
-
-
-

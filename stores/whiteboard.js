@@ -30,7 +30,7 @@ const state = () => ({
 });
 
 const actions = {
-  //ToolArgs
+  // ToolArgs
   setToolColor(toolColor) {
     this.toolArgs.color = toolColor;
     // commit("SET_TOOL_COLOR", toolColor);
@@ -58,7 +58,7 @@ const actions = {
     // commit("SET_TOOL_SIZE", toolSize);
   },
 
-  //Eraser
+  // Eraser
   setEraserSize(eraserSize) {
     this.eraserArgs.size = eraserSize;
     // commit("SET_ERASER_SIZE", eraserSize);
@@ -68,7 +68,7 @@ const actions = {
     this.eraserArgs.color = eraserColor;
     // commit("SET_ERASER_COLOR", eraserColor);
   },
-  //ShapeArgs
+  // ShapeArgs
   setShapeSize(shapeSize) {
     this.shapeArgs.size = shapeSize;
     // commit("SET_SHAPE_SIZE", shapeSize);
@@ -77,7 +77,7 @@ const actions = {
     this.shapeArgs.color = shapeColor;
     // commit("SET_SHAPE_COLOR", shapeColor);
   },
-  //Tool
+  // Tool
   setWhiteboardTool(tool) {
     console.log("Tool from setWhiteboardTool:", tool);
     this.tool = tool;

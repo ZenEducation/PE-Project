@@ -36,10 +36,10 @@ library.add({
 });
 
 export default {
-  props: ["icon", "toolColor", "isActive"],
   components: {
     "font-awesome-icon": FontAwesomeIcon,
   },
+  props: ["icon", "toolColor", "isActive"],
 };
 </script>
 

@@ -1,6 +1,5 @@
 <script setup>
 import { reactive } from "vue";
-import { useMainStore } from "@/stores/main";
 import {
   mdiAccount,
   mdiMail,
@@ -8,6 +7,8 @@ import {
   mdiFormTextboxPassword,
   mdiCreditCardOutline,
 } from "@mdi/js";
+import { Storage } from "@aws-amplify/storage";
+import { useMainStore } from "@/stores/main";
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
 import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
 import BaseDivider from "~~/components/NavBar/BaseDivider.vue";
@@ -17,7 +18,6 @@ import FormFilePicker from "@/components/AfterAuth/Forms/FormFilePicker.vue";
 import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
 import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
 import UserCard from "@/components/AfterAuth/Avatars/UserCard.vue";
-import { Storage } from "@aws-amplify/storage";
 
 import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
 

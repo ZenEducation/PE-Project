@@ -1,6 +1,5 @@
 <script setup>
 import { reactive, ref } from "vue";
-import { useMainStore } from "@/stores/main";
 import {
   mdiAccount,
   mdiMail,
@@ -21,6 +20,7 @@ import {
   mdiEyeOff,
 } from "@mdi/js";
 import { faEyeSlash, faSlash } from "@fortawesome/free-solid-svg-icons";
+import { useMainStore } from "@/stores/main";
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
 import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
 import BaseDivider from "@/components/AfterAuth/NavBar/BaseDivider.vue";

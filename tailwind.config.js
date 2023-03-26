@@ -10,7 +10,7 @@ module.exports = {
     "./nuxt.config.{js,ts}",
     "./configs/**.{vue,js,ts,jsx,tsx}",
     "./app.vue",
-    "./node_modules/flowbite.{js,ts}"
+    "./node_modules/flowbite.{js,ts}",
   ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
@@ -21,7 +21,7 @@ module.exports = {
     extend: {
       zIndex: {
         "-1": "-1",
-        8877:8863
+        8877: 8863,
       },
       spacing: {
         1.3: "0.313rem",
@@ -34,8 +34,7 @@ module.exports = {
       backgroundImage: {
         darkGradient:
           "linear-gradient(-180deg,transparent 0,rgba(0,0,0,.3) 100%)",
-        lightGradient:
-          "linear-gradient(180deg, #FFFFFF 0%, #F5F5F5 100%)",
+        lightGradient: "linear-gradient(180deg, #FFFFFF 0%, #F5F5F5 100%)",
         bodyGradient:
           "linear-gradient(-180deg, rgba(51, 51, 51, 0) 0%, #000 80%)",
         strawGradient: "linear-gradient(45deg,#fe378c 0,#fe5b34 100%)",
@@ -170,8 +169,8 @@ module.exports = {
         heading: ["Gilroy", "sans-serif"],
         playfair: ["Playfair Display", "serif"],
         rossela: ["Conv_Rossela-Demo-2", "serif"],
-    },
-    fontSize: {
+      },
+      fontSize: {
         sm: "0.75rem",
         md: "0.875rem",
         base: "0.938rem",
@@ -181,12 +180,12 @@ module.exports = {
         h4: "1.3125rem",
         h5: "1.09375rem",
         h6: "0.938rem",
-    },
-    lineHeight: {
+      },
+      lineHeight: {
         body: 1.74,
         heading: 1.3,
-    },
-    boxShadow: {
+      },
+      boxShadow: {
         xs: "4px 4px 8px",
         "2xs": "0 0 10px",
         sm: "0 3px 9px",
@@ -204,14 +203,14 @@ module.exports = {
         "3xl": "0 30px 50px",
         "4xl": "0 14px 59px",
         xxl: "0 130px 50px -100px",
-    },
-    letterSpacing: {
+      },
+      letterSpacing: {
         tightest: "-0.125rem",
         wider: "1px",
-    },
-    borderRadius: {
+      },
+      borderRadius: {
         DEFAULT: "0.313rem",
-    },
+      },
     },
   },
   plugins: [
@@ -270,6 +269,6 @@ module.exports = {
       );
     }),
     require("tailwind-scrollbar")({ nocompatible: true }),
-    require('flowbite')
+    require("flowbite"),
   ],
 };

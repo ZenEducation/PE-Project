@@ -5,6 +5,7 @@ export class DrawAction {
   constructor(args) {
     this._args = args;
   }
+
   exec() {
     console.log("Inside Exec Function");
     if (!paper.project.layers[this._args.layer]) {
@@ -15,6 +16,7 @@ export class DrawAction {
       return paper.project.layers[this._args.layer].addChildren(this.removed);
     }
   }
+
   unexec() {
     this.removed = paper.project.layers[this._args.layer].removeChildren();
   }

@@ -4,8 +4,8 @@
       ref="trigger"
       class="grow flex items-center truncate"
       aria-haspopup="true"
-      @click.prevent="dropdownOpen = !dropdownOpen"
       :aria-expanded="dropdownOpen"
+      @click.prevent="dropdownOpen = !dropdownOpen"
     >
       <img
         class="w-8 h-8 rounded-full mr-2"

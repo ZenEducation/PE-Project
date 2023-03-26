@@ -1,6 +1,6 @@
 <script setup>
-import { useStyleStore } from "@/stores/style.js";
 import { mdiThemeLightDark } from "@mdi/js";
+import { useStyleStore } from "@/stores/style.js";
 
 import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
 import SectionTitle from "@/components/AfterAuth/Sections/SectionTitle.vue";

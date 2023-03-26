@@ -1,6 +1,5 @@
 <script setup>
 import { computed } from "vue";
-import { useMainStore } from "@/stores/main.js";
 import {
   mdiMonitorCellphone,
   mdiTableOff,
@@ -8,6 +7,7 @@ import {
   mdiBank,
   mdiCreditCardOutline,
 } from "@mdi/js";
+import { useMainStore } from "@/stores/main.js";
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
 import NotificationBar from "@/components/AfterAuth/NotificationBars/NotificationBar.vue";
 import TableSampleClients from "@/components/AfterAuth/Tables/TableSampleClients.vue";

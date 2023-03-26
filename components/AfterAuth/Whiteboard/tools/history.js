@@ -3,6 +3,7 @@ class History {
     this.limit = limit;
     this.clear();
   }
+
   add(action) {
     if (
       this.history.length >= this.limit ||
@@ -13,16 +14,19 @@ class History {
     this.history.push(action);
     this.current = this.history.length;
   }
+
   undo() {
     if (this.current > 0) {
       this.history[--this.current].unexec();
     }
   }
+
   redo() {
     if (this.history.length > this.current) {
       this.history[this.current++].exec();
     }
   }
+
   clear() {
     this.history = [];
     this.current = 0;

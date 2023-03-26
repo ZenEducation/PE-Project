@@ -1,5 +1,7 @@
 <template>
-  <div class="font-body py-[100px] bg-white dark:bg-[#161821] blue px-5 md:px-[100px]">
+  <div
+    class="font-body py-[100px] bg-white dark:bg-[#161821] blue px-5 md:px-[100px]"
+  >
     <h2 class="title text-black dark:text-white">Login Register</h2>
 
     <div

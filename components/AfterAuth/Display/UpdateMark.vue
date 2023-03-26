@@ -1,6 +1,6 @@
 <script setup>
-import { colorsBgLight } from "@/configs/colors.js";
 import { ref } from "vue";
+import { colorsBgLight } from "@/configs/colors.js";
 
 defineProps({
   color: {

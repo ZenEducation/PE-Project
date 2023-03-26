@@ -1,8 +1,8 @@
 <script setup>
 import { reactive, onMounted } from "vue";
 // import { RouterLink } from "vue-router";
-import { useMainStore } from "@/stores/main.js";
 import { mdiAccount } from "@mdi/js";
+import { useMainStore } from "@/stores/main.js";
 import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
 import FormField from "@/components/AfterAuth/Forms/FormField.vue";
 import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";

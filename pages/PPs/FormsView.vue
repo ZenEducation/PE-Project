@@ -1,6 +1,5 @@
 <script setup>
 import { ref, reactive } from "vue";
-import { useMainStore } from "@/stores/main.js";
 import {
   mdiBallot,
   mdiBallotOutline,
@@ -11,6 +10,7 @@ import {
   mdiReload,
   mdiCreditCardOutline,
 } from "@mdi/js";
+import { useMainStore } from "@/stores/main.js";
 import { buttonMenuOptions } from "@/configs/sampleButtonMenuOptions.js";
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
 import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";

@@ -1,8 +1,5 @@
 <script setup>
-import { getButtonColor } from "@/configs/colors.js";
-import { controlTextColor } from "@/configs/colorsPremium.js";
 import { computed, ref, onMounted, onBeforeUnmount } from "vue";
-import { useMainStore } from "@/stores/main.js";
 import {
   mdiUnfoldMoreHorizontal,
   mdiAlertCircle,
@@ -10,6 +7,9 @@ import {
   mdiAsterisk,
   mdiLockOff,
 } from "@mdi/js";
+import { getButtonColor } from "@/configs/colors.js";
+import { controlTextColor } from "@/configs/colorsPremium.js";
+import { useMainStore } from "@/stores/main.js";
 import PremFormControlIcon from "@/components/AfterAuth/Forms/FormControlIcon.vue";
 import PremFormFieldHelp from "@/components/AfterAuth/Forms/FormFieldHelp.vue";
 import PremFormControlListbox from "@/components/AfterAuth/Forms/FormControlListbox.vue";
@@ -145,7 +145,7 @@ const placeholderColor = computed(() => {
 });
 
 const wrapperBorder = computed(
-  () => ["textarea"].indexOf(computedType.value) < 0
+  () => !["textarea"].includes(computedType.value)
 );
 
 const upperWrapperClass = computed(() => (props.expanded ? "grow shrink" : ""));

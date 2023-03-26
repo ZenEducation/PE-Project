@@ -7,13 +7,13 @@ import { useWhiteboardStore } from "@/stores/whiteboard";
 
 const whiteboardStore = useWhiteboardStore();
 
-let local = {
+const local = {
   path: null,
   group: null,
 };
 
 function onMouseDown(event) {
-  let layer = createLayer();
+  const layer = createLayer();
 
   local.path = new paper.Path();
   local.path.strokeColor = whiteboardStore.eraserArgs.color;

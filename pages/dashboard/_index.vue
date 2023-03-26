@@ -1,6 +1,5 @@
 <script setup>
 import { computed, ref, onMounted } from "vue";
-import { useMainStore } from "@/stores/main.js";
 import {
   mdiAccountMultiple,
   mdiCartOutline,
@@ -10,6 +9,7 @@ import {
   mdiGithub,
   mdiChartPie,
 } from "@mdi/js";
+import { useMainStore } from "@/stores/main.js";
 import * as chartConfig from "@/components/AfterAuth/Charts/chart.config.js";
 import LineChart from "@/components/AfterAuth/Charts/LineChart.vue";
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";

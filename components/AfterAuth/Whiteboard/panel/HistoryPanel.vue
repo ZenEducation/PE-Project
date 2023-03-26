@@ -1,7 +1,7 @@
 <template>
   <div class="historyPanel">
-    <panelToolIcon @click.native="undo" icon="undo" />
-    <panelToolIcon @click.native="redo" icon="redo" />
+    <panelToolIcon icon="undo" @click.native="undo" />
+    <panelToolIcon icon="redo" @click.native="redo" />
   </div>
 </template>
 

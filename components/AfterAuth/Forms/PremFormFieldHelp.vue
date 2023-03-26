@@ -1,6 +1,6 @@
 <script setup>
-import { controlTextColor } from "@/configs/colorsPremium.js";
 import { computed } from "vue";
+import { controlTextColor } from "@/configs/colorsPremium.js";
 
 const props = defineProps({
   help: {

@@ -57,8 +57,7 @@ definePageMeta({
 });
 </script>
 
-
- <style scoped>
+<style scoped>
 .sub-title {
   display: block;
   font-size: 24px;

@@ -11,7 +11,7 @@ const props = defineProps({
   cardType: {
     type: String,
     required: true,
-    validator: (value) => ["mc", "visa"].indexOf(value) > -1,
+    validator: (value) => ["mc", "visa"].includes(value),
   },
   cardNumber: {
     type: String,

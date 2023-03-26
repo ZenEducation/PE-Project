@@ -4,153 +4,153 @@
     <div class="actionsPanel">
       <!-- Pencil -->
       <panelToolIcon
+        :tool-color="getPencilColor"
+        :is-active="tool === 'pencil'"
+        icon="pencil-alt"
         @click.native="
           togglePencilSettings();
           setWhiteboardTool('pencil');
         "
-        :toolColor="getPencilColor"
-        :isActive="tool === 'pencil'"
-        icon="pencil-alt"
       />
       <!-- Pencil settings -->
       <panelToolSettings v-if="isPencilSettingsOpened">
         <template #settingsColorPicker>
           <!-- ColorPicker -->
           <colorPicker
-            :onSelectColor="setPencilColor"
+            :on-select-color="setPencilColor"
             class="settingsColorPicker"
-            :vividColors="vividColors"
-            :darkColors="darkColors"
+            :vivid-colors="vividColors"
+            :dark-colors="darkColors"
           />
         </template>
 
         <!-- Slider -->
         <rangeSlider
-          :onChange="setToolSize"
+          slot="slider"
+          :on-change="setToolSize"
           :min="0"
           :max="6"
           :value="toolSize"
           class="settingsSlider"
-          slot="slider"
         />
       </panelToolSettings>
 
       <!-- Brush -->
       <panelToolIcon
+        :tool-color="brushColor"
+        :is-active="tool === 'brush'"
+        icon="paint-brush"
         @click.native="
           toggleBrushSettings();
           setWhiteboardTool('brush');
         "
-        :toolColor="brushColor"
-        :isActive="tool === 'brush'"
-        icon="paint-brush"
       />
       <!-- Brush settings -->
       <panelToolSettings v-if="isBrushSettingsOpened">
         <template #settingsColorPicker>
           <!-- ColorPicker -->
           <colorPicker
-            :onSelectColor="setBrushColor"
+            :on-select-color="setBrushColor"
             class="settingsColorPicker"
-            :vividColors="vividColors"
-            :darkColors="darkColors"
+            :vivid-colors="vividColors"
+            :dark-colors="darkColors"
           />
         </template>
 
         <!-- Slider -->
         <rangeSlider
-          :onChange="setToolSize"
+          slot="slider"
+          :on-change="setToolSize"
           :min="0"
           :max="6"
           :value="toolSize"
           class="settingsSlider"
-          slot="slider"
         />
       </panelToolSettings>
 
       <!-- Eraser  -->
       <panelToolIcon
+        tool-color="#133337"
+        :is-active="tool === 'eraser'"
+        icon="eraser"
         @click.native="
           toggleEraserSettings();
           setWhiteboardTool('eraser');
         "
-        toolColor="#133337"
-        :isActive="tool === 'eraser'"
-        icon="eraser"
       />
       <!-- Eraser settings -->
       <panelToolSettings v-if="isEraserSettingsOpened">
         <!-- Slider -->
         <rangeSlider
-          :onChange="setEraserSize"
+          slot="slider"
+          :on-change="setEraserSize"
           :min="0"
           :max="24"
           :value="eraserSize"
           class="settingsSlider"
-          slot="slider"
         />
       </panelToolSettings>
 
       <!-- Shape Select -->
       <panelToolIcon
-        @click.native="toggleShapeSettings"
-        :toolColor="shapeColor"
-        :isActive="
+        :tool-color="shapeColor"
+        :is-active="
           tool === 'circle' ||
           tool === 'square' ||
           tool === 'triangle' ||
           tool === 'line'
         "
         :icon="activeShape"
+        @click.native="toggleShapeSettings"
       />
       <!-- Shape settings -->
       <panelToolSettings v-if="isShapeSettingsOpened">
         <!-- SettingsActions -->
-        <template class="settingsActions" #settingsActions>
+        <template #settingsActions class="settingsActions">
           <!-- Circle select -->
           <panelToolIcon
-            @click.native="setWhiteboardTool('circle')"
-            :toolColor="shapeColor"
-            :isActive="tool === 'circle'"
+            :tool-color="shapeColor"
+            :is-active="tool === 'circle'"
             icon="circle"
+            @click.native="setWhiteboardTool('circle')"
           />
           <!-- Square select -->
           <panelToolIcon
-            @click.native="setWhiteboardTool('square')"
-            :toolColor="shapeColor"
-            :isActive="tool === 'square'"
+            :tool-color="shapeColor"
+            :is-active="tool === 'square'"
             icon="square"
+            @click.native="setWhiteboardTool('square')"
           />
           <!-- Triangle select -->
           <panelToolIcon
-            @click.native="setWhiteboardTool('triangle')"
-            :toolColor="shapeColor"
-            :isActive="tool === 'triangle'"
+            :tool-color="shapeColor"
+            :is-active="tool === 'triangle'"
             icon="exclamation-triangle"
+            @click.native="setWhiteboardTool('triangle')"
           />
           <!-- Line select -->
           <panelToolIcon
-            @click.native="setWhiteboardTool('line')"
-            :toolColor="shapeColor"
-            :isActive="tool === 'line'"
+            :tool-color="shapeColor"
+            :is-active="tool === 'line'"
             icon="slash"
+            @click.native="setWhiteboardTool('line')"
           />
         </template>
 
         <template #settingsColorPicker>
           <!-- ColorPicker -->
           <colorPicker
-            :onSelectColor="setShapeColor"
+            :on-select-color="setShapeColor"
             class="settingsColorPicker"
-            :vividColors="vividColors"
-            :darkColors="darkColors"
+            :vivid-colors="vividColors"
+            :dark-colors="darkColors"
           />
         </template>
 
         <template #slider>
           <!-- Slider -->
           <rangeSlider
-            :onChange="setShapeSize"
+            :on-change="setShapeSize"
             :min="0"
             :max="6"
             :value="shapeSize"
@@ -164,16 +164,16 @@
 
 <script>
 // import { mapState } from "pinia";
-import Tools from "@/components/AfterAuth/Whiteboard/tools/tool/tools";
-import { useWhiteboardStore } from "@/stores/whiteboard";
+import ColorPicker from "../ColorPicker";
 import PanelToolIcon from "./PanelToolIcon";
 import PanelToolSettings from "./PanelToolSettings";
-import ColorPicker from "../ColorPicker";
+import Tools from "@/components/AfterAuth/Whiteboard/tools/tool/tools";
+import { useWhiteboardStore } from "@/stores/whiteboard";
 // import RangeSlider from "../RangeSlider";
 // const whiteboardStore = useWhiteboardStore(); // this is for the composition API
 
 const vividColours = [
-  "#FFFFFF", //White
+  "#FFFFFF", // White
   "#FF0000", // Red
   "#EC008C", // Pink
   "#AB47BC", // Violet
@@ -185,7 +185,7 @@ const vividColours = [
   "#FFEB3B", // Yellow
   "#FB8C00", // Orange
   "#8D6E63", // LightBrown
-  "#607D8B", //Slate
+  "#607D8B", // Slate
   "#263238", // DarkSlate
 ];
 
@@ -224,84 +224,6 @@ export default {
       vividColors: vividColours,
       darkColors: darkColours,
     };
-  },
-  methods: {
-    // Toggle
-    // toggleToolSettings() {
-    //   this.isToolSettingsOpened = !this.isToolSettingsOpened;
-    //   this.isEraserSettingsOpened = false;
-    //   this.isShapeSettingsOpened = false;
-    // },
-
-    togglePencilSettings() {
-      this.isPencilSettingsOpened = !this.isPencilSettingsOpened;
-      this.isBrushSettingsOpened = false;
-      // this.isToolSettingsOpened = !this.isToolSettingsOpened;
-      this.isEraserSettingsOpened = false;
-      this.isShapeSettingsOpened = false;
-    },
-
-    toggleBrushSettings() {
-      this.isBrushSettingsOpened = !this.isBrushSettingsOpened;
-      this.isPencilSettingsOpened = false;
-      // this.isToolSettingsOpened = !this.isToolSettingsOpened;
-      this.isEraserSettingsOpened = false;
-      this.isShapeSettingsOpened = false;
-    },
-    toggleEraserSettings() {
-      this.isEraserSettingsOpened = !this.isEraserSettingsOpened;
-      this.isBrushSettingsOpened = false;
-      this.isPencilSettingsOpened = false;
-
-      this.isShapeSettingsOpened = false;
-    },
-    toggleShapeSettings() {
-      this.isShapeSettingsOpened = !this.isShapeSettingsOpened;
-      this.isBrushSettingsOpened = false;
-      this.isPencilSettingsOpened = false;
-      this.isEraserSettingsOpened = false;
-    },
-    // Set Color
-    // setToolColor(color) {
-    //   console.log("Inside SetTool Color");
-    //   this.whiteboardStore.setToolColor(color);
-    //   // this.$store.dispatch("setToolColor", color);
-    // },
-
-    setPencilColor(color) {
-      console.log("Inside Set Pencil Color");
-      this.whiteboardStore.setPencilColor(color);
-      // this.$store.dispatch("setToolColor", color);
-    },
-
-    setBrushColor(color) {
-      console.log("Inside Set Brush Color");
-      this.whiteboardStore.setBrushColor(color);
-      // this.$store.dispatch("setToolColor", color);
-    },
-
-    setShapeColor(color) {
-      this.whiteboardStore.setShapeColor(color);
-      // this.$store.dispatch("setShapeColor", color);
-    },
-    // Set size
-    setToolSize(size) {
-      this.whiteboardStore.setToolSize(size);
-      // this.$store.dispatch("setToolSize", size);
-    },
-    setEraserSize(size) {
-      this.whiteboardStore.setEraserSize(size);
-      // this.$store.dispatch("setEraserSize", size);
-    },
-    setShapeSize(size) {
-      this.whiteboardStore.setShapeSize(size);
-      // this.$store.dispatch("setShapeSize", size);
-    },
-    // Set tool
-    setWhiteboardTool(tool) {
-      this.whiteboardStore.setWhiteboardTool(tool);
-      // this.$store.dispatch("setWhiteboardTool", tool);
-    },
   },
   computed: {
     // Mapping the store via MapStore from Pinia
@@ -389,6 +311,84 @@ export default {
     // this.whiteboardStore.setWhiteboardTool(Tools.pencil);
     console.log(this.whiteboardStore);
     this.setToolSize(3); // This is working to set the ToolSize
+  },
+  methods: {
+    // Toggle
+    // toggleToolSettings() {
+    //   this.isToolSettingsOpened = !this.isToolSettingsOpened;
+    //   this.isEraserSettingsOpened = false;
+    //   this.isShapeSettingsOpened = false;
+    // },
+
+    togglePencilSettings() {
+      this.isPencilSettingsOpened = !this.isPencilSettingsOpened;
+      this.isBrushSettingsOpened = false;
+      // this.isToolSettingsOpened = !this.isToolSettingsOpened;
+      this.isEraserSettingsOpened = false;
+      this.isShapeSettingsOpened = false;
+    },
+
+    toggleBrushSettings() {
+      this.isBrushSettingsOpened = !this.isBrushSettingsOpened;
+      this.isPencilSettingsOpened = false;
+      // this.isToolSettingsOpened = !this.isToolSettingsOpened;
+      this.isEraserSettingsOpened = false;
+      this.isShapeSettingsOpened = false;
+    },
+    toggleEraserSettings() {
+      this.isEraserSettingsOpened = !this.isEraserSettingsOpened;
+      this.isBrushSettingsOpened = false;
+      this.isPencilSettingsOpened = false;
+
+      this.isShapeSettingsOpened = false;
+    },
+    toggleShapeSettings() {
+      this.isShapeSettingsOpened = !this.isShapeSettingsOpened;
+      this.isBrushSettingsOpened = false;
+      this.isPencilSettingsOpened = false;
+      this.isEraserSettingsOpened = false;
+    },
+    // Set Color
+    // setToolColor(color) {
+    //   console.log("Inside SetTool Color");
+    //   this.whiteboardStore.setToolColor(color);
+    //   // this.$store.dispatch("setToolColor", color);
+    // },
+
+    setPencilColor(color) {
+      console.log("Inside Set Pencil Color");
+      this.whiteboardStore.setPencilColor(color);
+      // this.$store.dispatch("setToolColor", color);
+    },
+
+    setBrushColor(color) {
+      console.log("Inside Set Brush Color");
+      this.whiteboardStore.setBrushColor(color);
+      // this.$store.dispatch("setToolColor", color);
+    },
+
+    setShapeColor(color) {
+      this.whiteboardStore.setShapeColor(color);
+      // this.$store.dispatch("setShapeColor", color);
+    },
+    // Set size
+    setToolSize(size) {
+      this.whiteboardStore.setToolSize(size);
+      // this.$store.dispatch("setToolSize", size);
+    },
+    setEraserSize(size) {
+      this.whiteboardStore.setEraserSize(size);
+      // this.$store.dispatch("setEraserSize", size);
+    },
+    setShapeSize(size) {
+      this.whiteboardStore.setShapeSize(size);
+      // this.$store.dispatch("setShapeSize", size);
+    },
+    // Set tool
+    setWhiteboardTool(tool) {
+      this.whiteboardStore.setWhiteboardTool(tool);
+      // this.$store.dispatch("setWhiteboardTool", tool);
+    },
   },
 };
 </script>

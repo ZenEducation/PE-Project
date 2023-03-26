@@ -11,11 +11,7 @@
 </template>
 
 <script setup>
-import { reactive, toRefs } from "vue";
-import { useTasksAPIStore } from "~~/stores/tasksAPI";
-import { computed, ref, onMounted } from "vue";
-import TableTasks from "@/components/AfterAuth/Tables/TableTasks.vue";
-
+import { reactive, toRefs, computed, ref, onMounted } from "vue";
 import {
   mdiAccountMultiple,
   mdiCartOutline,
@@ -25,6 +21,9 @@ import {
   mdiGithub,
   mdiChartPie,
 } from "@mdi/js";
+import { useTasksAPIStore } from "~~/stores/tasksAPI";
+
+import TableTasks from "@/components/AfterAuth/Tables/TableTasks.vue";
 
 // const state = reactive({
 //   count: 17,

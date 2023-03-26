@@ -1,21 +1,21 @@
 <template>
   <div class="colorPicker">
-    <div class="" id="darkColors">
+    <div id="darkColors" class="">
       <div
-        @click="selectColor(color)"
-        class="color"
-        :style="{ 'background-color': color }"
         v-for="(color, i) in darkColors"
         :key="i"
-      ></div>
-    </div>
-    <div class="" id="vividColors">
-      <div
-        @click="selectColor(color)"
         class="color"
         :style="{ 'background-color': color }"
+        @click="selectColor(color)"
+      ></div>
+    </div>
+    <div id="vividColors" class="">
+      <div
         v-for="(color, i) in vividColors"
         :key="i"
+        class="color"
+        :style="{ 'background-color': color }"
+        @click="selectColor(color)"
       ></div>
     </div>
   </div>

@@ -54,7 +54,7 @@ definePageMeta({
 });
 </script>
 
- <style scoped>
+<style scoped>
 .sub-title {
   display: inline-block;
   line-height: 1.27;

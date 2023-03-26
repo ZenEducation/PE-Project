@@ -3,7 +3,7 @@
     <div class="container">
       <div class="py-[100px]">
         <courseheader>
-          <template v-slot:title>Blog Classic</template>
+          <template #title>Blog Classic</template>
         </courseheader>
       </div>
 

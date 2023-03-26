@@ -41,8 +41,6 @@ const styleStore = useStyleStore();
       />
     </transition>
 
-
-
     <transition
       enter-active-class="transition duration-100 ease-out"
       enter-from-class="transform scale-95 opacity-0"

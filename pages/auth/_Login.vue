@@ -42,7 +42,6 @@ const handleSubmit = async () => {
   // console.log("response", response);
 
   if (user_from_amplify) {
-    return;
     // router.push("/dashboard");
   }
 };

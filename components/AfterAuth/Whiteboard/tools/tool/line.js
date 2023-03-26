@@ -7,7 +7,7 @@ import { useWhiteboardStore } from "@/stores/whiteboard";
 
 const whiteboardStore = useWhiteboardStore();
 
-let local = {
+const local = {
   path: null,
 };
 
@@ -25,7 +25,7 @@ function onMouseDrag(event) {
 }
 
 function onMouseUp() {
-  let layer = createLayer();
+  const layer = createLayer();
   layer.addChild(local.path);
 
   const action = new DrawAction({

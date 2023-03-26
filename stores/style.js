@@ -38,16 +38,16 @@ export const useStyleStore = defineStore("style", {
 
     setDarkMode(payload = null) {
       if (payload === null) {
-        const mode = localStorage.getItem('darkMode')
-        if (mode && mode === 'true') {
-          this.darkMode = true
+        const mode = localStorage.getItem("darkMode");
+        if (mode && mode === "true") {
+          this.darkMode = true;
         } else {
-          this.darkMode = false
-          localStorage.setItem('darkMode', this.darkMode)
+          this.darkMode = false;
+          localStorage.setItem("darkMode", this.darkMode);
         }
       } else {
-        this.darkMode = payload
-        localStorage.setItem('darkMode', this.darkMode)
+        this.darkMode = payload;
+        localStorage.setItem("darkMode", this.darkMode);
       }
       if (this.darkMode) {
         document.documentElement.classList.add("dark");

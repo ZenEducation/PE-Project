@@ -1,9 +1,9 @@
 <script setup>
 import { reactive } from "vue";
-import { RouterLink } from "vue-router";
-import { useRouter } from "vue-router";
-import { useAuthStore } from "@/stores/authStore";
+import { RouterLink, useRouter } from "vue-router";
+
 import { mdiAccount, mdiEmail } from "@mdi/js";
+import { useAuthStore } from "@/stores/authStore";
 import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
 import FormField from "@/components/AfterAuth/Forms/FormField.vue";
 import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
@@ -47,7 +47,7 @@ const handleSubmit = async () => {
 
   if (form.otp_code) {
     // form.signUpEmail = user_to_register_in_amplify.username;
-    //console.log("Username:", user_to_register_in_amplify.username);
+    // console.log("Username:", user_to_register_in_amplify.username);
 
     console.log(
       "form.signUpEmail for comfirming registration:",
@@ -73,7 +73,6 @@ const handleSubmit = async () => {
 
 const reattemptSignup = () => {
   userSubmitted.value = false;
-  return;
 };
 </script>
 

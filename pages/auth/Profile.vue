@@ -1,6 +1,5 @@
 <script setup>
 import { reactive } from "vue";
-import { useMainStore } from "@/stores/main";
 import {
   mdiAccount,
   mdiMail,
@@ -8,6 +7,7 @@ import {
   mdiFormTextboxPassword,
   mdiCreditCardOutline,
 } from "@mdi/js";
+import { useMainStore } from "@/stores/main";
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
 import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
 

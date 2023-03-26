@@ -20,7 +20,7 @@ const props = defineProps({
     type: String,
     required: true,
     validator: (value) =>
-      ["contrast", "info", "success", "warning", "danger"].indexOf(value) > -1,
+      ["contrast", "info", "success", "warning", "danger"].includes(value),
   },
 });
 

@@ -7,7 +7,7 @@ import { useWhiteboardStore } from "@/stores/whiteboard";
 
 const whiteboardStore = useWhiteboardStore();
 
-let local = {
+const local = {
   path: null,
   center: null,
   layer: null,

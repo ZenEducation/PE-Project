@@ -1,8 +1,5 @@
 <script setup>
 import { ref, computed, watch, onMounted } from "vue";
-import { useMainStore } from "@/stores/main.js";
-import { useSnackBarStore } from "@/stores/snackBar.js";
-import { useLayoutStore } from "@/stores/layout.js";
 import {
   mdiAccountMultiple,
   mdiCartOutline,
@@ -18,6 +15,9 @@ import {
   mdiChartPie,
   mdiCreditCardOutline,
 } from "@mdi/js";
+import { useMainStore } from "@/stores/main.js";
+import { useSnackBarStore } from "@/stores/snackBar.js";
+import { useLayoutStore } from "@/stores/layout.js";
 import * as chartConfig from "@/components/AfterAuth/Charts/chart.config.js";
 import LineChart from "@/components/AfterAuth/Charts/LineChart.vue";
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";

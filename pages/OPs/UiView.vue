@@ -1,6 +1,5 @@
 <script setup>
 import { ref, computed } from "vue";
-import { useStyleStore } from "@/stores/style.js";
 import {
   mdiContrastCircle,
   mdiInformation,
@@ -12,6 +11,7 @@ import {
   mdiReload,
   mdiTrendingUp,
 } from "@mdi/js";
+import { useStyleStore } from "@/stores/style.js";
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
 import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
 import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
@@ -36,40 +36,38 @@ const modalThreeActive = ref(false);
 
 const notificationSettingsModel = ref([]);
 
-const notificationsOutline = computed(
-  () => notificationSettingsModel.value.indexOf("outline") > -1
+const notificationsOutline = computed(() =>
+  notificationSettingsModel.value.includes("outline")
 );
 
 const buttonSettingsModel = ref([]);
 
-const buttonsOutline = computed(
-  () => buttonSettingsModel.value.indexOf("outline") > -1
+const buttonsOutline = computed(() =>
+  buttonSettingsModel.value.includes("outline")
 );
 
-const buttonsSmall = computed(
-  () => buttonSettingsModel.value.indexOf("small") > -1
+const buttonsSmall = computed(() =>
+  buttonSettingsModel.value.includes("small")
 );
 
-const buttonsDisabled = computed(
-  () => buttonSettingsModel.value.indexOf("disabled") > -1
+const buttonsDisabled = computed(() =>
+  buttonSettingsModel.value.includes("disabled")
 );
 
-const buttonsRounded = computed(
-  () => buttonSettingsModel.value.indexOf("rounded") > -1
+const buttonsRounded = computed(() =>
+  buttonSettingsModel.value.includes("rounded")
 );
 
 const pillsSettingsModel = ref(["icon"]);
 
-const pillsOutline = computed(
-  () => pillsSettingsModel.value.indexOf("outline") > -1
+const pillsOutline = computed(() =>
+  pillsSettingsModel.value.includes("outline")
 );
 
-const pillsSmall = computed(
-  () => pillsSettingsModel.value.indexOf("small") > -1
-);
+const pillsSmall = computed(() => pillsSettingsModel.value.includes("small"));
 
 const pillsIcon = computed(() =>
-  pillsSettingsModel.value.indexOf("icon") > -1 ? mdiTrendingUp : null
+  pillsSettingsModel.value.includes("icon") ? mdiTrendingUp : null
 );
 
 const styleStore = useStyleStore();

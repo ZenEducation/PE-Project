@@ -1,7 +1,7 @@
 <script setup>
 import { computed, ref } from "vue";
-import { useMainStore } from "@/stores/main";
 import { mdiCheckDecagram } from "@mdi/js";
+import { useMainStore } from "@/stores/main";
 import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
 import UserAvatarCurrentUser from "@/components/AfterAuth/Avatars/UserAvatarCurrentUser.vue";
 import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";

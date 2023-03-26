@@ -1,13 +1,13 @@
 <script setup>
 import { computed, ref } from "vue";
 import { useRouter } from "vue-router";
-import { useLayoutStore } from "@/stores/layout.js";
-import { useStyleStore } from "@/stores/style.js";
 import {
   mdiClose,
   mdiChevronRightCircleOutline,
   mdiChevronLeftCircleOutline,
 } from "@mdi/js";
+import { useLayoutStore } from "@/stores/layout.js";
+import { useStyleStore } from "@/stores/style.js";
 import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
 import OverlayLayer from "@/components/AfterAuth/Asidemenu/OverlayLayer.vue";
 import PremAsideMenuLayer from "@/components/AfterAuth/Asidemenu/AsideMenuLayer.vue";

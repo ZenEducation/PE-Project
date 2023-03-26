@@ -118,7 +118,7 @@ export const getButtonColor = (
   }
 
   const isOutlinedProcessed =
-    isOutlined && ["white", "whiteDark", "lightDark"].indexOf(color) < 0;
+    isOutlined && !["white", "whiteDark", "lightDark"].includes(color);
 
   const base = [colors.borders[color], colors.ring[color]];
 

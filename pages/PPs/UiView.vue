@@ -10,7 +10,7 @@ import FormCheckRadioGroup from "@/components/AfterAuth/Forms/FormCheckRadioGrou
 
 import PremFormField from "@/components/AfterAuth/Forms/FormField.vue";
 import PremFormControl from "@/components/AfterAuth/Forms/FormControl.vue";
-//import NuxtLayout from "@/layouts/NuxtLayout.vue"
+// import NuxtLayout from "@/layouts/NuxtLayout.vue"
 import { useSnackBarStore } from "@/stores/snackBar";
 
 const snackBarColor = ref("info");

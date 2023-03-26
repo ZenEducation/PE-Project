@@ -8,13 +8,13 @@ import { useWhiteboardStore } from "@/stores/whiteboard";
 
 const whiteboardStore = useWhiteboardStore();
 
-let local = {
+const local = {
   path: null,
   center: null,
 };
 
 function onMouseDown(event) {
-  let layer = createLayer();
+  const layer = createLayer();
   local.path = new paper.Shape.Circle({
     center: event.point,
     strokeColor: whiteboardStore.shapeArgs.color,

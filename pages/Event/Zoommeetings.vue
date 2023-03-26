@@ -3,7 +3,7 @@
     <div class="container">
       <div class="pt-[100px] pb-[60px]">
         <courseheader>
-          <template v-slot:title>Zoom Meetings</template>
+          <template #title>Zoom Meetings</template>
         </courseheader>
       </div>
 
