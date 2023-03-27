@@ -4,9 +4,9 @@ const state = () => ({
   // ...
 
   /* User */
-  userName: null,
-  userEmail: null,
-  userAvatar: null,
+  userName: '',
+  userEmail: '',
+  userAvatar: '',
   userType: 'student',
   /* Field focus with ctrl+k (to register only once) */
   isFieldFocusRegistered: false,
@@ -121,25 +121,31 @@ const state = () => ({
 
 const getters = {}
 
-const actions = {
-  setUser(payload) {
-    if (payload.name) {
-      this.userName = payload.name
-    }
-    if (payload.email) {
-      this.userEmail = payload.email
-    }
-    if (payload.avatar) {
-      this.userAvatar = payload.avatar
-    }
-    if (payload.userType) {
-      this.userType = payload.userType
-    }
-  },
+interface User {
+  name: string
+  email: string
+  avatar: string
+  userType: 'educator' | 'freelancer' | 'employee'
 }
 
-export const useMainStore = defineStore('main', {
+export const useMainStore = defineStore({
+  id: 'main',
   state,
   getters,
-  actions,
+  actions: {
+    setUser(payload: User): void {
+      if (payload.name) {
+        this.userName = payload.name
+      }
+      if (payload.email) {
+        this.userEmail = payload.email
+      }
+      if (payload.avatar) {
+        this.userAvatar = payload.avatar
+      }
+      if (payload.userType) {
+        this.userType = payload.userType
+      }
+    },
+  },
 })

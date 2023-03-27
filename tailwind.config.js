@@ -21,7 +21,6 @@ module.exports = {
     extend: {
       zIndex: {
         '-1': '-1',
-        8877: 8863,
       },
       spacing: {
         1.3: '0.313rem',
@@ -45,10 +44,6 @@ module.exports = {
       maxHeight: {
         'screen-menu': 'calc(100vh - 3.5rem)',
         modal: 'calc(100vh - 160px)',
-      },
-      transitionProperty: {
-        position: 'right, left, top, bottom, margin, padding',
-        textColor: 'color',
       },
       colors: {
         transparent: 'transparent',
@@ -150,6 +145,16 @@ module.exports = {
         tan: '#d2a98e',
         mishcka: '#e2e2e8',
       },
+      transitionProperty: {
+        position: 'right, left, top, bottom, margin, padding',
+        textColor: 'color',
+      },
+      fontFamily: {
+        body: ['Gilroy'],
+        heading: ['Gilroy', 'sans-serif'],
+        playfair: ['Playfair Display', 'serif'],
+        rossela: ['Conv_Rossela-Demo-2', 'serif'],
+      },
       keyframes: {
         'fade-out': {
           from: { opacity: 1 },
@@ -163,27 +168,6 @@ module.exports = {
       animation: {
         'fade-out': 'fade-out 250ms ease-in-out',
         'fade-in': 'fade-in 250ms ease-in-out',
-      },
-      fontFamily: {
-        body: ['Gilroy'],
-        heading: ['Gilroy', 'sans-serif'],
-        playfair: ['Playfair Display', 'serif'],
-        rossela: ['Conv_Rossela-Demo-2', 'serif'],
-      },
-      fontSize: {
-        sm: '0.75rem',
-        md: '0.875rem',
-        base: '0.938rem',
-        h1: '2.5rem',
-        h2: '2.125rem',
-        h3: '1.5rem',
-        h4: '1.3125rem',
-        h5: '1.09375rem',
-        h6: '0.938rem',
-      },
-      lineHeight: {
-        body: 1.74,
-        heading: 1.3,
       },
       boxShadow: {
         xs: '4px 4px 8px',
@@ -217,7 +201,7 @@ module.exports = {
     require('@tailwindcss/forms'),
     function addComponentsFunc({ addComponents }) {
       addComponents({
-        '.container': {
+        '.public-container': {
           maxWidth: '100%',
           marginInline: 'auto',
           paddingInline: '15px',
@@ -269,6 +253,5 @@ module.exports = {
       )
     }),
     require('tailwind-scrollbar')({ nocompatible: true }),
-    require('flowbite'),
   ],
 }

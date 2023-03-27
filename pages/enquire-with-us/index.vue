@@ -1,7 +1,7 @@
 <template>
   <div class="dark:blue py-[100px] font-body px-5">
     <contactusform />
-    <div class="container">
+    <div class="public-container">
       <div class="flex flex-col">
         <div class="mb-[40px]">
           <h2 class="title text-center dark:text-white">
