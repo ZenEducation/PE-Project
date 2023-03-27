@@ -1,36 +1,36 @@
 <script setup>
-import { ref, computed, useSlots } from "vue";
-import { mdiClose } from "@mdi/js";
-import { colorsBgLight, colorsOutline } from "@/configs/colors.js";
-import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
-import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
+  import { ref, computed, useSlots } from 'vue'
+  import { mdiClose } from '@mdi/js'
+  import { colorsBgLight, colorsOutline } from '@/configs/colors.js'
+  import BaseLevel from '@/components/AfterAuth/Buttons/BaseLevel.vue'
+  import BaseIcon from '@/components/AfterAuth/Display/BaseIcon.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
 
-const props = defineProps({
-  icon: {
-    type: String,
-    default: null,
-  },
-  outline: Boolean,
-  color: {
-    type: String,
-    required: true,
-  },
-});
+  const props = defineProps({
+    icon: {
+      type: String,
+      default: null,
+    },
+    outline: Boolean,
+    color: {
+      type: String,
+      required: true,
+    },
+  })
 
-const componentClass = computed(() =>
-  props.outline ? colorsOutline[props.color] : colorsBgLight[props.color]
-);
+  const componentClass = computed(() =>
+    props.outline ? colorsOutline[props.color] : colorsBgLight[props.color]
+  )
 
-const isDismissed = ref(false);
+  const isDismissed = ref(false)
 
-const dismiss = () => {
-  isDismissed.value = true;
-};
+  const dismiss = () => {
+    isDismissed.value = true
+  }
 
-const slots = useSlots();
+  const slots = useSlots()
 
-const hasRightSlot = computed(() => slots.right);
+  const hasRightSlot = computed(() => slots.right)
 </script>
 
 <template>

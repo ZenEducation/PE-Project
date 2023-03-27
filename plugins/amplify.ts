@@ -1,6 +1,6 @@
-//amplify auth plugin
-import { defineNuxtPlugin } from "#app";
-import { Auth } from "aws-amplify";
+// amplify auth plugin
+import { defineNuxtPlugin } from '#app'
+import { Auth } from 'aws-amplify'
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.$auth = Auth;
-});
+  nuxtApp.$auth = Auth
+})

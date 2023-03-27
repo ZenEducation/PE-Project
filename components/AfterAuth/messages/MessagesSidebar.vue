@@ -65,12 +65,12 @@
           </form>
           <!-- Direct messages -->
           <DirectMessages
-            :msgSidebarOpen="msgSidebarOpen"
+            :msg-sidebar-open="msgSidebarOpen"
             @close-msgsidebar="$emit('close-msgsidebar')"
           />
           <!-- Channels -->
           <Channels
-            :msgSidebarOpen="msgSidebarOpen"
+            :msg-sidebar-open="msgSidebarOpen"
             @close-msgsidebar="$emit('close-msgsidebar')"
           />
         </div>
@@ -80,16 +80,16 @@
 </template>
 
 <script>
-import ChannelMenu from "./ChannelMenu.vue";
-import DirectMessages from "./DirectMessages.vue";
-import Channels from "./Channels.vue";
-export default {
-  name: "MessagesSidebar",
-  props: ["msgSidebarOpen"],
-  components: {
-    ChannelMenu,
-    DirectMessages,
-    Channels,
-  },
-};
+  import ChannelMenu from './ChannelMenu.vue'
+  import DirectMessages from './DirectMessages.vue'
+  import Channels from './Channels.vue'
+  export default {
+    name: 'MessagesSidebar',
+    components: {
+      ChannelMenu,
+      DirectMessages,
+      Channels,
+    },
+    props: ['msgSidebarOpen'],
+  }
 </script>

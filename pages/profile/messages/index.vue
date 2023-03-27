@@ -12,7 +12,7 @@
               <!-- Messages sidebar -->
               <MessagesSidebar
                 class=""
-                :msgSidebarOpen="msgSidebarOpen"
+                :msg-sidebar-open="msgSidebarOpen"
                 @close-msgsidebar="msgSidebarOpen = false"
               />
 
@@ -22,7 +22,7 @@
                 :class="msgSidebarOpen ? 'translate-x-1/3' : 'translate-x-0'"
               >
                 <MessagesHeader
-                  :msgSidebarOpen="msgSidebarOpen"
+                  :msg-sidebar-open="msgSidebarOpen"
                   @toggle-msgsidebar="msgSidebarOpen = !msgSidebarOpen"
                 />
 
@@ -38,35 +38,35 @@
 </template>
 
 <script>
-import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
-import { ref, onMounted, watch } from "vue";
+  import { ref, onMounted, watch } from 'vue'
+  import SectionMain from '@/components/AfterAuth/Sections/SectionMain.vue'
 
-export default {
-  components: {
-    SectionMain,
-  },
-  setup() {
-    const sidebarOpen = ref(false);
-    const msgSidebarOpen = ref(true);
-    const contentArea = ref(null);
+  export default {
+    components: {
+      SectionMain,
+    },
+    setup() {
+      const sidebarOpen = ref(false)
+      const msgSidebarOpen = ref(true)
+      const contentArea = ref(null)
 
-    const handleScroll = () => {
-      contentArea.value.scrollTop = 99999999;
-    };
+      const handleScroll = () => {
+        contentArea.value.scrollTop = 99999999
+      }
 
-    onMounted(() => {
-      handleScroll();
-    });
+      onMounted(() => {
+        handleScroll()
+      })
 
-    watch(msgSidebarOpen, () => {
-      handleScroll();
-    });
+      watch(msgSidebarOpen, () => {
+        handleScroll()
+      })
 
-    return {
-      sidebarOpen,
-      msgSidebarOpen,
-      contentArea,
-    };
-  },
-};
+      return {
+        sidebarOpen,
+        msgSidebarOpen,
+        contentArea,
+      }
+    },
+  }
 </script>

@@ -1,26 +1,26 @@
 <script setup>
-import { buttonMenuOptions } from "@/configs/sampleButtonMenuOptions.js";
-import { mdiDotsVertical } from "@mdi/js";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
-import PillTag from "@/components/AfterAuth/Display/PillTag.vue";
-import UserAvatar from "@/components/AfterAuth/Avatars/UserAvatar.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
+  import { mdiDotsVertical } from '@mdi/js'
+  import { buttonMenuOptions } from '@/configs/sampleButtonMenuOptions.js'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import BaseLevel from '@/components/AfterAuth/Buttons/BaseLevel.vue'
+  import PillTag from '@/components/AfterAuth/Display/PillTag.vue'
+  import UserAvatar from '@/components/AfterAuth/Avatars/UserAvatar.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
 
-import PremButtonMenu from "@/components/AfterAuth/Buttons/ButtonMenu.vue";
+  import PremButtonMenu from '@/components/AfterAuth/Buttons/ButtonMenu.vue'
 
-defineProps({
-  product: {
-    type: Object,
-    required: true,
-    validate: (value) =>
-      value.name &&
-      value.date &&
-      value.adjective &&
-      value.material &&
-      value.price,
-  },
-});
+  defineProps({
+    product: {
+      type: Object,
+      required: true,
+      validate: (value) =>
+        value.name &&
+        value.date &&
+        value.adjective &&
+        value.material &&
+        value.price,
+    },
+  })
 </script>
 
 <template>

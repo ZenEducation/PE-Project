@@ -1,67 +1,67 @@
 <script setup>
-import { computed } from "vue";
-import { mdiTrendingDown, mdiTrendingUp, mdiTrendingNeutral } from "@mdi/js";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
-import PillTag from "@/components/AfterAuth/Display/PillTag.vue";
-import UserAvatar from "@/components/AfterAuth/Avatars/UserAvatar.vue";
+  import { computed } from 'vue'
+  import { mdiTrendingDown, mdiTrendingUp, mdiTrendingNeutral } from '@mdi/js'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import BaseLevel from '@/components/AfterAuth/Buttons/BaseLevel.vue'
+  import PillTag from '@/components/AfterAuth/Display/PillTag.vue'
+  import UserAvatar from '@/components/AfterAuth/Avatars/UserAvatar.vue'
 
-const props = defineProps({
-  name: {
-    type: String,
-    required: true,
-  },
-  login: {
-    type: String,
-    required: true,
-  },
-  date: {
-    type: String,
-    required: true,
-  },
-  progress: {
-    type: Number,
-    default: 0,
-  },
-  text: {
-    type: String,
-    default: null,
-  },
-  type: {
-    type: String,
-    default: null,
-  },
-});
+  const props = defineProps({
+    name: {
+      type: String,
+      required: true,
+    },
+    login: {
+      type: String,
+      required: true,
+    },
+    date: {
+      type: String,
+      required: true,
+    },
+    progress: {
+      type: Number,
+      default: 0,
+    },
+    text: {
+      type: String,
+      default: null,
+    },
+    type: {
+      type: String,
+      default: null,
+    },
+  })
 
-const pillType = computed(() => {
-  if (props.type) {
-    return props.type;
-  }
-
-  if (props.progress) {
-    if (props.progress >= 60) {
-      return "success";
-    }
-    if (props.progress >= 40) {
-      return "warning";
+  const pillType = computed(() => {
+    if (props.type) {
+      return props.type
     }
 
-    return "danger";
-  }
+    if (props.progress) {
+      if (props.progress >= 60) {
+        return 'success'
+      }
+      if (props.progress >= 40) {
+        return 'warning'
+      }
 
-  return "info";
-});
+      return 'danger'
+    }
 
-const pillIcon = computed(() => {
-  return {
-    success: mdiTrendingUp,
-    warning: mdiTrendingNeutral,
-    danger: mdiTrendingDown,
-    info: null,
-  }[pillType.value];
-});
+    return 'info'
+  })
 
-const pillText = computed(() => props.text ?? `${props.progress}%`);
+  const pillIcon = computed(() => {
+    return {
+      success: mdiTrendingUp,
+      warning: mdiTrendingNeutral,
+      danger: mdiTrendingDown,
+      info: null,
+    }[pillType.value]
+  })
+
+  const pillText = computed(() => props.text ?? `${props.progress}%`)
 </script>
 
 <template>

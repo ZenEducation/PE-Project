@@ -1,19 +1,19 @@
-import { defineStore } from "pinia";
+import { defineStore } from 'pinia'
 
 const state = () => ({
   currentRectCount: 0,
-});
+})
 
 const actions = {
   incrCurrentRectCount() {
-    this.currentRectCount++;
+    this.currentRectCount++
   },
-};
+}
 
-const getters = {};
+const getters = {}
 
-export const useWBFabric = defineStore("WBFabric", {
+export const useWBFabric = defineStore('WBFabric', {
   state,
   getters,
   actions,
-});
+})

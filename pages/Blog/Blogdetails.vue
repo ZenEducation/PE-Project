@@ -2,7 +2,7 @@
   <div class="bg-[#161821] w-12/12 px-24">
     <div class="py-[100px]">
       <courseheader>
-        <template v-slot:title>Blog Details</template>
+        <template #title>Blog Details</template>
       </courseheader>
     </div>
 
@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>

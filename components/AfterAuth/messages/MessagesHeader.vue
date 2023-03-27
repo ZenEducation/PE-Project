@@ -8,9 +8,9 @@
         <!-- Close button -->
         <button
           class="md:hidden text-slate-400 hover:text-slate-500 mr-4"
-          @click.stop="$emit('toggle-msgsidebar')"
           aria-controls="messages-sidebar"
           :aria-expanded="msgSidebarOpen"
+          @click.stop="$emit('toggle-msgsidebar')"
         >
           <span class="sr-only">Close sidebar</span>
           <svg
@@ -71,8 +71,8 @@
 </template>
 
 <script>
-export default {
-  name: "MessagesHeader",
-  props: ["msgSidebarOpen"],
-};
+  export default {
+    name: 'MessagesHeader',
+    props: ['msgSidebarOpen'],
+  }
 </script>

@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>

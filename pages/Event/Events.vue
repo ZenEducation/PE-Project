@@ -3,12 +3,14 @@
     <div class="container">
       <div class="py-[100px]">
         <courseheader>
-          <template v-slot:title>Events</template>
+          <template #title>Events</template>
         </courseheader>
       </div>
       <div class="px-[80px]">
         <div class="flex justify-between items-start">
-          <p class="text-[15px] text-[#696969] dark:text-[#ddd] font-normal leading-[1.74]">
+          <p
+            class="text-[15px] text-[#696969] dark:text-[#ddd] font-normal leading-[1.74]"
+          >
             We found 12 courses available for you
           </p>
 
@@ -18,7 +20,12 @@
             >
               <icon class="w-10 h-10 text-gray-400" name="uil:angle-down" />
             </span>
-            <select class="bg-[#fff] rounded text-[#696969]" id="cars" name="cars" aria-placeholder="Default">
+            <select
+              id="cars"
+              class="bg-[#fff] rounded text-[#696969]"
+              name="cars"
+              aria-placeholder="Default"
+            >
               <div class="options">
                 <option>Default</option>
                 <option value="popularity">Popularity</option>
@@ -39,25 +46,25 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>
 
 <style scoped>
-.select {
-  width: 300px;
-  height: 54px;
-  margin-bottom: 10px;
-  padding: 0px 8px;
-}
+  .select {
+    width: 300px;
+    height: 54px;
+    margin-bottom: 10px;
+    padding: 0px 8px;
+  }
 
-select {
-  width: 100%;
-  height: 100%;
-  padding: 0px 15px;
-  outline: none;
-  padding: 0px 12px;
-  border-radius: 2px;
-}
+  select {
+    width: 100%;
+    height: 100%;
+    padding: 0px 15px;
+    outline: none;
+    padding: 0px 12px;
+    border-radius: 2px;
+  }
 </style>

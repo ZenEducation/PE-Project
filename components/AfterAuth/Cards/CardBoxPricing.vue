@@ -1,39 +1,39 @@
 <script setup>
-import { mdiCheck, mdiChevronUp, mdiChevronDown } from "@mdi/js";
-import { ref, computed } from "vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import PillTag from "@/components/AfterAuth/Display/PillTag.vue";
-import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
-import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
-import CardBoxComponentBody from "@/components/AfterAuth/Cards/CardBoxComponentBody.vue";
-import CardBoxComponentFooter from "@/components/AfterAuth/Cards/CardBoxComponentFooter.vue";
+  import { mdiCheck, mdiChevronUp, mdiChevronDown } from '@mdi/js'
+  import { ref, computed } from 'vue'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import PillTag from '@/components/AfterAuth/Display/PillTag.vue'
+  import BaseLevel from '@/components/AfterAuth/Buttons/BaseLevel.vue'
+  import BaseIcon from '@/components/AfterAuth/Display/BaseIcon.vue'
+  import CardBoxComponentBody from '@/components/AfterAuth/Cards/CardBoxComponentBody.vue'
+  import CardBoxComponentFooter from '@/components/AfterAuth/Cards/CardBoxComponentFooter.vue'
 
-const props = defineProps({
-  item: {
-    type: Object,
-    required: true,
-    validator: (value) => value.title && value.subTitle,
-  },
-  price: {
-    type: [String, Number],
-    required: true,
-  },
-  period: {
-    type: String,
-    required: true,
-  },
-  isMain: Boolean,
-});
+  const props = defineProps({
+    item: {
+      type: Object,
+      required: true,
+      validator: (value) => value.title && value.subTitle,
+    },
+    price: {
+      type: [String, Number],
+      required: true,
+    },
+    period: {
+      type: String,
+      required: true,
+    },
+    isMain: Boolean,
+  })
 
-const isCollapsed = ref(true);
+  const isCollapsed = ref(true)
 
-const isCollapsible = computed(() => !props.isMain);
+  const isCollapsible = computed(() => !props.isMain)
 
-const isCollapsedComputed = computed(
-  () => isCollapsible.value && isCollapsed.value
-);
+  const isCollapsedComputed = computed(
+    () => isCollapsible.value && isCollapsed.value
+  )
 </script>
 
 <template>

@@ -1,28 +1,37 @@
 <template>
-    <div class="mt-8 h-screen max-w-lg flex flex-col justify-center mx-auto">
+    <div class="mt-8 flex flex-col justify-center mx-4 w-full">
 
         <!-- standars -->
         <div class="mb-3">
-
+            <p class="text-[#ddd] mt-4 text-left">
+                <span>Standard</span>
+            </p>
             <multiselect class="w-full" v-model="selectedStandard" :options="standards.map(i => i.label)">
             </multiselect>
 
         </div>
         <!-- preferece -->
         <div class="mb-3">
-
+            <p class="text-[#ddd] mt-4 text-left">
+                <span>Tutor preferece</span>
+            </p>
             <multiselect class="w-full" v-model="selectedPrefernce" :options="prefernces.map(i => i.label)">
             </multiselect>
         </div>
+
         <!-- budget -->
         <div class="mb-3">
-
+            <p class="text-[#ddd] mt-4 text-left">
+                <span>Budget</span>
+            </p>
             <multiselect class="w-full" v-model="selectedBudget" :options="budgets.map(i => i.label)">
             </multiselect>
         </div>
         <!-- learning outcome sought -->
         <div class="mb-3">
-
+            <p class="text-[#ddd] mt-4 text-left">
+                <span>Learning outcome sought</span>
+            </p>
             <multiselect class="w-full" v-model="selectedLearningOutcome" :options="learningOutcomes.map(i => i.label)">
             </multiselect>
         </div>
@@ -32,10 +41,10 @@
         <button @click="showDatePicker = !showDatePicker">Date</button>
         <div v-show="showDatePicker">
             <date-picker v-model="date" mode="dateTime" :timezone="timezone" :is-dark="false"
-            :disabled-dates='{ weekdays: [1, 7] }'>
+                :disabled-dates='{ weekdays: [1, 7] }'>
             </date-picker>
         </div>
-        
+
 
         <!-- free time slots -->
         <!-- date comp -->

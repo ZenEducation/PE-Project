@@ -54,43 +54,42 @@
   </div>
 </template>
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>
 
+<style scoped>
+  .sub-title {
+    display: block;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #20ad96;
+    margin-bottom: 20px;
+  }
 
- <style scoped>
-.sub-title {
-  display: block;
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 500;
-  color: #20ad96;
-  margin-bottom: 20px;
-}
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /* color: #3F3A64; */
+    max-width: 470px;
+    color: white;
+  }
 
-.title {
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  /* color: #3F3A64; */
-  max-width: 470px;
-  color: white;
-}
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.67;
+    color: #8c89a2;
+    margin-top: 20px;
+  }
 
-p {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.67;
-  color: #8c89a2;
-  margin-top: 20px;
-}
-
-.background {
-  background-color: rgb(50, 48, 67);
-  background-image: url(/images/bg/map-dots-top-right-transparent.png);
-}
+  .background {
+    background-color: rgb(50, 48, 67);
+    background-image: url(/images/bg/map-dots-top-right-transparent.png);
+  }
 </style>

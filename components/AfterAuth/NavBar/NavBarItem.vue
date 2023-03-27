@@ -1,89 +1,89 @@
 <script setup>
-import { mdiChevronUp, mdiChevronDown } from "@mdi/js";
-import { RouterLink } from "vue-router";
-import { computed, ref, onMounted, onBeforeUnmount } from "vue";
-import { useStyleStore } from "@/stores/style.js";
-import { useMainStore } from "@/stores/main.js";
-import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
-import UserAvatarCurrentUser from "@/components/AfterAuth/Avatars/UserAvatarCurrentUser.vue";
-import NavBarMenuList from "@/components/AfterAuth/NavBar/NavBarMenuList.vue";
-import BaseDivider from "~~/components/NavBar/BaseDivider.vue";
+  import { mdiChevronUp, mdiChevronDown } from '@mdi/js'
+  import { RouterLink } from 'vue-router'
+  import { computed, ref, onMounted, onBeforeUnmount } from 'vue'
+  import { useStyleStore } from '@/stores/style.js'
+  import { useMainStore } from '@/stores/main.js'
+  import BaseIcon from '@/components/AfterAuth/Display/BaseIcon.vue'
+  import UserAvatarCurrentUser from '@/components/AfterAuth/Avatars/UserAvatarCurrentUser.vue'
+  import NavBarMenuList from '@/components/AfterAuth/NavBar/NavBarMenuList.vue'
+  import BaseDivider from '~~/components/NavBar/BaseDivider.vue'
 
-const props = defineProps({
-  item: {
-    type: Object,
-    required: true,
-  },
-});
+  const props = defineProps({
+    item: {
+      type: Object,
+      required: true,
+    },
+  })
 
-const emit = defineEmits(["menu-click"]);
+  const emit = defineEmits(['menu-click'])
 
-const is = computed(() => {
-  if (props.item.href) {
-    return "a";
+  const is = computed(() => {
+    if (props.item.href) {
+      return 'a'
+    }
+
+    if (props.item.to) {
+      return RouterLink
+    }
+
+    return 'div'
+  })
+
+  const styleStore = useStyleStore()
+
+  const componentClass = computed(() => {
+    const base = [
+      isDropdownActive.value
+        ? `${styleStore.navBarItemLabelActiveColorStyle} dark:text-slate-400`
+        : `${styleStore.navBarItemLabelStyle} dark:text-white dark:hover:text-slate-400 ${styleStore.navBarItemLabelHoverStyle}`,
+      props.item.menu ? 'lg:py-2 lg:px-3' : 'py-2 px-3',
+    ]
+
+    if (props.item.isDesktopNoLabel) {
+      base.push('lg:w-16', 'lg:justify-center')
+    }
+
+    return base
+  })
+
+  const itemLabel = computed(() =>
+    props.item.isCurrentUser ? useMainStore().userName : props.item.label
+  )
+
+  const isDropdownActive = ref(false)
+
+  const menuClick = (event) => {
+    emit('menu-click', event, props.item)
+
+    if (props.item.menu) {
+      isDropdownActive.value = !isDropdownActive.value
+    }
   }
 
-  if (props.item.to) {
-    return RouterLink;
+  const menuClickDropdown = (event, item) => {
+    emit('menu-click', event, item)
   }
 
-  return "div";
-});
+  const root = ref(null)
 
-const styleStore = useStyleStore();
-
-const componentClass = computed(() => {
-  const base = [
-    isDropdownActive.value
-      ? `${styleStore.navBarItemLabelActiveColorStyle} dark:text-slate-400`
-      : `${styleStore.navBarItemLabelStyle} dark:text-white dark:hover:text-slate-400 ${styleStore.navBarItemLabelHoverStyle}`,
-    props.item.menu ? "lg:py-2 lg:px-3" : "py-2 px-3",
-  ];
-
-  if (props.item.isDesktopNoLabel) {
-    base.push("lg:w-16", "lg:justify-center");
+  const forceClose = (event) => {
+    if (root.value && !root.value.contains(event.target)) {
+      isDropdownActive.value = false
+    }
   }
 
-  return base;
-});
+  onMounted(() => {
+    if (props.item.menu) {
+      window.addEventListener('click', forceClose)
+    }
+  })
 
-const itemLabel = computed(() =>
-  props.item.isCurrentUser ? useMainStore().userName : props.item.label
-);
-
-const isDropdownActive = ref(false);
-
-const menuClick = (event) => {
-  emit("menu-click", event, props.item);
-
-  if (props.item.menu) {
-    isDropdownActive.value = !isDropdownActive.value;
-  }
-};
-
-const menuClickDropdown = (event, item) => {
-  emit("menu-click", event, item);
-};
-
-const root = ref(null);
-
-const forceClose = (event) => {
-  if (root.value && !root.value.contains(event.target)) {
-    isDropdownActive.value = false;
-  }
-};
-
-onMounted(() => {
-  if (props.item.menu) {
-    window.addEventListener("click", forceClose);
-  }
-});
-
-onBeforeUnmount(() => {
-  if (props.item.menu) {
-    window.removeEventListener("click", forceClose);
-  }
-});
+  onBeforeUnmount(() => {
+    if (props.item.menu) {
+      window.removeEventListener('click', forceClose)
+    }
+  })
 </script>
 
 <template>

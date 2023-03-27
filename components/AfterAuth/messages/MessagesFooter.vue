@@ -45,7 +45,7 @@
 </template>
 
 <script>
-export default {
-  name: "MessagesFooter",
-};
+  export default {
+    name: 'MessagesFooter',
+  }
 </script>

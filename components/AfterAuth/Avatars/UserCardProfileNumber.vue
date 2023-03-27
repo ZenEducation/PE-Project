@@ -1,16 +1,16 @@
 <script setup>
-import NumberDynamic from "@/components/AfterAuth/Display/NumberDynamic.vue";
+  import NumberDynamic from '@/components/AfterAuth/Display/NumberDynamic.vue'
 
-defineProps({
-  number: {
-    type: Number,
-    required: true,
-  },
-  label: {
-    type: String,
-    required: true,
-  },
-});
+  defineProps({
+    number: {
+      type: Number,
+      required: true,
+    },
+    label: {
+      type: String,
+      required: true,
+    },
+  })
 </script>
 
 <template>

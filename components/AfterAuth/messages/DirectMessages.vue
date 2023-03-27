@@ -195,8 +195,8 @@
 </template>
 
 <script>
-export default {
-  name: "DirectMessages",
-  props: ["msgSidebarOpen"],
-};
+  export default {
+    name: 'DirectMessages',
+    props: ['msgSidebarOpen'],
+  }
 </script>

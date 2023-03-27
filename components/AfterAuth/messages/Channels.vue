@@ -59,8 +59,8 @@
 </template>
 
 <script>
-export default {
-  name: "Channels",
-  props: ["msgSidebarOpen"],
-};
+  export default {
+    name: 'Channels',
+    props: ['msgSidebarOpen'],
+  }
 </script>

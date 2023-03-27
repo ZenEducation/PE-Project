@@ -816,11 +816,11 @@
 </template>
 
 <script>
-import { ref } from "vue";
+  import { ref } from 'vue'
 
-export default {
-  name: "TasksList",
-  components: {},
-  setup() {},
-};
+  export default {
+    name: 'TasksList',
+    components: {},
+    setup() {},
+  }
 </script>

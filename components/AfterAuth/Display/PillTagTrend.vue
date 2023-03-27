@@ -1,46 +1,46 @@
 <script setup>
-import { computed } from "vue";
-import { mdiChevronUp, mdiChevronDown, mdiAlertCircleOutline } from "@mdi/js";
-import PillTag from "@/components/AfterAuth/Display/PillTag.vue";
+  import { computed } from 'vue'
+  import { mdiChevronUp, mdiChevronDown, mdiAlertCircleOutline } from '@mdi/js'
+  import PillTag from '@/components/AfterAuth/Display/PillTag.vue'
 
-const props = defineProps({
-  trend: {
-    type: String,
-    required: true,
-  },
-  trendType: {
-    type: String,
-    default: null,
-  },
-  small: Boolean,
-});
+  const props = defineProps({
+    trend: {
+      type: String,
+      required: true,
+    },
+    trendType: {
+      type: String,
+      default: null,
+    },
+    small: Boolean,
+  })
 
-const trendStyle = computed(() => {
-  if (props.trendType === "up") {
+  const trendStyle = computed(() => {
+    if (props.trendType === 'up') {
+      return {
+        icon: mdiChevronUp,
+        style: 'success',
+      }
+    }
+
+    if (props.trendType === 'down') {
+      return {
+        icon: mdiChevronDown,
+        style: 'danger',
+      }
+    }
+
+    if (props.trendType === 'alert') {
+      return {
+        icon: mdiAlertCircleOutline,
+        style: 'warning',
+      }
+    }
+
     return {
-      icon: mdiChevronUp,
-      style: "success",
-    };
-  }
-
-  if (props.trendType === "down") {
-    return {
-      icon: mdiChevronDown,
-      style: "danger",
-    };
-  }
-
-  if (props.trendType === "alert") {
-    return {
-      icon: mdiAlertCircleOutline,
-      style: "warning",
-    };
-  }
-
-  return {
-    style: "info",
-  };
-});
+      style: 'info',
+    }
+  })
 </script>
 
 <template>

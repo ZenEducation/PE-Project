@@ -1,15 +1,15 @@
 <script setup>
-import { useStyleStore } from "@/stores/style";
+  import { useStyleStore } from '@/stores/style'
 
-defineProps({
-  display: {
-    type: String,
-    default: "flex",
-  },
-  useMargin: Boolean,
-});
+  defineProps({
+    display: {
+      type: String,
+      default: 'flex',
+    },
+    useMargin: Boolean,
+  })
 
-const styleStore = useStyleStore();
+  const styleStore = useStyleStore()
 </script>
 
 <template>

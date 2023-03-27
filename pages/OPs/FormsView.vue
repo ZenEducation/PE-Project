@@ -1,62 +1,62 @@
 <script setup>
-import { reactive, ref } from "vue";
-import {
-  mdiBallotOutline,
-  mdiAccount,
-  mdiMail,
-  mdiCreditCardOutline,
-} from "@mdi/js";
-import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import FormCheckRadioGroup from "@/components/AfterAuth/Forms/FormCheckRadioGroup.vue";
-import FormFilePicker from "@/components/AfterAuth/Forms/FormFilePicker.vue";
-import FormField from "@/components/AfterAuth/Forms/FormField.vue";
-import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
-import BaseDivider from "@/components/AfterAuth/NavBar/BaseDivider.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
-import SectionTitle from "@/components/AfterAuth/Sections/SectionTitle.vue";
+  import { reactive, ref } from 'vue'
+  import {
+    mdiBallotOutline,
+    mdiAccount,
+    mdiMail,
+    mdiCreditCardOutline,
+  } from '@mdi/js'
+  import SectionMain from '@/components/AfterAuth/Sections/SectionMain.vue'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import FormCheckRadioGroup from '@/components/AfterAuth/Forms/FormCheckRadioGroup.vue'
+  import FormFilePicker from '@/components/AfterAuth/Forms/FormFilePicker.vue'
+  import FormField from '@/components/AfterAuth/Forms/FormField.vue'
+  import FormControl from '@/components/AfterAuth/Forms/FormControl.vue'
+  import BaseDivider from '@/components/AfterAuth/NavBar/BaseDivider.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
+  import SectionTitle from '@/components/AfterAuth/Sections/SectionTitle.vue'
 
-import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
-import NotificationBarInCard from "@/components/AfterAuth/NotificationBars/NotificationBarInCard.vue";
+  import SectionTitleLineWithButton from '@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue'
+  import NotificationBarInCard from '@/components/AfterAuth/NotificationBars/NotificationBarInCard.vue'
 
-const selectOptions = [
-  { id: 1, label: "Business development" },
-  { id: 2, label: "Marketing" },
-  { id: 3, label: "Sales" },
-];
+  const selectOptions = [
+    { id: 1, label: 'Business development' },
+    { id: 2, label: 'Marketing' },
+    { id: 3, label: 'Sales' },
+  ]
 
-const form = reactive({
-  name: "John Doe",
-  email: "john.doe@example.com",
-  phone: "",
-  department: selectOptions[0],
-  subject: "",
-  question: "",
-});
+  const form = reactive({
+    name: 'John Doe',
+    email: 'john.doe@example.com',
+    phone: '',
+    department: selectOptions[0],
+    subject: '',
+    question: '',
+  })
 
-const customElementsForm = reactive({
-  checkbox: ["lorem"],
-  radio: "one",
-  switch: ["one"],
-  file: null,
-});
+  const customElementsForm = reactive({
+    checkbox: ['lorem'],
+    radio: 'one',
+    switch: ['one'],
+    file: null,
+  })
 
-const submit = () => {
-  //
-};
+  const submit = () => {
+    //
+  }
 
-const formStatusWithHeader = ref(true);
+  const formStatusWithHeader = ref(true)
 
-const formStatusCurrent = ref(0);
+  const formStatusCurrent = ref(0)
 
-const formStatusOptions = ["info", "success", "danger", "warning"];
+  const formStatusOptions = ['info', 'success', 'danger', 'warning']
 
-const formStatusSubmit = () => {
-  formStatusCurrent.value = formStatusOptions[formStatusCurrent.value + 1]
-    ? formStatusCurrent.value + 1
-    : 0;
-};
+  const formStatusSubmit = () => {
+    formStatusCurrent.value = formStatusOptions[formStatusCurrent.value + 1]
+      ? formStatusCurrent.value + 1
+      : 0
+  }
 </script>
 
 <template>

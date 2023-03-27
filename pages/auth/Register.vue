@@ -1,80 +1,79 @@
 <script setup>
-import { reactive } from "vue";
-import { RouterLink } from "vue-router";
-import { useRouter } from "vue-router";
-import { useAuthStore } from "@/stores/authStore";
-import { mdiAccount, mdiEmail } from "@mdi/js";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import FormField from "@/components/AfterAuth/Forms/FormField.vue";
-import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
-import { useMainStore } from "@/stores/main.js";
-import PremSectionFormScreen from "@/components/AfterAuth/Sections/SectionFormScreen.vue";
+  import { reactive } from 'vue'
+  import { RouterLink, useRouter } from 'vue-router'
 
-const router = useRouter();
-const AuthStore = useAuthStore();
+  import { mdiAccount, mdiEmail } from '@mdi/js'
+  import { useAuthStore } from '@/stores/authStore'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import FormField from '@/components/AfterAuth/Forms/FormField.vue'
+  import FormControl from '@/components/AfterAuth/Forms/FormControl.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import BaseLevel from '@/components/AfterAuth/Buttons/BaseLevel.vue'
+  import { useMainStore } from '@/stores/main.js'
+  import PremSectionFormScreen from '@/components/AfterAuth/Sections/SectionFormScreen.vue'
 
-const userSubmitted = ref(false);
+  const router = useRouter()
+  const AuthStore = useAuthStore()
 
-const form = reactive({
-  userName: "",
-  signUpEmail: "",
-  password: "",
-  otp_code: "",
-  // Sample User is as follows:
-  // AakashShendage
-  // paathshala.connect@gmail.com
-  // AakashShendage@99
-});
+  const userSubmitted = ref(false)
 
-// const mainStore = useMainStore();
+  const form = reactive({
+    userName: '',
+    signUpEmail: '',
+    password: '',
+    otp_code: '',
+    // Sample User is as follows:
+    // AakashShendage
+    // paathshala.connect@gmail.com
+    // AakashShendage@99
+  })
 
-const handleSubmit = async () => {
-  // call the login method from the Authstore
-  if (!form.otp_code) {
-    const user_to_register_in_amplify = await AuthStore.register({
-      email: form.signUpEmail,
-      password: form.password,
-    });
-    console.log("Sent user", user_to_register_in_amplify);
-    if (user_to_register_in_amplify) {
-      userSubmitted.value = true;
-      return;
-      // use return statements to change the UI
+  // const mainStore = useMainStore();
+
+  const handleSubmit = async () => {
+    // call the login method from the Authstore
+    if (!form.otp_code) {
+      const user_to_register_in_amplify = await AuthStore.register({
+        email: form.signUpEmail,
+        password: form.password,
+      })
+      console.log('Sent user', user_to_register_in_amplify)
+      if (user_to_register_in_amplify) {
+        userSubmitted.value = true
+        return
+        // use return statements to change the UI
+      }
+    }
+
+    if (form.otp_code) {
+      // form.signUpEmail = user_to_register_in_amplify.username;
+      // console.log("Username:", user_to_register_in_amplify.username);
+
+      console.log(
+        'form.signUpEmail for comfirming registration:',
+        form.signUpEmail,
+        'form.otp_code:',
+        form.otp_code
+      )
+      const registrationConfirmed = AuthStore.confirmRegistration({
+        email: form.signUpEmail,
+        code: form.otp_code,
+      })
+
+      if (registrationConfirmed) {
+        const currentUser = AuthStore.loadAmplifyUser()
+        console.log('CurrentUser', currentUser)
+        console.log('Confirmed the OTP successfully')
+        router.push('/dashboard')
+      } else {
+        console.log('OTP Confirmation was unsuccessfull')
+      }
     }
   }
 
-  if (form.otp_code) {
-    // form.signUpEmail = user_to_register_in_amplify.username;
-    //console.log("Username:", user_to_register_in_amplify.username);
-
-    console.log(
-      "form.signUpEmail for comfirming registration:",
-      form.signUpEmail,
-      "form.otp_code:",
-      form.otp_code
-    );
-    const registrationConfirmed = AuthStore.confirmRegistration({
-      email: form.signUpEmail,
-      code: form.otp_code,
-    });
-
-    if (registrationConfirmed) {
-      const currentUser = AuthStore.loadAmplifyUser();
-      console.log("CurrentUser", currentUser);
-      console.log("Confirmed the OTP successfully");
-      router.push("/dashboard");
-    } else {
-      console.log("OTP Confirmation was unsuccessfull");
-    }
+  const reattemptSignup = () => {
+    userSubmitted.value = false
   }
-};
-
-const reattemptSignup = () => {
-  userSubmitted.value = false;
-  return;
-};
 </script>
 
 <template>
