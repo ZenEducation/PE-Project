@@ -18,7 +18,7 @@
           class="w-full transition-transform duration-1500 group-hover:scale-110"
           alt=""
         /> -->
-        <iframe class="w-full transition-transform duration-1500 group-hover:scale-110"  height="400" :src="'https://www.youtube.com/embed/JWoWfzHowjI'" frameborder="0"
+        <iframe class="transition-transform duration-1500 group-hover:scale-110" width="970"  height="570" :src="'https://www.youtube.com/embed/JWoWfzHowjI'" frameborder="0"
           allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
 

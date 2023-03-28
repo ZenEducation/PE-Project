@@ -7,7 +7,7 @@
         <div class="h-[229px] rounded-md overflow-hidden">
           <div class="thumbnail ">
             <a href="blog/12-essential-bodyweight-exercises" class="image"><img class="rounded-md object-contain group-hover:scale-[1.15] transition-all ease-in-out duration-500"
-                :src="course.image" /></a>
+                :src="course.image" width="370" height="277.5" /></a>
           </div>
         </div>
 
@@ -16,7 +16,7 @@
             {{ course.bio }}</span>
           <h3
             class="text-[24px] hover: font-extrabold leading-[1.5] mb-1 text-[#3f3a64] dark:text-white hover:text-[#20ad96] dark:hover:text-[#20ad96] hover:cursor-pointer">
-            {{ course.title }}
+            <NuxtLink :to="`/blog/blogclassic#${course.id}`">{{ course.title }}</NuxtLink>
           </h3>
 
           <div class="flex justify-start items-center mt-5 text-[14px] font-light">
@@ -52,7 +52,7 @@ export default {
       courses: [
       {
           id: 1,
-          image: "/images/blog/blog_images/blog-1.jpg",
+          image: "/images/blog/blog-images-grid/blog-1.jpg",
           bio: '',
           date: 'June 21, 2022',
           title: 'Maximizing Exam Success with Personalized Learning: A Guide',
@@ -61,7 +61,7 @@ export default {
 
         {
           id: 2,
-          image: "/images/blog/blog_images/blog-2.jpg",
+          image: "/images/blog/blog-images-grid/blog-2.jpg",
           bio: '',
           date: 'August 7, 2022',
           title: 'The Top Three Types of Exam Mistakes Students Make and How to Avoid Them',
@@ -70,7 +70,7 @@ export default {
 
         {
           id: 3,
-          image: "/images/blog/blog_images/blog-3.jpg",
+          image: "/images/blog/blog-images-grid/blog-3.jpg",
           bio: '',
           date: 'September 15, 2022',
           title: 'Ace Your Exams: How to Memorize Different Formulae Like a Pro',
@@ -79,7 +79,7 @@ export default {
 
         {
           id: 4,
-          image: "/images/blog/blog_images/blog-4.jpg",
+          image: "/images/blog/blog-images-grid/blog-4.jpg",
           bio: '',
           date: 'October 24, 2022',
           title: 'Unlocking Success: The Power of Personalized Attention in Competitive Exams',
@@ -88,7 +88,7 @@ export default {
 
         {
           id: 5,
-          image: "/images/blog/blog_images/blog-5.jpg",
+          image: "/images/blog/blog-images-grid/blog-5.jpg",
           bio: '',
           date: 'December 1, 2022',
           title: 'Maximize Your Study Time with the Pomodoro Timer Technique: A Step-by-Step Guide',
@@ -97,7 +97,7 @@ export default {
 
         {
           id: 6,
-          image: "/images/blog/blog_images/blog-6.jpg",
+          image: "/images/blog/blog-images-grid/blog-6.jpg",
           bio: '',
           date: 'January 9, 2023',
           title: 'Learn Smarter, Not Harder: How the Feynman Technique Can Revolutionize Your Study Habits',
@@ -105,7 +105,7 @@ export default {
         },
         {
           id: 7,
-          image: "/images/blog/blog_images/blog-7.jpg",
+          image: "/images/blog/blog-images-grid/blog-7.jpg",
           bio: '',
           date: 'February 14, 2023',
           title: 'From Perfectionists to Crisis Makers: A Comprehensive Guide to Procrastination Types While Studying',
@@ -113,7 +113,7 @@ export default {
         },
         {
           id: 8,
-          image: "/images/blog/blog_images/blog-8.jpg",
+          image: "/images/blog/blog-images-grid/blog-8.jpg",
           bio: '',
           date: 'March 1, 2023',
           title: "Cultivating a Winner's Mindset: A Guide to Academic Success",
@@ -121,7 +121,7 @@ export default {
         },
         {
           id: 9,
-          image: "/images/blog/blog_images/blog-9.jpg",
+          image: "/images/blog/blog-images-grid/blog-9.jpg",
           bio: '',
           date: 'March 8, 2023',
           title: 'Mastering the Art of Time Management: How to Beat Procrastination and Stay on Task',
@@ -129,7 +129,7 @@ export default {
         },
         {
           id: 10,
-          image: "/images/blog/blog_images/blog-10.jpg",
+          image: "/images/blog/blog-images-grid/blog-10.jpg",
           bio: '',
           date: 'March 15, 2023',
           title: 'One-on-One in the Online World: How Personalized Attention from Tutors Can Benefit Remote Learners',
@@ -137,7 +137,7 @@ export default {
         },
         {
           id: 11,
-          image: "/images/blog/blog_images/blog-11.jpg",
+          image: "/images/blog/blog-images-grid/blog-11.jpg",
           bio: '',
           date: 'March 22, 2023',
           title: 'Beyond Tutoring: How Educare Mentors Provide Holistic Support to Students',
@@ -145,7 +145,7 @@ export default {
         },
         {
           id: 12,
-          image: "/images/blog/blog_images/blog-12.jpg",
+          image: "/images/blog/blog-images-grid/blog-12.jpg",
           bio: 'health coaching',
           date: 'March 29, 2023',
           title: 'Beyond the Classroom: How Remote Learning is Revolutionizing Educations',

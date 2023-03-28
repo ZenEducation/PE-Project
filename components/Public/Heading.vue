@@ -185,7 +185,7 @@
             <li v-if="darkMode" class="inline-block px-2.5 2xl:px-[17px] py-[29px] group relative" role="none">
               <NuxtLink rel="noopener noreferrer"
                 class="darkMain font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white"
-                to="#!" id="nav-2" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">Pages<i
+                to="#!" id="nav-2" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">About<i
                   class="fa fa-chevron-down ml-2 text-xs"></i></NuxtLink>
               <ul
                 class="absolute z-20 top-full left-0 w-60 mt-5 py-4 transition-all duration-400 bg-white border-b-4 border-b-primary shadow-2md shadow-black/5 visible opacity-0 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:mt-0 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:mt-0 group-focus-within:pointer-events-auto dark:bg-[#161821] text-secondary dark:text-white"
@@ -193,19 +193,25 @@
                 <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]" role="menuitem" to="/about/aboutme">About me</NuxtLink>
                 </li>
+                <li role="none" class="relative">
+                  <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]" role="menuitem" to="/about/testimonials">Testimonials</NuxtLink>
+                </li>
                 
               </ul>
             </li>
             <li v-else class="inline-block px-2.5 2xl:px-[17px] py-[29px] group relative" role="none">
               <NuxtLink rel="noopener noreferrer"
                 class="main font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white"
-                to="#!" id="nav-2" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">Pages<i
+                to="#!" id="nav-2" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">About<i
                   class="fa fa-chevron-down ml-2 text-xs"></i></NuxtLink>
               <ul
                 class="absolute z-20 top-full left-0 w-60 mt-5 py-4 transition-all duration-400 bg-white border-b-4 border-b-primary shadow-2md shadow-black/5 visible opacity-0 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:mt-0 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:mt-0 group-focus-within:pointer-events-auto dark:bg-[#161821] text-secondary dark:text-white"
                 role="menu">
                 <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]" role="menuitem" to="/about/aboutme">About me</NuxtLink>
+                </li>
+                <li role="none" class="relative">
+                  <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]" role="menuitem" to="/about/testimonials">Testimonials</NuxtLink>
                 </li>
                 
               </ul>

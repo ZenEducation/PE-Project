@@ -18,7 +18,7 @@
               mb-[25px]
             "
           >
-            Get rid of <span class="font-[400]">Old School Assumptions</span>
+          The New Way of <span class="font-[400]">Learning in The 21st Centaury</span>
           </h2>
           <div class="flex flex-col md:flex-row w-12/12">
             <p
@@ -29,14 +29,12 @@
                 lg:mr-10
               "
             >
-              I assist learners in finding new effective belief and get rid of
-              the outdated, discouraged and irrelevant life attitudes. You're
-              upgrading to be a better you.
+            We assist students from all walks of life with our learning methodologies and kickstart the process of achieving your goals and upgrading to be a better you.
             </p>
 
             <div class="h-full w-full mt-10 md:mt-0 md:ml-4">
               <h2 class="text-[24px] text-[#20ad96] font-[800] leading-[1.3]">
-                <span class="text-[48px] mr-[5px]">19</span>years
+                <span class="text-[48px] mr-[5px]">15</span>years
               </h2>
 
               <p
@@ -48,7 +46,7 @@
                   tracking-[2px]
                 "
               >
-                work experience
+              tutoring experience
               </p>
 
               <button
