@@ -1,29 +1,29 @@
 <script setup>
-import { computed } from "vue";
-import { RouterLink } from "vue-router";
-import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
+  import { computed } from 'vue'
+  import { RouterLink } from 'vue-router'
+  import BaseIcon from '@/components/AfterAuth/Display/BaseIcon.vue'
 
-const props = defineProps({
-  to: {
-    type: String,
-    default: null,
-  },
-  href: {
-    type: String,
-    default: null,
-  },
-  icon: {
-    type: String,
-    default: null,
-  },
-  label: {
-    type: String,
-    default: null,
-  },
-  small: Boolean,
-});
+  const props = defineProps({
+    to: {
+      type: String,
+      default: null,
+    },
+    href: {
+      type: String,
+      default: null,
+    },
+    icon: {
+      type: String,
+      default: null,
+    },
+    label: {
+      type: String,
+      default: null,
+    },
+    small: Boolean,
+  })
 
-const is = computed(() => (props.to ? RouterLink : "a"));
+  const is = computed(() => (props.to ? RouterLink : 'a'))
 </script>
 
 <template>

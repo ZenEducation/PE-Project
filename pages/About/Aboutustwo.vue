@@ -60,8 +60,8 @@
       <headers
         class="py-[100px] w-8/12 flex flex-col items-center justify-center text-center"
       >
-        <template v-slot:headerone>Learn at your pace</template>
-        <template v-slot:headertwo>
+        <template #headerone>Learn at your pace</template>
+        <template #headertwo>
           Enjoyable
           <span class="text-[#20AD96] font-[400]">Benefits</span> For Our
           Learners.
@@ -73,39 +73,37 @@
       class="blue px-40 pb-20 w-12/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
     >
       <abouttwocard>
-        <template v-slot:cardIcon>
+        <template #cardIcon>
           <img src="/images/learner/learner-01.png" />
         </template>
-        <template v-slot:cardHead
-          >Customize Freely to Your preferences</template
-        >
-        <template v-slot:cardP
+        <template #cardHead>Customize Freely to Your preferences</template>
+        <template #cardP
           >Learners are given the right to arrange and customize their study
           schedule and timetable based on preferences.
         </template>
       </abouttwocard>
 
       <abouttwocard>
-        <template v-slot:cardIcon>
+        <template #cardIcon>
           <img src="/images/learner/learner-02.png" />
         </template>
-        <template v-slot:cardHead
+        <template #cardHead
           >Cloud Storage or Download Lessons to Devices</template
         >
-        <template v-slot:cardP
+        <template #cardP
           >Develop skills for career of various majors including computer
           science &amp; language competence.
         </template>
       </abouttwocard>
 
       <abouttwocard>
-        <template v-slot:cardIcon>
+        <template #cardIcon>
           <img src="/images/learner/learner-03.png" />
         </template>
-        <template v-slot:cardHead
+        <template #cardHead
           >Multimedia Study Materials & Info Channels</template
         >
-        <template v-slot:cardP
+        <template #cardP
           >We provide study materials with various formats: video, audio,
           slides, doc, prints, books and applications.
         </template>
@@ -206,12 +204,12 @@
         </div>
 
         <companionship class="xl:ml-24 mt-10 xl:mt-0">
-          <template v-slot:headerone>together expand and grow</template>
-          <template v-slot:headertwo>
+          <template #headerone>together expand and grow</template>
+          <template #headertwo>
             Enjoy
             <span class="text-[#20AD96] font-[400]">Our Companionship</span>
           </template>
-          <template v-slot:content>
+          <template #content>
             As learners, people can enjoy great companionship from MaxCoach
             mentors and educators. We can help you develop and grow at your
             best.
@@ -229,65 +227,65 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>
-
 
 <script>
-export default {
-  data () {
-    return {
-learningrates: [{
-  number: 1.926,
-  title: 'Finished sessions'
-},
-{
-  number: 3.092,
-  title: 'online enrollment'
-},
-{
-  number: 200,
-  title: 'Subjects taught'
-},{
-  number: 150,
-  title: 'Satisfaction rate'
-}
-]
-    }
+  export default {
+    data() {
+      return {
+        learningrates: [
+          {
+            number: 1.926,
+            title: 'Finished sessions',
+          },
+          {
+            number: 3.092,
+            title: 'online enrollment',
+          },
+          {
+            number: 200,
+            title: 'Subjects taught',
+          },
+          {
+            number: 150,
+            title: 'Satisfaction rate',
+          },
+        ],
+      }
+    },
   }
-}
 </script>
 
-
 <style scoped>
-.fronttext {
-  background-size: cover;
-  background-position: center;
-  font-size: 34px;
-  font-weight: bold;
-  line-height: 48px;
-  color: #ffffff;
-  margin-bottom: 0;
-}
+  .fronttext {
+    background-size: cover;
+    background-position: center;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 48px;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
 
-.title {
-  margin-top: 14px;
-  color: white;
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 1.34;
-}
+  .title {
+    margin-top: 14px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.34;
+  }
 
-.rate {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  padding: 0 12px;
-}
+  .rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 12px;
+  }
 </style>

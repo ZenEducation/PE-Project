@@ -1,12 +1,12 @@
 <script setup>
-import { colorsBgLight } from "@/configs/colors.js";
+  import { colorsBgLight } from '@/configs/colors.js'
 
-defineProps({
-  color: {
-    type: String,
-    required: true,
-  },
-});
+  defineProps({
+    color: {
+      type: String,
+      required: true,
+    },
+  })
 </script>
 
 <template>

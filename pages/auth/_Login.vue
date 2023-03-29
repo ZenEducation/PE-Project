@@ -1,51 +1,50 @@
 <script setup>
-import { reactive } from "vue";
-import { useRouter } from "vue-router";
-import { mdiAccount, mdiAsterisk } from "@mdi/js";
-import SectionFullScreen from "@/components/AfterAuth/Sections/SectionFullScreen.vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import FormCheckRadio from "@/components/AfterAuth/Forms/FormCheckRadio.vue";
-import FormField from "@/components/AfterAuth/Forms/FormField.vue";
-import FormControl from "@/components/AfterAuth/Forms/FormControl.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
-import { useAuthStore } from "@/stores/authStore";
-import { useGraphqlAPIStore } from "@/stores/graphqlAPI";
+  import { reactive } from 'vue'
+  import { useRouter } from 'vue-router'
+  import { mdiAccount, mdiAsterisk } from '@mdi/js'
+  import SectionFullScreen from '@/components/AfterAuth/Sections/SectionFullScreen.vue'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import FormCheckRadio from '@/components/AfterAuth/Forms/FormCheckRadio.vue'
+  import FormField from '@/components/AfterAuth/Forms/FormField.vue'
+  import FormControl from '@/components/AfterAuth/Forms/FormControl.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
+  import { useAuthStore } from '@/stores/authStore'
+  import { useGraphqlAPIStore } from '@/stores/graphqlAPI'
 
-// const form = reactive({
-//   loginEmail: "",
-//   password: "",
-//   remember: true,
-// });
+  // const form = reactive({
+  //   loginEmail: "",
+  //   password: "",
+  //   remember: true,
+  // });
 
-const form = reactive({
-  loginEmail: "zenithathang@gmail.com",
-  password: "Zenithathang@gmail.com@99",
-  remember: true,
-});
+  const form = reactive({
+    loginEmail: 'zenithathang@gmail.com',
+    password: 'Zenithathang@gmail.com@99',
+    remember: true,
+  })
 
-const router = useRouter();
+  const router = useRouter()
 
-const AuthStore = useAuthStore();
+  const AuthStore = useAuthStore()
 
-const GraphqlAPIStore = useGraphqlAPIStore();
+  const GraphqlAPIStore = useGraphqlAPIStore()
 
-const handleSubmit = async () => {
-  // call the login method from the Authstore
-  const user_from_amplify = await AuthStore.login({
-    email: form.loginEmail,
-    password: form.password,
-  });
-  console.log(user_from_amplify);
+  const handleSubmit = async () => {
+    // call the login method from the Authstore
+    const user_from_amplify = await AuthStore.login({
+      email: form.loginEmail,
+      password: form.password,
+    })
+    console.log(user_from_amplify)
 
-  // const response = await GraphqlAPIStore.createSuperAdmin({ input: {} });
-  // console.log("response", response);
+    // const response = await GraphqlAPIStore.createSuperAdmin({ input: {} });
+    // console.log("response", response);
 
-  if (user_from_amplify) {
-    return;
-    // router.push("/dashboard");
+    if (user_from_amplify) {
+      // router.push("/dashboard");
+    }
   }
-};
 </script>
 
 <template>

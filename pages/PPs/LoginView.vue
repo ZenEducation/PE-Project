@@ -1,33 +1,33 @@
 <script setup>
-import { reactive, ref, computed } from "vue";
+  import { reactive, ref, computed } from 'vue'
 
-const form = reactive({
-  login: "johndoe",
-  pass: "secret",
-  remember: ["remember"],
-});
+  const form = reactive({
+    login: 'johndoe',
+    pass: 'secret',
+    remember: ['remember'],
+  })
 
-const hasTip = ref(false);
-
-setTimeout(() => {
-  hasTip.value = true;
-}, 750);
-
-const hasError = ref(false);
-
-const cardClassAddon = computed(() => (hasError.value ? "animate-shake" : ""));
-
-const submit = () => {
-  hasError.value = true;
-  hasTip.value = false;
+  const hasTip = ref(false)
 
   setTimeout(() => {
-    hasError.value = false;
-    passShowHideClicked.value = false;
-  }, 2000);
-};
+    hasTip.value = true
+  }, 750)
 
-const passShowHideClicked = ref(true);
+  const hasError = ref(false)
+
+  const cardClassAddon = computed(() => (hasError.value ? 'animate-shake' : ''))
+
+  const submit = () => {
+    hasError.value = true
+    hasTip.value = false
+
+    setTimeout(() => {
+      hasError.value = false
+      passShowHideClicked.value = false
+    }, 2000)
+  }
+
+  const passShowHideClicked = ref(true)
 </script>
 
 <template>

@@ -1,9 +1,9 @@
 <template>
   <div class="font-body dark:bg-[#161821] w-12/12">
-    <div class="container">
+    <div class="public-container">
       <div class="py-[100px]">
         <courseheader>
-          <template v-slot:title>Events</template>
+          <template #title>Events</template>
         </courseheader>
       </div>
       <div class="px-[80px]">
@@ -13,12 +13,10 @@
           </p>
 
           <div class="select relative">
-            <span
-              class="absolute top-0 bottom-0 right-0 w-[54px] flex justify-center items-center"
-            >
+            <span class="absolute top-0 bottom-0 right-0 w-[54px] flex justify-center items-center">
               <icon class="w-10 h-10 text-gray-400" name="uil:angle-down" />
             </span>
-            <select class="bg-[#fff] rounded text-[#696969]" id="cars" name="cars" aria-placeholder="Default">
+            <select id="cars" class="bg-[#fff] rounded text-[#696969]" name="cars" aria-placeholder="Default">
               <div class="options">
                 <option>Default</option>
                 <option value="popularity">Popularity</option>
@@ -40,8 +38,8 @@
 
 <script setup>
 definePageMeta({
-  layout: "frontend",
-});
+  layout: 'frontend',
+})
 </script>
 
 <style scoped>

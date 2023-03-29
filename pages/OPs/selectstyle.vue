@@ -1,41 +1,41 @@
 <script setup>
-import { useRouter } from "vue-router";
-import { useStyleStore } from "@/stores/style.js";
-import { darkModeKey, styleKey } from "@/configs/config";
+  import { useRouter } from 'vue-router'
+  import { useStyleStore } from '@/stores/style.js'
+  import { darkModeKey, styleKey } from '@/configs/config'
 
-import { gradientBgPurplePink } from "@/configs/colors.js";
-import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
+  import { gradientBgPurplePink } from '@/configs/colors.js'
+  import SectionMain from '@/components/AfterAuth/Sections/SectionMain.vue'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
 
-const styles = ["white", "basic"];
+  const styles = ['white', 'basic']
 
-const styleStore = useStyleStore();
+  const styleStore = useStyleStore()
 
-// styleStore.setDarkMode(false)
+  // styleStore.setDarkMode(false)
 
-const router = useRouter();
-const click = (slug) => {
-  styleStore.setDarkMode(false);
+  const router = useRouter()
+  const click = (slug) => {
+    styleStore.setDarkMode(false)
 
-  styleStore.setStyle(slug);
-  // styleStore.setStyle('white')
-  router.push("/dashboard");
-};
+    styleStore.setStyle(slug)
+    // styleStore.setStyle('white')
+    router.push('/dashboard')
+  }
 
-onMounted(() => {
-  // if (process.client)
-  // /* App style */
-  // styleStore.setStyle(localStorage[styleKey] ?? 'basic')
-  // /* Dark mode */
-  // if (
-  //   (!localStorage[darkModeKey] &&
-  //     window.matchMedia('(prefers-color-scheme: dark)').matches) ||
-  //   localStorage[darkModeKey] === '1'
-  // ) {
-  //   styleStore.setDarkMode()
-  // }
-  styleStore.setDarkMode(true);
-});
+  onMounted(() => {
+    // if (process.client)
+    // /* App style */
+    // styleStore.setStyle(localStorage[styleKey] ?? 'basic')
+    // /* Dark mode */
+    // if (
+    //   (!localStorage[darkModeKey] &&
+    //     window.matchMedia('(prefers-color-scheme: dark)').matches) ||
+    //   localStorage[darkModeKey] === '1'
+    // ) {
+    //   styleStore.setDarkMode()
+    // }
+    styleStore.setDarkMode(true)
+  })
 </script>
 
 <template>

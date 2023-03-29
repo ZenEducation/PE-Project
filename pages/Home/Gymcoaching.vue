@@ -49,39 +49,39 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>
 
- <style scoped>
-.sub-title {
-  display: inline-block;
-  line-height: 1.27;
-  border-radius: 5px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #201c3f;
-  background: #eab75f;
-  padding: 6px 15px 3px;
-  margin-bottom: 24px;
-}
+<style scoped>
+  .sub-title {
+    display: inline-block;
+    line-height: 1.27;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #201c3f;
+    background: #eab75f;
+    padding: 6px 15px 3px;
+    margin-bottom: 24px;
+  }
 
-.title {
-  font-size: 60px;
-  line-height: 1.27;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  .title {
+    font-size: 60px;
+    line-height: 1.27;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 
-  color: white;
-}
+    color: white;
+  }
 
-p {
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.67;
-  color: white;
-  margin-top: 20px;
-}
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+    color: white;
+    margin-top: 20px;
+  }
 </style>

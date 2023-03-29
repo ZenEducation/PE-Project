@@ -1,9 +1,9 @@
 <template>
   <div class="font-body dark:bg-[#161821] w-12/12 px-24">
-    <div class="container">
+    <div class="public-container">
       <div class="py-[100px]">
         <courseheader>
-          <template v-slot:title>Blog Classic</template>
+          <template #title>Blog Classic</template>
         </courseheader>
       </div>
 
@@ -21,6 +21,6 @@
 
 <script setup>
 definePageMeta({
-  layout: "frontend",
-});
+  layout: 'frontend',
+})
 </script>

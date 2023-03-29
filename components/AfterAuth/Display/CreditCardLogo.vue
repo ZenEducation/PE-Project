@@ -1,11 +1,11 @@
 <script setup>
-defineProps({
-  cardType: {
-    type: String,
-    required: true,
-    validator: (value) => ["mc", "visa"].indexOf(value) > -1,
-  },
-});
+  defineProps({
+    cardType: {
+      type: String,
+      required: true,
+      validator: (value) => ['mc', 'visa'].includes(value),
+    },
+  })
 </script>
 
 <template>

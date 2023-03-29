@@ -3,10 +3,10 @@
 </template>
 
 <script>
-import Whiteboard from "@/components/AfterAuth/Whiteboard/WhiteBoard.vue";
-export default {
-  components: {
-    whiteboard: Whiteboard,
-  },
-};
+  import Whiteboard from '@/components/AfterAuth/Whiteboard/WhiteBoard.vue'
+  export default {
+    components: {
+      whiteboard: Whiteboard,
+    },
+  }
 </script>

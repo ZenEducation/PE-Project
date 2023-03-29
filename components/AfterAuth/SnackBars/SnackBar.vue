@@ -1,12 +1,12 @@
 <script setup>
-import { useSnackBarStore } from "@/stores/snackBar";
-import SnackBarItem from "@/components/AfterAuth/SnackBars/SnackBarItem.vue";
+  import { useSnackBarStore } from '@/stores/snackBar'
+  import SnackBarItem from '@/components/AfterAuth/SnackBars/SnackBarItem.vue'
 
-const snackBarStore = useSnackBarStore();
+  const snackBarStore = useSnackBarStore()
 
-const cancelMessage = (timestamp) => {
-  snackBarStore.cancelMessage(timestamp);
-};
+  const cancelMessage = (timestamp) => {
+    snackBarStore.cancelMessage(timestamp)
+  }
 </script>
 
 <template>

@@ -1,24 +1,24 @@
 <script setup>
-import PremAsideMenuItem from "@/components/AfterAuth/Asidemenu/AsideMenuItem.vue";
+  import PremAsideMenuItem from '@/components/AfterAuth/Asidemenu/AsideMenuItem.vue'
 
-defineProps({
-  isDropdownList: Boolean,
-  isCompact: Boolean,
-  menu: {
-    type: Array,
-    default: () => [],
-  },
-  activeSecondaryMenuKey: {
-    type: String,
-    default: null,
-  },
-});
+  defineProps({
+    isDropdownList: Boolean,
+    isCompact: Boolean,
+    menu: {
+      type: Array,
+      default: () => [],
+    },
+    activeSecondaryMenuKey: {
+      type: String,
+      default: null,
+    },
+  })
 
-const emit = defineEmits(["menu-click"]);
+  const emit = defineEmits(['menu-click'])
 
-const menuClick = (event, item) => {
-  emit("menu-click", event, item);
-};
+  const menuClick = (event, item) => {
+    emit('menu-click', event, item)
+  }
 </script>
 
 <template>

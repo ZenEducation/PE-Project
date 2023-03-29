@@ -1,20 +1,20 @@
-import { defineStore } from "pinia";
-import * as styles from "@/configs/styles";
-import { darkModeKey, styleKey } from "@/configs/config";
+import { defineStore } from 'pinia'
+import * as styles from '@/configs/styles'
+import { darkModeKey, styleKey } from '@/configs/config'
 
-export const useStyleStore = defineStore("style", {
+export const useStyleStore = defineStore('style', {
   state: () => ({
     /* Styles */
-    asideStyle: "",
-    asideScrollbarsStyle: "",
-    asideBrandStyle: "",
-    asideMenuItemStyle: "",
-    asideMenuItemActiveStyle: "",
-    asideMenuDropdownStyle: "",
-    navBarItemLabelStyle: "",
-    navBarItemLabelHoverStyle: "",
-    navBarItemLabelActiveColorStyle: "",
-    overlayStyle: "",
+    asideStyle: '',
+    asideScrollbarsStyle: '',
+    asideBrandStyle: '',
+    asideMenuItemStyle: '',
+    asideMenuItemActiveStyle: '',
+    asideMenuDropdownStyle: '',
+    navBarItemLabelStyle: '',
+    navBarItemLabelHoverStyle: '',
+    navBarItemLabelActiveColorStyle: '',
+    overlayStyle: '',
 
     /* Dark mode */
     darkMode: false,
@@ -22,17 +22,17 @@ export const useStyleStore = defineStore("style", {
   actions: {
     setStyle(payload) {
       if (!styles[payload]) {
-        return;
+        return
       }
 
-      if (typeof localStorage !== "undefined") {
-        localStorage.setItem(styleKey, payload);
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem(styleKey, payload)
       }
 
-      const style = styles[payload];
+      const style = styles[payload]
 
       for (const key in style) {
-        this[`${key}Style`] = style[key];
+        this[`${key}Style`] = style[key]
       }
     },
 
@@ -50,10 +50,10 @@ export const useStyleStore = defineStore("style", {
         localStorage.setItem('darkMode', this.darkMode)
       }
       if (this.darkMode) {
-        document.documentElement.classList.add("dark");
+        document.documentElement.classList.add('dark')
       } else {
-        document.documentElement.classList.remove("dark");
+        document.documentElement.classList.remove('dark')
       }
     },
   },
-});
+})

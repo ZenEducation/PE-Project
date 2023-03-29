@@ -46,39 +46,39 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>
 
 <style scoped>
-.title span {
-  color: #3a7e69;
-  font-style: italic;
-  font-weight: 400;
-}
+  .title span {
+    color: #3a7e69;
+    font-style: italic;
+    font-weight: 400;
+  }
 
-.title {
-  line-height: 1.17;
-  font-weight: bold;
-  color: #3f3a64;
-  font-family: "Playfair Display", serif;
-}
+  .title {
+    line-height: 1.17;
+    font-weight: bold;
+    color: #3f3a64;
+    font-family: 'Playfair Display', serif;
+  }
 
-.sub-title {
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 2;
-  display: block;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #8c89a2;
-}
+  .sub-title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 2;
+    display: block;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8c89a2;
+  }
 
-.frontpage {
-  background-image: url(/images/intro/intro7/hero-slider-slide-bg-02.jpg);
-  background: contain;
-  background-position: center;
-}
+  .frontpage {
+    background-image: url(/images/intro/intro7/hero-slider-slide-bg-02.jpg);
+    background: contain;
+    background-position: center;
+  }
 </style>

@@ -1,46 +1,46 @@
 <script setup>
-import { mdiCog } from "@mdi/js";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import NumberDynamic from "@/components/AfterAuth/Display/NumberDynamic.vue";
-import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
-import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
-import PillTagTrend from "@/components/AfterAuth/Display/PillTagTrend.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
+  import { mdiCog } from '@mdi/js'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import NumberDynamic from '@/components/AfterAuth/Display/NumberDynamic.vue'
+  import BaseIcon from '@/components/AfterAuth/Display/BaseIcon.vue'
+  import BaseLevel from '@/components/AfterAuth/Buttons/BaseLevel.vue'
+  import PillTagTrend from '@/components/AfterAuth/Display/PillTagTrend.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
 
-defineProps({
-  number: {
-    type: Number,
-    default: 0,
-  },
-  icon: {
-    type: String,
-    default: null,
-  },
-  prefix: {
-    type: String,
-    default: null,
-  },
-  suffix: {
-    type: String,
-    default: null,
-  },
-  label: {
-    type: String,
-    default: null,
-  },
-  color: {
-    type: String,
-    default: null,
-  },
-  trend: {
-    type: String,
-    default: null,
-  },
-  trendType: {
-    type: String,
-    default: null,
-  },
-});
+  defineProps({
+    number: {
+      type: Number,
+      default: 0,
+    },
+    icon: {
+      type: String,
+      default: null,
+    },
+    prefix: {
+      type: String,
+      default: null,
+    },
+    suffix: {
+      type: String,
+      default: null,
+    },
+    label: {
+      type: String,
+      default: null,
+    },
+    color: {
+      type: String,
+      default: null,
+    },
+    trend: {
+      type: String,
+      default: null,
+    },
+    trendType: {
+      type: String,
+      default: null,
+    },
+  })
 </script>
 
 <template>

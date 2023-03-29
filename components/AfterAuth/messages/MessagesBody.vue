@@ -271,7 +271,7 @@
 </template>
 
 <script>
-export default {
-  name: "MessagesBody",
-};
+  export default {
+    name: 'MessagesBody',
+  }
 </script>

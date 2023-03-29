@@ -1,13 +1,13 @@
 <template>
   <div class="font-body dark:bg-[#161821] w-12/12 px-24">
-    <div class="container">
+    <div class="public-container-public">
       <div class="pt-[100px] pb-[60px]">
         <courseheader>
-          <template v-slot:title>Zoom Meetings</template>
+          <template #title>Zoom Meetings</template>
         </courseheader>
       </div>
 
-      <div class="pb-[100px] px-[80px]">
+      <div class="pb-[100px] px-[80px] bg-red-yolo">
         <zoomcard />
         <loadmorebtn />
       </div>
@@ -17,8 +17,8 @@
 
 <script setup>
 definePageMeta({
-  layout: "frontend",
-});
+  layout: 'frontend',
+})
 </script>
 
 <style scoped>

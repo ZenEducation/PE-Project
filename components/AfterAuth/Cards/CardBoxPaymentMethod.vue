@@ -1,39 +1,39 @@
 <script setup>
-import { mdiTrashCan, mdiCreditCardEdit, mdiCreditCardCheck } from "@mdi/js";
-import { computed } from "vue";
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import PillTag from "@/components/AfterAuth/Display/PillTag.vue";
-import PremCreditCardLogo from "@/components/AfterAuth/Display/CreditCardLogo.vue";
+  import { mdiTrashCan, mdiCreditCardEdit, mdiCreditCardCheck } from '@mdi/js'
+  import { computed } from 'vue'
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import PillTag from '@/components/AfterAuth/Display/PillTag.vue'
+  import PremCreditCardLogo from '@/components/AfterAuth/Display/CreditCardLogo.vue'
 
-const props = defineProps({
-  cardType: {
-    type: String,
-    required: true,
-    validator: (value) => ["mc", "visa"].indexOf(value) > -1,
-  },
-  cardNumber: {
-    type: String,
-    required: true,
-  },
-  cardExpires: {
-    type: String,
-    required: true,
-  },
-  cardOwner: {
-    type: String,
-    required: true,
-  },
-  isPrimary: Boolean,
-});
+  const props = defineProps({
+    cardType: {
+      type: String,
+      required: true,
+      validator: (value) => ['mc', 'visa'].includes(value),
+    },
+    cardNumber: {
+      type: String,
+      required: true,
+    },
+    cardExpires: {
+      type: String,
+      required: true,
+    },
+    cardOwner: {
+      type: String,
+      required: true,
+    },
+    isPrimary: Boolean,
+  })
 
-const cardTypeNames = {
-  mc: "MasterCard",
-  visa: "Visa",
-};
+  const cardTypeNames = {
+    mc: 'MasterCard',
+    visa: 'Visa',
+  }
 
-const cardTypeName = computed(() => cardTypeNames[props.cardType]);
+  const cardTypeName = computed(() => cardTypeNames[props.cardType])
 </script>
 
 <template>

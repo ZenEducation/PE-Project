@@ -1,24 +1,24 @@
 <script setup>
-import { useStyleStore } from "@/stores/style.js";
+  import { useStyleStore } from '@/stores/style.js'
 
-defineProps({
-  zIndex: {
-    type: String,
-    default: "z-50",
-  },
-  type: {
-    type: String,
-    default: "flex",
-  },
-});
+  defineProps({
+    zIndex: {
+      type: String,
+      default: 'z-50',
+    },
+    type: {
+      type: String,
+      default: 'flex',
+    },
+  })
 
-const emit = defineEmits(["overlay-click"]);
+  const emit = defineEmits(['overlay-click'])
 
-const overlayClick = (event) => {
-  emit("overlay-click", event);
-};
+  const overlayClick = (event) => {
+    emit('overlay-click', event)
+  }
 
-const styleStore = useStyleStore();
+  const styleStore = useStyleStore()
 </script>
 
 <template>
@@ -40,8 +40,6 @@ const styleStore = useStyleStore();
         @click="overlayClick"
       />
     </transition>
-
-
 
     <transition
       enter-active-class="transition duration-100 ease-out"

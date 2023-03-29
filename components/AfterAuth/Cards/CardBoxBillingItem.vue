@@ -1,19 +1,19 @@
 <script setup>
-import CardBox from "@/components/AfterAuth/Cards/CardBox.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
-import PillTag from "@/components/AfterAuth/Display/PillTag.vue";
+  import CardBox from '@/components/AfterAuth/Cards/CardBox.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
+  import PillTag from '@/components/AfterAuth/Display/PillTag.vue'
 
-defineProps({
-  date: {
-    type: String,
-    required: true,
-  },
-  amount: {
-    type: [String, Number],
-    required: true,
-  },
-});
+  defineProps({
+    date: {
+      type: String,
+      required: true,
+    },
+    amount: {
+      type: [String, Number],
+      required: true,
+    },
+  })
 </script>
 
 <template>

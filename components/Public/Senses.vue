@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-16 relative">
+  <div class="public-container py-16 relative">
     <div>
       <headers class="mb-[60px]">
         <template v-slot:headerone>What does it mean when we say we are giving you</template>
@@ -18,8 +18,9 @@
           class="w-full transition-transform duration-1500 group-hover:scale-110"
           alt=""
         /> -->
-        <iframe class="transition-transform duration-1500 group-hover:scale-110" width="970"  height="570" :src="'https://www.youtube.com/embed/JWoWfzHowjI'" frameborder="0"
-          allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class="transition-transform duration-1500 group-hover:scale-110" width="970" height="570"
+          :src="'https://www.youtube.com/embed/JWoWfzHowjI'" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
       </div>
 
       <ShapeWithAnimation imgSrc="/images/shape-animation/shape-2.svg"
