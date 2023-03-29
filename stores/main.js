@@ -7,7 +7,7 @@ const state = () => ({
   userName: null,
   userEmail: null,
   userAvatar: null,
-
+  userType: 'student',
   /* Field focus with ctrl+k (to register only once) */
   isFieldFocusRegistered: false,
 
@@ -131,6 +131,9 @@ const actions = {
     }
     if (payload.avatar) {
       this.userAvatar = payload.avatar
+    }
+    if (payload.userType) {
+      this.userType = payload.userType
     }
   },
 }

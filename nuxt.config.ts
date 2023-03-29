@@ -2,10 +2,12 @@ export default defineNuxtConfig({
   ssr: false,
   srcDir: './',
   css: [
-    '@/assets/css/main.css',
-    '@/assets/css/font-awesome-pro.min.css',
-    '@/assets/css/vue-multiselect.css',
-    '@/assets/css/v-calendar.css',
+    "@/assets/css/main.css",
+    "@/assets/css/font-awesome-pro.min.css",
+    "@/assets/css/vue-multiselect.css",
+    "@/assets/css/v-calendar.css",
+    '@fortawesome/fontawesome-free/css/all.css',
+    
   ],
 
   experimental: { payloadExtraction: false },

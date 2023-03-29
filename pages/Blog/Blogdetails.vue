@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#161821] w-12/12 px-24">
+  <div class="dark:bg-[#161821] bg-white w-12/12 px-24">
     <div class="py-[100px]">
       <courseheader>
         <template #title>Blog Details</template>

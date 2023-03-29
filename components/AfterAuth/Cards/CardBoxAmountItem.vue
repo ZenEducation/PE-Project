@@ -1,35 +1,35 @@
 <script setup>
-  import BaseDivider from '~~/components/NavBar/BaseDivider.vue'
-  import PillTagTrend from '@/components/AfterAuth/Display/PillTagTrend.vue'
-  import IconRounded from '@/components/AfterAuth/Display/IconRounded.vue'
+import BaseDivider from '@/components/AfterAuth/NavBar/BaseDivider.vue'
+import PillTagTrend from '@/components/AfterAuth/Display/PillTagTrend.vue'
+import IconRounded from '@/components/AfterAuth/Display/IconRounded.vue'
 
-  defineProps({
-    title: {
-      type: String,
-      required: true,
-    },
-    value: {
-      type: String,
-      required: true,
-    },
-    divider: Boolean,
-    trend: {
-      type: String,
-      default: null,
-    },
-    trendType: {
-      type: String,
-      default: null,
-    },
-    icon: {
-      type: String,
-      default: null,
-    },
-    iconType: {
-      type: String,
-      default: null,
-    },
-  })
+defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+  value: {
+    type: String,
+    required: true,
+  },
+  divider: Boolean,
+  trend: {
+    type: String,
+    default: null,
+  },
+  trendType: {
+    type: String,
+    default: null,
+  },
+  icon: {
+    type: String,
+    default: null,
+  },
+  iconType: {
+    type: String,
+    default: null,
+  },
+})
 </script>
 
 <template>

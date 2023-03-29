@@ -153,6 +153,67 @@ const allLinks = [
     icon: mdiHelpCircle,
   },
 ]
+// educator
+const educatorLinks = [
+  {
+    to: '/',
+    icon: mdiMonitor,
+    label: 'Educator Link 1',
+  },
+  {
+    to: '/dashboard',
+    label: 'Educator Link 2',
+    icon: mdiTelevisionGuide,
+  },
+  {
+    to: '/pps/tablesListsView',
+    label: 'Educator Link 3',
+    icon: mdiTable,
+    updateMark: 'warning',
+  },
+]
+// employees
+const employeesLinks = [
+  {
+    to: '/',
+    icon: mdiMonitor,
+    label: 'Employee Link 1',
+  },
+  {
+    to: '/dashboard',
+    label: 'Employee Link 2',
+    icon: mdiTelevisionGuide,
+  },
+  {
+    to: '/pps/tablesListsView',
+    label: 'Employee Link 3',
+    icon: mdiTable,
+    updateMark: 'warning',
+  },
+]
+// freelancer
+const freelancerLinks = [
+  {
+    to: '/',
+    icon: mdiMonitor,
+    label: 'Home',
+  },
+  {
+    to: '/dashboard',
+    label: 'UI Base',
+    icon: mdiTelevisionGuide,
+  },
+  {
+    to: '/pps/tablesListsView',
+    label: 'Tables & Lists',
+    icon: mdiTable,
+    updateMark: 'warning',
+  },
+]
+// garduian
+// learner
+// superadmin
+// vendor
 
 // todo implement aside menu list
 // get profile from store
@@ -164,3 +225,4 @@ const allLinks = [
 // }
 
 export default allLinks
+export { educatorLinks, employeesLinks, freelancerLinks }

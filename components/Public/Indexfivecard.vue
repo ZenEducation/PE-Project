@@ -1,10 +1,7 @@
 <template>
   <div class="emd:w-[370px] p-3 rounded-lg bg-transparent">
     <span>
-      <img
-        src="/images/courses/370/course-2.jpg"
-        class="w-full lg:w-full h-[229px]"
-      />
+      <slot name="img"></slot>
     </span>
 
     <div class="relative p-8 pb-10 dark:bg-black rounded-b-md">
@@ -12,7 +9,7 @@
         <slot name="date"></slot
       ></span>
       <h3
-        class="text-[24px] dark:text-white hover: font-extrabold leading-[1.5] mb-1"
+        class="text-[24px] dark:text-white  font-extrabold leading-[1.5] mb-1"
       >
         <slot name="title"></slot>
       </h3>

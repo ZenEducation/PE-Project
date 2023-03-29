@@ -1,15 +1,13 @@
 <template>
   <div class="p-3 mb-4 text-center md:text-left">
     <h5 class="landingtext text-[13px] xl:text-[15px]">
-      MaxCoach is the lifebuoy
+      Achieve Your Academic Goals with <br> Our World-Class Tutors
     </h5>
     <h1 class="landingtext text-[40px] md:text-[48px] lg:text-[63px]">
-      In Mentoring <br />
-      2B a Better You.
+      Personalized <br> One-to-One <br> Tutoring Services <br> for All Subjects
     </h1>
     <p class="text-[16px] lg:text-[18px]">
-      The right mentoring relationship can be a powerful tool for professional
-      growth. Bark up the right tree.
+      Unlock your academic potential with our personalized  approach. <br> Tailored to your needs, our tutors bring out the best in you.
     </p>
 
     <span>

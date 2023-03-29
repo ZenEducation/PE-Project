@@ -4,12 +4,11 @@
       <div class="w-8/12 md:w-6/12 mb-[60px]">
         <headers>
           <template v-slot:headerone
-            >Maximize your potentials and possibilities</template
+            >Maximize Your Potentials and Possibilities</template
           >
           <template v-slot:headertwo>
-            Learn the secrets to
-            <span class="text-[#20AD96] font-[400]">Life Success</span>, these
-            people have got the key.
+            Your Best Shot at
+            <span class="text-[#20AD96] font-[400]">Academic Excellence</span>, Like These People
           </template>
         </headers>
       </div>
