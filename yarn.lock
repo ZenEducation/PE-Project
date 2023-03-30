@@ -5885,6 +5885,11 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
+countup.js@^2.6.0, countup.js@latest:
+  version "2.6.0"
+  resolved "https://registry.npmjs.org/countup.js/-/countup.js-2.6.0.tgz"
+  integrity sha512-GeORCrCcaFUHP3RNf0/dWK+XQX+fsdtrMO31mNvsbKXNNG+DMTcgZ4dWpIG9BnOS8t5+iJbaRXgaaG9oLs0N4g==
+
 crc-32@^1.2.0:
   version "1.2.2"
   resolved "https://registry.npmjs.org/crc-32/-/crc-32-1.2.2.tgz"
@@ -12622,6 +12627,11 @@ vue-bundle-renderer@^1.0.0:
   dependencies:
     ufo "^1.0.0"
 
+vue-countup-v2@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/vue-countup-v2/-/vue-countup-v2-4.0.0.tgz"
+  integrity sha512-XjKeHo1ndRlJtXvHd6B1eWOpbrJDdNU3rdYZwVPv2YlUXbvthsBT4kms5Fc/mn9RdXPrMX2H/ktAAQtKjWFisw==
+
 vue-demi@*:
   version "0.13.11"
   resolved "https://registry.npmjs.org/vue-demi/-/vue-demi-0.13.11.tgz"
@@ -12659,7 +12669,7 @@ vue-split-carousel@^2.2.3:
   resolved "https://registry.npmjs.org/vue-split-carousel/-/vue-split-carousel-2.2.3.tgz"
   integrity sha512-1cY2KHCiFDB7r218sLHGubjuY16ScwEn3BCNLYovPcvEugJh7gJx5ni1rr5GW6ddpy1qvsjmlnxC4MKa0uPq9w==
 
-vue@*, "vue@^2.6.0 || ^3.2.0", "vue@^2.6.14 || ^3.2.0", vue@^3.0.0, "vue@^3.0.0-0 || ^2.6.0", vue@^3.2.0, vue@^3.2.25, vue@^3.2.33, vue@^3.2.41, vue@^3.2.45, "vue@>= 3.0.0 < 4", "vue@>=2.7 || >=3", vue@3.2.47:
+vue@*, "vue@^2.6.0 || ^3.2.0", "vue@^2.6.14 || ^3.2.0", vue@^3.0.0, "vue@^3.0.0-0 || ^2.6.0", vue@^3.2.0, vue@^3.2.25, vue@^3.2.33, vue@^3.2.41, vue@^3.2.45, "vue@>= 3.0.0 < 4", "vue@>=2.7 || >=3", vue@3.2.47, vue@latest:
   version "3.2.47"
   resolved "https://registry.npmjs.org/vue/-/vue-3.2.47.tgz"
   integrity sha512-60188y/9Dc9WVrAZeUVSDxRQOZ+z+y5nO2ts9jWXSTkMvayiWxCWOWtBQoYjLeccfXkiiPZWAHcV+WTPhkqJHQ==
