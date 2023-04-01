@@ -510,7 +510,7 @@
             </div>
 
         </div>
-        <div class="bg-[#f8f8f8] dark:bg-[#161821] p-3 my-3">
+        <div class="bg-[#f8f8f8] dark:bg-[#161821] px-3 pt-3 mt-3">
             <BecomeTutor />
         </div>
 
