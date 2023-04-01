@@ -401,103 +401,121 @@
                     @click="setActiveData(11)" :class="{ 'bg-[#20ad96] text-white': Data11 }">
                     <h3 class="font-bold">Impersonal Video Lectures focused on concepts</h3>
                     <div>
-                    <i v-if="Data11" class="fa-solid fa-angle-up"></i>
-                    <i v-else class="fa-solid fa-angle-down"></i>
+                        <i v-if="Data11" class="fa-solid fa-angle-up"></i>
+                        <i v-else class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data11">
+                    <img src="/images/about/why-choose-us/img11.png" alt="img11">
+                    <div class="m-10">
+                        <p class="text-justify text-gray-800">Paathshala Education video lectures focus on the learning of
+                            concepts in the most optimal manner and are engaging and stimulating to the brain. The concepts
+                            developed are useful for not only test preparation, entrance exams, but also for life in
+                            general, and lead to cognitive and neural brain development of the student if they just go
+                            through all the modules sincerely with zeal and perseverance.</p>
+
+                    </div>
+
+                </div>
+                <div class="container border hidden mx-10 p-3" v-else>
+                    <img src="/images/about/why-choose-us/img11.png" alt="img11">
+                    <div class="m-10">
+                        <p class="text-justify text-gray-800">Paathshala Education video lectures focus on the learning of
+                            concepts in the most optimal manner and are engaging and stimulating to the brain. The concepts
+                            developed are useful for not only test preparation, entrance exams, but also for life in
+                            general, and lead to cognitive and neural brain development of the student if they just go
+                            through all the modules sincerely with zeal and perseverance.</p>
+                    </div>
+
+
                 </div>
             </div>
-            <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data11">
-                <img src="/images/about/why-choose-us/img11.png" alt="img11">
-                <div class="m-10">
-                    <p class="text-justify text-gray-800">Paathshala Education video lectures focus on the learning of
-                        concepts in the most optimal manner and are engaging and stimulating to the brain. The concepts
-                        developed are useful for not only test preparation, entrance exams, but also for life in
-                        general, and lead to cognitive and neural brain development of the student if they just go
-                        through all the modules sincerely with zeal and perseverance.</p>
+            <div class=" flex justify-center flex-col px-10">
+                <div class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300  mx-10 p-3"
+                    @click="setActiveData(12)" :class="{ 'bg-[#20ad96] text-white': Data12 }">
+                    <h3 class="font-bold">Join the Learning Revolution</h3>
+                    <div>
+                        <i v-if="Data12" class="fa-solid fa-angle-up"></i>
+                        <i v-else class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data12">
+                    <div class="m-10">
+                        <p class="text-justify text-gray-800">Paathshala Education believes in the potential of every
+                            student, takes pride in their passion, creates equal, impartial, powerful learning avenues for
+                            EVERY student.</p>
+                        <p class="text-justify text-gray-800 font-semibold">Your child is special and one of a kind. So are
+                            we!</p>
+
+
+                    </div>
+                    <img src="/images/about/why-choose-us/img12.jpg" alt="img12">
 
                 </div>
+                <div class="container border hidden mx-10 p-3" v-else>
+                    <div class="m-10">
+                        <p class="text-justify text-gray-800">Paathshala Education believes in the potential of every
+                            student, takes pride in their passion, creates equal, impartial, powerful learning avenues for
+                            EVERY student.</p>
+                        <p class="text-justify text-gray-800 font-semibold">Your child is special and one of a kind. So are
+                            we!</p>
+                    </div>
+                    <img src="/images/about/why-choose-us/img12.jpg" alt="img12">
 
-            </div>
-            <div class="container border hidden mx-10 p-3" v-else>
-                <img src="/images/about/why-choose-us/img11.png" alt="img11">
-                <div class="m-10">
-                    <p class="text-justify text-gray-800">Paathshala Education video lectures focus on the learning of
-                        concepts in the most optimal manner and are engaging and stimulating to the brain. The concepts
-                        developed are useful for not only test preparation, entrance exams, but also for life in
-                        general, and lead to cognitive and neural brain development of the student if they just go
-                        through all the modules sincerely with zeal and perseverance.</p>
                 </div>
-
-
             </div>
+            <div class=" flex justify-center flex-col px-10">
+                <div class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300  mx-10 p-3"
+                    @click="setActiveData(13)" :class="{ 'bg-[#20ad96] text-white': Data13 }">
+                    <h3 class="font-bold">Clarify Doubts, and Excel</h3>
+                    <div>
+                        <i v-if="Data13" class="fa-solid fa-angle-up"></i>
+                        <i v-else class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data13">
+                    <img src="/images/about/why-choose-us/img13.png" alt="img13">
+                    <div class="m-10">
+                        <p class="text-justify text-gray-800">Discuss doubts with you peers and mentors during the online
+                            lecture sessions and learn to excel in competitive exams and in your career.</p>
+                        <p class="text-justify text-gray-800">We at Paathshala believe that anything that seems difficult at
+                            first can become easy over time with dedication, determination, persistence that leads to
+                            desensitization of the process knowledge acquisition that leads a beginner level learner become
+                            intermediate and then an expert.</p>
+                        <p class="text-justify text-gray-800">We at Paathshala believe that anything that seems difficult at
+                            first can become easy over time with dedication, determination, persistence that leads to
+                            desensitization of the process knowledge acquisition that leads a beginner level learner become
+                            intermediate and then an expert.</p>
+
+
+                    </div>
+
+                </div>
+                <div class="container border hidden mx-10 p-3" v-else>
+                    <img src="/images/about/why-choose-us/img13.png" alt="img13">
+                    <div class="m-10">
+                        <p class="text-justify text-gray-800">Discuss doubts with you peers and mentors during the online
+                            lecture sessions and learn to excel in competitive exams and in your career.</p>
+                        <p class="text-justify text-gray-800">We at Paathshala believe that anything that seems difficult at
+                            first can become easy over time with dedication, determination, persistence that leads to
+                            desensitization of the process knowledge acquisition that leads a beginner level learner become
+                            intermediate and then an expert.</p>
+                        <p class="text-justify text-gray-800">We at Paathshala believe that anything that seems difficult at
+                            first can become easy over time with dedication, determination, persistence that leads to
+                            desensitization of the process knowledge acquisition that leads a beginner level learner become
+                            intermediate and then an expert.</p>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-        <div class=" flex justify-center flex-col px-10">
-            <div class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300  mx-10 p-3"
-                @click="setActiveData(12)" :class="{ 'bg-[#20ad96] text-white': Data12 }">
-                <h3 class="font-bold">Join the Learning Revolution</h3>
-                <div>
-                    <i v-if="Data12" class="fa-solid fa-angle-up"></i>
-                    <i v-else class="fa-solid fa-angle-down"></i>
-                </div>
-            </div>
-            <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data12">
-                <div class="m-10">
-                    <p class="text-justify text-gray-800">Paathshala Education believes in the potential of every
-                        student, takes pride in their passion, creates equal, impartial, powerful learning avenues for
-                        EVERY student.</p>
-                    <p class="text-justify text-gray-800 font-semibold">Your child is special and one of a kind. So are
-                        we!</p>
-
-
-                </div>
-                <img src="/images/about/why-choose-us/img12.jpg" alt="img12">
-
-            </div>
-            <div class="container border hidden mx-10 p-3" v-else>
-                <div class="m-10">
-                    <p class="text-justify text-gray-800">Paathshala Education believes in the potential of every
-                        student, takes pride in their passion, creates equal, impartial, powerful learning avenues for
-                        EVERY student.</p>
-                    <p class="text-justify text-gray-800 font-semibold">Your child is special and one of a kind. So are
-                        we!</p>
-                </div>
-                <img src="/images/about/why-choose-us/img12.jpg" alt="img12">
-
-            </div>
+        <div class="bg-[#f8f8f8] dark:bg-[#161821] p-3 my-3">
+            <BecomeTutor />
         </div>
-        <div class=" flex justify-center flex-col px-10">
-            <div class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300  mx-10 p-3"
-                @click="setActiveData(13)" :class="{ 'bg-[#20ad96] text-white': Data13 }">
-                <h3 class="font-bold">Clarify Doubts, and Excel</h3>
-                <div>
-                    <i v-if="Data13" class="fa-solid fa-angle-up"></i>
-                    <i v-else class="fa-solid fa-angle-down"></i>
-                </div>
-            </div>
-            <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data13">
-                <img src="/images/about/why-choose-us/img13.png" alt="img13">
-                <div class="m-10">
-                    <p class="text-justify text-gray-800">Discuss doubts with you peers and mentors during the online lecture sessions and learn to excel in competitive exams and in your career.</p>
-                    <p class="text-justify text-gray-800">We at Paathshala believe that anything that seems difficult at first can become easy over time with dedication, determination, persistence that leads to desensitization of the process knowledge acquisition that leads a beginner level learner become intermediate and then an expert.</p>
-                    <p class="text-justify text-gray-800">We at Paathshala believe that anything that seems difficult at first can become easy over time with dedication, determination, persistence that leads to desensitization of the process knowledge acquisition that leads a beginner level learner become intermediate and then an expert.</p>
 
-
-                </div>
-
-            </div>
-            <div class="container border hidden mx-10 p-3" v-else>
-                <img src="/images/about/why-choose-us/img13.png" alt="img13">
-                <div class="m-10">
-                    <p class="text-justify text-gray-800">Discuss doubts with you peers and mentors during the online lecture sessions and learn to excel in competitive exams and in your career.</p>
-                    <p class="text-justify text-gray-800">We at Paathshala believe that anything that seems difficult at first can become easy over time with dedication, determination, persistence that leads to desensitization of the process knowledge acquisition that leads a beginner level learner become intermediate and then an expert.</p>
-                    <p class="text-justify text-gray-800">We at Paathshala believe that anything that seems difficult at first can become easy over time with dedication, determination, persistence that leads to desensitization of the process knowledge acquisition that leads a beginner level learner become intermediate and then an expert.</p>
-                </div>
-
-            </div>
-        </div>
-        
     </div>
-
-</div></template>
+</template>
 
 <script>
 definePageMeta({
