@@ -5,11 +5,14 @@ import { useMainStore } from "@/stores/main.js";
 import "@/assets/css/main.css";
 import "@/assets/css/font-awesome-pro.min.css";
 import "@/assets/css/fonts.css";
+import "tw-elements/dist/js/index.min.js"
 
 
 const mainStore = useMainStore();
 const styleStore = useStyleStore();
 const loading = ref(true);
+
+
 
 onMounted(() => {
   styleStore.setStyle(localStorage[styleKey] ?? "basic");

@@ -11,6 +11,8 @@ module.exports = {
             "./configs/**.{vue,js,ts,jsx,tsx}",
             "./app.vue",
             "./node_modules/flowbite.{js,ts}",
+            "./src/**/*.{html,js}",
+            "./node_modules/tw-elements/dist/js/**/*.js"
 
         ],
         darkMode: "class", // or 'media' or 'class'
@@ -267,7 +269,8 @@ module.exports = {
       );
     }),
     require("tailwind-scrollbar")({ nocompatible: true }),
-    require('flowbite')
+    require('flowbite'),
+    require("tw-elements/dist/plugin.js")
     
     
   ],
