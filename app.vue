@@ -6,6 +6,7 @@ import "@/assets/css/main.css";
 import "@/assets/css/font-awesome-pro.min.css";
 import "@/assets/css/fonts.css";
 
+
 const mainStore = useMainStore();
 const styleStore = useStyleStore();
 const loading = ref(true);

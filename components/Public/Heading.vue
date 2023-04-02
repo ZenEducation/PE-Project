@@ -236,7 +236,7 @@
                 </li>
                 <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/about/faqs">FAQs</NuxtLink>
+                    role="menuitem" to="/about/faq">FAQs</NuxtLink>
                 </li>
                 <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
@@ -295,7 +295,7 @@
                 </li>
                 <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/about/faqs">FAQs</NuxtLink>
+                    role="menuitem" to="/about/faq">FAQs</NuxtLink>
                 </li>
                 <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
