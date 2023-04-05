@@ -11,14 +11,21 @@
         <blogclassicsidebar />
       </div>
       <div class="col-span-2 ml-5">
-        <blogdetailscontent />
+        <blogdetailscontent :slug="slug"  />
       </div>
     </div>
   </div>
 </template>
 
-<script setup>
+<script>
 definePageMeta({
   layout: "frontend",
 });
+export default {
+  computed: {
+    slug() {
+      return this.$route.params.slug;
+    }
+  }
+};
 </script>

@@ -16,7 +16,7 @@
                 <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data1">
                     <img src="/images/about/why-choose-us/img1.png" alt="img1">
                     <div class="m-10">
-                        <p class="text-justify text-gray-800">The courses and academic models are designed in such a way
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">The courses and academic models are designed in such a way
                             that they cater to all categories of students and their cognitive grasping capabilities. We have
                             kept in mind the unique learning requirements of different types of students while preparing
                             these courses. We also upgrade our courses from time to time, add additional content and latest
@@ -53,13 +53,13 @@
                 </div>
                 <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data2">
                     <div class="m-10">
-                        <p class="text-justify text-gray-800">Travelling to a coaching class can be messy, tiring, and might
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">Travelling to a coaching class can be messy, tiring, and might
                             suck up your energy and enthusiasm. Many a times, it drains the student of energy, which could
                             have been better utilized for studying at home from Paathshala Education’s finest quality online
                             video lectures & Paathshala’s online teachers helping the student at each step, in explaining
                             the concepts and solving questions in order to get the optimal result that the student truly is
                             capable of achieving.</p>
-                        <p class="text-justify text-gray-800">With Paathshala’s expert guidance & Paathshala Education’s
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">With Paathshala’s expert guidance & Paathshala Education’s
                             classic academic modules and courses at your fingertips, you don’t have to travel anywhere to
                             achieve excellent academic success. You can achieve it from the comfort of your homes.
                             We have to learn to be wise in today’s Information & Technology Age, and focus on smart work,
@@ -100,12 +100,12 @@
                 <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data3">
                     <img src="/images/about/why-choose-us/img3.png" alt="img3">
                     <div class="m-10">
-                        <p class="text-justify text-gray-800">Travelling to a coaching class can be messy, tiring, and might
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">Travelling to a coaching class can be messy, tiring, and might
                             suck up your energy and enthusiasm. Many a times, it drains the student of energy, which could
                             have been better utilized for studying at home from Paathshala Education finest quality online
                             video lectures and solving questions in order to get the optimal result that the student truly
                             is capable of achieving.</p>
-                        <p class="text-justify text-gray-800">With Paathshala Education’s classic academic modules and
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">With Paathshala Education’s classic academic modules and
                             courses at your fingertips, you don’t have to travel anywhere to achieve excellent academic
                             success. You can achieve it from the comfort of your homes. We have to learn to be wise in
                             today’s Information & Technology Age, and focus on smart work, not only hard work.</p>
@@ -141,9 +141,9 @@
                 </div>
                 <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data4">
                     <div class="m-10">
-                        <p class="text-justify text-gray-800">The freedom to learn is now yours! 2:00 AM? 5:00 AM? 11:00 PM?
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">The freedom to learn is now yours! 2:00 AM? 5:00 AM? 11:00 PM?
                             Learn whenever you want.</p>
-                        <p class="text-justify text-gray-800">Want to revise concepts while traveling or commuting? While in
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">Want to revise concepts while traveling or commuting? While in
                             washroom? Your wish is granted. Learn wherever you want, whenever you want.</p>
                     </div>
                     <img src="/images/about/why-choose-us/img4.jpg" alt="img4">
@@ -172,12 +172,12 @@
                 <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data5">
                     <img src="/images/about/why-choose-us/img5.jpg" alt="img5">
                     <div class="m-10">
-                        <p class="text-justify text-gray-800">Most often, especially in coaching classes, the students
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">Most often, especially in coaching classes, the students
                             compare their performance with their peers and often feel stressed about it. Most students
                             develop either superiority complex or inferiority complex as a result of this self-comparison
                             with their classmates. This further leads to performance pressure which may lead to the
                             students, failing to perform to the best of their ability.</p>
-                        <p class="text-justify text-gray-800">With our academic modules, our students stay fully focused on
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">With our academic modules, our students stay fully focused on
                             what is actually required thereby leaving no opportunity for unnecessary distractions</p>
                     </div>
 
@@ -208,11 +208,11 @@
                 </div>
                 <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data6">
                     <div class="m-10">
-                        <p class="text-justify text-gray-800">All the courses, curriculum, academic modules of Paathshala
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">All the courses, curriculum, academic modules of Paathshala
                             Education have been designed by highly experienced, expert professors, IITians, and PhDs. Our
                             Professors also have deep and unique insights about the learning pattern and behavior of
                             students and have created the Academic Modules keeping these know-how’s in mind.</p>
-                        <p class="text-justify text-gray-800">Besides having a great learning experience, our students are
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">Besides having a great learning experience, our students are
                             mentored by their live online Professors and some of the best counselors in the education space,
                             who actually care about the students and their aspirations! We do not focus only on toppers, but
                             give equal attention to one and all.</p>
@@ -247,13 +247,13 @@
                 <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data7">
                     <img src="/images/about/why-choose-us/img7.jpg" alt="img7">
                     <div class="m-10">
-                        <p class="text-justify text-gray-800">Typically, in a coaching class setup, there are a lot of entry
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">Typically, in a coaching class setup, there are a lot of entry
                             barriers to obtain the attention of the top notch professors and learn from them. The students
                             are judged by various Tests and Intra Exams to gauge the mental ability of the student to assess
                             whether he/she will be eligible for pursuing their dream. Such intermittent with mostly
                             unfamiliar, untaught, unlearnt concepts should not have the decisive power over the student’s
                             life’s aims.</p>
-                        <p class="text-justify text-gray-800">All the students need to have is the passion, to become a
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">All the students need to have is the passion, to become a
                             scientist, doctor, engineer and an unbreakable will power! That’s it! Paathshala Education
                             welcomes you! The path to the light of learning and knowledge is at your fingertips. You have to
                             just grasp it with all your wit and let your efforts make you sail onto the shores of success.
@@ -291,7 +291,7 @@
                 </div>
                 <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data8">
                     <div class="m-10">
-                        <p class="text-justify text-gray-800">Whether the student requires fast, slow, medium paced
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">Whether the student requires fast, slow, medium paced
                             teaching; easy, moderate, difficult levels to begin with, Paathshala Education’s innovative,
                             unprecedented teaching methodology accommodates every aspirant’s learning requirements</p>
 
@@ -321,7 +321,7 @@
                 <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data9">
                     <img src="/images/about/why-choose-us/img9.png" alt="img9">
                     <div class="m-10">
-                        <p class="text-justify text-gray-800">Paathshala Education’s team comprising of expert professors,
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">Paathshala Education’s team comprising of expert professors,
                             IITians, PhDs, industry professionals, have created amazing questions practice sets for each
                             topic of each chapter of each subject that will make the aspirant a pro at problem solving
                             thereby enhancing the aspirants’ confidence, leading to the aspirants securing a rank in their
@@ -360,15 +360,15 @@
                 </div>
                 <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data10">
                     <div class="m-10">
-                        <p class="text-justify text-gray-800">Full Syllabus Test Series is the most important element that
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">Full Syllabus Test Series is the most important element that
                             enhances the students’ rank in their dream entrance exam.</p>
-                        <p class="text-justify text-gray-800">Paathshala Education’s students get access to over 100 Full
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">Paathshala Education’s students get access to over 100 Full
                             Syllabus Test Series of their dream entrance exam. Apart from that, the students gain access to
                             a plethora of tests: Chapter Wise Tests, Section Wise Tests and what not. Statistically
                             speaking, if the student were to give one test a day, it would take the student over 1000 days
                             to complete just the tests. So, more the number of tests the student gives, the better! The
                             Paathshala Education’s Tests’ Treasure is theirs, to utilize and master!</p>
-                        <p class="text-justify text-gray-800">Such unprecedented testing is hardly seen on any other
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">Such unprecedented testing is hardly seen on any other
                             platform, and the students should take maximum benefit of such extensive test series module and
                             secure the best possible rank they can via solving as many Full Syllabus Tests as they possibly
                             can.</p>
@@ -408,7 +408,7 @@
                 <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data11">
                     <img src="/images/about/why-choose-us/img11.png" alt="img11">
                     <div class="m-10">
-                        <p class="text-justify text-gray-800">Paathshala Education video lectures focus on the learning of
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">Paathshala Education video lectures focus on the learning of
                             concepts in the most optimal manner and are engaging and stimulating to the brain. The concepts
                             developed are useful for not only test preparation, entrance exams, but also for life in
                             general, and lead to cognitive and neural brain development of the student if they just go
@@ -441,10 +441,10 @@
                 </div>
                 <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data12">
                     <div class="m-10">
-                        <p class="text-justify text-gray-800">Paathshala Education believes in the potential of every
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">Paathshala Education believes in the potential of every
                             student, takes pride in their passion, creates equal, impartial, powerful learning avenues for
                             EVERY student.</p>
-                        <p class="text-justify text-gray-800 font-semibold">Your child is special and one of a kind. So are
+                        <p class="text-justify dark:text-[#ddd] text-[#333] font-semibold">Your child is special and one of a kind. So are
                             we!</p>
 
 
@@ -476,13 +476,13 @@
                 <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data13">
                     <img src="/images/about/why-choose-us/img13.png" alt="img13">
                     <div class="m-10">
-                        <p class="text-justify text-gray-800">Discuss doubts with you peers and mentors during the online
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">Discuss doubts with you peers and mentors during the online
                             lecture sessions and learn to excel in competitive exams and in your career.</p>
-                        <p class="text-justify text-gray-800">We at Paathshala believe that anything that seems difficult at
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">We at Paathshala believe that anything that seems difficult at
                             first can become easy over time with dedication, determination, persistence that leads to
                             desensitization of the process knowledge acquisition that leads a beginner level learner become
                             intermediate and then an expert.</p>
-                        <p class="text-justify text-gray-800">We at Paathshala believe that anything that seems difficult at
+                        <p class="text-justify dark:text-[#ddd] text-[#333]">We at Paathshala believe that anything that seems difficult at
                             first can become easy over time with dedication, determination, persistence that leads to
                             desensitization of the process knowledge acquisition that leads a beginner level learner become
                             intermediate and then an expert.</p>
