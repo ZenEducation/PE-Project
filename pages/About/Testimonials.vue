@@ -15,7 +15,7 @@
                     <div class="flex flex-wrap items-start dark:bg-gray-900 bg-gray-200 p-5 ">
                         <div class="grow-0 shrink-0 basis-auto block lg:flex justify-center  w-full lg:w-6/12 xl:w-4/12 ">
                             <img src="/images/testimonial/70/aadya-deshpande.jpg" alt="aadya deshpande"
-                                class=" rounded-[50%] pt-10" width="150" />
+                                class="  pt-10" width="150" height="150" style="border-radius: 800%;" />
                         </div>
                         <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12 dark:bg-gray-900 bg-gray-200">
                             <div class="px-6 py-12 md:px-12">
@@ -120,6 +120,19 @@
 definePageMeta({
     layout: "frontend",
 });
+
+export default {
+    data(){
+        return{
+            testimonials: [
+                {
+                    
+                }
+            ]
+        }
+    }
+}
 </script>
+
 
 <style lang="scss" scoped></style>

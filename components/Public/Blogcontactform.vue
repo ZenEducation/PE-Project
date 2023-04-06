@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex flex-col justify-center lg:justify-start">
+    <div class="flex flex-col justify-center lg:justify-start pb-5">
       <div class="text-left md:text-left text-white font-bold text-[24px]">
         Leave your thought here
       </div>
@@ -13,14 +13,14 @@
       <form @submit.prevent="submitform" class="w-full lg:w-12/12 mt-10">
         <div class="flex justify-between items-center w-12/12 mb-4">
           <input
-            class="w-6/12 mr-4 dark:bg-[#222] bg-[#f8f8f8] px-5 py-2.5 rounded-[3px] outline-none"
+            class="w-6/12 mr-4 dark:bg-[#222] bg-[#f8f8f8] border-none px-5 py-2.5 rounded-[3px] outline-none"
             type="text"
             placeholder="Your Name"
             id=""
             v-model="thought.name"
           />
           <input
-            class="w-6/12 ml-2 dark:bg-[#222] bg-[#f8f8f8] px-5 py-2.5 rounded-[3px] outline-none"
+            class="w-6/12 ml-2 dark:bg-[#222] bg-[#f8f8f8] border-none px-5 py-2.5 rounded-[3px] outline-none"
             type="email"
             placeholder="Email"
             id=""
@@ -30,7 +30,7 @@
         </div>
 
         <textarea
-          class="w-full text-white my-2 min-h-[220px] mb-3 dark:bg-[#222] bg-[#f8f8f8] px-5 py-2.5 rounded-[3px] outline-none"
+          class="w-full text-white my-2 min-h-[220px] border-none mb-3 dark:bg-[#222] bg-[#f8f8f8] px-5 py-2.5 rounded-[3px] outline-none"
           placeholder="Your Message"
           v-model="thought.message"
         ></textarea>

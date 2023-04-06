@@ -2,15 +2,17 @@
   <div class="pt-[70px] pb-[50px] dark:bg-black bg-[#f8f8f8]">
     <div class="flex justify-center items-start">
       <div class="mb-8 w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2">
-        <div class="flex flex-col">
-          <img src="/images/logo/light-logo-footer.png" width="200" alt="">
-          <div class="mb-[10px] flex flex-col justify-start items-start">
+        <div class="flex flex-col ">
+          <div class="">
+            <img src="/images/logo/light-logo-footer.png" width="200" alt="">
+          </div>
+          <div class="mb-[10px] flex flex-col justify-start items-start ml-4">
             <p class="dark:text-[#ddddd] text-[#696969] text-[14px] hover:text-[#20ad96] font-medium mb-[11px]"> <i class="fa-solid fa-phone"></i> &nbsp; +91 77962 69677 </p>
             <p class="dark:text-[#ddddd] text-[#696969] text-[14px] hover:text-[#20ad96] font-medium mb-[11px]"> <i class="fa-solid fa-envelope"></i> &nbsp; photon@paathshala.world </p>
             
           </div>
           
-          <div class="flex justify-start items-center">
+          <div class="flex justify-start items-center ml-4">
             
             <NuxtLink to="https://www.facebook.com/paathshalafortheworld" target="_blank">
               <i class="fa-brands fa-facebook mr-[24px] text-[#8c89a2] w-6 h-6 text-[25px]"></i>

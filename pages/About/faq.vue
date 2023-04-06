@@ -20,13 +20,13 @@
                             <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data1">
 
                                 <div class="m-10">
-                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot"></i>Go to the Contact Us tab on www.photonecademy.com
+                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot mr-1"></i>Go to the Contact Us tab on www.photonecademy.com
                                     </p>
-                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot"></i> Fill up the Enquire with us section</p>
-                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot"></i> Submit the form by clicking on Enquire
+                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot mr-1"></i>Fill up the Enquire with us section</p>
+                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot mr-1"></i>Submit the form by clicking on Enquire
                                         Now
                                     </p>
-                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot"></i>Photon Ecademy representatives will get in touch with you to understand your requirement</p>
+                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot mr-1"></i>Photon Ecademy representatives will get in touch with you to understand your requirement</p>
                                 </div>
 
                             </div>
@@ -56,7 +56,7 @@
                             <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data2">
 
                                 <div class="m-10">
-                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot"></i>Photon Ecademy services include teaching for JEE, NEET, AIIMS, science entrances aspirants, CBSE, ICSE Boards, Olympiads, Academics Counselling, Homework Checking, Student Mentoring, Academics Planning</p>
+                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot mr-1"></i>Photon Ecademy services include teaching for JEE, NEET, AIIMS, science entrances aspirants, CBSE, ICSE Boards, Olympiads, Academics Counselling, Homework Checking, Student Mentoring, Academics Planning</p>
 
                                 </div>
 
@@ -82,11 +82,11 @@
                             <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data3">
 
                                 <div class="m-10">
-                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot"></i>At Photon Ecademy, we believe that every student is unique and so are his/her learning requirements.
+                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot mr-1"></i>At Photon Ecademy, we believe that every student is unique and so are his/her learning requirements.
                                     </p>
-                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot"></i> Student will be taught in an exclusive one to one manner</p>
-                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot"></i> One Student – One Professor</p>
-                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot"></i> This is the best personalized service that any student can dream of If you have reached till here, you are at the right place</p>
+                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot mr-1"></i>Student will be taught in an exclusive one to one manner</p>
+                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot mr-1"></i>One Student – One Professor</p>
+                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot mr-1"></i>This is the best personalized service that any student can dream of If you have reached till here, you are at the right place</p>
                                 </div>
 
                             </div>
@@ -114,7 +114,7 @@
                             <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data4">
 
                                 <div class="m-10">
-                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot"></i> Classes are taken online in a one to one manner i.e. one student – one professor. The students can have amazing learning experience without the hassle of extensive travel and enjoy being taught, where ever they are, in the world</p>
+                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot mr-1"></i>Classes are taken online in a one to one manner i.e. one student – one professor. The students can have amazing learning experience without the hassle of extensive travel and enjoy being taught, where ever they are, in the world</p>
 
                                 </div>
 
@@ -140,10 +140,10 @@
                             <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data5">
 
                                 <div class="m-10">
-                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot"></i>Photon Ecademy has an extensive and personalized exams portal exclusively for Photon Ecademy students
+                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot mr-1"></i>Photon Ecademy has an extensive and personalized exams portal exclusively for Photon Ecademy students
                                     </p>
-                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot"></i> Photon Ecademy exams are curated by experts in such a way that students would actually love to give more exams and improve themselves with each exam</p>
-                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot"></i>After each exam, the students would receive detailed analytics about their performance in the exam which would empower the students to focus on areas they need to strengthen</p>
+                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot mr-1"></i> Photon Ecademy exams are curated by experts in such a way that students would actually love to give more exams and improve themselves with each exam</p>
+                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot mr-1"></i>After each exam, the students would receive detailed analytics about their performance in the exam which would empower the students to focus on areas they need to strengthen</p>
                                     
                                 </div>
 
@@ -173,7 +173,7 @@
                             <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data11">
 
                                 <div class="m-10">
-                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot"></i> The fee for the course depends upon the requirement of the student. The student can customize the course as per his/her requirement</p>
+                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot mr-1"></i>The fee for the course depends upon the requirement of the student. The student can customize the course as per his/her requirement</p>
                                     
                                 </div>
 
@@ -198,7 +198,7 @@
                             <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data12">
 
                                 <div class="m-10">
-                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot"></i> <strong>Absolutely.</strong> The student can enroll for 1 or 2 chapters as well</p>
+                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot mr-1"></i><strong>Absolutely.</strong> The student can enroll for 1 or 2 chapters as well</p>
 
                                 </div>
 
@@ -224,9 +224,9 @@
                             <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data13">
 
                                 <div class="m-10">
-                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot"></i>You have to send your requirement to us by clicking on the Contact tab on www.photonecademy.com
+                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot mr-1"></i>You have to send your requirement to us by clicking on the Contact tab on www.photonecademy.com
                                     </p>
-                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot"></i> Our representatives will get in touch with you<br> They will guide you about how to enroll for test series<br> After you officially enroll for the test series, you will be given an official ID to login to the Photon Ecademy official exams portal</p>
+                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot mr-1"></i>Our representatives will get in touch with you<br> They will guide you about how to enroll for test series<br> After you officially enroll for the test series, you will be given an official ID to login to the Photon Ecademy official exams portal</p>
                                     
                                 </div>
 
@@ -253,8 +253,8 @@
                             <div class="container border flex mx-10 p-3 dark:text-white dark:border-none" v-if="Data14">
 
                                 <div class="m-10">
-                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot"></i> Photon Ecademy Student Mentor’ is a premium service available for enrollment for Photon Ecademy students only</p>
-                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot"></i> More information about this premium service shall be provided the company representatives</p>
+                                    <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot mr-1"></i>Photon Ecademy Student Mentor’ is a premium service available for enrollment for Photon Ecademy students only</p>
+                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot mr-1"></i>More information about this premium service shall be provided the company representatives</p>
 
                                 </div>
 
@@ -283,9 +283,9 @@
                                 <div class="m-10">
                                     <p class="text-justify dark:text-gray-800"><i class="fa-solid fa-circle-dot"></i> Go to the <strong>contact tab</strong> on www.photonecademy.com
                                     </p>
-                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot"></i> Fill up the <strong>Enquire with us</strong> section</p>
-                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot"></i> Submit the form by clicking on <strong>Enquire Now</strong></p>
-                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot"></i> Photon Ecademy representatives will get in touch with you to understand your requirement</p>
+                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot mr-1"></i>Fill up the <strong>Enquire with us</strong> section</p>
+                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot mr-1"></i>Submit the form by clicking on <strong>Enquire Now</strong></p>
+                                    <p class="text-justify dark:text-gray-800 pt-3"><i class="fa-solid fa-circle-dot mr-1"></i>Photon Ecademy representatives will get in touch with you to understand your requirement</p>
                                     
                                 </div>
 

@@ -14,7 +14,7 @@
 
           <div class="flex justify-start items-center mt-5 text-[14px] font-light dark:text-[#ddd] text-[#696969]">
             <span class="flex justify-center items-center mr-4">
-              <img src="/images/blog/blog-avatar.jpg" alt="image" class="rounded-[50%] mr-2 w-[32px] h-[32px]" />
+              <img src="/images/logo/Photon Logo Earth.png" alt="image" class="rounded-[50%] mr-2 w-[32px] h-[32px]" />
               <span
                 class="dark:text-[#ddd] text-[#696969] hover:text-[#20ad96] dark:hover:text-[#20ad96] hover:cursor-pointer">{{
                   blog.name }}</span>
@@ -40,7 +40,7 @@
           <div class="flex items-center justify-between pt-4">
             <NuxtLink :to="`/blog/${blog.link}`">
               <button class="w-auto text-[14px] text-white font-bold px-10 py-4 bg-[#20ad96] hover:bg-[#3F3A64] rounded-md">
-              Reead more
+              Read more
             </button>
             </NuxtLink>
             <div class="flex items-center dark:text-[#ddd] text-[#696969]">
