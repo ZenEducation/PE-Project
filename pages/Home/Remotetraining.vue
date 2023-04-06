@@ -135,34 +135,33 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>
 
-
 <style scoped>
-.sub-title {
-  display: block;
-  font-size: 18px;
-  line-height: 1.78;
-  font-weight: 500;
-  color: #ddd;
-  margin-bottom: 24px;
-}
+  .sub-title {
+    display: block;
+    font-size: 18px;
+    line-height: 1.78;
+    font-weight: 500;
+    color: #ddd;
+    margin-bottom: 24px;
+  }
 
-.title {
-  font-size: 48px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  /* color: #3F3A64; */
-  line-height: 1.17;
-  color: white;
-  width: 100%;
-  margin-bottom: 0.5rem;
-}
+  .title {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    /* color: #3F3A64; */
+    line-height: 1.17;
+    color: white;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
 
-button:hover .icon {
-  color: #20ad96;
-}
+  button:hover .icon {
+    color: #20ad96;
+  }
 </style>

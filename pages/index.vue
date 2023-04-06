@@ -6,11 +6,12 @@
     <!-- <indexfour /> -->
     <indexfive />
     <brandsession />
+    <testimonials />
   </div>
 </template>
 
 <script setup>
 definePageMeta({
-  layout: "frontend",
-});
+  layout: 'frontend',
+})
 </script>

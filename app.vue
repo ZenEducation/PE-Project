@@ -8,32 +8,30 @@ import "@/assets/css/fonts.css";
 import "tw-elements/dist/js/index.min.js"
 
 
-const mainStore = useMainStore();
-const styleStore = useStyleStore();
-const loading = ref(true);
-
-
+const mainStore = useMainStore()
+const styleStore = useStyleStore()
+const loading = ref(true)
 
 onMounted(() => {
-  styleStore.setStyle(localStorage[styleKey] ?? "basic");
+  styleStore.setStyle(localStorage[styleKey] ?? 'basic')
   /* Dark mode */
   if (
     (!localStorage[darkModeKey] &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches) ||
-    localStorage[darkModeKey] === "1"
+      window.matchMedia('(prefers-color-scheme: dark)').matches) ||
+    localStorage[darkModeKey] === '1'
   ) {
-    styleStore.setDarkMode();
+    styleStore.setDarkMode()
   }
-  loading.value = false;
-});
+  loading.value = false
+})
 useHead({
   titleTemplate: (titleChunk) => {
-    const titleBase = "Zen Nuxt";
+    const titleBase = 'Zen Nuxt'
 
-    return titleChunk ? `${titleChunk} - ${titleBase}` : titleBase;
+    return titleChunk ? `${titleChunk} - ${titleBase}` : titleBase
   },
   link: [{ rel: 'icon', href: 'favicon.ico' }],
-});
+})
 </script>
 
 <template>

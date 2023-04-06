@@ -1,63 +1,63 @@
 <script setup>
-import { computed, onMounted } from "vue";
-import { useRoute, RouterLink } from "vue-router";
-import { useStyleStore } from "@/stores/style.js";
-import {
-  gradientBgPurplePink,
-  gradientBgDark,
-  gradientBgPinkRed,
-} from "@/configs/colors.js";
-import {
-  gradientBgYellowRed,
-  gradientBgRedYellow,
-} from "@/configs/colorsPremium.js";
-import JustboilLogo from "@/components/AfterAuth/Display/JustboilLogo.vue";
-import BaseButtons from "@/components/AfterAuth/Buttons/BaseButtons.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
+  import { computed, onMounted } from 'vue'
+  import { useRoute, RouterLink } from 'vue-router'
+  import { useStyleStore } from '@/stores/style.js'
+  import {
+    gradientBgPurplePink,
+    gradientBgDark,
+    gradientBgPinkRed,
+  } from '@/configs/colors.js'
+  import {
+    gradientBgYellowRed,
+    gradientBgRedYellow,
+  } from '@/configs/colorsPremium.js'
+  import JustboilLogo from '@/components/AfterAuth/Display/JustboilLogo.vue'
+  import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
 
-onMounted(() => {
-  console.log("Section Form Screen ");
-});
+  onMounted(() => {
+    console.log('Section Form Screen ')
+  })
 
-const props = defineProps({
-  bg: {
-    type: String,
-    required: true,
-    validator: (value) =>
-      ["purplePink", "pinkRed", "yellowRed", "redYellow"].includes(value),
-  },
-  hasPromo: Boolean,
-});
+  const props = defineProps({
+    bg: {
+      type: String,
+      required: true,
+      validator: (value) =>
+        ['purplePink', 'pinkRed', 'yellowRed', 'redYellow'].includes(value),
+    },
+    hasPromo: Boolean,
+  })
 
-const colorClass = computed(() => {
-  if (useStyleStore().darkMode) {
-    return gradientBgDark;
+  const colorClass = computed(() => {
+    if (useStyleStore().darkMode) {
+      return gradientBgDark
+    }
+
+    switch (props.bg) {
+      case 'purplePink':
+        return gradientBgPurplePink
+      case 'pinkRed':
+        return gradientBgPinkRed
+      case 'yellowRed':
+        return gradientBgYellowRed
+      case 'redYellow':
+        return gradientBgRedYellow
+    }
+
+    return ''
+  })
+
+  const route = useRoute()
+
+  const currentRouteName = route.name
+
+  const routes = {
+    login: 'Login',
+    signup: 'Signup',
+    remind: 'Remind',
+    error: 'Error',
   }
-
-  switch (props.bg) {
-    case "purplePink":
-      return gradientBgPurplePink;
-    case "pinkRed":
-      return gradientBgPinkRed;
-    case "yellowRed":
-      return gradientBgYellowRed;
-    case "redYellow":
-      return gradientBgRedYellow;
-  }
-
-  return "";
-});
-
-const route = useRoute();
-
-const currentRouteName = route.name;
-
-const routes = {
-  login: "Login",
-  signup: "Signup",
-  remind: "Remind",
-  error: "Error",
-};
 </script>
 
 <template>

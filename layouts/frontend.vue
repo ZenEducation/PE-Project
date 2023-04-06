@@ -1,7 +1,7 @@
 <template>
   <div class="font-body leading-body">
-      <heading />
-      <slot />
-      <Footer/>
+    <heading />
+    <slot />
+    <Footer />
   </div>
 </template>

@@ -1,67 +1,67 @@
 <script setup>
-import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
-import { computed } from "vue";
-import { mdiChevronDown } from "@mdi/js";
-import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
-import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
+  import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
+  import { computed } from 'vue'
+  import { mdiChevronDown } from '@mdi/js'
+  import BaseIcon from '@/components/AfterAuth/Display/BaseIcon.vue'
+  import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
 
-const props = defineProps({
-  icon: {
-    type: String,
-    default: null,
-  },
-  iconRight: {
-    type: String,
-    default: null,
-  },
-  label: {
-    type: String,
-    default: null,
-  },
-  options: {
-    type: Array,
-    required: true,
-  },
-  modelValue: {
-    type: Object,
-    default: null,
-  },
-  left: Boolean,
-  iconW: {
-    type: String,
-    default: null,
-  },
-  iconH: {
-    type: String,
-    default: null,
-  },
-  iconSize: {
-    type: [String, Number],
-    default: null,
-  },
-  small: Boolean,
-  color: {
-    type: String,
-    default: "lightDark",
-  },
-  outline: Boolean,
-  disabled: Boolean,
-});
+  const props = defineProps({
+    icon: {
+      type: String,
+      default: null,
+    },
+    iconRight: {
+      type: String,
+      default: null,
+    },
+    label: {
+      type: String,
+      default: null,
+    },
+    options: {
+      type: Array,
+      required: true,
+    },
+    modelValue: {
+      type: Object,
+      default: null,
+    },
+    left: Boolean,
+    iconW: {
+      type: String,
+      default: null,
+    },
+    iconH: {
+      type: String,
+      default: null,
+    },
+    iconSize: {
+      type: [String, Number],
+      default: null,
+    },
+    small: Boolean,
+    color: {
+      type: String,
+      default: 'lightDark',
+    },
+    outline: Boolean,
+    disabled: Boolean,
+  })
 
-const emit = defineEmits(["update:modelValue"]);
+  const emit = defineEmits(['update:modelValue'])
 
-computed({
-  get: () => props.modelValue,
-  set: (value) => {
-    emit("update:modelValue", value);
-  },
-});
+  computed({
+    get: () => props.modelValue,
+    set: (value) => {
+      emit('update:modelValue', value)
+    },
+  })
 
-const iconRightComputed = computed(() =>
-  props.label && !props.icon && !props.iconRight
-    ? mdiChevronDown
-    : props.iconRight
-);
+  const iconRightComputed = computed(() =>
+    props.label && !props.icon && !props.iconRight
+      ? mdiChevronDown
+      : props.iconRight
+  )
 </script>
 
 <template>

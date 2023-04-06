@@ -68,25 +68,25 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>
 
 <style scoped>
-.title {
-  line-height: 1.17;
-  font-weight: 700;
-  letter-spacing: 2px;
-  /* color: #3F3A64; */
-  color: white;
-}
+  .title {
+    line-height: 1.17;
+    font-weight: 700;
+    letter-spacing: 2px;
+    /* color: #3F3A64; */
+    color: white;
+  }
 
-p {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.67;
-  color: #8c89a2;
-  margin-top: 20px;
-}
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.67;
+    color: #8c89a2;
+    margin-top: 20px;
+  }
 </style>

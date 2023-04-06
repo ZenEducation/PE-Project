@@ -11,7 +11,7 @@
         <blogclassicsidebar />
       </div>
       <div class="col-span-2 ml-5">
-        <blogdetailscontent :slug="slug"  />
+        <blogdetailscontent :slug="slug" />
       </div>
     </div>
   </div>

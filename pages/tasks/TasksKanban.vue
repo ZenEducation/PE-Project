@@ -141,43 +141,43 @@
 </template>
 
 <script>
-import { ref } from "vue";
-import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
-import TasksGroups from "@/components/AfterAuth/Tasks/TasksGroups.vue";
-import Task01 from "@/components/AfterAuth/Tasks/Task01.vue";
-import Task02 from "@/components/AfterAuth/Tasks/Task02.vue";
-import Task03 from "@/components/AfterAuth/Tasks/Task03.vue";
-import Task04 from "@/components/AfterAuth/Tasks/Task04.vue";
-import Task05 from "@/components/AfterAuth/Tasks/Task05.vue";
-import Task06 from "@/components/AfterAuth/Tasks/Task06.vue";
-import Task07 from "@/components/AfterAuth/Tasks/Task07.vue";
-import Task08 from "@/components/AfterAuth/Tasks/Task08.vue";
-import Task09 from "@/components/AfterAuth/Tasks/Task09.vue";
-import { useStyleStore } from "@/stores/style";
+  import { ref } from 'vue'
+  import SectionMain from '@/components/AfterAuth/Sections/SectionMain.vue'
+  import TasksGroups from '@/components/AfterAuth/Tasks/TasksGroups.vue'
+  import Task01 from '@/components/AfterAuth/Tasks/Task01.vue'
+  import Task02 from '@/components/AfterAuth/Tasks/Task02.vue'
+  import Task03 from '@/components/AfterAuth/Tasks/Task03.vue'
+  import Task04 from '@/components/AfterAuth/Tasks/Task04.vue'
+  import Task05 from '@/components/AfterAuth/Tasks/Task05.vue'
+  import Task06 from '@/components/AfterAuth/Tasks/Task06.vue'
+  import Task07 from '@/components/AfterAuth/Tasks/Task07.vue'
+  import Task08 from '@/components/AfterAuth/Tasks/Task08.vue'
+  import Task09 from '@/components/AfterAuth/Tasks/Task09.vue'
+  import { useStyleStore } from '@/stores/style'
 
-const styleStore = useStyleStore();
+  const styleStore = useStyleStore()
 
-export default {
-  name: "TasksKanban",
-  components: {
-    SectionMain,
-    TasksGroups,
-    Task01,
-    Task02,
-    Task03,
-    Task04,
-    Task05,
-    Task06,
-    Task07,
-    Task08,
-    Task09,
-  },
-  setup() {
-    const sidebarOpen = ref(false);
+  export default {
+    name: 'TasksKanban',
+    components: {
+      SectionMain,
+      TasksGroups,
+      Task01,
+      Task02,
+      Task03,
+      Task04,
+      Task05,
+      Task06,
+      Task07,
+      Task08,
+      Task09,
+    },
+    setup() {
+      const sidebarOpen = ref(false)
 
-    return {
-      sidebarOpen,
-    };
-  },
-};
+      return {
+        sidebarOpen,
+      }
+    },
+  }
 </script>

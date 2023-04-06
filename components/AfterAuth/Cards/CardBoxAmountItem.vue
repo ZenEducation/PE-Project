@@ -1,7 +1,7 @@
 <script setup>
-import BaseDivider from "~~/components/NavBar/BaseDivider.vue";
-import PillTagTrend from "@/components/AfterAuth/Display/PillTagTrend.vue";
-import IconRounded from "@/components/AfterAuth/Display/IconRounded.vue";
+import BaseDivider from '@/components/AfterAuth/NavBar/BaseDivider.vue'
+import PillTagTrend from '@/components/AfterAuth/Display/PillTagTrend.vue'
+import IconRounded from '@/components/AfterAuth/Display/IconRounded.vue'
 
 defineProps({
   title: {
@@ -29,7 +29,7 @@ defineProps({
     type: String,
     default: null,
   },
-});
+})
 </script>
 
 <template>

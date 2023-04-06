@@ -21,20 +21,20 @@
 </template>
 
 <script>
-export default {
-  name: "TasksGroups",
-  props: ["title"],
-};
+  export default {
+    name: 'TasksGroups',
+    props: ['title'],
+  }
 </script>
 
 <style>
-.tasks-groups-container {
-  --width: 20rem;
-}
+  .tasks-groups-container {
+    --width: 20rem;
+  }
 
-.tasks-groups-container {
-  width: var(--width);
-  min-width: var(--width);
-  max-width: var(--width);
-}
+  .tasks-groups-container {
+    width: var(--width);
+    min-width: var(--width);
+    max-width: var(--width);
+  }
 </style>

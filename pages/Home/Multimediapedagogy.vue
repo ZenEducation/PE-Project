@@ -73,30 +73,28 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: "frontend",
-});
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>
 
-
-
 <style scoped>
-.sub-title {
-  display: block;
-  font-size: 18px;
-  line-height: 1.78;
-  font-weight: 500;
-  color: white;
-  margin-bottom: 45px;
-}
+  .sub-title {
+    display: block;
+    font-size: 18px;
+    line-height: 1.78;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 45px;
+  }
 
-.title {
-  font-weight: 500;
-  letter-spacing: 2px;
-  /* color: #3F3A64; */
-  line-height: 1.29;
-  color: white;
-  width: 100%;
-  margin-bottom: 0.5rem;
-}
+  .title {
+    font-weight: 500;
+    letter-spacing: 2px;
+    /* color: #3F3A64; */
+    line-height: 1.29;
+    color: white;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
 </style>

@@ -1,37 +1,37 @@
 <script setup>
-import { computed, ref, onMounted } from "vue";
-import { useMainStore } from "@/stores/main.js";
-import {
-  mdiAccountMultiple,
-  mdiCartOutline,
-  mdiChartTimelineVariant,
-  mdiMonitorCellphone,
-  mdiReload,
-  mdiGithub,
-  mdiChartPie,
-} from "@mdi/js";
-import * as chartConfig from "@/components/AfterAuth/Charts/chart.config.js";
-import LineChart from "@/components/AfterAuth/Charts/LineChart.vue";
-import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
-import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
-import SectionBannerStarOnGitHub from "@/components/AfterAuth/Sections/SectionBannerStarOnGitHub.vue";
-import CardBoxWidget from "@/components/AfterAuth/Cards/CardBoxWidget.vue";
-import CardBoxClient from "@/components/AfterAuth/Cards/CardBoxClient.vue";
-import CardBoxTransaction from "@/components/AfterAuth/Cards/CardBoxTransaction.vue";
-import NotificationBar from "@/components/AfterAuth/NotificationBars/NotificationBar.vue";
-import TableCardClients from "@/components/AfterAuth/Tables/TableCardClients.vue";
+  import { computed, ref, onMounted } from 'vue'
+  import {
+    mdiAccountMultiple,
+    mdiCartOutline,
+    mdiChartTimelineVariant,
+    mdiMonitorCellphone,
+    mdiReload,
+    mdiGithub,
+    mdiChartPie,
+  } from '@mdi/js'
+  import { useMainStore } from '@/stores/main.js'
+  import * as chartConfig from '@/components/AfterAuth/Charts/chart.config.js'
+  import LineChart from '@/components/AfterAuth/Charts/LineChart.vue'
+  import SectionMain from '@/components/AfterAuth/Sections/SectionMain.vue'
+  import SectionTitleLineWithButton from '@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue'
+  import SectionBannerStarOnGitHub from '@/components/AfterAuth/Sections/SectionBannerStarOnGitHub.vue'
+  import CardBoxWidget from '@/components/AfterAuth/Cards/CardBoxWidget.vue'
+  import CardBoxClient from '@/components/AfterAuth/Cards/CardBoxClient.vue'
+  import CardBoxTransaction from '@/components/AfterAuth/Cards/CardBoxTransaction.vue'
+  import NotificationBar from '@/components/AfterAuth/NotificationBars/NotificationBar.vue'
+  import TableCardClients from '@/components/AfterAuth/Tables/TableCardClients.vue'
 
-const chartData = ref(null);
+  const chartData = ref(null)
 
-const fillChartData = () => {
-  chartData.value = chartConfig.sampleChartData();
-};
-onMounted(() => {
-  fillChartData();
-});
-const mainStore = useMainStore();
-const clientBarItems = computed(() => mainStore.clients.slice(0, 4));
-const transactionBarItems = computed(() => mainStore.history);
+  const fillChartData = () => {
+    chartData.value = chartConfig.sampleChartData()
+  }
+  onMounted(() => {
+    fillChartData()
+  })
+  const mainStore = useMainStore()
+  const clientBarItems = computed(() => mainStore.clients.slice(0, 4))
+  const transactionBarItems = computed(() => mainStore.history)
 </script>
 
 <template>

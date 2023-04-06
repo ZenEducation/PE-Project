@@ -1,28 +1,28 @@
 <script setup>
-import BaseIcon from "@/components/AfterAuth/Display/BaseIcon.vue";
+  import BaseIcon from '@/components/AfterAuth/Display/BaseIcon.vue'
 
-defineProps({
-  icon: {
-    type: String,
-    default: null,
-  },
-  h: {
-    type: String,
-    default: null,
-  },
-  isRight: Boolean,
-  clickable: Boolean,
-  textColor: {
-    type: String,
-    default: "text-gray-500",
-  },
-});
+  defineProps({
+    icon: {
+      type: String,
+      default: null,
+    },
+    h: {
+      type: String,
+      default: null,
+    },
+    isRight: Boolean,
+    clickable: Boolean,
+    textColor: {
+      type: String,
+      default: 'text-gray-500',
+    },
+  })
 
-const emit = defineEmits(["icon-click"]);
+  const emit = defineEmits(['icon-click'])
 
-const iconClick = (e) => {
-  emit("icon-click", e);
-};
+  const iconClick = (e) => {
+    emit('icon-click', e)
+  }
 </script>
 
 <template>

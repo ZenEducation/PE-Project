@@ -9,27 +9,27 @@ import {
   mdiLogout,
   mdiThemeLightDark,
   mdiHelpCircleOutline,
-} from "@mdi/js";
+} from '@mdi/js'
 
 export default [
   {
     icon: mdiMenu,
-    label: "Sample menu",
+    label: 'Sample menu',
     menu: [
       {
         icon: mdiClockOutline,
-        label: "Item One",
+        label: 'Item One',
       },
       {
         icon: mdiCloud,
-        label: "Item Two",
+        label: 'Item Two',
       },
       {
         isDivider: true,
       },
       {
         icon: mdiCrop,
-        label: "Item Last",
+        label: 'Item Last',
       },
     ],
   },
@@ -38,51 +38,51 @@ export default [
     menu: [
       {
         icon: mdiAccount,
-        label: "My Profile",
-        to: "/pps/profileView",
+        label: 'My Profile',
+        to: '/pps/profileView',
       },
       {
         icon: mdiCogOutline,
-        label: "Settings",
+        label: 'Settings',
       },
       {
         icon: mdiEmail,
-        label: "Messages",
+        label: 'Messages',
       },
       {
         isDivider: true,
       },
       {
         icon: mdiAccount,
-        label: "Stylize",
-        to: "/pps/styleView",
+        label: 'Stylize',
+        to: '/pps/styleView',
       },
       {
         isDivider: true,
       },
       {
         icon: mdiLogout,
-        label: "Log Out",
+        label: 'Log Out',
         isLogout: true,
       },
     ],
   },
   {
     icon: mdiThemeLightDark,
-    label: "Light/Dark",
+    label: 'Light/Dark',
     isDesktopNoLabel: true,
     isToggleLightDark: true,
   },
   {
     icon: mdiHelpCircleOutline,
-    label: "About",
-    href: "",
+    label: 'About',
+    href: '',
     isDesktopNoLabel: true,
   },
   {
     icon: mdiLogout,
-    label: "Log out",
+    label: 'Log out',
     isDesktopNoLabel: true,
     isLogout: true,
   },
-];
+]

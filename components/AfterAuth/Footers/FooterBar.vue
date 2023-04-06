@@ -1,9 +1,9 @@
 <script setup>
-import { containerMaxW } from "@/configs/config.js";
-import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
-import JustboilLogo from "@/components/AfterAuth/Display/JustboilLogo.vue";
+  import { containerMaxW } from '@/configs/config.js'
+  import BaseLevel from '@/components/AfterAuth/Buttons/BaseLevel.vue'
+  import JustboilLogo from '@/components/AfterAuth/Display/JustboilLogo.vue'
 
-const year = new Date().getFullYear();
+  const year = new Date().getFullYear()
 </script>
 
 <template>
