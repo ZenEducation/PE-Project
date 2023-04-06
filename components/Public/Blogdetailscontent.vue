@@ -60,7 +60,7 @@
             {{ blog.paragraph8 }}
           </div>
 
-          <div class="text-[15px] dark:text-[#ddd] text-[#696969] leading-[1.74] mb-[1rem]">
+          <!-- <div class="text-[15px] dark:text-[#ddd] text-[#696969] leading-[1.74] mb-[1rem]">
             <p>Source: thisiscolossal.com</p>
           </div>
 
@@ -76,21 +76,21 @@
               Share this post
 
               <span class="border-[2px] border-[#ededed] rounded-[50%] w-12 h-12 flex justify-center items-center ml-4 group-hover:bg-[#20ad96]">
-                <!-- <icon class="w-5 h-5 text-[#20ad96]" name="uil:share-alt" /> -->
+                
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-[#20ad96] group-hover:fill-white" viewBox="0 0 24 24"><path  d="M18 22q-1.25 0-2.125-.875T15 19q0-.175.025-.363t.075-.337l-7.05-4.1q-.425.375-.95.588T6 15q-1.25 0-2.125-.875T3 12q0-1.25.875-2.125T6 9q.575 0 1.1.213t.95.587l7.05-4.1q-.05-.15-.075-.337T15 5q0-1.25.875-2.125T18 2q1.25 0 2.125.875T21 5q0 1.25-.875 2.125T18 8q-.575 0-1.1-.212t-.95-.588L8.9 11.3q.05.15.075.338T9 12q0 .175-.025.363T8.9 12.7l7.05 4.1q.425-.375.95-.587T18 16q1.25 0 2.125.875T21 19q0 1.25-.875 2.125T18 22Zm0-16q.425 0 .713-.288T19 5q0-.425-.288-.713T18 4q-.425 0-.713.288T17 5q0 .425.288.713T18 6ZM6 13q.425 0 .713-.288T7 12q0-.425-.288-.713T6 11q-.425 0-.713.288T5 12q0 .425.288.713T6 13Zm12 7q.425 0 .713-.288T19 19q0-.425-.288-.713T18 18q-.425 0-.713.288T17 19q0 .425.288.713T18 20Zm0-15ZM6 12Zm12 7Z"/></svg>
               </span>
             </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
   </div>
 
   <div>
-    <div class="flex flex-row items-start my-10">
+    <div class="flex flex-row items-center my-10">
       <div class="flex flex-col justify-center items-center px-5">
-        <img class="rounded-[50%] mb-4 min-w-[100px] min-h-[100px]" src="/images/author/blog-author.jpg" alt="image" />
+        <img class="rounded-[50%] " src="/images/logo/light-logo.png" width="400" height="400" alt="image" />
 
         <div class="flex items-center gap-2">
           <icon class="w-[13px] h-[13px] text-[#8C89A2]" name="uil:twitter" />
@@ -99,16 +99,14 @@
         </div>
       </div>
       <div>
-        <h6 class="uppercase">Owen Christ</h6>
+        
         <div class="text-[15px] dark:text-[#ddd] text-[#696969] mt-[15px]">
-          Owen Christ is an author, blogger, and designer living in a suburb of
-          Washington, DC. When she’s not designing, blogging, or writing, Owen
-          can be found with her head in a book or pinning like a madman.
+          Photon Ecademy is a premier educational services company that provides private one-to-one personalized classes all over the world, curated to meet your academic needs.
         </div>
       </div>
     </div>
 
-    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+    <!-- <div class="flex flex-col md:flex-row justify-between items-center gap-4">
       <div class="topic w-full relative dark:bg-[#111] bg-none transition-all duration-[0.3s] ease-[ease-in-out] pl-[50px] pr-[30px] px-2.5  py-[30px] rounded-md flex items-center justify-start bg-white max-w-[373px]">
         <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 fill-[#20ad96]" width="44" height="44" viewBox="0 0 24 24"><path  d="m8.5 12.8l5.7 5.6c.4.4 1 .4 1.4 0c.4-.4.4-1 0-1.4l-4.9-5l4.9-5c.4-.4.4-1 0-1.4c-.2-.2-.4-.3-.7-.3c-.3 0-.5.1-.7.3l-5.7 5.6c-.4.5-.4 1.1 0 1.6c0-.1 0-.1 0 0z"/></svg>
         <h6 class="leading-[1.56] font-bold text-[18px] text-[#333] dark-[#fff]">
@@ -123,16 +121,16 @@
         <icon class="text-[30px] ml-3 text-[#20AD96]" name="uil:angle-right-b" />
         <svg xmlns="http://www.w3.org/2000/svg" class="ml-3 fill-[#20ad96]" width="44" height="44" viewBox="0 0 24 24"><path d="m14.83 11.29l-4.24-4.24a1 1 0 0 0-1.42 0a1 1 0 0 0 0 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41a1 1 0 0 0 .71.29a1 1 0 0 0 .71-.29l4.24-4.24a1 1 0 0 0 0-1.42Z"/></svg>
       </div>
-    </div>
+    </div> -->
 
     <!-- comments start -->
 
     <div>
       <h6 class="text-[24px] my-20 text-[#333] dark:text-[#fff]">
-        Comments <span class="text-[#20AD96]">(3)</span>
+        Comments <span class="text-[#20AD96]">(0)</span>
       </h6>
 
-      <div class="flex flex-row items-start mb-10">
+      <!-- <div class="flex flex-row items-start mb-10">
         <div class="flex flex-col justify-center items-center px-5">
           <img class="rounded-[50%] mb-4 min-w-[80px] min-h-[80px]" src="/images/author/blog-author.jpg" alt="image" />
         </div>
@@ -176,7 +174,7 @@
             <a href="">Reply</a>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- comment end -->

@@ -10,7 +10,7 @@
                     <h3><i class="fa-solid fa-phone"></i> Phone</h3>
                 </div>
                 <div class="dark:text-white text-black">
-                    <p>+91 9867998388</p>
+                    <p>+91 77962 69677</p>
                 </div>
             </div>
             <div class="flex justify-center w-[50%] flex-col gap-4">
@@ -18,16 +18,22 @@
                     <h3><i class="fa-sharp fa-solid fa-envelope"></i> Email</h3>
                 </div>
                 <div class="flex flex-col dark:text-white text-black">
-                    <p>affiliations@paathshala.world</p>
-                    <p>clientrelations@paathshala.world</p>
+                    <p>photon@paathshala.world</p>
+                    
                 </div>
             </div>
         </div>
         <div class="flex justify-center gap-2 mb-2">
-            <i class="fa-brands fa-square-facebook text-blue-900 hover:text-blue-700 hover:cursor-pointer text-xl"></i>
-            <i class="fa-brands fa-square-instagram text-pink-700 hover:text-[#c13584] hover:cursor-pointer text-xl"></i>
-            <i class="fa-brands fa-linkedin text-sky-900 hover:text-sky-600 hover:cursor-pointer text-xl"></i>
-            <i class="fa-brands fa-square-youtube text-[#ff0000] hover:text-red-800 hover:cursor-pointer text-xl"></i>
+            <NuxtLink to="https://www.facebook.com/paathshalafortheworld">
+                <i class="fa-brands fa-square-facebook text-blue-900 hover:text-blue-700 hover:cursor-pointer text-xl"></i>
+            </NuxtLink>
+            <!-- <i class="fa-brands fa-square-instagram text-pink-700 hover:text-[#c13584] hover:cursor-pointer text-xl"></i> -->
+            <NuxtLink to="https://www.linkedin.com/company/paathshala-ascension">
+                <i class="fa-brands fa-linkedin text-sky-900 hover:text-sky-600 hover:cursor-pointer text-xl"></i>
+            </NuxtLink>
+            <NuxtLink to="https://www.youtube.com/c/PaathshalaEducation">
+                <i class="fa-brands fa-square-youtube text-[#ff0000] hover:text-red-800 hover:cursor-pointer text-xl"></i>
+            </NuxtLink>
         </div>
     </div>
 </template>

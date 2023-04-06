@@ -12,191 +12,11 @@
         </NuxtLink>
         <nav aria-label="Main Menu" class="relative mx-auto hidden xl:block">
           <ul aria-label="Main Menu" role="menubar">
-            <li v-if="darkMode" class="inline-block px-2.5 2xl:px-[17px] py-[29px] group" role="none">
-              <NuxtLink rel="noopener noreferrer"
-                class="darkMain font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white"
-                to="#!" id="nav-1" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">Home<i
-                  class="fa fa-chevron-down ml-2 text-xs"></i></NuxtLink>
-              <div
-                class="w-[1170px] flex flex-wrap absolute z-20 top-full mt-5 invisible opacity-0 pt-7.5 pb-[34px] px-3.8 shadow-2md shadow-black/5 bg-white border-b-4 border-b-primary transition-all duration-300 left-1/2 -translate-x-1/2 group-hover:visible group-hover:opacity-100 group-hover:mt-0 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:mt-0 group-focus-within:pointer-events-auto dark:bg-[#161821] dark:text-white">
-                <div class="px-3.8 shrink-0 grow-0 w-1/4 basis-1/4">
-                  <h2 class="sr-only">Group 01</h2>
-                  <ul>
-                    <li class="relative">
-                      <NuxtLink
-                        class="leading-relaxed block font-medium py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                        to="/">MaxCoach Education<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-strawGradient pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">hot</span>
-                      </NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink
-                        class="leading-relaxed block font-medium py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                        to="/home/courseportal">Course Portal</NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink
-                        class="leading-relaxed block font-medium py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                        to="/home/distantlearning">Distant Learning<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-strawGradient pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">hot</span>
-                      </NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink
-                        class="leading-relaxed block font-medium py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                        to="/home/multimediapedagogy">Multimedia Pedagogy</NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink
-                        class="leading-relaxed block font-medium py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                        to="/home/modernschooling">Modern Schooling</NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink
-                        class="leading-relaxed block font-medium py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                        to="/home/remotetraining">Remote Training</NuxtLink>
-                    </li>
-                  </ul>
-                </div>
-                <div class="px-3.8 shrink-0 grow-0 w-1/4 basis-1/4">
-                  <h2 class="sr-only">Group 02</h2>
-                  <ul>
-                    <li class="relative">
-                      <NuxtLink class="leading-relaxed block font-medium py-2 hover:text-heading pointer-events-none"
-                        to="/">Health Coaching<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-primary pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">coming
-                          soon</span></NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink class="leading-relaxed block font-medium py-2 hover:text-heading pointer-events-none"
-                        to="/">Gym Coaching<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-primary pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">coming
-                          soon</span></NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink class="leading-relaxed block font-medium py-2 hover:text-heading pointer-events-none"
-                        to="/">Business<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-primary pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">coming
-                          soon</span></NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink class="leading-relaxed block font-medium py-2 hover:text-heading pointer-events-none"
-                        to="/">Artist<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-primary pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">coming
-                          soon</span></NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink class="leading-relaxed block font-medium py-2 hover:text-heading pointer-events-none"
-                        to="/">Kitchen Coach<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-primary pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">coming
-                          soon</span></NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink class="leading-relaxed block font-medium py-2 hover:text-heading pointer-events-none"
-                        to="/">Motivation<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-primary pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">coming
-                          soon</span></NuxtLink>
-                    </li>
-                  </ul>
-                </div>
-                <div class="px-3.8 shrink-0 grow-0 w-1/2 basis-1/2">
-                  <h2 class="sr-only">Banner</h2>
-                  <NuxtLink to="/"><img src="/images/others/mega-menu.jpg" alt="Banner" /></NuxtLink>
-                </div>
-              </div>
-            </li>
-            <li v-else class="inline-block px-2.5 2xl:px-[17px] py-[29px] group" role="none">
-              <NuxtLink rel="noopener noreferrer"
-                class="main font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white"
-                to="#!" id="nav-1" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">Home<i
-                  class="fa fa-chevron-down ml-2 text-xs"></i></NuxtLink>
-              <div
-                class="w-[1170px] flex flex-wrap absolute z-20 top-full mt-5 invisible opacity-0 pt-7.5 pb-[34px] px-3.8 shadow-2md shadow-black/5 bg-white border-b-4 border-b-primary transition-all duration-300 left-1/2 -translate-x-1/2 group-hover:visible group-hover:opacity-100 group-hover:mt-0 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:mt-0 group-focus-within:pointer-events-auto dark:bg-[#161821] dark:text-white">
-                <div class="px-3.8 shrink-0 grow-0 w-1/4 basis-1/4">
-                  <h2 class="sr-only">Group 01</h2>
-                  <ul>
-                    <li class="relative">
-                      <NuxtLink
-                        class="leading-relaxed block font-medium py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                        to="/">MaxCoach Education<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-strawGradient pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">hot</span>
-                      </NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink
-                        class="leading-relaxed block font-medium py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                        to="/home/courseportal">Course Portal</NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink
-                        class="leading-relaxed block font-medium py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                        to="/home/distantlearning">Distant Learning<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-strawGradient pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">hot</span>
-                      </NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink
-                        class="leading-relaxed block font-medium py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                        to="/home/multimediapedagogy">Multimedia Pedagogy</NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink
-                        class="leading-relaxed block font-medium py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                        to="/home/modernschooling">Modern Schooling</NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink
-                        class="leading-relaxed block font-medium py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                        to="/home/remotetraining">Remote Training</NuxtLink>
-                    </li>
-                  </ul>
-                </div>
-                <div class="px-3.8 shrink-0 grow-0 w-1/4 basis-1/4">
-                  <h2 class="sr-only">Group 02</h2>
-                  <ul>
-                    <li class="relative">
-                      <NuxtLink class="leading-relaxed block font-medium py-2 hover:text-heading pointer-events-none"
-                        to="/">Health Coaching<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-primary pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">coming
-                          soon</span></NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink class="leading-relaxed block font-medium py-2 hover:text-heading pointer-events-none"
-                        to="/">Gym Coaching<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-primary pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">coming
-                          soon</span></NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink class="leading-relaxed block font-medium py-2 hover:text-heading pointer-events-none"
-                        to="/">Business<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-primary pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">coming
-                          soon</span></NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink class="leading-relaxed block font-medium py-2 hover:text-heading pointer-events-none"
-                        to="/">Artist<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-primary pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">coming
-                          soon</span></NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink class="leading-relaxed block font-medium py-2 hover:text-heading pointer-events-none"
-                        to="/">Kitchen Coach<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-primary pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">coming
-                          soon</span></NuxtLink>
-                    </li>
-                    <li class="relative">
-                      <NuxtLink class="leading-relaxed block font-medium py-2 hover:text-heading pointer-events-none"
-                        to="/">Motivation<span
-                          class="inline-flex justify-center items-center leading-none text-white bg-primary pt-1 px-2 pb-[3px] text-[11px] rounded-sm ml-2.5 font-bold tracking-wide uppercase">coming
-                          soon</span></NuxtLink>
-                    </li>
-                  </ul>
-                </div>
-                <div class="px-3.8 shrink-0 grow-0 w-1/2 basis-1/2">
-                  <h2 class="sr-only">Banner</h2>
-                  <NuxtLink to="/"><img src="/images/others/mega-menu.jpg" alt="Banner" /></NuxtLink>
-                </div>
-              </div>
+            
+            <li class="inline-block px-2.5 2xl:px-[17px] py-[29px] group" role="none">
+              <NuxtLink
+                class="font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white hover:text-[#20ad96] dark:hover:text-[#20ad96]"
+                id="nav-6" role="menuitem" tabindex="0" to="/">Home</NuxtLink>
             </li>
             <li v-if="darkMode" class="inline-block px-2.5 2xl:px-[17px] py-[29px] group relative" role="none">
               <NuxtLink rel="noopener noreferrer"
@@ -206,14 +26,8 @@
               <ul
                 class="absolute z-20 top-full left-0 w-60 mt-5 py-4 transition-all duration-400 bg-white border-b-4 border-b-primary shadow-2md shadow-black/5 visible opacity-0 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:mt-0 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:mt-0 group-focus-within:pointer-events-auto dark:bg-[#161821] text-secondary dark:text-white"
                 role="menu">
-                <li role="none" class="relative">
-                  <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/about/aboutme">About me</NuxtLink>
-                </li>
-                <li role="none" class="relative">
-                  <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/about/testimonials">Testimonials</NuxtLink>
-                </li>
+                
+                
                 <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/Aboutus">About Us</NuxtLink>
@@ -226,34 +40,34 @@
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/enquire_with_us">Enquire With US</NuxtLink>
                 </li>
-                <li role="none" class="relative">
+                <!-- <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/payments">Payments</NuxtLink>
                 </li>
                 <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/donations">Donations</NuxtLink>
-                </li>
+                </li> -->
                 <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/faq">FAQs</NuxtLink>
                 </li>
-                <li role="none" class="relative">
+                <!-- <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/gallery">Gallery</NuxtLink>
-                </li>
-                <li role="none" class="relative">
+                </li> -->
+                <!-- <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/paathshala_instructor">Become a Paathshala Instructor</NuxtLink>
-                </li>
-                <li role="none" class="relative">
+                </li> -->
+                <!-- <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/career_stories">Career Stories</NuxtLink>
                 </li>
                 <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/chapters_topicList">Paathshala Chapters & Topics List</NuxtLink>
-                </li>
+                </li> -->
 
               </ul>
             </li>
@@ -265,14 +79,8 @@
               <ul
                 class="absolute z-20 top-full left-0 w-60 mt-5 py-4 transition-all duration-400 bg-white border-b-4 border-b-primary shadow-2md shadow-black/5 visible opacity-0 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:mt-0 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:mt-0 group-focus-within:pointer-events-auto dark:bg-[#161821] text-secondary dark:text-white"
                 role="menu">
-                <li role="none" class="relative">
-                  <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/about/aboutme">About me</NuxtLink>
-                </li>
-                <li role="none" class="relative">
-                  <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/about/testimonials">Testimonials</NuxtLink>
-                </li>
+                
+                
                 <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/Aboutus">About Us</NuxtLink>
@@ -285,128 +93,43 @@
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/enquire_with_us">Enquire With US</NuxtLink>
                 </li>
-                <li role="none" class="relative">
+                <!-- <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/payments">Payments</NuxtLink>
                 </li>
                 <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/donations">Donations</NuxtLink>
-                </li>
+                </li> -->
                 <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/faq">FAQs</NuxtLink>
                 </li>
-                <li role="none" class="relative">
+                <!-- <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/gallery">Gallery</NuxtLink>
-                </li>
-                <li role="none" class="relative">
+                </li> -->
+                <!-- <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/paathshala_instructor">Become a Paathshala Instructor</NuxtLink>
-                </li>
-                <li role="none" class="relative">
+                </li> -->
+                <!-- <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/career_stories">Career Stories</NuxtLink>
                 </li>
                 <li role="none" class="relative">
                   <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                     role="menuitem" to="/about/chapters_topicList">Paathshala Chapters & Topics List</NuxtLink>
-                </li>
+                </li> -->
 
               </ul>
             </li>
-            <li v-if="darkMode" class="inline-block px-2.5 2xl:px-[17px] py-[29px] group relative" role="none">
-              <NuxtLink rel="noopener noreferrer"
-                class="darkMain font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white"
-                to="#!" id="nav-3" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">Courses<i
-                  class="fa fa-chevron-down ml-2 text-xs"></i></NuxtLink>
-              <ul
-                class="absolute z-20 top-full left-0 w-60 mt-5 py-4 transition-all duration-400 bg-white border-b-4 border-b-primary shadow-2md shadow-black/5 visible opacity-0 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:mt-0 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:mt-0 group-focus-within:pointer-events-auto dark:bg-[#161821] dark:text-white"
-                role="menu">
-                <li role="none" class="relative">
-                  <NuxtLink class="flex items-center px-7.5 py-2" role="menuitem"
-                    to="/courses/coursegridone hover:text-[#20ad96] dark:hover:text-[#20ad96]">All Courses</NuxtLink>
-                </li>
-                <li role="none" class="relative">
-                  <NuxtLink class="flex items-center  px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/courses/membership">Membership Levels</NuxtLink>
-                </li>
-                <li role="none" class="relative">
-                  <NuxtLink class="flex items-center  px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/courses/becomeateacher">Become a Teacher</NuxtLink>
-                </li>
-                <li role="none" class="relative">
-                  <NuxtLink class="flex items-center  px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/courses/profile">Profile</NuxtLink>
-                </li>
-              </ul>
+            <li class="inline-block px-2.5 2xl:px-[17px] py-[29px] group" role="none">
+              <NuxtLink
+                class="font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white hover:text-[#20ad96] dark:hover:text-[#20ad96]"
+                id="nav-6" role="menuitem" tabindex="0" to="/about/testimonials">Testimonials</NuxtLink>
             </li>
-            <li v-else class="inline-block px-2.5 2xl:px-[17px] py-[29px] group relative" role="none">
-              <NuxtLink rel="noopener noreferrer"
-                class="main font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white"
-                to="#!" id="nav-3" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">Courses<i
-                  class="fa fa-chevron-down ml-2 text-xs"></i></NuxtLink>
-              <ul
-                class="absolute z-20 top-full left-0 w-60 mt-5 py-4 transition-all duration-400 bg-white border-b-4 border-b-primary shadow-2md shadow-black/5 visible opacity-0 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:mt-0 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:mt-0 group-focus-within:pointer-events-auto dark:bg-[#161821] dark:text-white"
-                role="menu">
-                <li role="none" class="relative">
-                  <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/courses/coursegridone">All Courses</NuxtLink>
-                </li>
-                <li role="none" class="relative">
-                  <NuxtLink
-                    class="flex items-center text-secondary px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/courses/membership">Membership Levels</NuxtLink>
-                </li>
-                <li role="none" class="relative">
-                  <NuxtLink
-                    class="flex items-center text-secondary px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/courses/becomeateacher">Become a Teacher</NuxtLink>
-                </li>
-                <li role="none" class="relative">
-                  <NuxtLink
-                    class="flex items-center text-secondary px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/courses/profile">Profile</NuxtLink>
-                </li>
-              </ul>
-            </li>
-            <li v-if="darkMode" class="inline-block px-2.5 2xl:px-[17px] py-[29px] group relative" role="none">
-              <NuxtLink rel="noopener noreferrer"
-                class=" darkMain font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white"
-                to="#!" id="nav-4" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">Event<i
-                  class="fa fa-chevron-down ml-2 text-xs"></i></NuxtLink>
-              <ul
-                class="absolute z-20 top-full left-0 w-60 mt-5 py-4 transition-all duration-400 bg-white border-b-4 border-b-primary shadow-2md shadow-black/5 visible opacity-0 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:mt-0 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:mt-0 group-focus-within:pointer-events-auto dark:bg-[#161821] text-secondary dark:text-white"
-                role="menu">
-                <li role="none" class="relative">
-                  <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/event/events">Event</NuxtLink>
-                </li>
-                <li role="none" class="relative">
-                  <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/event/zoommeetings">Zoom Meetings</NuxtLink>
-                </li>
-              </ul>
-            </li>
-            <li v-else class="inline-block px-2.5 2xl:px-[17px] py-[29px] group relative" role="none">
-              <NuxtLink rel="noopener noreferrer"
-                class=" main font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white"
-                to="#!" id="nav-4" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">Event<i
-                  class="fa fa-chevron-down ml-2 text-xs"></i></NuxtLink>
-              <ul
-                class="absolute z-20 top-full left-0 w-60 mt-5 py-4 transition-all duration-400 bg-white border-b-4 border-b-primary shadow-2md shadow-black/5 visible opacity-0 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:mt-0 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:mt-0 group-focus-within:pointer-events-auto dark:bg-[#161821] text-secondary dark:text-white"
-                role="menu">
-                <li role="none" class="relative">
-                  <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/event/events">Event</NuxtLink>
-                </li>
-                <li role="none" class="relative">
-                  <NuxtLink class="flex items-center px-7.5 py-2 hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                    role="menuitem" to="/event/zoommeetings">Zoom Meetings</NuxtLink>
-                </li>
-              </ul>
-            </li>
+            
             <li v-if="darkMode" class="inline-block px-2.5 2xl:px-[17px] py-[29px] group relative" role="none">
               <NuxtLink rel="noopener noreferrer"
                 class="darkMain font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white"
@@ -502,7 +225,7 @@
             <li class="inline-block px-2.5 2xl:px-[17px] py-[29px] group" role="none">
               <NuxtLink
                 class="font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white hover:text-[#20ad96] dark:hover:text-[#20ad96]"
-                id="nav-6" role="menuitem" tabindex="0" to="/contactus">Contact Us</NuxtLink>
+                id="nav-6" role="menuitem" tabindex="0" to="/about/enquire_with_us">Contact Us</NuxtLink>
             </li>
           </ul>
         </nav>

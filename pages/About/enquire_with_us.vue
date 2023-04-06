@@ -13,9 +13,9 @@
                 </div>
             </div>
         </div>
-        <div class="bg-[#f8f8f8] dark:bg-[#161821] p-3 my-3">
+        <!-- <div class="bg-[#f8f8f8] dark:bg-[#161821] p-3 my-3">
             <BecomeTutor />
-        </div>
+        </div> -->
 
     </div>
 </template>
