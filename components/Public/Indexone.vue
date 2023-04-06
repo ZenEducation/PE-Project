@@ -1,7 +1,8 @@
 <template>
   <div>
     <div
-      class="bg-[#EAE1D6] h-auto w-12/12 flex justify-center content-center items-center p-2 md:p-10 xl:p-20 background" id="home">
+      class="bg-[#EAE1D6] h-auto w-12/12 flex justify-center content-center items-center p-2 md:p-10 xl:p-20 background"
+      id="home">
       <div class="w-12/12 grid grid-cols-1 md:grid-cols-2">
         <div>
           <gridone />
@@ -17,15 +18,15 @@
               </h1>
               <div class="flex flex-col justify-between items-center w-12/12 mb-2 dark:text-white text-[#696969]">
                 <input
-                  class="w-full my-2 dark:bg-[#222] border-none focus:ring-primary bg-[#f5f5f5] placeholder-[#696969]"
+                  class="w-full my-2 dark:bg-[#222] border-none focus:ring-primary bg-[#f5f5f5] placeholder-[#696969] dark:placeholder-gray-200"
                   type="text" placeholder="Enter Student Name" id="" v-model="registration.name" />
 
                 <input
-                  class="w-full my-2 dark:bg-[#222] border-none focus:ring-primary bg-[#f5f5f5] placeholder-[#696969]"
+                  class="w-full my-2 dark:bg-[#222] border-none focus:ring-primary bg-[#f5f5f5] placeholder-[#696969] dark:placeholder-gray-200"
                   type="email" placeholder="Enter Your Email Id*" id="" v-model="registration.email" />
 
                 <input
-                  class="w-full my-2 dark:bg-[#222] border-none focus:ring-primary bg-[#f5f5f5] placeholder-[#696969]"
+                  class="w-full my-2 dark:bg-[#222] border-none focus:ring-primary bg-[#f5f5f5] placeholder-[#696969] dark:placeholder-gray-200"
                   type="text" placeholder="Enter Mobile No" id="" v-model="registration.subject" />
               </div>
               <div class="w-full flex justify-center">
