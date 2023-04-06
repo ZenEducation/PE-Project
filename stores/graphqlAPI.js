@@ -1,28 +1,28 @@
-import { defineStore } from "pinia";
-import { API } from "aws-amplify";
+import { defineStore } from 'pinia'
+import { API } from 'aws-amplify'
 // import * as gqlQueries from "~/src/graphql/queries";
 // import * as gqlMutations from "~/src/graphql/mutations";
 
 export const state = () => ({
   superadmin: {
-    id: "",
-    firstName: "",
-    middleName: "",
-    lastName: "",
-    email: "",
-    altEmail: "",
-    phoneNumber: "",
-    altPhoneNumber: "",
-    description: "",
-    isActive: "",
+    id: '',
+    firstName: '',
+    middleName: '',
+    lastName: '',
+    email: '',
+    altEmail: '',
+    phoneNumber: '',
+    altPhoneNumber: '',
+    description: '',
+    isActive: '',
     accessControls: [],
   },
-});
+})
 
 export const getters = {
   //   authMode: (state, getters, rootState) =>
   //     rootState.auth.isAuthenticated ? "AMAZON_COGNITO_USER_POOLS" : "API_KEY",
-};
+}
 
 // export const mutations = {
 //   set(state, { key, value }) {
@@ -60,21 +60,21 @@ export const actions = {
 } 
 
   }`,
-        authMode: "AMAZON_COGNITO_USER_POOLS",
-      });
+        authMode: 'AMAZON_COGNITO_USER_POOLS',
+      })
 
-      console.log(superadmin);
+      console.log(superadmin)
     } catch (err) {
-      console.log("err", err);
+      console.log('err', err)
     }
   },
-};
+}
 
-export const useGraphqlAPIStore = defineStore("useGraphqlAPI", {
+export const useGraphqlAPIStore = defineStore('useGraphqlAPI', {
   state,
   getters,
   actions,
-});
+})
 
 //   async deletePost({ dispatch }, id) {
 //     return dispatch("mutate", { mutation: "deletePost", input: { id } });

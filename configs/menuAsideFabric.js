@@ -17,139 +17,139 @@ import {
   mdiMessage,
   mdiFastForwardOutline,
   mdiBook,
-} from "@mdi/js";
+} from '@mdi/js'
 
 export default [
   {
-    to: "",
+    to: '',
     icon: mdiMonitor,
-    label: "Home",
+    label: 'Home',
   },
   {
-    to: "",
-    label: "UI Base",
+    to: '',
+    label: 'UI Base',
     icon: mdiTelevisionGuide,
   },
   {
-    to: "",
-    label: "Tables & Lists",
+    to: '',
+    label: 'Tables & Lists',
     icon: mdiTable,
-    updateMark: "warning",
+    updateMark: 'warning',
   },
 
   {
-    to: "",
-    label: "Forms Advanced",
+    to: '',
+    label: 'Forms Advanced',
     icon: mdiBallot,
   },
 
   {
-    to: "",
-    label: "UI Advanced",
+    to: '',
+    label: 'UI Advanced',
     icon: mdiViewQuilt,
   },
   {
-    to: "",
-    label: "Stylize",
+    to: '',
+    label: 'Stylize',
     icon: mdiPalette,
   },
   {
-    to: "",
-    label: "Pricing layout",
+    to: '',
+    label: 'Pricing layout',
     icon: mdiBarcode,
   },
   {
-    label: "",
+    label: '',
     icon: mdiFormDropdown,
     menu: [
       {
-        label: "Dropdown item Uno",
+        label: 'Dropdown item Uno',
       },
       {
-        label: "Dropdown item Dos",
+        label: 'Dropdown item Dos',
       },
     ],
   },
   {
-    to: "",
-    label: "Profile",
+    to: '',
+    label: 'Profile',
     icon: mdiAccountCircle,
   },
   {
-    to: "",
-    label: "Login",
+    to: '',
+    label: 'Login',
     icon: mdiLock,
   },
   {
-    to: "",
-    label: "Register",
+    to: '',
+    label: 'Register',
     icon: mdiSquareEditOutline,
   },
   {
     // Key should be unique for each submenus object
     // It is required for open/close logic
-    key: "submenus-1",
-    label: "Sub",
+    key: 'submenus-1',
+    label: 'Sub',
     icon: mdiMenuOpen,
     menuSecondary: [
       {
-        to: "",
-        label: "Sample RouterLink",
+        to: '',
+        label: 'Sample RouterLink',
         icon: mdiCardAccountDetailsOutline,
       },
       {
-        label: "External link",
-        href: "",
+        label: 'External link',
+        href: '',
         icon: mdiOpenInNew,
-        target: "_blank",
+        target: '_blank',
       },
       {
-        label: "Dropdown",
+        label: 'Dropdown',
         icon: mdiFormDropdown,
         menu: [
           {
-            label: "Dropdown item One",
+            label: 'Dropdown item One',
           },
           {
-            label: "Dropdown item Two",
+            label: 'Dropdown item Two',
           },
         ],
       },
       {
-        to: "",
-        label: "Whiteboard",
+        to: '',
+        label: 'Whiteboard',
         icon: mdiOpenInNew,
       },
     ],
   },
   {
-    to: "",
-    label: "Messages",
+    to: '',
+    label: 'Messages',
     icon: mdiMessage,
   },
   {
-    to: "",
-    label: "Authenticator",
+    to: '',
+    label: 'Authenticator',
     icon: mdiHelpCircle,
   },
   {
-    to: "",
-    label: "AdminTasks",
+    to: '',
+    label: 'AdminTasks',
     icon: mdiFastForwardOutline,
   },
   {
-    to: "",
-    label: "Syllabus",
+    to: '',
+    label: 'Syllabus',
     icon: mdiBook,
   },
   {
-    to: "",
-    label: "PE Tasks",
+    to: '',
+    label: 'PE Tasks',
     icon: mdiHelpCircle,
   },
   {
-    href: "",
-    label: "About",
+    href: '',
+    label: 'About',
     icon: mdiHelpCircle,
   },
-];
+]

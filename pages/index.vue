@@ -1,12 +1,17 @@
 <template>
- 
+  <div class="relative font-body">
+    <indexone />
+    <indextwo />
+    <indexthree />
+    <!-- <indexfour /> -->
+    <indexfive />
+    <brandsession />
+    <testimonials />
+  </div>
 </template>
 
 <script setup>
-// if user is logged in redirect to profile 
-// if not show the login / register page
+definePageMeta({
+  layout: 'frontend',
+})
 </script>
-
-<style lang="scss" scoped>
-
-</style>

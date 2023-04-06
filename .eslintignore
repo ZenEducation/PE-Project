@@ -1,2 +1,5 @@
-\models
-amplify-codegen-temp\models
+components.d.ts
+nuxt.d.ts
+dist
+.nuxt
+.output

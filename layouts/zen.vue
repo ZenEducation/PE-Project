@@ -1,56 +1,69 @@
 <script setup>
-import { computed } from "vue";
-import { mdiForwardburger, mdiBackburger, mdiMenu } from "@mdi/js";
-import { useRouter } from "vue-router";
-import menuAside from "@/configs/menuAside.js";
-import menuNavBar from "@/configs/menuNavBar.js";
-import { useMainStore } from "@/stores/main.js";
-import { useLayoutStore } from "@/stores/layout.js";
-import { useStyleStore } from "@/stores/style.js";
-import BaseIcon from "@/components/Display/BaseIcon.vue";
-import FormControl from "@/components/Forms/FormControl.vue";
-import NavBar from "@/components/Navbar/NavBar.vue";
-import PremAsideMenu from "@/components/AsideMenu/AsideMenu.vue";
-import NavBarItemPlain from "@/components/Navbar/NavBarItemPlain.vue";
-import FooterBar from "@/components/Footers/FooterBar.vue";
-import { useAuthStore } from "~~/stores/auth"
+import { computed } from 'vue'
+import { mdiForwardburger, mdiBackburger, mdiMenu } from '@mdi/js'
+import { useRouter } from 'vue-router'
+import menuAside, { educatorLinks, employeesLinks, freelancerLinks } from '@/configs/menuAside.js';
+import menuNavBar from '@/configs/menuNavBar.js'
+// import { useMainStore } from '@/stores/main.js'
+import { useMainStore } from '@/stores/mainNew';
+import { useLayoutStore } from '@/stores/layout.js'
+import { useStyleStore } from '@/stores/style.js'
+import BaseIcon from '@/components/AfterAuth/Display/BaseIcon.vue'
+import FormControl from '@/components/AfterAuth/Forms/FormControl.vue'
+import NavBar from '@/components/AfterAuth/NavBar/NavBar.vue'
+import PremAsideMenu from '@/components/AfterAuth/Asidemenu/AsideMenu.vue'
+import NavBarItemPlain from '@/components/AfterAuth/NavBar/NavBarItemPlain.vue'
+import FooterBar from '@/components/AfterAuth/Footers/FooterBar.vue'
+import { useAuthStore } from '@/stores/authStore'
 
-useMainStore().setUser({
-  name: "Zenith Physics",
-  email: "zenith@physics.com",
+const userStore = useMainStore();
+
+userStore.setUser({
+  name: 'Zenith Physics',
+  email: 'zenith@physics.com',
   avatar:
-    "https://avatars.dicebear.com/api/avataaars/example.svg?options[top][]=shortHair&options[accessoriesChance]=93",
-});
+    'https://avatars.dicebear.com/api/avataaars/example.svg?options[top][]=shortHair&options[accessoriesChance]=93',
+  userType: 'employee'
 
-const layoutAsidePadding = computed(() =>
-  layoutStore.isAsideLgActive ? "lg:pl-20" : "xl:pl-20"
-);
+})
 
-const styleStore = useStyleStore();
+const layoutAsidePadding = computed(() => layoutStore.isAsideLgActive ? 'lg:pl-20' : 'xl:pl-20')
 
-const layoutStore = useLayoutStore();
+const menuAsideLinks = computed(() => {
+  if (userStore.userType === 'freelancer') {
+    return freelancerLinks;
+  } else if (userStore.userType === 'employee') {
+    return employeesLinks;
+  } else if (userStore.userType === 'educator') {
+    return educatorLinks;
+  }
+}
+)
+const styleStore = useStyleStore()
 
-const router = useRouter();
+const layoutStore = useLayoutStore()
 
-const AuthStore = useAuthStore();
+const router = useRouter()
+
+const AuthStore = useAuthStore()
 
 // const GraphqlAPIStore = useGraphqlAPIStore();
 
 router.beforeEach(() => {
-  layoutStore.isAsideMobileExpanded = false;
-});
+  layoutStore.isAsideMobileExpanded = false
+})
 
 const menuClick = (event, item) => {
   if (item.isToggleLightDark) {
-    styleStore.setDarkMode();
+    styleStore.setDarkMode()
   }
 
   if (item.isLogout) {
-    AuthStore.logout();
+    AuthStore.logout()
     // console.log("Clicked On Logout");
-    router.push("/auth/login");
+    router.push('/auth/login')
   }
-};
+}
 </script>
 
 <template>
@@ -85,8 +98,8 @@ const menuClick = (event, item) => {
           </NavBarItemPlain>
         </NavBar>
         <!-- The  Premium Aside Menu -->
-        <PremAsideMenu :menu="menuAside" @menu-click="menuClick" />
-        <slot />
+        <PremAsideMenu :menu="menuAsideLinks" @menu-click="menuClick" />
+        <slot></slot>
         <!-- FooterBar-->
         <FooterBar>
           <a href="#" target="_blank" class="text-blue-600"> Photon Ecademy</a>
