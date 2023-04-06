@@ -17,7 +17,7 @@
 
     <div class="group">
       <span class="flex items-center p-[5px] text-secondary dark:text-[#ddd] mt-[25px]  group-hover:text-[#ddd] group-hover:bg-[#20ad96] transition-all ease-in-out duration-500 group-hover:cursor-pointer group-hover:rounded-xl ">
-      <h4 class="font-[700] text-[14px] mr-2  transition-all ease-in-out duration-500">Know More</h4>
+      <h4 class="font-[700] text-[14px] mr-2  transition-all ease-in-out duration-500"><slot name="know"></slot></h4>
       <i class="fa-solid fa-arrow-right group-hover:pl-4 transition-all ease-in-out duration-500"></i>
     </span>
     </div>

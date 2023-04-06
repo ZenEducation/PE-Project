@@ -1,45 +1,40 @@
 <template>
   <div>
-    <div class="
-            bg-[#EAE1D6]
-            h-auto
-            w-12/12
-            flex
-            justify-center
-            content-center
-            items-center
-            p-2
-            md:p-10
-            xl:p-20
-            background
-          ">
-      <div class="w-12/12 grid grid-cols-1 md:grid-cols-2 ">
+    <div
+      class="bg-[#EAE1D6] h-auto w-12/12 flex justify-center content-center items-center p-2 md:p-10 xl:p-20 background"
+      id="home">
+      <div class="w-12/12 grid grid-cols-1 md:grid-cols-2">
         <div>
           <gridone />
         </div>
         <div class="w-12/12 flex items-center justify-center lg:justify-end">
           <img src="/images/intro/intro1/intro-popular-course.png" alt="image"
-            class="z-[9] self-end flex-[0_0_auto] ml-auto mr-5 mb-[100px]">
+            class="z-[9] self-end flex-[0_0_auto] ml-auto mr-5 mb-[100px]" />
           <div class="flex flex-col">
             <img src="/images/courses/370/course-2.jpg" class="w-full lg:w-full h-[229px]" />
-          <form @submit.prevent="submitform" class="w-full p-8 dark:bg-[#333333] bg-white">
-            <h1 class="text-center text-3xl text-[#20ad96] font-bold">Contact Us</h1>
-            <div class="flex flex-col justify-between items-center w-12/12 mb-2 dark:text-white text-[#696969]">
-              <input class="w-full  my-2 dark:bg-[#222] border-none focus:ring-primary bg-[#f5f5f5] placeholder-[#696969]"
-                type="text" placeholder="Enter Student Name" id="" v-model="registration.name" />
+            <form @submit.prevent="submitform" class="w-full p-8 dark:bg-[#333333] bg-white">
+              <h1 class="text-center text-3xl text-[#20ad96] font-bold">
+                Contact Us
+              </h1>
+              <div class="flex flex-col justify-between items-center w-12/12 mb-2 dark:text-white text-[#696969]">
+                <input
+                  class="w-full my-2 dark:bg-[#222] border-none focus:ring-primary bg-[#f5f5f5] placeholder-[#696969] dark:placeholder-gray-200"
+                  type="text" placeholder="Enter Student Name" id="" v-model="registration.name" />
 
-              <input class="w-full  my-2 dark:bg-[#222] border-none focus:ring-primary bg-[#f5f5f5] placeholder-[#696969]"
-                type="email" placeholder="Enter Your Email Id*" id="" v-model="registration.email" />
+                <input
+                  class="w-full my-2 dark:bg-[#222] border-none focus:ring-primary bg-[#f5f5f5] placeholder-[#696969] dark:placeholder-gray-200"
+                  type="email" placeholder="Enter Your Email Id*" id="" v-model="registration.email" />
 
-              <input class="w-full my-2 dark:bg-[#222] border-none focus:ring-primary bg-[#f5f5f5] placeholder-[#696969]"
-                type="text" placeholder="Enter Mobile No" id="" v-model="registration.subject" />
-            </div>
-            <div class="w-full flex justify-center">
-              <button class="text-[14px] text-white font-bold px-12 py-2 bg-[#20ad96] rounded-md mt-8">
-                Book Now
-              </button>
-            </div>
-          </form>
+                <input
+                  class="w-full my-2 dark:bg-[#222] border-none focus:ring-primary bg-[#f5f5f5] placeholder-[#696969] dark:placeholder-gray-200"
+                  type="text" placeholder="Enter Mobile No" id="" v-model="registration.subject" />
+              </div>
+              <div class="w-full flex justify-center">
+                <button class="text-[14px] text-white font-bold px-12 py-2 bg-[#20ad96] rounded-md mt-8">
+                  Book Now
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -57,21 +52,20 @@ export default {
   data() {
     return {
       registration: {
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-      }
-    }
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      },
+    };
   },
 
   methods: {
     submitform() {
-      console.log('Registration', this.registration);
-    }
-  }
-}
-
+      console.log("Registration", this.registration);
+    },
+  },
+};
 </script>
 <style scoped>
 .background {

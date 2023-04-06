@@ -1,11 +1,11 @@
 <template>
-  <div class="py-[100px]">
-    <div class="flex flex-col justify-center lg:justify-start">
+  <div>
+    <div class="flex flex-col justify-center lg:justify-start pb-5">
       <div class="text-left md:text-left text-white font-bold text-[24px]">
         Leave your thought here
       </div>
 
-      <p class="text-[#ddd] mt-[30px] text-left">
+      <p class="dark:text-[#ddd] text-[#696969] mt-[30px] text-left">
         <span id="email-notes">Your email address will not be published.</span>
         Required fields are marked <span class="required">*</span>
       </p>
@@ -67,14 +67,7 @@ export default {
   background-image: url(/images/bg/become-a-teache-bg.jpg);
 }
 
-input,
-textarea {
-  padding: 10px 20px;
-  background-color: #222;
-  border: solid 0.5px #333;
-  border-radius: 3px;
-  outline: none;
-}
+
 
 input::placeholder,
 textarea::placeholder {

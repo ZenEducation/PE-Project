@@ -26,54 +26,57 @@
             
             <i class="fa-solid fa-arrow-right w-4 h-4 mr-4 mt-2 group-hover:text-[#20ad96] text-[#696969] dark:text-white group-hover:cursor-pointer"></i>
             <div>
-             <span class="group-hover:text-[#20ad96] group-hover:cursor-pointer text-[#696969] dark:text-white">Maximizing Exam Success with <br> Personalized Learning: A Guide</span>
+             <NuxtLink to="/blog/maximizing-exam-success-with-personalized-learning">
+              <span class="group-hover:text-[#20ad96] group-hover:cursor-pointer text-[#696969] dark:text-white">Maximizing Exam Success with <br> Personalized Learning: A Guide</span>
+             </NuxtLink>
             </div>
           </li>
 
           <li class="group flex justify-start items-start text-lg font-bold leading-[1.78] relative ml-0 pl-0 pr-[30px] pt-4 pb-[15px] border-b-[solid] border-b-[#696969]">
             <i class="fa-solid fa-arrow-right w-4 h-4 mr-4 mt-2 group-hover:text-[#20ad96] text-[#696969] dark:text-white group-hover:cursor-pointer"></i>
             <div>
-              <span class="group-hover:text-[#20ad96] group-hover:cursor-pointer text-[#696969] dark:text-white">The Top Three Types of Exam Mistakes Students Make and How to Avoid Them</span>
+              <NuxtLink to="/blog/the-top-three-types-of-exam-mistakes-students-make-and-how-to-avoid-them">
+                <span class="group-hover:text-[#20ad96] group-hover:cursor-pointer text-[#696969] dark:text-white">The Top Three Types of Exam Mistakes Students Make and How to Avoid Them</span>
+              </NuxtLink>
             </div>
           </li>
 
           <li class="group flex justify-start items-start text-lg font-bold leading-[1.78] relative ml-0 pl-0 pr-[30px] pt-4 pb-[15px] border-b-[solid] border-b-[#696969]">
             <i class="fa-solid fa-arrow-right w-4 h-4 mr-4 mt-2 group-hover:text-[#20ad96] text-[#696969] dark:text-white group-hover:cursor-pointer"></i>
             <div>
-              <span class="group-hover:text-[#20ad96] group-hover:cursor-pointer text-[#696969] dark:text-white">Ace Your Exams: How to Memorize Different Formulae Like a Pro</span>
+              <NuxtLink to="/blog/ace-your-exams-how-to-memorize-different-formula-like-a-pro">
+                <span class="group-hover:text-[#20ad96] group-hover:cursor-pointer text-[#696969] dark:text-white">Ace Your Exams: How to Memorize Different Formulae Like a Pro</span>
+              </NuxtLink>
             </div>
           </li>
 
           <li class="group flex justify-start items-start text-lg font-bold leading-[1.78] relative ml-0 pl-0 pr-[30px] pt-4 pb-[15px] border-b-[solid] border-b-[#696969]">
             <i class="fa-solid fa-arrow-right w-4 h-4 mr-4 mt-2 group-hover:text-[#20ad96] text-[#696969] dark:text-white group-hover:cursor-pointer"></i>
-            <div><span class="group-hover:text-[#20ad96] group-hover:cursor-pointer text-[#696969] dark:text-white">Unlocking Success: The Power of Personalized Attention in Competitive Exams</span></div>
+            <div>
+              <NuxtLink to="/blog/unlocking-success-the-power-of-personalized-attention-in-competitive-exams">
+                <span class="group-hover:text-[#20ad96] group-hover:cursor-pointer text-[#696969] dark:text-white">Unlocking Success: The Power of Personalized Attention in Competitive Exams</span>
+              </NuxtLink>
+            </div>
           </li>
 
           <li class="group flex justify-start items-start text-lg font-bold leading-[1.78] relative ml-0 pl-0 pr-[30px] pt-4 pb-[15px] border-b-[solid] border-b-[#696969]">
             <i class="fa-solid fa-arrow-right w-4 h-4 mr-4 mt-2 group-hover:text-[#20ad96] text-[#696969] dark:text-white group-hover:cursor-pointer"></i>
             <div>
-              <span class="group-hover:text-[#20ad96] group-hover:cursor-pointer text-[#696969] dark:text-white">Maximize Your Study Time with the Pomodoro Timer Technique: A Step-by-Step Guide</span>
+              <NuxtLink to="/blog/maximize-your-study-time-with-the-pomodoro-timer-technique">
+                <span class="group-hover:text-[#20ad96] group-hover:cursor-pointer text-[#696969] dark:text-white">Maximize Your Study Time with the Pomodoro Timer Technique: A Step-by-Step Guide</span>
+              </NuxtLink>
             </div>
           </li>
         </ul>
       </div>
 
-      <div class="mt-10">
-        <h3 class="text-2xl font-bold leading-[1.3] mt-0 mb-[30px] dark:text-white">Popular posts</h3>
-
-        <div class="flex flex-wrap gap-2 dark:text-white text-[#696969]">
-          <button class="rounded text-[small] transition-all duration-[0.3s] ease-[ease-in-out] px-5 py-2 hover:bg-[#20ad96] hover:text-white dark:hover:bg-[#20ad96] dark:hover:text-white bg-[#f5f5f5] dark:bg-[#3f3a54]">Lifestyle</button>
-          <button class="rounded text-[small] transition-all duration-[0.3s] ease-[ease-in-out] px-5 py-2 hover:bg-[#20ad96] hover:text-white dark:hover:bg-[#20ad96] dark:hover:text-white bg-[#f5f5f5] dark:bg-[#3f3a54]">Health Care</button>
-          <button class="rounded text-[small] transition-all duration-[0.3s] ease-[ease-in-out] px-5 py-2 hover:bg-[#20ad96] hover:text-white dark:hover:bg-[#20ad96] dark:hover:text-white bg-[#f5f5f5] dark:bg-[#3f3a54]">Education</button>
-          <button class="rounded text-[small] transition-all duration-[0.3s] ease-[ease-in-out] px-5 py-2 hover:bg-[#20ad96] hover:text-white dark:hover:bg-[#20ad96] dark:hover:text-white bg-[#f5f5f5] dark:bg-[#3f3a54]">Kitchen</button>
-          <button class="rounded text-[small] transition-all duration-[0.3s] ease-[ease-in-out] px-5 py-2 hover:bg-[#20ad96] hover:text-white dark:hover:bg-[#20ad96] dark:hover:text-white bg-[#f5f5f5] dark:bg-[#3f3a54]">Course</button>
-          <button class="rounded text-[small] transition-all duration-[0.3s] ease-[ease-in-out] px-5 py-2 hover:bg-[#20ad96] hover:text-white dark:hover:bg-[#20ad96] dark:hover:text-white bg-[#f5f5f5] dark:bg-[#3f3a54]">Business</button>
-          <button class="rounded text-[small] transition-all duration-[0.3s] ease-[ease-in-out] px-5 py-2 hover:bg-[#20ad96] hover:text-white dark:hover:bg-[#20ad96] dark:hover:text-white bg-[#f5f5f5] dark:bg-[#3f3a54]">Gym</button>
-        </div>
-      </div>
+      
     </div>
   </div>
 </template>
+
+
+
 
 <style scoped>
 .purplebtn {

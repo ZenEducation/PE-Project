@@ -149,6 +149,7 @@ module.exports = {
         position: 'right, left, top, bottom, margin, padding',
         textColor: 'color',
       },
+
       fontFamily: {
         body: ['Gilroy'],
         heading: ['Gilroy', 'sans-serif'],
@@ -165,6 +166,21 @@ module.exports = {
           to: { opacity: 1 },
         },
       },
+      fontSize: {
+        sm: "0.75rem",
+        md: "0.875rem",
+        base: "0.938rem",
+        h1: "2.5rem",
+        h2: "2.125rem",
+        h3: "1.5rem",
+        h4: "1.3125rem",
+        h5: "1.09375rem",
+        h6: "0.938rem",
+    },
+    lineHeight: {
+        body: 1.74,
+        heading: 1.3,
+    },
       animation: {
         'fade-out': 'fade-out 250ms ease-in-out',
         'fade-in': 'fade-in 250ms ease-in-out',
@@ -230,9 +246,9 @@ module.exports = {
             const thumb = value === 'light' ? '300' : '600'
             const color = value === 'light' ? 'gray' : value
 
-            return {
-              scrollbarWidth: 'thin',
-              scrollbarColor: `${theme(`colors.${color}.${thumb}`)} ${theme(
+                                            return {
+                                                scrollbarWidth: "thin",
+                                                scrollbarColor: `${theme(`colors.${color}.${thumb}`)} ${theme(
                 `colors.${color}.${track}`
               )}`,
               '&::-webkit-scrollbar': {
@@ -252,6 +268,10 @@ module.exports = {
         { values: theme('asideScrollbars') }
       )
     }),
-    require('tailwind-scrollbar')({ nocompatible: true }),
+    require("tailwind-scrollbar")({ nocompatible: true }),
+    require('flowbite'),
+    require("tw-elements/dist/plugin.js")
+    
+    
   ],
-}
+};
