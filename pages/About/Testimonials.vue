@@ -5,7 +5,7 @@
 
             <!-- <h1 class="text-[#161821] dark:text-[#fff] text-3xl text-center py-6 relative ">TESTIMONIAL</h1> -->
             <courseheader>
-                <template v-slot:title>Testemonial</template>
+                <template v-slot:title>Testimonial</template>
             </courseheader>
 
             <!-- Section: Design Block -->
@@ -15,7 +15,7 @@
                     <div class="flex flex-wrap items-start dark:bg-gray-900 bg-gray-200 p-5 ">
                         <div class="grow-0 shrink-0 basis-auto block lg:flex justify-center  w-full lg:w-6/12 xl:w-4/12 ">
                             <img :src="item.profile" alt="aadya deshpande" class="  pt-10"
-                                width="150" height="150" style="border-radius: 800%;" />
+                                width="200" style="border-radius: 800%;" />
                         </div>
                         <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12 dark:bg-gray-900 bg-gray-200">
                             <div class="px-6 py-12 md:px-12">
@@ -61,7 +61,7 @@
                                 <p class="font-bold text-[#696969] dark:text-[#dddddd] mb-6" v-html="item.admission">
                                     
                                 </p>
-                                <iframe width="640" height="360" :src="item.video" title="Aadya Deshpande | MBBS | A Paathshala Ascension Exclusive" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe v-if="item.video" width="640" height="360" :src="item.video" title="Aadya Deshpande | MBBS | A Paathshala Ascension Exclusive" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                 
 
                             </div>
@@ -220,6 +220,119 @@ export default {
           "admission": "Rijushree has also been offered admission at Indian Institute of Science Education and Research (IISER), Bhopal <br><br> Secured Admission At Kasturba Medical College, Manipal University for M.B.B.S in NEET-UG",
           "video": "https://www.youtube.com/embed/erfVT0l2AjE"
         },
+        {
+          "name": "Owais Chunawala",
+          "college": "B-TECH | IIT BOMBAY",
+          "ranks": `JEE Advanced AIR 2636* <br> BITSAT 330 <br> MHTCET 177 <br> Eligible for Admission at – All the Top 7 IITs, Top 10 NITs, BITS Pilani`,
+          
+          "profile": "/images/testimonial/70/owais-chunawala.jpg",
+          "paragraph1": "I have always wanted to study at an IIT and <b>Paathshala and Photon Ecademy has played a significant role in my achievement. I was guided every step of the way by Paathshala and Photon Ecademy’s professors and mentors.</b> All my doubts were cleared very effectively and on-time",
+          "paragraph2": "I was given numerous tips, tricks and techniques for efficient preparation, fast problem-solving and was made to solve 100s of questions from the Paathshala and Photon Ecademy learning sources, in a structured and systematic manner, and that greatly impacted my test scores and helped me gain confidence",
+          "paragraph3": "I was allocated a comfortable space where I could sit and solve questions all day, right from morning till late night",
+          "paragraph4": "<b>Company’s administration has been extremely supportive</b>",
+          "paragraph5": "The post exam counselling session at Paathshala and Photon Ecademy after JEE gave me in-depth knowledge about career opportunities available to me. <b>I was grateful to have received such phenomenal guidance, support, help from Paathshala and Photon Ecademy – the professors, admin executives, mentors without whom this milestone would not have been possible</b>",
+          "paragraph6": "<b>Alumni Spotlight</b> <br> <ul><li>Owais is the CEO and Co-founder of Augle AI</li> <li>Augle AI provides Computer Vision-based Automation Solutions. Their product portfolio consists of Face Recognition (Attendance, Access Control, Customer Recognition, APIs), Crowd Analysis (through Drones, UAVs, CCTV Cameras), OCR, and Object Detection and Automation</li><li>Owais has been the Convener of Electronics and Robotics Club at IIT Bombay. It is the largest Robotics Club in India</li><li>Owais has also done his Minor in Entrepreneurship at IIT Bombay</li></ul>",
+
+          
+          
+          "admission": "Secured Admission At IIT Bombay for B-Tech in Metallurgical Engineering and Material Science",
+          
+        },
+        {
+            "name": "Dhwani Kakkad",
+            "profile": "/images/testimonial/70/dhwani-kakkad.png",
+            "college": "M.B.B.S | HBT MEDICAL COLLEGE AND DR. R N COOPER MUNICIPAL GENERAL HOSPITAL, MUMBAI",
+            "paragraph1": "I have given approximately 100 Full Syllabus Tests and have assessed my tests using the <b>Paathshala and Photon Ecademy Mistakes Analysis Model.</b> The reports help us understand what we do not know and hence where we need to focus our efforts",
+            "paragraph2": "<b>Completing the syllabus early at Paathshala and Photon Ecademy has been greatly helpful</b>",
+            "paragraph3": "For Inorganic Chemistry, I have studied from NCERT, hand-made short notes, revised the concepts multiple times, practiced many questions",
+            "paragraph4": "For Biology, I used to revise concepts from NCERT everyday. Almost all Biology questions asked in NEET were from NCERT, except for 1 or 2 maybe. Biology NCERT is pretty straight-forward to prepare from and revise. We completed Biology also very early, around June-July. The earlier the syllabus completion, the better. <b>I have revised the entire NCERT Biology almost 6 times</b>",
+            "paragraph5": "<b>Teaching is very effective and efficient in Paathshala and Photon Ecademy’s personalized one-to-one teaching mode and add to that highly experienced and amazing professors, we get the maximum possible academic value</b>",
+            "ranks": "NEET 625 / 720 <br> NEET Physics 99.12 Percentile <br> NEET Chemistry 99.37 Percentile <br> NEET Biology (Botany and Zoology) 99.24 Percentile",
+            "admission": "Secured Admission at HBT Medical College And Dr. R N Cooper Municipal General Hospital, Juhu, Mumbai for M.B.B.S",
+
+        },
+        {
+            "name": "Devansh B",
+            "profile": "/images/testimonial/70/devansh-b.jpg",
+            "college": "B-TECH | IIT BOMBAY",
+            "paragraph1": "Irrespective of the exam I was preparing for, be it JEE Main, JEE Advanced, BITSAT, I was mentored and guided by the Paathshala and Photon Ecademy’s professors about how I can crack the exam with ease. They taught me how to manage time effectively while solving questions. The professors cleared all my conceptual doubts in such a way that I could apply the concepts effectively while solving numericals",
+            "paragraph2": "Devansh’s Tips to JEE Aspirants – study all the concepts that are part of your syllabus without leaving anything. Revise whatever you have learnt thoroughly and solve as many numericals as possible",
+            "paragraph3": "<b>Alumni Spotlight</b> <br> <ul><li>Devansh completed his Research Internship at Stockholm University, Swedan</li> <li>He has also done his Research Internship with Purdue University, United States</li><li>Devansh served as an Editor of Insight, IIT Bombay’s Official Student Media Body</li></ul>",
+            "admission": "Secured Admission At IIT Bombay for B-Tech in Energy Sciences",
+            "video": "https://www.youtube.com/embed/SWDIbwlqZoU"
+            
+            
+
+
+        },
+        {
+            "name": "Mr Prashant B | Father of Devansh B",
+            "profile": "/images/testimonial/70/devansh-b.jpg",
+            "college": "B-TECH | IIT BOMBAY",
+            "paragraph1": "We had a wonderful and happy experience at Paathshala and Photon Ecademy. (Professor) SPP Sir taught and guided Devansh and us, parents with utmost dedication. Because of his and Paathshala and Photon Ecademy’s efforts, Devansh could achieve the desired result in JEE Advanced. JEE Main and Advanced being exams with negative markings, it is important for the student to know what questions to solve and what questions to leave, and when to leave. Devansh was extensively guided about such exam strategies by professionals at Paathshala and Photon Ecademy. The executives at Paathshala and Photon Ecademy had many sessions with us, where we were explained in-depth and in detail about what topics to study, how to study, how to practice problems, how to give the Paathshala and Photon Ecademy Test Series and how to analyze the mistakes in the Exams. Because of such expert guidance from Paathshala and Photon Ecademy, Devansh was able to score minimum negative marks in his JEE Main and JEE Advanced Exams. We express our deepest gratitude to Paathshala and Photon Ecademy for being an incredible part of Devansh’s JEE journey and for him getting into IIT Bombay",
+            
+            "admission": "His ward Devansh Has Secured Admission At IIT Bombay for B-Tech in Energy Sciences",
+            "video": "https://www.youtube.com/embed/SWDIbwlqZoU"
+            
+            
+
+
+        },
+        {
+            "name": "Mrs Padmapriya B | Mother of Devansh B",
+            "profile": "/images/testimonial/70/devansh-b.jpg",
+            "college": "B-TECH | IIT BOMBAY",
+            "paragraph1": "At every step, all the professors of Paathshala and Photon Ecademy especially (Professor) SPP Sir and PDC Ma’am have helped and guided us throughout the course. This played a crucial role in Devansh achieving his success in JEE Advanced. After gauging Devansh’s potential, (Professor) SPP Sir guided us strategically about how to study and practice more in less time. It is very important for any student to be thorough with concepts, definitions, and formulae and Paathshala and Photon Ecademy ensured that. We would like to thank Paathshala and Photon Ecademy for being a part of Devansh’s journey and the academic milestone of getting into IIT Bombay, that he has accomplished",
+            
+            "admission": "Her ward Devansh Has Secured Admission At IIT Bombay for B-Tech in Energy Sciences",
+            "video": "https://www.youtube.com/embed/SWDIbwlqZoU"
+            
+            
+
+
+        },
+        {
+            "name": "Soumil Kelkar",
+            "profile": "/images/testimonial/70/soumil-kelkar.jpg",
+            "college": "BSMS | IISER (INDIAN INSTITUTE OF SCIENCE EDUCATION AND RESEARCH), PUNE",
+            "paragraph1": "The professors at Paathshala and Photon Ecademy were very good; they helped me in learning the concepts really well. The classrooms and infrastructure radiate the concept of education and that kept us focused on our studies all the time. The Academics and the Test modules were very helpful. I had no idea of what type of questions would be asked. These modules helped me focus not only on how to solve the paper but also on time management. The Academics modules helped me understand the concepts well for my college exams as well",
+            "paragraph2": "<b>Soumil’s Tips to JEE Aspirants</b> – Do not panic or be stressed out. One has to only study hard, understand the concepts well and solve the maximum number of previous years’ questions. I motivated myself to prepare well for the exams without getting stressed out; listening to music in my spare time was a booster. Some of my school friends used to ask me questions from other institutes’ modules which I could easily answer. So, by being a student of Paathshala and Photon Ecademy, I had a competitive advantage over students from other institutes",
+            "ranks": "JEE Main 98.96 Percentile <br> JEE Advanced Score 159 <br> JEE Advanced Rank 4721 <br> IISER 134/180 <br> BITSAT 340 <br> MHCET 178/200 <br> XII Boards CBSE 95.6% <br> Eligible For BITS Pilani <br> Selected for IIT Kharagpur | B-Tech",
+            
+            "admission": "Secured Admission At IISER, Pune (Indian Institute of Science Education and Research) for BSMS Dual Degree in Physics",
+            "video": "https://www.youtube.com/embed/Nl_h7ACy6As"
+        },
+        {
+            "name": "Aditi Goyal",
+            "profile": "/images/testimonial/70/aditi-goyal.jpg",
+            "college": "B-TECH | INSTITUTE OF CHEMICAL TECHNOLOGY (ICT) MATUNGA",
+            "paragraph1": "At college, I was not able to understand the concepts clearly and I used to have a lot of doubts, which went uncleared. After joining Paathshala and Photon Ecademy, I got personalized attention from the Professors here and I got all the concepts cleared. The professors had great command over the subject and were able to make me understand all the topics. I found myself in a stronger position academically. I wish I had joined Paathshala and Photon Ecademy earlier",
+            "paragraph3": "<b>Alumni Spotlight</b> <br> <ul><li>Aditi is a batch of 2023 MBA Student at XLRI, Jamshedpur</li><li>Aditi worked at Pidilite Industries Limited as a Technical Services Executive</li><li>She has also interned at 3M as a Research Intern and PolyOne as a Research Intern</li><li>Aditi is a 2022 Summer Associate Intern at Boston Consulting Group (BCG)</li><li>Aditi has been awarded with the M.V Joshi Platinum Jubilee Endowment Award by the Institute of Chemical Technology</li><li>She has also been honoured with the Dr. Balwant Joshi Award for Top Rank in B.Tech (for the First Year) by the Institute of Chemical Technology</li></ul>",
+            "admission": "Secured Admission At IIT Bombay for B-Tech in Energy Sciences",
+            
+            "ranks": "JEE Advanced AIR 13124 <br> JEE Main Score 180",
+            
+            "admission": "Secured Admission At Institute of Chemical Technology (ICT) Matunga for B-Tech in Polymer/Plastics Engineering",
+            "video": "https://www.youtube.com/embed/CxZb3K7u3Yo"
+            
+        },
+        {
+            "name": "Mr and Mrs Koparkar | Chartered Accountants | Parents of Advait Koparkar",
+            "profile": "/images/testimonial/70/mr-and-mrs-koparkar.jpg",
+            "college": "BE | BITS PILANI GOA",
+            "paragraph1": "The most striking thing you experience with the professors of Paathshala and Photon Ecademy is their passion for teaching and the mastery over the subject that makes a huge difference from the perspective of a student. They are very interactive with the students. The professors could clear the conceptual doubts of each student. They connect well with the students in solving their doubts. The Professors are also very frank in their feedback without mincing words – Mr. and Mrs. Koparkar",
+            "paragraph2": "<b>Alumni Spotlight</b> <br> <ul><li>Advait graduated with an overall CGPA of 9.73/10.0 from BITS Pilani Goa and is also the Top Ranker of the Electronics and Electrical Department</li><li>He has done his Masters in Electrical and Computer Science Engineering from Georgia Institute of Technology, United States securing an overall CGPA of 4.0/4.0</li><li>Advait has Interned at Nanyang Technological University (Summer Research Intern), Indian Institute of Science (IISc) (Research Intern)</li><li>Advait is working as a Machine Learning Software Engineer at Qualcomm in the San Francisco Bay Area</li></ul>",
+            "admission": "Secured Admission At IIT Bombay for B-Tech in Energy Sciences",
+            
+            
+            
+            "admission": "Their ward Advait has Secured Admission At BITS Pilani Goa for BE in Electrical Engineering",
+            "video": "https://www.youtube.com/embed/Q0D8P6tW4ps"
+
+            
+            
+        },
+        
         
         
         
