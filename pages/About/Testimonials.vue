@@ -14,7 +14,7 @@
                 <div class="block rounded-lg bg-gray-200 dark:bg-gray-900">
                     <div class="flex flex-wrap items-start dark:bg-gray-900 bg-gray-200 p-5 ">
                         <div class="grow-0 shrink-0 basis-auto block lg:flex justify-center  w-full lg:w-6/12 xl:w-4/12 ">
-                            <img :src="item.profile" alt="aadya deshpande" class="  pt-10"
+                            <img :src="item.imgSrc" alt="aadya deshpande" class="  pt-10"
                                 width="200" style="border-radius: 800%;" />
                         </div>
                         <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12 dark:bg-gray-900 bg-gray-200">
@@ -88,6 +88,7 @@ export default {
     return {
       testimonials: [
         {
+          imgSrc:'/images/testimonial/70/aadya-deshpande.jpg',
           id:'aadya',
           "name": "Aadya Deshpande",
           "college": "M.B.B.S | GRANT MEDICAL COLLEGE AND SIR J. J. GROUP OF HOSPITALS, MUMBAI",
@@ -101,6 +102,7 @@ export default {
           "video": "https://www.youtube.com/embed/8GmVNb_6Ckk"
         },
         {
+          imgSrc:'/images/testimonial/70/ojas-deshpande.jpg',
           id:'ojas',
           "name": "Ojas Deshpande",
           "college": "M.B.B.S | KING EDWARD MEMORIAL HOSPITAL AND SETH GORDHANDAS SUNDERDAS MEDICAL COLLEGE, MUMBAI",
@@ -114,6 +116,7 @@ export default {
           "video": "https://www.youtube.com/embed/zPMn_QZb7jE"
         },
         {
+          imgSrc:'/images/testimonial/70/saurabh-parekh.jpg',
           id:'saurabh',
           "name": "Saurabh Parekh",
           "college": "B-TECH | IIT BOMBAY",
@@ -131,6 +134,7 @@ export default {
           "video": "https://www.youtube.com/embed/hGLVnI7766c"
         },
         {
+          imgSrc:'',
           id:'',
           "name": "Mr. Jayesh Parekh | Father of Saurabh Parekh",
           "college": "B-TECH | IIT BOMBAY",
@@ -149,6 +153,7 @@ export default {
         },
         
         {
+          imgSrc:'',
           id:'',
           "name": "Nihar Mhapankar",
           "college": "M.B.B.S | LOKMANYA TILAK GENERAL MEDICAL COLLEGE",
@@ -161,6 +166,7 @@ export default {
           "video": "https://www.youtube.com/embed/qIJripnZVig"
         },
         {
+          imgSrc:'',
           id:'',
           "name": "Dr. Tushar Mhapankar | ENT Surgeon | Father of Nihar Mhapankar",
           "college": "M.B.B.S | LOKMANYA TILAK GENERAL MEDICAL COLLEGE",
@@ -173,6 +179,7 @@ export default {
           "video": "https://www.youtube.com/embed/qIJripnZVig"
         },
         {
+          imgSrc:'',
           id:'',
           "name": "Sachit Shanbhag",
           "college": "B-TECH | IIT BOMBAY",
@@ -197,6 +204,7 @@ export default {
           "video": "https://www.youtube.com/embed/qBxlFrOsGQo"
         },
         {
+          imgSrc:'',
           id:'',
           "name": "Mr. Subhash Shanbhag | IIT BHU Alumnus | Father of Sachit Shanbhag",
           "college": "B-TECH | IIT BOMBAY",
@@ -211,6 +219,7 @@ export default {
           "video": "https://www.youtube.com/embed/qBxlFrOsGQo"
         },
         {
+          imgSrc:'',
           id:'',
           "name": "Rijushree Saha",
           "college": "M.B.B.S | KASTURBA MEDICAL COLLEGE, MANIPAL UNIVERSITY",
@@ -230,6 +239,7 @@ export default {
           "video": "https://www.youtube.com/embed/erfVT0l2AjE"
         },
         {
+          imgSrc:'/images/testimonial/70/owais-chunawala.jpg',
           id:'owais',
           "name": "Owais Chunawala",
           "college": "B-TECH | IIT BOMBAY",
@@ -249,6 +259,7 @@ export default {
           
         },
         {
+          imgSrc:'',
           id:'',  
           "name": "Dhwani Kakkad",
             "profile": "/images/testimonial/70/dhwani-kakkad.png",
@@ -263,6 +274,7 @@ export default {
 
         },
         {
+          imgSrc:'',
           id:'',  
           "name": "Devansh B",
             "profile": "/images/testimonial/70/devansh-b.jpg",
@@ -278,6 +290,7 @@ export default {
 
         },
         {
+          imgSrc:'',
           id:'',  
           "name": "Mr Prashant B | Father of Devansh B",
             "profile": "/images/testimonial/70/devansh-b.jpg",
@@ -292,6 +305,7 @@ export default {
 
         },
         {
+          imgSrc:'',
           id:'',  
           "name": "Mrs Padmapriya B | Mother of Devansh B",
             "profile": "/images/testimonial/70/devansh-b.jpg",
@@ -306,6 +320,7 @@ export default {
 
         },
         {
+          imgSrc:'',
           id:'',  
           "name": "Soumil Kelkar",
             "profile": "/images/testimonial/70/soumil-kelkar.jpg",
@@ -318,6 +333,7 @@ export default {
             "video": "https://www.youtube.com/embed/Nl_h7ACy6As"
         },
         {
+          imgSrc:'',
           id:'',  
           "name": "Aditi Goyal",
             "profile": "/images/testimonial/70/aditi-goyal.jpg",
@@ -333,6 +349,7 @@ export default {
             
         },
         {
+          imgSrc:'',
           id:'',  
           "name": "Mr and Mrs Koparkar | Chartered Accountants | Parents of Advait Koparkar",
             "profile": "/images/testimonial/70/mr-and-mrs-koparkar.jpg",

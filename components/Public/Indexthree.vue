@@ -16,7 +16,7 @@
       </div>
 
       <Rates />
-      <TestimonialSection />
+      <testimonials />
       <Senses />
     </div>
         <div
@@ -36,7 +36,6 @@
 </template>
 
 <script setup>
-import TestimonialSection from './TestimonialSection.vue';
 </script>
 
 <style>
