@@ -1,0 +1,58 @@
+<svg
+  xml:space="preserve"
+  enable-background="new 0 0 64 64"
+  viewBox="0 0 64 64"
+  height="64px"
+  width="64px"
+  y="0px"
+  x="0px"
+  id="Layer_1"
+  version="1.1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns="http://www.w3.org/2000/svg"
+  alt="icon"
+>
+<g xmlns="http://www.w3.org/2000/svg">
+	<rect
+      x="1"
+      y="10"
+      fill="none"
+      stroke="#fff"
+      stroke-width="2"
+      stroke-miterlimit="10"
+      width="62"
+      height="41"
+    />
+	<line
+      fill="none"
+      stroke="#fff"
+      stroke-width="2"
+      stroke-miterlimit="10"
+      x1="22"
+      y1="63"
+      x2="42"
+      y2="63"
+    />
+	<line
+      fill="none"
+      stroke="#fff"
+      stroke-width="2"
+      stroke-miterlimit="10"
+      x1="32"
+      y1="63"
+      x2="32"
+      y2="51"
+    />
+</g>
+<line
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    stroke="#fff"
+    stroke-width="2"
+    stroke-miterlimit="10"
+    x1="1"
+    y1="43"
+    x2="64"
+    y2="43"
+  />
+</svg>

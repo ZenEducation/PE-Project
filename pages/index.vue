@@ -1,23 +1,17 @@
 <template>
-  <div class="bg-gray-900 text-white flex justify-center">
-    <h1>Index Page</h1>
+  <div class="relative font-body">
+    <indexone />
+    <indextwo />
+    <indexthree />
+    <!-- <indexfour /> -->
+    <indexfive />
+    <brandsession />
+    <testimonials />
   </div>
 </template>
 
-<script>
-import { reactive, toRefs } from "vue";
-
-export default {
-  setup() {
-    const state = reactive({
-      count: 0,
-    });
-
-    return {
-      ...toRefs(state),
-    };
-  },
-};
+<script setup>
+definePageMeta({
+  layout: 'frontend',
+})
 </script>
-
-<style lang="scss" scoped></style>
