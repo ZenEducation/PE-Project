@@ -103,6 +103,17 @@
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
                 ></iframe>
+                <iframe
+                  v-if="item.video2"
+                  width="640"
+                  height="360"
+                  :src="item.video2"
+                  class="mt-2"
+                  title="Aadya Deshpande | MBBS | A Paathshala Ascension Exclusive"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
                 <figure v-if="item.image">
                   <img :src="item.image" alt="" />
                   <figcaption class="text-center mt-2">{{ item.caption }}</figcaption>
@@ -721,6 +732,495 @@ export default {
           paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; At MIT, Akhilesh was a part of The Literary, Debate, and the Quiz Club</li><li> &rarr; He Interned at Reliance Industries Limited</li><li> &rarr; As of the summer of 2022, Akhilesh is working at Juniper Networks as a Software Engineer</li></ul>",
           image: "/images/testimonial/inner-img/akhilesh-k.png",
           caption: "Akhilesh Kalse is 2nd from left, second row"
+        },
+        {
+          name: "Tanmay Pawaskar",
+          profile: "/images/testimonial/70/tanmay-pawaskar.png",
+          
+          paragraph1: "My experience at Paathshala and Photon Ecademy was amazing. The professors at Paathshala and Photon Ecademy are very very good. They have provided personalized attention to us and helped us whenever required. Many doubts about careers and career opportunities were also clarified by the Academics Team. The counselors of the Academics Team have given us motivation counseling from time to time and the counseling really helped me a lot",
+          
+        },
+        {
+          name: "Nikhil Sharma",
+          profile: "/images/testimonial/70/nikhil-sharma.jpg",
+          
+          paragraph1: "My experience at Paathshala Education and Photon Ecademy is good. The professors are very amicable and supportive. The best thing about Paathshala and Photon Ecademy is that all the students get maximum personalized attention.",
+          
+        },
+        {
+          name: "Vivaan G",
+          profile: "/images/testimonial/70/vivaan-g.jpg",
+          college: "BE | BITS PILANI GOA",
+          ranks: "JEE Main 98.1 Percentile <br> JEE Advanced AIR 12652 <br> CET Score 99.82 Percentile <br> CBSE Boards 95% <br> BITSAT 336/450",
+          paragraph1: "I have enjoyed and experienced the journey here at Paathshala Education and Photon Ecademy. The professors are good, the study material provided is good. The professors have really guided us well. I have put in a lot of effort; the professors also put a lot of effort into making me understand the concepts very well. The Paathshala and Photon Ecademy Education Academics and Test module and also the other resources were nice and really helped me in solving a good amount of questions. Any doubts in the questions during problem practice, I could ask the Professors any time. Regular problem-solving helped me increase my problem-solving level. During this period, I restricted myself to only very limited mobile usage. I had a competitive advantage over my friends who were studying in other classes because the Paathshala and Photon Ecademy module questions were definitely at a higher level with proper solutions. For a JEE aspirant, I would say that you need to focus thoroughly on your studies in these 2 years, and also not get distracted by others",
+          admission: "Secured Admission at BITS Pilani Goa for BE in Mechanical Engineering",
+          
+        },
+        {
+          name: "Meenakshi K",
+          profile: "/images/testimonial/70/meenakshi-k.png",
+          college: "B-TECH | SARDAR PATEL COLLEGE OF ENGINEERING",
+          ranks: "JEE Advanced 132 <br> MHTCET 162 <br> MIT AIR 900 <br> Boards 92%",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Meenakshi passed out of Sardar Patel with an overall CGPA of 9.03/10.0</li><li> &rarr; She Interned at VPS Techhub Pvt Ltd (Software Development)</li><li> &rarr; As of the summer of 2022, Meenakshi is working at Goldman Sachs in Bengaluru as an Analyst (Network Software Team)</li></ul>",
+          admission: "Secured Admission at BITS Pilani Goa for BE in Mechanical Engineering",
+          
+        },
+        {
+          name: "Abhishek Dwivedi",
+          profile: "/images/testimonial/70/abhishek-dwivedi.jpg",
+          
+          paragraph1: "Initially, I joined a different coaching institute and left the class within 2 months as I was totally dissatisfied with the teaching and management over there. After that, I have taken admission at Paathshala and Photon Ecademy. My experience at Paathshala and Photon Ecademy has been wonderful. Paathshala and Photon Ecademy is one of the best classes in Mumbai and even Maharashtra. The professors are very good, friendly, and supportive. I just want to say this: If you are searching for the best class in Mumbai, then it is Paathshala. I am completely overwhelmed to have been a student of Paathshala and Photon Ecademy. The way in which Paathshala and Photon Ecademy’s counselors keep you motivated, focused, and goal-oriented from time to time is amazing. I am speechless!",
+          
+          
+        },
+        {
+          name: "Kaustubh Gaikwad",
+          profile: "/images/testimonial/70/kaustubh-gaikwad.png",
+          college: "B-TECH | PUNE INSTITUTE OF COMPUTER TECHNOLOGY",
+          ranks: "JEE Main 115 <br> BITSAT 242",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Kaustubh has Interned at Finastra as an Associate Software Engineer</li><li> &rarr; As of the summer of 2022, Kaustubh is working at Energy Exemplar as an Associate Software Engineer</li></ul>",
+          admission: "Secured Admission at PICT, Pune (Pune Institute of Computer Technology) for B-Tech in Electrical, Electronics and Communications Engineering"
+          
+          
+        },
+        {
+          name: "Surbhi C",
+          profile: "/images/testimonial/70/surbhi-c.jpg",
+          college: "B.SC & M.SC DUAL DEGREE | NARSEE MONJEE",
+          
+          admission: "Secured Admission at Narsee Monjee NMIMS for Integrated M.Sc. in Biomedical Science"
+          
+          
+        },
+        {
+          name: "Aayush M",
+          profile: "/images/testimonial/70/aayush-m.png",
+          paragraph1: "I was previously associated with another institute but I stopped going there since the concepts were not being taught properly. I have taken Admission at Paathshala and Photon Ecademy later. I got to know about Paathshala and Photon Ecademy from one of my friends. My concepts have become very much clearer and problem-solving skills have improved greatly after joining Paathshala and Photon Ecademy",
+
+          
+          
+        },
+        {
+          name: "Titiksha W",
+          profile: "/images/testimonial/70/titiksha-w.png",
+          college: "B-TECH | MANIPAL INSTITUTE OF TECHNOLOGY",
+          admission: "Secured Admission At MIT (Manipal Institute of Technology) for B-Tech in Electrical and Electronics Engineering",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; At MIT, Titiksha has pursued her minors in Embedded Systems</li><li> &rarr She has a Master’s Degree in Engineering Management from Purdue University, United States</li><li> &rarr; As of the summer of 2022, she is working as an Analyst at Deloitte</li></ul>", 
+        },
+        {
+          name: "Manjiri Vichare",
+          profile: "/images/testimonial/70/manjiri-vichare.jpg",
+          college: "KJ SOMAIYA COLLEGE OF ENGINEERING | B-TECH",
+          ranks: "JEE Main 90.98 Percentile",
+          paragraph1: "My experience at Paathshala and Photon Ecademy was mind-blowing. Here the students are taught in small batches and so the Professors were able to give good attention which is very good for the student. The Professors clear all our doubts easily, they encourage us to ask questions and are very supportive. After JEE Main, some of my friends mentioned to me they did not do well. But for me, thanks to Paathshala and Photon Ecademy, I performed much better than the others. This is because they conducted various Chapter Wise Tests, later on, the Full Syllabus Tests were given. The level of tests at Paathshala and Photon Ecademy was also higher so that we do not get nervous during the actual exam. The counselors and professors were cooperative and helped us with time management, suggested us what additional books to buy and how to solve extra papers at home. For a JEE aspirant, I would suggest, that the preparation should start from XI Std itself without being stressed out. There should be very less use of the mobile phone for these two years and the student should be focused only on studies. I have good memories of studying at Paathshala and Photon Ecademy that I will cherish",
+          admission: "Admitted into KJ Somaiya College of Engineering for B-Tech in Mechanical Engineering",
+          video: "https://www.youtube.com/embed/Oi3JtrnDm6I",
+        },
+        {
+          name: "Krutika Desai",
+          profile: "/images/testimonial/70/krutika-desai.png",
+          college: "B.SC AND M.SC DUAL DEGREE | NARSEE MONJEE",
+          
+          admission: "Secured Admission At Narsee Monjee (NMIMS) for B.Sc and M.Sc Dual Degree in Biomedical Sciences",
+          
+        },
+        {
+          name: "Jatin Panchal",
+          profile: "/images/testimonial/70/jatin-panchal.jpg",
+          paragraph1: "My experience at Paathshala and Photon Ecademy was superb. The teaching of all professors is at higher level as well as simple so that all students could understand well. The management, classes schedule, academic service – everything is the best. I became confident to study and I have improved so much compared to how I was till 10th Std. I am proud to have been a student of Paathshala and Photon Ecademy",
+          
+          
+        },
+        {
+          name: "Kedar Khapre",
+          profile: "/images/testimonial/70/kedar-khapre.png",
+          college: "B.E | BITS PILANI, GOA",
+          ranks: "JEE Main 125 <br> BITSAT 301",
+          admission: "Secured Admission At BITS Pilani Goa for BE in Chemical Engineering",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Kedar worked as a Data Analyst at Cogoport, Mumbai, and as an Analyst at IQVIA, Bengaluru</li><li> &rarr; As of Summer 2022, Kedar is working as a Decision Science Analyst at Jumbotail</li></ul>",
+          video: "https://www.youtube.com/embed/uxer_66jaMM",
+
+          
+        },
+        {
+          name: "Viral Mehta",
+          profile: "/images/testimonial/70/viral-mehta.png",
+          college: "VEERMATA JIJABAI TECHNOLOGICAL INSTITUTE",
+          ranks: "JEE Main 139 <br> MHTCET 138 <br> Boards 89%",
+          admission: "Secured Admission At VJTI, Mumbai (Veermata Jijabai Technological Institute) for B-Tech in Textile Sciences and Engineering",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Viral went on to do his MBA from SP Jain Institute of Management and Research, Mumbai</li></ul>",
+          
+
+          
+        },
+        {
+          name: "Pratik Barahatte",
+          profile: "/images/testimonial/70/pratik-barahatte.png",
+          college: "WESTERN SYDNEY UNIVERSITY, AUSTRALIA",
+          
+          admission: "Secured Admission At Western Sydney University, Australia for a Dual Degree Course in Cyber Sciences",
+        },
+        {
+          name: "Srushti Jagtap",
+          profile: "/images/testimonial/70/srushti-jagtap.png",
+          college: "BE | VIVEKANAND EDUCATION SOCIETY'S INSTITUTE OF TECHNOLOGY",
+          paragraph1: "My experience at Paathshala and Photon Ecademy was very good. The professors helped me at every stage, from clearing my doubts, to improving my scores in the subjects. The Academics and Tests module helped me to solve more variety of questions in a limited time and taught me how to manage time effectively. For entrance exam aspirants, I would say that you should make efforts to understand all the concepts by revising them and clearing the doubts with the Professors. Do not get distracted by Social Media, Phones, Video Games, etc as these two are academically very precious years and hence, concentrate only on studies. At Paathshala and Photon Ecademy, I learned how to categorize a topic and study the concepts which made learning very easy",         
+          admission: "Secured Admission At Vivekanand Education Society’s Institute of Technology (VESIT) for BE in Electronics and Telecommunications Engineering",
+          video: "https://www.youtube.com/embed/19PlsOMahCE"
+          
+        },
+        {
+          name: "Shruti Bhakare",
+          profile: "/images/testimonial/70/shruti-bhakare.png",
+          college: "M.B.B.S | D.Y. PATIL UNIVERSITY",       
+          admission: "Secured Admission At School of Medicine, D.Y. Patil University for M.B.B.S",  
+        },
+        {
+          name: "Kashish Chandwani",
+          profile: "/images/testimonial/70/kashish-chandwani.png",
+          paragraph1: "My experience at Paathshala and Photon Ecademy was worthwhile. I have received a lot of guidance in making proper and correct decisions regarding my career and Academics. Thank You, Paathshala and Photon Ecademy!",  
+        },
+        {
+          name: "Aamod Joshi",
+          profile: "/images/testimonial/70/aamod-joshi.png",
+          college: "B.SC AND M.SC DUAL DEGREE | BITS PILANI HYDERABAD",
+          ranks: "Boards 90% ISC",
+          admission: "Secured Admission At BITS Pilani Hyderabad for B.Sc and M.Sc Dual Degree in Physics"  
+        },
+        {
+          name: "Utkarsh Kumar",
+          profile: "/images/testimonial/70/utkarsh-kumar.png",
+          college: "B-ARCH | SRM UNIVERSITY",
+          
+          admission: "Secured Admission at SRM University for B-Arch"  
+        },
+        {
+          name: "Ashish L",
+          profile: "/images/testimonial/70/ashish-l.png",
+          college: "BE | DON BOSCO INSTITUTE OF TECHNOLOGY",
+          ranks: "JEE Main 113 <br> BITSAT 330 <br> Eligible for BITS Pilani",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Ashish secured an All India Rank of 17 in CSE in GATE 2021</li><li> &rarr; He is a 2023 Batch M-Tech Computer Science Student at IIT Bombay</li></ul>",
+          admission: "Secured Admission At Don Bosco Institute of Technology for BE in Computer Engineering"  
+        },
+        {
+          name: "Ankita Bhoye",
+          profile: "/images/testimonial/70/ankita-bhoye.png",
+          paragraph1: "My experience at Paathshala and Photon Ecademy was very nice. Teaching at Paathshala  and Photon Ecademy is great. It helped me to improve my skills in exams and enhance my scores. On-Time Counseling and Guidance is the best part of Paathshala and Photon Ecademy. My concentration in studies has steadily improved over time",  
+        },
+        {
+          name: "Gaurangi Puradkar",
+          profile: "/images/testimonial/70/gaurangi-puradkar.png",
+          college: "B.SC | RAMNIRANJAN JHUNJHUNWALA COLLEGE",
+          paragraph1: "At Paathshala and Photon Ecademy, the professors gave great attention to each student and this helped me understand each topic well as I got all the concepts cleared. I also got to solve lots of questions as per the Professors’ and Mentors’ guidance, who are also very helpful and understanding. For the JEE Aspirants, I will say they should complete the syllabus as early as possible and then revise and solve lots of practice questions",
+          paragraph2: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Gaurangi Interned at the Sparks Foundation (Content Development Intern)</li><li> &rarr; She has completed her Externship at Crio.Do</li></ul>",
+          admission: "Secured Admission At Ramniranjan Jhunjhunwala College for B.Sc in Computer Science"
+        },
+        {
+          name: "Vishad Sawant",
+          profile: "/images/testimonial/70/vishad-sawant.jpg",
+          paragraph1: "My experience at Paathshala and Photon Ecademy was very nice. The professors are highly qualified and dedicated. The atmosphere was very studious. Every student is dedicated to their studies which also kept me dedicated and sincere. My doubts were cleared from time to time. The infrastructure is very nice and the staff is always ready to cater to our requirements. The academics team kept me motivated and focused",
+        },
+        {
+          name: "Ramya M",
+          profile: "/images/testimonial/70/ramya-m.png",
+          college: "BS | PURDUE UNIVERSITY",
+          admission: "Secured Admission At Purdue University, United States for BS in Computer Science",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Ramya graduated from Purdue with an overall CGPA of 4.0/4.0</li><li> &rarr; She on the Dean’s List at Purdue University for 6 semesters for academic performance</li><li> &rarr; Ramya was awarded Scholarship Award for Excellence from Boeing</li><li> &rarr; She Interned at Angie’s List (Software Engineering Intern), Verizon Media (Software Engineering Intern)</li><li> &rarr; As of the summer of 2022, Ramya is an Undergraduate Teaching Assistant at Purdue University</li></ul>",
+        },
+        {
+          name: "Akash Magdum",
+          profile: "/images/testimonial/70/akash-magdum.png",
+          college: "B-TECH | VIVEKANAND EDUCATION SOCIETY'S INSTITUTE OF TECHNOLOGY",
+          ranks: "JEE Main 125 <br> MHTCET 148 <br> Boards 92%",
+          admission: "Secured Admission At Vivekanand Education Society’s Institute of Technology (VESIT) for B-Tech in Computer Science Engineering",          
+        },
+        {
+          name: "Bhagyashri Bhamare",
+          profile: "/images/testimonial/70/bhagyashri-bhamare.png",
+          college: "B-TECH | NIT SURATHKAL",
+          ranks: "JEE Advanced 125 <br> JEE Main 113 <br> BITSAT 298 <br> MHTCET 145 <br> Boards 85%",
+          admission: "Secured Admission at NIT Surathkal for B-Tech in Information Technology",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Bhagyashri was selected for the Microsoft Codess Mentorship Program</li><li> &rarr; She Interned at Microsoft (Software Development Engineer), eSamudaay (Software Development Engineer)</li></ul>"        
+        },
+        {
+          name: "Rujuta Ghorpade",
+          profile: "/images/testimonial/70/rujuta-ghorpade.jpg",
+          college: "B-PHARM | NARSEE MONJEE'S SHOBHABEN PRATAPBHAI SCHOOL OF PHARMACY",
+          paragraph1: "Before joining Paathshala and Photon Ecademy, my experience with another institute was not good. At Paathshala and Photon Ecademy, I was able to understand the concepts of the subject clearly and became confident and interested in the subjects. The professors taught me right from the basics of the 11th standard and made me capable of solving MCQs of JEE Main level quickly. Also, I was made to solve lots of questions from previous years’ tests. I could understand the questions and what I am supposed to answer. I would advise entrance exam aspirants – to stay focused on their studies, have their concepts of each topic cleared and solve as many questions as possible. And beware of the marketing strategies used by the coaching classes and don’t fall prey to them. I did initially fall prey to such tactics and joined a different class before joining Paathshlala and Photon Ecademy",
+          paragraph2: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Rujuta graduated from Narsee Monjee with an overall CGPA of 3.38/4.0</li><li> &rarr; She has pursued her Master’s Degree in Chemistry from Georgia State University, University</li><li> &rarr; During her Master’s program, her coursework included Advanced Organic Synthesis, Mechanistic Organic Chemistry, Medicinal Chemistry, Biostatistics</li><li> &rarr; Rujuta has Interned at Centaur Pharmaceuticals Ltd (R&D Intern), Glenmark Pharmaceuticals (Marketing Intern)</li><li> &rarr; During her undergraduate years, Rujuta has co-authored a book chapter on the Formulation of Peptides and Peptidomimetics, and a review article on the Different Medicinal Plants Used In The Treatment of Parkinson’s Disease</li></ul>",
+          admission: "Secured Admission At Narsee Monjee’s Shobhaben Pratapbhai School of Pharmacy for B-Pharmacy",
+          video: "https://www.youtube.com/embed/DvKYcn9ZqEw"
+        },
+        {
+          name: "Aditya L",
+          profile: "/images/testimonial/70/aditya-l.png",
+          college: "B-TECH | KJ SOMAIYA COLLEGE OF ENGINEERING",
+          ranks: "JEE Main 142 <br> CET 141 <br> Boards 88%",
+          admission: "Secured Admission At KJ Somaiya College of Engineering for B-Tech in Mechanical Engineering",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Aditya Interned at Orion Racing India (Junior Engineer)</li><li> &rarr; He also Interned at Air India Engineering Service Limited (Engineering Intern)</li><li> &rarr; He served as the President of ISHRAE Mumbai Chapter</li><li> &rarr; As of the summer of 2022, Aditya is working at Vertiv as a Graduate Engineer Trainee</li></ul>"
+        },
+        {
+          name: "Sasha O",
+          profile: "/images/testimonial/70/sasha-o.png",
+          college: "BS | ARIZONA STATE UNIVERSITY",
+          admission: "Secured Admission at Arizona State University (Ira A. Fulton Schools of Engineering) for BS in Mechanical Engineering"
+        },
+        {
+          name: "Nidhi Vispute",
+          profile: "/images/testimonial/70/nidhi-vispute.png",
+          college: "B-TECH | TERNA ENGINEERING COLLEGE, MUMBAI",
+          admission: "Secured Admission at Terna Engineering College, Mumbai for B-Tech in Computer Science Engineering",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Nidhi is the Co-lead of the Google Student Developer Club (Terna Engineering College Chapter)</li></ul>"
+        },
+        {
+          name: "Akhil Boddul",
+          profile: "/images/testimonial/70/akhil-boddul.jpg",
+          college: "BE | COMPUTER ENGINEERING",
+          paragraph1: "My experience at Paathshala and Photon Ecademy was very good. I felt very comfortable here. The professors taught and explained the concepts very nicely. They also made hard concepts easy to understand. We have gotten personalized attention from the professors because we were taught in small batches. I have enjoyed learning all the subjects here, Physics, Chemistry and Maths, my favourite subject being Physics",
+          admission: "Secured Admission At Terna Engineering for BE in Computer Engineering"
+        },
+        {
+          name: "Mann V",
+          profile: "/images/testimonial/70/mann-v.jpg",
+          college: "B.E | BITS PILANI, GOA",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Mann has been a Publicity Associate and a Core Team Member of Department of Publicity and Public Relations at BITS Pilani Goa</li><li> &rarr; He was a Curator and a Marketing Associate of TEDx BITSGoa</li><li> &rarr; He Interned at Birla Carbon (Project Intern)</li><li> &rarr; Mann is working with UltraTech Cement as of June 2022</li></ul>",
+          admission: "Secured Admission At BITS Pilani Goa for BE in Chemical Engineering"
+        },
+        {
+          name: "Aditya Atreya",
+          profile: "/images/testimonial/70/aditya-atreya.jpg",
+          college: "B-TECH & MBA DUAL DEGREE | NARSEE MONJEE'S MUKESH PATEL INSTITUTE OF TECHNOLOGY MANAGEMENT AND ENGINEERING",
+          paragraph1: "In the institute where I enrolled before joining Paathshala and Photon Ecademy, I had many conceptual doubts which was a setback in the MCQ performance. After coming to Paathshala and Photon Ecademy, I got personalized attention from various Professors, and the continuous clarification of doubts, helped me solve the questions appropriately. When the conceptual doubts are cleared, then the question-solving ability is developed automatically. For entrance exam aspirants, I would say – attempt all the Part Syllabus, Full Syllabus and Topic Wise Tests to get the confidence for scoring higher marks in competitive exams. For the future students/batches at Paathshala and Photon Ecademy, I would say that this is the best place where personalized attention is actually given to the student",
+          paragraph2: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Aditya Interned at Siemens (Management Trainee)</li><li> &rarr; As of the summer of 2022, Aditya is working at Ernst and Young as an Associate Consultant</li></ul>",
+          admission: "Secured Admission At Narsee Monjee’s Mukesh Patel Institute of Technology Management and Engineering for Dual Degree Course in B-Tech and MBA"
+        },
+        {
+          name: "Chirayu Shetty",
+          profile: "/images/testimonial/70/chirayu-shetty.png",
+          college: "BDS | BHARATI VIDYAPEETH MEDICAL COLLEGE",
+          admission: "Secured Admission At Bharati Vidyapeeth Medical College for Bachelor of Dental Surgery (BDS)"
+        },
+        {
+          name: "Ruchira Jawale",
+          profile: "/images/testimonial/70/ruchira-jawale.png",
+          paragraph1: "Everything at Paathshala and Photon Ecademy is very good. The Academics Team, management, Professors. The classrooms are very well maintained. Even the smallest of things are dealt with great care and concern!"
+        },
+        {
+          name: "Atharva B",
+          profile: "/images/testimonial/70/atharva-b.png",
+          college: "B-TECH | INSTITUTE OF CHEMICAL TECHNOLOGY (ICT) MATUNGA",
+          ranks: "JEE Main 120 <br> BITSAT 266 <br> MHTCET 155",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Atharva is pursuing his PhD in Chemical Engineering at University of Massachusetts (UMass) Amherst, United States</li></ul>",
+          admission: "Secured Admission At Institute of Chemical Technology (ICT) Matunga for B-Tech in Chemical Engineering (Oils, Oleochemicals and Surfactants Technology)"
+        },
+        {
+          name: "Amit Salgaonkar",
+          profile: "/images/testimonial/70/amit-salgaonkar.png",
+          paragraph1: "My experience at Paathshala and Photon Ecademy was very good. The syllabus was completed early and revision sessions were very helpful"
+        },
+        {
+          name: "Shriraj A",
+          profile: "/images/testimonial/70/shriraj-a.png",
+          college: "B-TECH | IIT BOMBAY",
+          admission: "Secured Admission At IIT Bombay for B-Tech in Civil Engineering",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Shriraj Interned at Bombay Locale, an advertising services start-up as an Assistant Director Intern</li><li> &rarr; As of the Summer of 2022, he is interning at TVF (The Viral Fever) as a Creative Writer Intern</li></ul>"
+        },
+        {
+          name: "Yash Bhosale",
+          profile: "/images/testimonial/70/yash-bhosale.png",
+          college: "B-TECH | DON BOSCO INSTITUTE OF TECHNOLOGY",
+          ranks: "BITSAT 330",
+          admission: "Secured Admission At Don Bosco Institute of Technology for B-Tech in Mechanical Engineering",
+        },
+        {
+          name: "Shashank Iyer",
+          profile: "/images/testimonial/70/shashank-lyer.jpg",
+          paragraph1: "I had a great experience studying at Paathshala and Photon Ecademy. Here the students get all the required facilities and study material required for perfect preparation. The classification of the topics into subtopics has helped in better understanding the concepts in that topic. Also, the classes are conducted in small batches which enables the professor to give personalized attention to the student. The student is encouraged to ask questions and clear all his/her doubts. I was initially in a different institute before joining Paathshala and Photon Ecademy. I would have to work much much harder if I were at some other institute, where they start teaching the chapters slowly in the beginning and then after enough students have enrolled for the course, they rush through the syllabus. On top of that, they don’t teach properly. They give you a mixed bag of theories; you need to go into it and search out the important points. Here at Paathshala Education and Photon Ecademy, the professors are knowledgeable and provided personalized attention to each student and cleared all their doubts on the subject. They guide you properly and give what is actually required. For entrance exam aspirants, I would say do not count the number of hours you study, instead solve more conceptual questions because this is what that develops our concepts. As soon as you finish theory, start off with practice papers of previous years and solve as many as possible",
+          ranks: "JEE Main 143",
+          video: "https://www.youtube.com/embed/a6BAau8SBZY"
+        },
+        {
+          name: "Chaitanya Tamhankar",
+          profile: "/images/testimonial/70/chaitanya-tamhankar.jpg",
+          college: "B-TECH | KJ SOMAIYA COLLEGE OF ENGINEERING",
+          admission: "Secured Admission At KJ Somaiya College of Engineering for B-Tech in Electronics Engineering",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Chaitanya is a class of 2024 MBA student at the prestigious BITS School of Management</li><li> &rarr; During his graduation at KJ Somaiya, he was the Editor-In-Chief of the 33rd edition of the college periodical – Kshitij, Literary Secretary of the Students’ Council for the Academic year 2019-20, Convenor of Syahi 2020, Part of Organizing Committee of Technical Festival – Abhiyantriki 2019, Part of Organizing Committee of Cultural Festival of – Symphony 2020</li></ul>",
+        },
+        {
+          name: "Faizan Sarang",
+          profile: "/images/testimonial/70/faizan-sarang.png",
+          college: "BDS | M.A. RANGOONWALA COLLEGE OF DENTAL SCIENCE AND RESEARCH CENTRE",
+          admission: "Secured Admission At M.A. Rangoonwala College of Dental Science and Research Centre for Bachelor of Dental Surgery (BDS)"
+        },
+        {
+          name: "Maitreyee A",
+          profile: "/images/testimonial/70/maitreyee-a.jpg",
+          college: "NARSEE MONJEE, NMIMS UNIVERSITY | DUAL DEGREE MASTERS",
+          paragraph1: "My experience at Paathshala and Photon Ecademy was good. The professors are good and knowledgeable. They are quite encouraging. The study atmosphere is also good. The staff and counselors are friendly and helping. My experience overall was good.",
+          admission: "Admitted into Narsee Monjee, NMIMS University for Dual Degree Masters in Bio Medical Sciences"
+        },
+        {
+          name: "Sumanth Atreya",
+          profile: "/images/testimonial/70/sumanth-atreya.png",
+          college: "BS | INDIAN INSTITUTE OF SCIENCE EDUCATION AND RESEARCH (IISER), PUNE",
+          paragraph1: "<b>Sumanth is a DST INSPIRE Fellow <br> ‘Innovation in Science Pursuit for Inspired Research (INSPIRE)‘ is an innovative programme sponsored and managed by the Department of Science & Technology for attraction of talent to Science</b>",
+          admission: "Secured Admission At Indian Institute of Science Education and Research (IISER), Pune"
+        },
+        {
+          name: "Suparnan V",
+          profile: "/images/testimonial/70/suparnan-v.jpg",
+          college: "BE | IMPERIAL COLLEGE, LONDON",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; As of the summer of 2022, Suparnan is working at Citadel in London. Citadel, a financial services company considered one of the world’s leading alternative investment managers</li></ul>",
+          admission: "Secured Admission at Imperial College, London for BE in Electronics and Information Engineering"
+        },
+        {
+          name: "Saloni Mahajan",
+          profile: "/images/testimonial/70/saloni-mahajan.jpg",
+          college: "B-TECH | NARSEE MONJEE, NMIMS UNIVERSITY",
+          paragraph1: "I got a lot of encouragement and motivation for my studies and exams from Paathshala and Photon Ecademy. The Academics and Tests module helped me prepare well and improve my scores as I solved as many questions to gain confidence. For an entrance exam aspirant, I would say you should stay focused on your studies and it is important that you should solve lots of practice questions along with a timer to the side. It is advisable to stay away from all distractions especially social media for these two years. Use your phone only when required and do not spend too much time on it. What I appreciate about Paathshala and Photon Ecademy is that they are goal-oriented oriented and the smaller batch size enables the Professors to give personalized attention to the students",
+          admission: "Secured Admission At Narsee Monjee, NMIMS University for B-Tech in Data Science Engineering",
+          video: "https://www.youtube.com/embed/3xFNwDqRFu8"
+        },
+        {
+          name: "Yash D",
+          profile: "/images/testimonial/70/yash-d.jpg",
+          college: "B-TECH & M-TECH DUAL DEGREE | NARSEE MONJEE",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; As of the summer of 2022, Yash is working as an Associate Consultant at Deloitte</li></ul>",
+          admission: "Secured Admission At Narsee Monjee for B-Tech & M-Tech Dual Degree in Electronics and Telecommunications Engineering",
+        },
+        {
+          name: "Sanika Biwalkar",
+          profile: "/images/testimonial/70/sanika-biwalkar.png",
+          college: "BE | DWARKADAS J. SANGHVI COLLEGE OF ENGINEERING",
+          paragraph1: "I am Sanika’s father. I had been told that the teaching at Paathshala and Photon Ecademy is at a different level altogether. The topics are categorized and the concepts are taught thoroughly for better understanding and then there are tests on each topic followed by Full Syllabus Tests. The concepts have been taught very very clearly by the Paathshala and Photon Ecademy’s Professors. They taught her how to systematically prepare for the exams, and how to write the answers in the board exams, and as time passed, she became very confident in the subjects <br> <b>– Mr. Biwalkar (Sanika’s Father)</b>",
+          paragraph2: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; As of the summer of 2022, Sanika is working as a System Engineer at Tata Consultancy Services</li></ul>",
+          admission: "Secured Admission at Dwarkadas J. Sanghvi College of Engineering for BE in Information Technology Engineering",
+          video: "https://www.youtube.com/embed/x15g1-v7pQw",
+        },
+        {
+          name: "Maitry Patel",
+          profile: "/images/testimonial/70/maitry-patel.png",
+          college: "M.B.B.S | D.Y. PATIL UNIVERSITY",
+          admission: "Secured Admission At School of Medicine, D. Y. Patil University for M.B.B.S",
+        },
+        {
+          name: "Siddharth P",
+          profile: "/images/testimonial/70/siddharth-p.png",
+          college: "BITS PILANI",
+          admission: "Secured Admission at BITS Pilani Goa for BE in Electrical, Electronics, and Communications Engineering",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Siddharth has Interned at Hyphen SCS (Financial Analysis Intern)</li><li> &rarr; He has done his Research Internship at Nord University, Norway</li><li> &rarr; He is also doing his minors in Finance at BITS Pilani Goa</li><li> &rarr; He has a keen interest in Quantitative Finance and Applications of Machine Learning in Finance, Blockchain and Crypto</li><li> &rarr; As of 2023, he is interning at the Mumbai office of Morningstar, Inc., an independent investment research firm based out of Chicago, IL</li></ul>"
+        },
+        {
+          name: "Asesh Patra",
+          profile: "/images/testimonial/70/asesh-patra.jpg",
+          paragraph1: "I joined Paathshala and Photon Ecademy a bit late and now wish I had joined earlier. The guidance that Paathshala and Photon Ecademy provides cannot be found anywhere else. I have learned how to prepare for the exam and solve the questions within the allotted time. The professors and counsellors here motivated us a lot and have provided us with timely guidance which enabled us to excel in the exams. For any entrance exam aspirants, I would say, you need to be strong in your concepts. Do not spend too much time on difficult questions. Work hard, study smart",
+          video: "https://www.youtube.com/embed/5C-GIytSoVY",
+          video2: "https://www.youtube.com/embed/Xr9DlfIu_Z4",       
+        },
+        {
+          name: "Ameya N",
+          profile: "/images/testimonial/70/ameya-n.png",
+          college: "B-TECH | SARDAR PATEL INSTITUTE OF TECHNOLOGY",
+          admission: "Secured Admission At Sardar Patel Institute of Technology For B-Tech In Electronics and Telecommunications Engineering",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Ameya has a Master’s Degree in Nanoscience and Nanotechnology from LU Leuven, Belgium (First Year of Erasmus Mundus Joint Masters Program)</li><li> &rarr; She also has a Master’s Degree in Quantum and Nanoscale Engineering from Université Grenoble Alpes, France (First Year of Erasmus Mundus Joint Masters Program)</li><li> &rarr; As of 2023, Ameya is pursuing her PhD from Karlsruhe Institute of Technology, Germany</li></ul>",
+          image: "/images/testimonial/inner-img/ameya-n.png"        
+        },
+        {
+          name: "Shardul D",
+          profile: "/images/testimonial/70/shardul-d.png",
+          college: "B-TECH | MANIPAL ACADEMY OF HIGHER EDUCATION, MANIPAL UNIVERSITY",
+          admission: "Secured Admission At Manipal Academy of Higher Education, Manipal University for B-Tech in Computer Science Engineering",
+          ranks: "JEE Main 147 <br> MIT AIR 653 <br> MHTCET 142",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Shardul graduated from Manipal with an overall CGPA of 9.18/10</li><li> &rarr; He Interned at vPhrase, Reliance Industries Limited (Software Developer), ZS (Business Technology Solutions Associate)</li><li> &rarr; Shardul completed his MS in Computer Science (AI) from the University of Southern California, United States</li></ul>",
+          image: "/images/testimonial/inner-img/shardul-d.png"        
+        },
+        {
+          name: "Vaikund M",
+          profile: "/images/testimonial/70/vaikund-m.png",
+          ranks: "JEE Advanced AIR 13153 <br> JEE Main 192"        
+        },
+        {
+          name: "Swara Limbekar",
+          profile: "/images/testimonial/70/swara-limbekar.png",
+          college: "MIT SCHOOL OF BIOENGINEERING SCIENCES & RESEARCH",
+          paragraph1: "Initially, I have taken admission at a different institute. I was not at all happy with the institute and discontinued from there. Then, I joined Paathshala and Photon Ecademy. My experience at Paathshala and Photon Ecademy was quite good. I have gotten a lot of support and guidance from the professors, and also had very good practice sessions for the competitive entrance exams. All the professors are friendly and encouraging. The academic counselors were always motivating me. That helped me a lot",
+          admission: "Secured Admission at MIT School of Bioengineering Sciences & Research-MITBIO, Manipal University",        
+        },
+        {
+          name: "Arpit Kolge",
+          profile: "/images/testimonial/70/arpit-kolge.png",
+          college: "B-TECH | NARSEE MONJEE",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Arpit has Interned at Siemens, Mumbai (Technological Planning)</li><li> &rarr; He worked as a Human Resources Intern at MentorBoxx</li><li> &rarr; Arpit is a class of 2024 PGDM student at ISBR Business School</li></ul>",
+          admission: "Secured Admission at Narsee Monjee’s Mukesh Patel Institute of Technology Management and Engineering for B-Tech in Mechanical Engineering",
+          image: "/images/testimonial/inner-img/arpit-kolge.png"      
+        },
+        {
+          name: "Aditya Parhad",
+          profile: "/images/testimonial/70/aditya-parhad.png",
+          college: "B-TECH | VEERMATA JIJABAI TECHNOLOGICAL INSTITUTE (VJTI)",
+          paragraph1: "The Professors at Paathshala and Photon Ecademy have good knowledge of the fundamentals and advanced concepts of the subject. Some of the Professors have a good sense of humor too! The Professors method of explaining the topics is simple. They divide the topics into categories and sub-categories that are easy to remember. The best way to crack the JEE is to initially focus on the fundamentals and give each topic a lot of time. After completion of the syllabus, you should practice at least 50 FSTs of Main and 50 FSTs of Advanced. This will really help you a lot.",
+          paragraph2: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Aditya has completed his MS in Electrical and Electronics Engineering from North Carolina State University with an overall CGPA of 3.9/4.0</li><li> &rarr; Aditya Interned at Go-Solar Solutions (Business Development Intern), Bhabha Atomic Research Centre (Research), 7X Analytics LLC, United States, National Renewable Energy Laboratory, Colorado</li><li> &rarr; He was also a Summer Trainee at Mazgaon Dock, Mumbai, and a Project Trainee at Reliance Infrastructure</li><li> &rarr; He was a Graduate Student Researcher at North Carolina State University and a Graduate Research Assistant at Duke Energy Corporation</li><li> &rarr; As of the summer of 2022, Aditya is working as an Associate Engineer at Schweitzer Engineering Laboratories (SEL), Washington, United States</li></ul>",
+          admission: "Secured Admission At Veermata Jijabai Technological Institute (VJTI) for B-Tech in Electrical Engineering",
+          image: "/images/testimonial/inner-img/aditya-parhad.png",
+          video: "https://www.youtube.com/embed/0esivhhKErE",      
+        },
+        {
+          name: "Radhika T",
+          profile: "/images/testimonial/70/radhika-t.png",
+          college: "B-TECH | NIT NAGPUR",
+          ranks: "JEE Main 147 <br> BITSAT 290 <br> MHTCET 152 <br> Boards 90%",
+          admission: "Secured Admission At NIT Nagpur for B-Tech in Mechanical Engineering",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Radhika is a 2023 Master’s student (Mechatronics, Robotics and Automation Engineering) at the Oregon State University, United States</li><li> &rarr; She has done her Industrial Training Apprenticeship at Maruti Suzuki India Limited</li><li> &rarr; She Interned at the KTH Royal Institute of Technology, Stockholm, Swedan</li><li> &rarr; She has also Interned at Technip Energies (Graduate Engineering Trainee)</li></ul>",
+          image: "/images/testimonial/inner-img/radhika-t.jpg",
+        },
+        {
+          name: "Bhakti Savla",
+          profile: "/images/testimonial/70/bhakti-savla.jpg",
+          college: "MAHARASHTRA INSTITUTE FOR MEDICAL EDUCATION AND RESEARCH | M.B.B.S",
+          paragraph1: "Her professors are intelligent, knowledgeable and dedicated. My daughter really benefited from the class as she learnt the subjects in depth. She was given daily assignments to complete. It really improved her test scores including MCQs. For the NEET aspirants, I will say one has to be very focused and planned with studies. Also, indulge in extra curricular activities like sports or music to relax. <br> <b>– Mrs. Savla, Bhakti’s Mother</b>",
+          admission: "Her ward Bhakti Savla got admitted into Maharashtra Institute for Medical Education and Research for M.B.B.S through NEET (UG)"
+        },
+        {
+          name: "Divya M",
+          profile: "/images/testimonial/70/Divya-m.png",
+          college: "BE | VIVEKANAND EDUCATION SOCIETY'S INSTITUTE OF TECHNOLOGY (VESIT)",
+          ranks: "Boards 92% (Physics 93, Chemistry 94, Mathematics 90)",
+          admission: "Secured Admission At Vivekanand Education Society’s Institute of Technology (VESIT) for BE in Computer Engineering",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Divya has Interned at Nuclear Power Corporation of India Limited (Web Developer), Bhabha Atomic Research Centre (Machine Learning Engineer)</li><li> &rarr; She has worked at Computer Society of India as a Senior Operations Officer, CitrusTech as a (Trainee) Software Engineer</li><li> &rarr; As of the summer of 2022, Divya is Interning at Innomatics Research Labs (Data Science)</li></ul>"
+        },
+        {
+          name: "Aayush Voleti",
+          profile: "/images/testimonial/70/aayush-voleti.jpg",
+          college: "B-TECH & M-TECH DUAL DEGREE | IIT BHU",
+          paragraph1: "I became more confident than before after I got all the concepts cleared at Paathshala and Photon Ecademy. The professors are all student-friendly; they give lots of problems to solve. As a JEE Aspirant, you need to be calm and not be stressed out. My tips to the aspirants would be – ask your doubts and get the concepts cleared, also solve lots of questions from previous years’ tests. This will give you the confidence to do well in your paper",
+          paragraph2: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Aayush has Interned at Bhabha Atomic Research Centre, Mumbai (Summer Intern) and Eaton, an Appliances, Electrical, and Electronics Manufacturing Company based out of Dublin, Ireland</li><li> &rarr; As of the Summer of 2022, Aayush is working at HSBC as a Senior Software Engineer</li></ul>",
+          admission: "Secured Admission At IIT BHU for B-Tech & M-Tech Dual Degree in Materials Science and Technology",
+          video: "https://www.youtube.com/embed/cbKZZNMpCHM"
+        },
+        {
+          name: "Anish Jadhav",
+          profile: "/images/testimonial/70/anish-jadhav.png",
+          paragraph1: "My experience with the Professors at Paathshala Education and Photon Ecademy has been amazing. The professors are friendly and knowledgeable. The syllabus was completed early as per the usual Paathshala and Photon Ecademy Policy. Due to the small size of the batch, we got personalized attention from the faculty. Also, audio visuals and small animated videos were shown in the class to make the study more understandable and entertaining. Compared to Paathshala and Photon Ecademy, when I was at another institute before joining here, their method of teaching was different and I could not understand the concepts well",
+          paragraph2: "At Paathshala and Photon Ecademy, the professors ensured that I understood the concepts and their applications correctly. Each topic is categorized into divisions for better understanding. Plus there are lots of practice questions to be solved which helped us in gaining confidence in the subjects",
+          video: "https://www.youtube.com/embed/863yZByzQw4"
+        },
+        {
+          name: "Tiasha M",
+          profile: "/images/testimonial/70/tiasha-m.png",
+          college: "B.PHARM | BITS PILANI",
+          admission: "Secured Admission At BITS Pilani for Bachelors in Pharmacy",
+          paragraph1: "<b>Alumni Spotlight</b> <br> <ul><li> &rarr; Tiasha has also done her Minors in Finance from BITS Pilani</li><li> &rarr; She has Interned at RPG Life Sciences Ltd, Deloitte (Risk Advisory Team), InMobi (Strategy and Operations)</li><li> &rarr; Tiasha has worked as a Consultant at Zinnov, and an Associate Manager at ShareChat</li><li> &rarr; As of the summer of 2022, Tiasha is working as an Associate Manager at Groww, India</li></ul>",
+          image: "/images/testimonial/inner-img/taisha-m.png"
+        },
+        {
+          name: "Gaurav Parekh",
+          profile: "/images/testimonial/70/gaurav-parekh.png",
+          college: "B-TECH | KJ SOMAIYA COLLEGE OF ENGINEERING",
+          paragraph1: "At Paathshala and Photon Ecademy, the professors gave great attention to each student and this helped me understand each topic well as I got all the concepts cleared. I also got to solve lots of questions and get my doubts cleared by the professors at Paathshala and Photon Ecademy. The professors are very helpful. For the JEE Aspirants, I would say they should complete the syllabus as early as possible and then revise and solve lots of practice questions",
+          ranks: "JEE Main 140/360 <br> JEE Advanced 147/366 <br> JEE Advanced AIR 32164 <br> MHTCET 131/200",
+          admission: "Secured Admission At KJ Somaiya College of Engineering for B-Tech in Computer Science Engineering",
+          image: "/images/testimonial/inner-img/gaurav-parekh.png",
+          video: "https://www.youtube.com/embed/br-DNI4CWY0"
         },
       ],
     };
