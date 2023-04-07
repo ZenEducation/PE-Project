@@ -158,7 +158,16 @@ export default {
         {
           id: 12,
           image: "/images/blog/blog-images-grid/blog-12.jpg",
-          bio: 'health coaching',
+          bio: '',
+          date: 'March 29, 2023',
+          title: 'Beyond the Classroom: How Remote Learning is Revolutionizing Educations',
+          views: '227 views',
+          link: "beyond-the-classroom-how-remote-learning-is-revolutionizing-educations"
+        },
+        {
+          id: 13,
+          image: "/images/blog/blog-images-grid/blog-13.jpg",
+          bio: '',
           date: 'March 29, 2023',
           title: 'Beyond the Classroom: How Remote Learning is Revolutionizing Educations',
           views: '227 views',
