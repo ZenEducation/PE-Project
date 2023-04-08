@@ -196,8 +196,109 @@ export default {
           date: 'March 29, 2023',
           title: 'Beyond the Classroom: How Remote Learning is Revolutionizing Educations',
           views: '227 views',
+          summary: "The emergence of remote learning and online one-to-one tutoring has revolutionized the way we approach education. While traditional forms of teaching and tutoring have been effective, remote learning and online one-to-one tutoring offer numerous advantages that are hard to ignore.",
           link: "beyond-the-classroom-how-remote-learning-is-revolutionizing-educations"
           
+        },
+        {
+          id: 13,
+          image: "/images/blog/blog_images/blog-13.png",
+          bio: '',
+          date: 'June 8, 2020',
+          title: 'Categorization of the Learning Needs of our Children',
+          views: '265 views',
+          summary: "In order for us – parents, teachers and students to better understand learning requirements, we have classified the types of students into the following categories 4 by drawing a 2 x 2 matrix.",
+          link: "categorization-of-the-learning-needs-of-our-children"
+        },
+        {
+          id: 14,
+          image: "/images/blog/blog_images/blog-14.png",
+          bio: '',
+          date: 'May 3, 2020',
+          title: 'Fast Completion of Syllabus for Competitive Entrance Exams',
+          views: '275 views',
+          summary: "By failing to prepare, we are preparing to fail. Adept planning and preparation is a pivotal step in being successful. Competitive exams, are getting increasingly cut-throat day-by-day and there is a pressing need for even exact and impactful preparation, which is smart, efficient and thorough.",
+          link: "fast-completion-of-syllabus-for-competitive-entrance-exams"
+        },
+        {
+          id: 15,
+          image: "/images/blog/blog_images/blog-15.png",
+          bio: '',
+          date: 'April 11, 2020',
+          title: 'Layered Attempting',
+          views: '295 views',
+          summary: "We understand that giving your best will always be the prime aim in your life. We have always looked forward in enhancing student’s learning more smartly. We all know that hard work is the key to success but do we understand that smart work also pays off equally. Preparing your subjects is no doubt very wise but creating a strategy in your mind proves to be more fruitful.",
+          link: "layered-attempting"
+        },
+        {
+          id: 16,
+          image: "/images/blog/blog_images/blog-16.png",
+          bio: '',
+          date: 'March 9, 2020',
+          title: 'Optimal Student Welfare Activity',
+          views: '195 views',
+          summary: "Results are like precious plants. You cant just sow the seed and leave it and think its going to grow by itself and flower. You have to keep on watering it. You have to look after it and nurture it. For good results just teaching is not enough, there is much more after it. Students perform up to their potential only when they are taken care of through all dimensions 360 degree.",
+          link: "optimal-student-welfare-activity"
+        },
+        {
+          id: 17,
+          image: "/images/blog/blog_images/blog-17.png",
+          bio: '',
+          date: 'February 14, 2020',
+          title: 'The Educational Needs of our Children',
+          views: '169 views',
+          summary: "This for the parents and guardians. The mothers and the fathers who work the hardest to make sure their children get the best of care, nurture and opportunities.The parents who want their children to succeed in this world. The world that is often harsh, seldom full of challenges.",
+          link: "the-educational-needs-of-our-children"
+        },
+        {
+          id: 18,
+          image: "/images/blog/blog-images-grid/blog-18.png",
+          bio: '',
+          date: 'February 8, 2020',
+          title: 'Paathshala x Photon Ecademy: Foundation Course – Prayaag',
+          views: '300 views',
+          summary: "Considering the competitive scenario and the dynamics of the same, it is very important for a student to stay ahead of the game and have an edge over the others, in order to secure and pursue stellar careers. It’s just not about knowledge anymore. It’s about the depth of your thought horizons are, analytical thinking capability, your imagination ability, agility of mind and great memory.",
+          link: "paathshala-photon-ecademy-foundation-course-prayaag"
+        },
+        {
+          id: 19,
+          image: "/images/blog/blog_images/blog-19.png",
+          bio: '',
+          date: 'January 12, 2020',
+          title: 'JEE Main',
+          views: '269 views',
+          summary: "JEE Main is among the toughest exams in the world. Every year, over 12 lakh students appear while only 2,20,000 qualify for JEE Advanced. The Joint Entrance Examination (JEE) is an All-India Common Entrance Exam for getting admissions into engineering colleges across India.",
+          link: "jee-main"
+        },
+        {
+          id: 20,
+          image: "/images/blog/blog_images/blog-20.png",
+          bio: '',
+          date: 'December 22, 2020',
+          title: 'JEE Advanced',
+          views: '258 views',
+          summary: "JEE Advanced is one of the toughest exams in India. Over 2.24 lakh students take it every year with only 20,000 getting a rank. JEE (Joint Entrance Exam), an all India common entrance exam for engineering, is held in two stages: Stage 1: JEE Main Stage 2: JEE Advanced. JEE Advanced is the second stage of the Joint Entrance Examination. You are eligible to take JEE Advanced only if you clear the cut-off for JEE Main.",
+          link: "jee-advanced"
+        },
+        {
+          id: 21,
+          image: "/images/blog/blog_images/blog-21.png",
+          bio: '',
+          date: 'November 18, 2019',
+          title: 'NEET',
+          views: '216 views',
+          summary: "The National Eligibility cum Entrance Test (NEET) is held yearly to help students secure admission to the top medical institutions in India. NEET will be conducted by National Testing Agency (NTA) from 2019. All major dental and medical colleges offer students admission on the basis of their NEET scores, excluding AIIMS and JIPMER.",
+          link: "neet"
+        },
+        {
+          id: 22,
+          image: "/images/blog/blog_images/blog-22.png",
+          bio: '',
+          date: 'October 20, 2019',
+          title: 'BITSAT',
+          views: '196 views',
+          summary: "What is BITSAT? The Birla Institute of Technology & Science conducts the BIT Science Aptitude Test (BITSAT) every year. There are three institutions that consider BITSAT scores. This university-level examination is conducted in order to provide admission to UG and PG courses.",
+          link: "bitsat"
         },
 
       ]

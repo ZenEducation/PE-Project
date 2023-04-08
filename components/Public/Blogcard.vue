@@ -166,12 +166,93 @@ export default {
         },
         {
           id: 13,
-          image: "/images/blog/blog-images-grid/blog-13.jpg",
+          image: "/images/blog/blog-images-grid/blog-13.png",
           bio: '',
-          date: 'March 29, 2023',
-          title: 'Beyond the Classroom: How Remote Learning is Revolutionizing Educations',
-          views: '227 views',
-          link: "beyond-the-classroom-how-remote-learning-is-revolutionizing-educations"
+          date: 'June 8, 2020',
+          title: 'Categorization of the Learning Needs of our Children',
+          views: '265 views',
+          link: "categorization-of-the-learning-needs-of-our-children"
+        },
+        {
+          id: 14,
+          image: "/images/blog/blog-images-grid/blog-14.png",
+          bio: '',
+          date: 'May 3, 2020',
+          title: 'Fast Completion of Syllabus for Competitive Entrance Exams',
+          views: '275 views',
+          link: "fast-completion-of-syllabus-for-competitive-entrance-exams"
+        },
+        {
+          id: 15,
+          image: "/images/blog/blog-images-grid/blog-15.png",
+          bio: '',
+          date: 'April 11, 2020',
+          title: 'Layered Attempting',
+          views: '295 views',
+          link: "layered-attempting"
+        },
+        {
+          id: 16,
+          image: "/images/blog/blog-images-grid/blog-16.png",
+          bio: '',
+          date: 'March 9, 2020',
+          title: 'Optimal Student Welfare Activity',
+          views: '195 views',
+          link: "optimal-student-welfare-activity"
+        },
+        {
+          id: 17,
+          image: "/images/blog/blog-images-grid/blog-17.png",
+          bio: '',
+          date: 'February 14, 2020',
+          title: 'The Educational Needs of our Children',
+          views: '169 views',
+          link: "the-educational-needs-of-our-children"
+        },
+        {
+          id: 18,
+          image: "/images/blog/blog-images-grid/blog-18.png",
+          bio: '',
+          date: 'February 8, 2020',
+          title: 'Paathshala x Photon Ecademy: Foundation Course – Prayaag',
+          views: '300 views',
+          link: "paathshala-photon-ecademy-foundation-course-prayaag"
+        },
+        {
+          id: 19,
+          image: "/images/blog/blog-images-grid/blog-19.png",
+          bio: '',
+          date: 'January 12, 2020',
+          title: 'JEE Main',
+          views: '269 views',
+          link: "jee-main"
+        },
+        {
+          id: 20,
+          image: "/images/blog/blog-images-grid/blog-20.png",
+          bio: '',
+          date: 'December 22, 2019',
+          title: 'JEE Advanced',
+          views: '258 views',
+          link: "jee-advanced"
+        },
+        {
+          id: 21,
+          image: "/images/blog/blog-images-grid/blog-21.png",
+          bio: '',
+          date: 'November 18, 2019',
+          title: 'NEET',
+          views: '216 views',
+          link: "neet"
+        },
+        {
+          id: 22,
+          image: "/images/blog/blog-images-grid/blog-22.png",
+          bio: '',
+          date: 'October 20, 2019',
+          title: 'BITSAT',
+          views: '196 views',
+          link: "bitsat"
         },
       ],
       itemsPerPage: 6,
