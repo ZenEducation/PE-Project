@@ -1,5 +1,5 @@
 <template>
-    <div class=" dark:bg-black bg-white">
+    <div class=" dark:bg-black bg-white pt-12">
         <div class="mx-auto bg-white dark:bg-black">
             <courseheader>
                 <template v-slot:title>Why Choose Us?</template>

@@ -1,5 +1,5 @@
 <template>
-  <header class="header relative">
+  <header class="header relative" style="position: fixed; top: 0; left: 0; width: 100%; z-index: 999">
     <div
       class="header-inner flex items-center py-[19px] xl:py-0 z-50 transition-all left-0 top-0 w-full h-auto absolute bg-white dark:bg-[#161821]">
       <div class="container grid grid-flow-col xl:grid-cols-[22%_minmax(56%,_1fr)_22%] items-center px-3.8 3xl:px-37">
@@ -15,12 +15,12 @@
             
             <li class="inline-block px-2.5 2xl:px-[17px] py-[29px] group" role="none">
               <NuxtLink
-                class="font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white hover:text-[#20ad96] dark:hover:text-[#20ad96]"
+                class=" dark font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                 id="nav-6" role="menuitem" tabindex="0" to="/">Home</NuxtLink>
             </li>
             <li v-if="darkMode" class="inline-block px-2.5 2xl:px-[17px] py-[29px] group relative" role="none">
               <NuxtLink rel="noopener noreferrer"
-                class="darkMain font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white"
+                class="darkMain font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white hover:text-[#20ad96]"
                 to="#!" id="nav-2" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">About<i
                   class="fa fa-chevron-down ml-2 text-xs"></i></NuxtLink>
               <ul
@@ -126,7 +126,7 @@
             </li>
             <li class="inline-block px-2.5 2xl:px-[17px] py-[29px] group" role="none">
               <NuxtLink
-                class="font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white hover:text-[#20ad96] dark:hover:text-[#20ad96]"
+                class="dark font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                 id="nav-6" role="menuitem" tabindex="0" to="/about/testimonials">Testimonials</NuxtLink>
             </li>
             
@@ -224,7 +224,7 @@
             </li>
             <li class="inline-block px-2.5 2xl:px-[17px] py-[29px] group" role="none">
               <NuxtLink
-                class="font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white hover:text-[#20ad96] dark:hover:text-[#20ad96]"
+                class=" dark font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                 id="nav-6" role="menuitem" tabindex="0" to="/about/enquire_with_us">Contact Us</NuxtLink>
             </li>
           </ul>
@@ -306,9 +306,17 @@ const { setDarkMode } = styleStore;
   color: white;
 }
 
+.darkMain:hover, .main:hover {
+  color: #20ad96;
+}
 
 
 
 .router-link-exact-active {
   color: #20ad96;
-}</style>
+}
+.dark.router-link-exact-active {
+  color: #20ad96;
+
+}
+</style>

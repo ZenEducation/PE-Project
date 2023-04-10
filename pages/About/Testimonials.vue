@@ -1,11 +1,12 @@
 <template>
-  <div class="dark:bg-black bg-white">
+  <div class="dark:bg-black bg-white pt-12">
     <!-- Container for demo purpose -->
-    <div class="container px-6 mx-auto bg-white dark:bg-black">
+    <div class="container px-6 mt-5 mx-auto bg-white dark:bg-black">
       <!-- <h1 class="text-[#161821] dark:text-[#fff] text-3xl text-center py-6 relative ">TESTIMONIAL</h1> -->
       <courseheader>
         <template v-slot:title>Testimonial</template>
       </courseheader>
+
 
       <!-- Section: Design Block -->
       <section

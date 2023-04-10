@@ -1,5 +1,5 @@
 <template>
-    <div class="dark:bg-black bg-white">
+    <div class="dark:bg-black bg-white pt-12">
         <div class=" mx-auto bg-white dark:bg-black flex flex-col justify-center  items-center">
             <courseheader>
                 <template v-slot:title>Enquire-With-Us</template>

@@ -1,6 +1,8 @@
 <template>
   <div class="font-body leading-body">
-      <heading />
+      <div class="mb-5">
+        <heading />
+      </div>
       <slot />
       <Footer/>
   </div>
