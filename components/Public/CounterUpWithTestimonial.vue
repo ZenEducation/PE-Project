@@ -139,7 +139,7 @@ const { swiperOptions, testimonialItems } = reactive({
   testimonialItems: [
     {
       id: 1,
-      image: "/images/testimonial/70/testimonial-1.jpeg",
+      image: "",
       alt: "image",
       text: "I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation into effective methods to adopt for learners.",
       name: "Luvic Dubble",
