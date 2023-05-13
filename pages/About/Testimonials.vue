@@ -82,7 +82,6 @@ definePageMeta({
 });
 
 
-
 export default {
   data() {
     return {
@@ -337,9 +336,6 @@ export default {
         
         
       ]
-      
-      
-      
     }
   }
 }
