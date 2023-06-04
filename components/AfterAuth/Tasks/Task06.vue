@@ -21,7 +21,7 @@
         <a class="block" href="#0">
           <img
             class="rounded-full border-2 border-white box-content"
-            src="/images/user-28-12.jpg"
+            src="/assets/images/user.png"
             width="28"
             height="28"
             alt="User 12"
@@ -30,7 +30,7 @@
         <a class="block" href="#0">
           <img
             class="rounded-full border-2 border-white box-content"
-            src="/images/user-28-02.jpg"
+            src="/assets/images/user.png"
             width="28"
             height="28"
             alt="User 02"
