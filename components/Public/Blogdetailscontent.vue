@@ -14,7 +14,7 @@
 
           <div class="flex justify-start items-center mt-5 text-[14px] font-light text-[#ddd]">
             <span class="flex justify-center items-center mr-4 dark:text-[#ddd] text-[#696969]">
-              <img src="/images/logo/photon-logo-earth.png" alt="image" class="rounded-[50%] mr-2 w-[32px] h-[32px]" />
+              <!-- <img src="/images/logo/photon-logo-earth.png" alt="image" class="rounded-[50%] mr-2 w-[32px] h-[32px]" /> -->
               {{ blog.name }}
             </span>
 
@@ -90,7 +90,7 @@
   <div>
     <div class="flex flex-row items-center my-10">
       <div class="flex flex-col justify-center items-center px-5">
-        <img class="rounded-[50%] " src="/images/logo/photon-logo-earth.png" width="100" alt="image" />
+        <!-- <img class="rounded-[50%] " src="/images/logo/photon-logo-earth.png" width="100" alt="image" /> -->
 
         <div class="flex items-center gap-2">
           <icon class="w-[13px] h-[13px] text-[#8C89A2]" name="uil:twitter" />

@@ -14,7 +14,7 @@
 
           <div class="flex justify-start items-center mt-5 text-[14px] font-light dark:text-[#ddd] text-[#696969]">
             <span class="flex justify-center items-center mr-4">
-              <img src="/images/logo/photon-logo-earth.png" alt="image" class="rounded-[50%] mr-2 w-[32px] h-[32px]" />
+              <!-- <img src="/images/logo/photon-logo-earth.png" alt="image" class="rounded-[50%] mr-2 w-[32px] h-[32px]" /> -->
               <span
                 class="dark:text-[#ddd] text-[#696969] hover:text-[#20ad96] dark:hover:text-[#20ad96] hover:cursor-pointer">{{
                   blog.name }}</span>
