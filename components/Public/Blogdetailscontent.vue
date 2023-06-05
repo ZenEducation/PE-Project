@@ -14,7 +14,7 @@
 
           <div class="flex justify-start items-center mt-5 text-[14px] font-light text-[#ddd]">
             <span class="flex justify-center items-center mr-4 dark:text-[#ddd] text-[#696969]">
-              <img src="/images/logo/Photon-Logo-Earth.png" alt="image" class="rounded-[50%] mr-2 w-[32px] h-[32px]" />
+              <img src="/images/logo/photon-logo-earth.png" alt="image" class="rounded-[50%] mr-2 w-[32px] h-[32px]" />
               {{ blog.name }}
             </span>
 
