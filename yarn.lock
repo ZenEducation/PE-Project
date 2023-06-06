@@ -3845,7 +3845,7 @@
     tiny-glob "^0.2.9"
     tslib "^2.4.0"
 
-"@popperjs/core@^2.0.0", "@popperjs/core@^2.11.6", "@popperjs/core@^2.9.3":
+"@popperjs/core@^2.0.0", "@popperjs/core@^2.11.6", "@popperjs/core@^2.6.0", "@popperjs/core@^2.9.3":
   version "2.11.6"
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.6.tgz"
   integrity sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==
@@ -6307,6 +6307,11 @@ cosmiconfig@^8.1.0:
     js-yaml "^4.1.0"
     parse-json "^5.0.0"
     path-type "^4.0.0"
+
+countup.js@^2.6.0, countup.js@latest:
+  version "2.6.0"
+  resolved "https://registry.npmjs.org/countup.js/-/countup.js-2.6.0.tgz"
+  integrity sha512-GeORCrCcaFUHP3RNf0/dWK+XQX+fsdtrMO31mNvsbKXNNG+DMTcgZ4dWpIG9BnOS8t5+iJbaRXgaaG9oLs0N4g==
 
 crc-32@^1.2.0:
   version "1.2.2"
