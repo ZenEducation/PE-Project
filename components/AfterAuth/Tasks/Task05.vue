@@ -13,7 +13,7 @@
         </div>
         <img
           class="w-full mt-3"
-          src="/images/task-image-01.jpg"
+          src="@/assets/images/user.png"
           width="259"
           height="142"
           alt="Task 01"
