@@ -1,5 +1,5 @@
 <script setup>
-  import PremAsideMenuItem from '@/components/AfterAuth/WBFabric/AsideMenu/AsideMenuItem.vue'
+  import PremAsideMenuItem from '@/components/AfterAuth/WBFabric/DBAsideMenu/DBAsideMenuItem.vue'
 
   defineProps({
     isDropdownList: Boolean,

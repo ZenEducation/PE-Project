@@ -17,11 +17,11 @@ frontend:
       commands:
         - npm run generate
   artifacts:
-    baseDirectory: /.output/public
+    baseDirectory: .output/public
     files:
-      # - "**/*"
-      - "/*"
+      - "**/*"
+      # - "/*"
   cache:
     paths:
-      # - node_modules/**/*
-      - node_modules//*
+      - node_modules/**/*
+      # - node_modules//*
