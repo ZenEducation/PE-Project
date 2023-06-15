@@ -1,9 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=4096 nuxt build",
+    "generate": "cross-env NODE_OPTIONS=--max-old-space-size=4096 nuxt generate",
+    "start": "cross-env NODE_OPTIONS=--max-old-space-size=4096 nuxt start",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .eslintignore .",
@@ -63,6 +64,7 @@
     "aws-amplify": "^5.0.5",
     "chart.js": "^3.9.1",
     "countup.js": "^2.6.0",
+    "cross-env": "^7.0.3",
     "fabric": "^5.3.0",
     "flowbite": "^1.6.4",
     "numeral": "^2.0.6",
