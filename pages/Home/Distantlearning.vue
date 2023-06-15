@@ -66,6 +66,6 @@ s
 }
 
 .back {
-  background-image: url('/images/intro/intro3/bg-1.jpg');
+  background-image: url('@/public/imgOldFolder/intro/intro3/bg-1.jpg');
 }
 </style>
