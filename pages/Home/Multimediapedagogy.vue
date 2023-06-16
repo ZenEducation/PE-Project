@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div
-      class="relative w-full py-[250px] bg-[url('/images/intro/intro4/bg-1.jpg')] text-center"
+      class="relative w-full py-[250px] bg-[url('@/public/imgOldFolder/intro/intro4/bg-1.jpg')] text-center"
     >
       <h2 class="title title-responsive lg:text-[56px]">
         Expand Your Possibilities

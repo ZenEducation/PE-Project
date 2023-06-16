@@ -33,7 +33,7 @@
             <div class="min-w-[70px] mr-4">
               <img
                 class="rounded-[50%]"
-                src="/images/testimonial/70/testimonial-1.jpeg"
+                src="@/public/images/testimonial/70/aadya-deshpande.jpg"
                 alt="image"
               />
             </div>

@@ -7,7 +7,7 @@
     <div class="flex items-center mb-[20px]">
       <img
         class="rounded-[50%] mr-[30px]"
-        src="/images/testimonial/70/testimonial-3.jpeg"
+        src="@/public/images/testimonial/70/aadya-deshpande.jpg"
         alt="image"
       />
       <div class="flex flex-col">

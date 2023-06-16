@@ -15,7 +15,7 @@
       <div class="flex items-center pt-[40px]">
         <img
           class="rounded-[50%] mr-[20px]"
-          src="/images/testimonial/70/testimonial-1.jpeg"
+          src="@/public/images/testimonial/70/aadya-deshpande.jpg"
           alt="Florence Themes"
         />
         <div class="flex flex-col">

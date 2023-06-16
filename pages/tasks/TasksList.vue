@@ -27,7 +27,7 @@
                     <a class="block" href="#0">
                       <img
                         class="rounded-full border-2 border-slate-100 box-content"
-                        src="/images/user-32-08.jpg"
+                        src="@/public/images/user/download.png"
                         width="32"
                         height="32"
                         alt="User 08"
@@ -36,7 +36,7 @@
                     <a class="block" href="#0">
                       <img
                         class="rounded-full border-2 border-slate-100 box-content"
-                        src="/images/user-32-07.jpg"
+                        src="@/public/images/user/download.png"
                         width="32"
                         height="32"
                         alt="User 07"
@@ -45,7 +45,7 @@
                     <a class="block" href="#0">
                       <img
                         class="rounded-full border-2 border-slate-100 box-content"
-                        src="/images/user-32-05.jpg"
+                        src="@/public/images/user/download.png"
                         width="32"
                         height="32"
                         alt="User 05"
@@ -132,7 +132,7 @@
                             <a class="block" href="#0">
                               <img
                                 class="rounded-full border-2 border-white box-content"
-                                src="/images/user-32-07.jpg"
+                                src="@/public/images/user/download.png"
                                 width="24"
                                 height="24"
                                 alt="User 07"
@@ -141,7 +141,7 @@
                             <a class="block" href="#0">
                               <img
                                 class="rounded-full border-2 border-white box-content"
-                                src="/images/user-32-05.jpg"
+                                src="@/public/images/user/download.png"
                                 width="24"
                                 height="24"
                                 alt="User 05"
@@ -315,7 +315,7 @@
                             <a class="block" href="#0">
                               <img
                                 class="rounded-full border-2 border-white box-content"
-                                src="/images/user-32-08.jpg"
+                                src="@/public/images/user/download.png"
                                 width="24"
                                 height="24"
                                 alt="User 08"
@@ -324,7 +324,7 @@
                             <a class="block" href="#0">
                               <img
                                 class="rounded-full border-2 border-white box-content"
-                                src="/images/user-32-07.jpg"
+                                src="@/public/images/user/download.png"
                                 width="24"
                                 height="24"
                                 alt="User 07"
@@ -452,7 +452,7 @@
                             <a class="block" href="#0">
                               <img
                                 class="rounded-full border-2 border-white box-content"
-                                src="/images/user-32-05.jpg"
+                                src="@/public/images/user/download.png"
                                 width="24"
                                 height="24"
                                 alt="User 05"
@@ -596,7 +596,7 @@
                             <a class="block" href="#0">
                               <img
                                 class="rounded-full border-2 border-white box-content"
-                                src="/images/user-32-07.jpg"
+                                src="@/public/images/user/download.png"
                                 width="24"
                                 height="24"
                                 alt="User 07"
@@ -683,7 +683,7 @@
                             <a class="block" href="#0">
                               <img
                                 class="rounded-full border-2 border-white box-content"
-                                src="/images/user-32-08.jpg"
+                                src="@/public/images/user/download.png"
                                 width="24"
                                 height="24"
                                 alt="User 08"
@@ -762,7 +762,7 @@
                             <a class="block" href="#0">
                               <img
                                 class="rounded-full border-2 border-white box-content"
-                                src="/images/user-32-08.jpg"
+                                src="@/public/images/user/download.png"
                                 width="24"
                                 height="24"
                                 alt="User 08"
@@ -771,7 +771,7 @@
                             <a class="block" href="#0">
                               <img
                                 class="rounded-full border-2 border-white box-content"
-                                src="/images/user-32-07.jpg"
+                                src="@/public/images/user/download.png"
                                 width="24"
                                 height="24"
                                 alt="User 07"
