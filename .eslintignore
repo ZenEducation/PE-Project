@@ -3,3 +3,6 @@ nuxt.d.ts
 dist
 .nuxt
 .output
+src/models
+
+amplify-codegen-temp/models
