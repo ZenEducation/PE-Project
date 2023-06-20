@@ -45,7 +45,7 @@ export const actions = {
       this.isAuthenticated = false
     }
     this.user = null
-    if (!user) {
+    if (!this.user) {
       console.log('User successfully logged out')
     }
   },

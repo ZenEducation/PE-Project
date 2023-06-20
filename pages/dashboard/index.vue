@@ -12,7 +12,7 @@
   import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
   import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
   import SectionFullScreen from '@/components/AfterAuth/Sections/SectionFullScreen.vue'
-  import { useAuthStore } from '@/stores/auth'
+  import { useAuthStore } from '@/stores/authStore'
   const AuthStore = useAuthStore()
 
   async function signOutAndRedirect() {
