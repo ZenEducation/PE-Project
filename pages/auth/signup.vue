@@ -10,12 +10,7 @@
   import FormControl from '@/components/AfterAuth/Forms/FormControl.vue'
   import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
   import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
-  import {
-    useAuthStore,
-    signUp,
-    resendConfirmationCode,
-    confirmSignUp,
-  } from '@/stores/auth'
+  import { useAuthStore } from '@/stores/auth'
   import BaseDivider from '@/components/AfterAuth/NavBar/BaseDivider.vue'
 
   const form = reactive({

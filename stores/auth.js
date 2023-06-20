@@ -1,96 +1,5 @@
 import { Auth } from 'aws-amplify'
 import { defineStore } from 'pinia'
-import { ref, computed } from 'vue'
-
-// cognito needs username as unique field eg phone num, email
-export async function signUp({ email, username, familyName, password }) {
-  try {
-    const resp = await Auth.signUp({
-      username: email,
-      password: 'Test@1234',
-      attributes: {
-        email,
-        name: username,
-        // family_name: familyName,
-      },
-      autoSignIn: {
-        enabled: true,
-      },
-    })
-    if (resp.user && !resp.userConfirmed)
-      return {
-        isUserCreated: true,
-        userConfirmed: resp.userConfirmed,
-        user: resp.user,
-        mg: 'User created successfully',
-        codeDeliveryDetails: resp.codeDeliveryDetails,
-      }
-  } catch (error) {
-    console.log('inside signup error ', error)
-    return {
-      isUserCreated: false,
-      msg: error.message,
-    }
-  }
-}
-
-export async function resendConfirmationCode({ username }) {
-  try {
-    const resp = await Auth.resendSignUp(username)
-    if (resp && resp.CodeDeliveryDetails) {
-      return {
-        isCodeSent: true,
-        ...resp.CodeDeliveryDetails,
-      }
-    }
-  } catch (error) {
-    return {
-      msg: error,
-    }
-  }
-}
-
-export async function confirmSignUp({ username, code }) {
-  try {
-    const resp = Auth.confirmSignUp(username, code)
-    if (resp) {
-      return {
-        isUserVerified: true,
-      }
-    }
-  } catch (error) {
-    console.log('error ', error)
-    return {
-      isUserVerified: false,
-      msg: error?.message ? error.message : '',
-    }
-  }
-}
-
-export async function signOut() {
-  try {
-    const resp = await Auth.signOut()
-    console.log('resp ', resp)
-  } catch (error) {
-    return {
-      msg: error,
-    }
-  }
-}
-
-export async function signIn({ email, password }) {
-  try {
-    const username = email
-    console.log(email, password)
-    const user = await Auth.signIn(username, password)
-    return { isAuthenticated: true, user }
-  } catch (error) {
-    return {
-      isAuthenticated: false,
-      msg: error,
-    }
-  }
-}
 
 export const state = () => ({
   isAuthenticated: false,
@@ -111,16 +20,25 @@ export const actions = {
     }
   },
 
-  async register({ email, password }) {
+  async register({ name, email, password, address, pincode }) {
     const user = await Auth.signUp({
       username: email,
       password,
+      attributes: {
+        name,
+        address,
+        'custom:pincode': pincode,
+      },
     })
     return user
   },
 
   async confirmRegistration({ email, code }) {
     return await Auth.confirmSignUp(email, code)
+  },
+
+  async resendConfirmationCode({ email }) {
+    await Auth.resendSignUp(email)
   },
 
   async login({ email, password }) {
@@ -136,25 +54,40 @@ export const actions = {
       this.isAuthenticated = false
     }
     this.user = null
-    if (!user) {
+    if (!this.user) {
       console.log('User successfully logged out')
+    }
+  },
+
+  async forgetPassword({ email }) {
+    const forgetInfo = await Auth.forgotPassword(email)
+      .then((data) => {
+        return data
+      })
+      .catch((err) => {
+        return err
+      })
+    return forgetInfo
+  },
+
+  async forgotPasswordSubmit({ email, code, new_password }) {
+    try {
+      const newPasswordInfo = await Auth.forgotPasswordSubmit(
+        email,
+        code,
+        new_password
+      )
+      console.log(newPasswordInfo)
+      return newPasswordInfo
+    } catch (err) {
+      console.log(err)
+      return err
     }
   },
 }
 
-export const useAuthStore = defineStore('authStore', () => {
-  const user = ref({})
-  const username = computed(() => user.value?.username)
-
-  function setupUser(userData) {
-    user.value = { ...userData }
-  }
-  function emptyUser() {
-    setupUser({})
-  }
-  return {
-    setupUser,
-    username,
-    emptyUser,
-  }
+export const useAuthStore = defineStore('authStore', {
+  state,
+  getters,
+  actions,
 })

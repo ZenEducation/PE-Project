@@ -4,11 +4,10 @@
       class="header-inner flex items-center py-[19px] xl:py-0 z-50 transition-all left-0 top-0 w-full h-auto absolute bg-white dark:bg-[#161821]">
       <div class="container grid grid-flow-col xl:grid-cols-[22%_minmax(56%,_1fr)_22%] items-center px-3.8 3xl:px-37">
         <NuxtLink to="/">
-          <img class="w-full h-auto max-h-20" :src="
-            darkMode
+          <img class="w-full h-auto max-h-20" :src="darkMode
               ? '/images/logo/dark-logo.png'
               : '/images/logo/light-logo.png'
-          " alt="Logo" />
+            " alt="Logo" />
         </NuxtLink>
         <nav aria-label="Main Menu" class="relative mx-auto hidden xl:block">
           <ul aria-label="Main Menu" role="menubar">
@@ -226,6 +225,19 @@
               <NuxtLink
                 class="font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white hover:text-[#20ad96] dark:hover:text-[#20ad96]"
                 id="nav-6" role="menuitem" tabindex="0" to="/about/enquire_with_us">Contact Us</NuxtLink>
+            </li>
+
+            <li class="inline-block px-2.5 2xl:px-[17px] py-[29px] group" role="none">
+              <NuxtLink
+                class="font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white hover:text-[#20ad96] dark:hover:text-[#20ad96]"
+                id="nav-6" role="menuitem" tabindex="0" to="/auth/register">Register</NuxtLink>
+
+
+            </li>
+            <li class="inline-block px-2.5 2xl:px-[17px] py-[29px] group" role="none">
+              <NuxtLink
+                class="font-medium 2xl:text-[16px] flex items-center leading-snug text-secondary dark:text-white hover:text-[#20ad96] dark:hover:text-[#20ad96]"
+                id="nav-6" role="menuitem" tabindex="0" to="/auth/login">Login</NuxtLink>
             </li>
           </ul>
         </nav>
