@@ -34,7 +34,7 @@
       console.log(user)
 
       if (user) {
-        router.push('/dashboard')
+        router.push('/dashboard/_index')
         return
       }
     } catch (err) {
