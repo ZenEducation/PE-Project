@@ -34,7 +34,9 @@
   import PremUserCard from '@/components/AfterAuth/Cards/UserCard.vue'
   import PremCardBoxProduct from '@/components/AfterAuth/Cards/CardBoxProduct.vue'
   import PremCardBoxAmountItem from '@/components/AfterAuth/Cards/CardBoxAmountItem.vue'
-
+  definePageMeta({
+    middleware: 'auth-check',
+  })
   const mainStore = useMainStore()
 
   const snackBarStore = useSnackBarStore()

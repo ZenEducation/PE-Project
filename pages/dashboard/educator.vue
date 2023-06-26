@@ -18,6 +18,9 @@
   const fillChartData = () => {
     chartData.value = chartConfig.sampleChartData()
   }
+  definePageMeta({
+  middleware: 'auth-check'
+})
   onMounted(() => {
     fillChartData()
   })

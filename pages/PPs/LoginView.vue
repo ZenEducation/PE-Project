@@ -1,6 +1,8 @@
 <script setup>
   import { reactive, ref, computed } from 'vue'
-
+  definePageMeta({
+    middleware: 'auth-check',
+  })
   const form = reactive({
     login: 'johndoe',
     pass: 'secret',

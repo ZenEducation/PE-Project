@@ -8,7 +8,9 @@
   import PremCardBoxPricing from '@/components/AfterAuth/Cards/CardBoxPricing.vue'
 
   const period = ref('monthly')
-
+  definePageMeta({
+    middleware: 'auth-check',
+  })
   const pricing = {
     monthly: {
       beginner: 19,

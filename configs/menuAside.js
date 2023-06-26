@@ -21,7 +21,7 @@ import {
 
 const allLinks = [
   {
-    to: '/',
+    to: '/dashboard/_index',
     icon: mdiMonitor,
     label: 'Home',
   },
@@ -156,7 +156,7 @@ const allLinks = [
 // educator
 const educatorLinks = [
   {
-    to: '/',
+    to: '/dashboard/_index',
     icon: mdiMonitor,
     label: 'Educator Link 1',
   },
@@ -175,7 +175,7 @@ const educatorLinks = [
 // employees
 const employeesLinks = [
   {
-    to: '/',
+    to: '/dashboard/_index',
     icon: mdiMonitor,
     label: 'Employee Link 1',
   },
@@ -194,7 +194,7 @@ const employeesLinks = [
 // freelancer
 const freelancerLinks = [
   {
-    to: '/',
+    to: '/dashboard/_index',
     icon: mdiMonitor,
     label: 'Home',
   },

@@ -14,7 +14,9 @@
   import { useSnackBarStore } from '@/stores/snackBar'
 
   const snackBarColor = ref('info')
-
+  definePageMeta({
+    middleware: 'auth-check',
+  })
   const snackBarMessage = ref('Hello! This is demo message...')
 
   const snackBarLifetime = ref(3000)

@@ -43,7 +43,9 @@
   import PremSectionBannerProfile from '@/components/AfterAuth/Sections/SectionBannerProfile.vue'
 
   const mainStore = useMainStore()
-
+  definePageMeta({
+    middleware: 'auth-check',
+  })
   const profileForm = reactive({
     name: mainStore.userName,
     email: mainStore.userEmail,

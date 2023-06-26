@@ -22,7 +22,9 @@
   import TableCardClients from '@/components/AfterAuth/Tables/TableCardClients.vue'
 
   const chartData = ref(null)
-
+  definePageMeta({
+    middleware: 'auth-check',
+  })
   const fillChartData = () => {
     chartData.value = chartConfig.sampleChartData()
   }

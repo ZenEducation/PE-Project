@@ -13,7 +13,9 @@
   const form = reactive({
     login: 'HarryPotter',
   })
-
+  definePageMeta({
+    middleware: 'auth-check',
+  })
   const mainStore = useMainStore()
 
   onMounted(() => {

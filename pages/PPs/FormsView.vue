@@ -24,7 +24,9 @@
   import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
   import SectionTitle from '@/components/AfterAuth/Sections/SectionTitle.vue'
   import CardBoxComponentTitle from '@/components/AfterAuth/Cards/CardBoxComponentTitle.vue'
-
+  definePageMeta({
+    middleware: 'auth-check',
+  })
   const selectFieldOptions = [
     { id: 1, label: 'Business development' },
     { id: 2, label: 'Marketing' },

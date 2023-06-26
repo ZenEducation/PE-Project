@@ -14,7 +14,9 @@
   import SectionFullScreen from '@/components/AfterAuth/Sections/SectionFullScreen.vue'
   import { useAuthStore } from '@/stores/authStore'
   const AuthStore = useAuthStore()
-
+  definePageMeta({
+  middleware: 'auth-check'
+})
   async function signOutAndRedirect() {
     const resp = await AuthStore.logout()
     navigateTo('/auth/login')
