@@ -5,7 +5,7 @@
   import { useStyleStore } from '@/stores/style.js'
   import { getButtonColor } from '@/configs/colors.js'
   import BaseIcon from '@/components/AfterAuth/Display/BaseIcon.vue'
-  import PremAsideMenuList from '@/components/AfterAuth/WBFabric/AsideMenu/AsideMenuList.vue'
+  import PremAsideMenuList from '@/components/AfterAuth/WBFabric/DBAsideMenu/DBAsideMenuList.vue'
   import PremUpdateMark from '@/components/AfterAuth/Display/UpdateMark.vue'
 
   const props = defineProps({

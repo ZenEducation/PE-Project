@@ -8,8 +8,8 @@
         :is-active="tool === 'pencil'"
         icon="pencil-alt"
         @click.native="
-          togglePencilSettings()
-          setWhiteboardTool('pencil')
+          togglePencilSettings();
+          setWhiteboardTool('pencil');
         "
       />
       <!-- Pencil settings -->
@@ -41,8 +41,8 @@
         :is-active="tool === 'brush'"
         icon="paint-brush"
         @click.native="
-          toggleBrushSettings()
-          setWhiteboardTool('brush')
+          toggleBrushSettings();
+          setWhiteboardTool('brush');
         "
       />
       <!-- Brush settings -->
@@ -74,8 +74,8 @@
         :is-active="tool === 'eraser'"
         icon="eraser"
         @click.native="
-          toggleEraserSettings()
-          setWhiteboardTool('eraser')
+          toggleEraserSettings();
+          setWhiteboardTool('eraser');
         "
       />
       <!-- Eraser settings -->
@@ -112,7 +112,7 @@
             :tool-color="shapeColor"
             :is-active="tool === 'circle'"
             icon="circle"
-            @click.native="setWhiteboardTool('circle')"
+            @click.native="setWhiteboardTool('circle');"
           />
           <!-- Square select -->
           <panelToolIcon
@@ -126,14 +126,14 @@
             :tool-color="shapeColor"
             :is-active="tool === 'triangle'"
             icon="exclamation-triangle"
-            @click.native="setWhiteboardTool('triangle')"
+            @click.native="setWhiteboardTool('triangle');"
           />
           <!-- Line select -->
           <panelToolIcon
             :tool-color="shapeColor"
             :is-active="tool === 'line'"
             icon="slash"
-            @click.native="setWhiteboardTool('line')"
+            @click.native="setWhiteboardTool('line');"
           />
         </template>
 

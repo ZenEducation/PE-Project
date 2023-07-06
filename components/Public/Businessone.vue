@@ -15,7 +15,7 @@
         :key="card.header"
         class="flex items-start mb-10"
       >
-        <img class="mr-5" src="" />
+        <!-- <img class="mr-5" src="/svgs/onetoone.svg" /> -->
         <div>
           <h3 class="text-[24px] font-[600] text-white leading-[1.5]">
             {{ card.header }}

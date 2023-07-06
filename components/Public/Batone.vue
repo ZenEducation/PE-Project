@@ -35,7 +35,7 @@
       </div>
 
       <div class="w-full flex justify-center relative bottom-[-90px]">
-        <img class="image" src="/images/others/hero-image.png" alt="image" />
+        <img class="image" src="@/assets/images/user.png" alt="image" />
       </div>
     </div>
 

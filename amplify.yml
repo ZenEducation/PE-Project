@@ -11,15 +11,17 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install
+        # - npm install
         - npm ci # ci = clean install, its needed to intall the exact packages on linux
     build:
       commands:
         - npm run generate
   artifacts:
-    baseDirectory: /.output/public
+    baseDirectory: .output/public
     files:
       - "**/*"
+      # - "/*"
   cache:
     paths:
       - node_modules/**/*
+      # - node_modules//*

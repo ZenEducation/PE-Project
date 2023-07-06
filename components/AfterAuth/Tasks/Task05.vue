@@ -13,7 +13,7 @@
         </div>
         <img
           class="w-full mt-3"
-          src="/images/task-image-01.jpg"
+          src="@/assets/images/user.png"
           width="259"
           height="142"
           alt="Task 01"
@@ -27,7 +27,7 @@
         <a class="block" href="#0">
           <img
             class="rounded-full border-2 border-white box-content"
-            src="/images/user-28-05.jpg"
+            src="@/assets/images/user.png"
             width="28"
             height="28"
             alt="User 05"
@@ -36,7 +36,7 @@
         <a class="block" href="#0">
           <img
             class="rounded-full border-2 border-white box-content"
-            src="/images/user-28-02.jpg"
+            src="@/assets/images/user.png"
             width="28"
             height="28"
             alt="User 02"

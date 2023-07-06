@@ -8,7 +8,7 @@
           <a class="block" href="#0">
             <img
               class="rounded-full border-2 border-white box-content"
-              src="/images/user-28-12.jpg"
+              src="@/assets/images/user.png"
               width="28"
               height="28"
               alt="User 12"
@@ -33,7 +33,7 @@
         </div>
         <img
           class="w-full mt-3"
-          src="/images/task-image-02.jpg"
+          src="@/assets/images/user.png"
           width="259"
           height="142"
           alt="Task 02"

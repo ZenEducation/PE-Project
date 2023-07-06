@@ -69,7 +69,7 @@ export default {
 </script>
 <style scoped>
 .background {
-  background-image: url("@/images/intro/intro1/bg-1.jpg");
+  background-image: url("@/public/images/intro/intro1/bg-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

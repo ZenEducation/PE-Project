@@ -16,7 +16,7 @@
     resendConfirmationCode,
     confirmSignUp,
   } from '@/stores/auth'
-  import BaseDivider from '@/components/AfterAuth/Navbar/BaseDivider.vue'
+  import BaseDivider from '@/components/AfterAuth/NavBar/BaseDivider.vue'
 
   const form = reactive({
     email: '',

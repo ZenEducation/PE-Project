@@ -17,7 +17,7 @@ import FormControl from '@/components/AfterAuth/Forms/FormControl.vue'
 import FormFilePicker from '@/components/AfterAuth/Forms/FormFilePicker.vue'
 import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
 import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
-import UserCard from '@/components/AfterAuth/Avatars/UserCard.vue'
+// import UserCard from '@/components/AfterAuth/Avatars/UserCard.vue'
 
 import SectionTitleLineWithButton from '@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue'
 
