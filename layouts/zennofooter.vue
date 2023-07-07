@@ -48,7 +48,7 @@
     if (item.isLogout) {
       AuthStore.logout()
       // console.log("Clicked On Logout");
-      router.push('/auth/login')
+      // router.push('/auth/login')
     }
   }
 </script>

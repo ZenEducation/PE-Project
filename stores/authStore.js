@@ -1,5 +1,8 @@
 import { Auth } from 'aws-amplify'
 import { defineStore } from 'pinia'
+import { useRouter } from "vue-router";
+
+const router = useRouter()
 
 export const state = () => ({
   isAuthenticated: false,
@@ -49,6 +52,8 @@ export const actions = {
       this.isAuthenticated = false
     }
     localStorage.removeItem('authToken')
+    navigateTo('/auth/login')
+
     this.user = null
     if (!this.user) {
       console.log('User successfully logged out')
