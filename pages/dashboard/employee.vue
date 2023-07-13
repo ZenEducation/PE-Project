@@ -12,7 +12,9 @@
   import { useMainStore } from '@/stores/main.js'
   import * as chartConfig from '@/components/AfterAuth/Charts/chart.config.js'
   import LineChart from '@/components/AfterAuth/Charts/LineChart.vue'
-
+  definePageMeta({
+  middleware: 'auth-check'
+})
   const chartData = ref(null)
 
   const fillChartData = () => {

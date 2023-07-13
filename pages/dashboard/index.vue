@@ -12,10 +12,13 @@
   import BaseButton from '@/components/AfterAuth/Buttons/BaseButton.vue'
   import BaseButtons from '@/components/AfterAuth/Buttons/BaseButtons.vue'
   import SectionFullScreen from '@/components/AfterAuth/Sections/SectionFullScreen.vue'
-  import { signOut } from '@/stores/auth'
-
+  import { useAuthStore } from '@/stores/authStore'
+  const AuthStore = useAuthStore()
+  definePageMeta({
+  middleware: 'auth-check'
+})
   async function signOutAndRedirect() {
-    const resp = await signOut()
+    const resp = await AuthStore.logout()
     navigateTo('/auth/login')
   }
 </script>

@@ -1,13 +1,23 @@
 <script setup>
-import { useStyleStore } from "@/stores/style.js";
-import { darkModeKey, styleKey } from "@/configs/config";
-import { useMainStore } from "@/stores/main.js";
-import "@/assets/css/main.css";
-import "@/assets/css/font-awesome-pro.min.css";
-import "@/assets/css/fonts.css";
-import "tw-elements/dist/js/index.min.js"
-
-
+import { Amplify, Auth } from 'aws-amplify'
+import { useStyleStore } from '@/stores/style.js'
+import { darkModeKey, styleKey } from '@/configs/config'
+import { useMainStore } from '@/stores/main.js'
+import '@/assets/css/main.css'
+import '@/assets/css/font-awesome-pro.min.css'
+import '@/assets/css/fonts.css'
+import 'tw-elements/dist/js/index.min.js'
+import awsconfig from '@/src/aws-exports'
+const url = window.location.host
+if (url.includes('localhost')) {
+  awsconfig.oauth.redirectSignIn = 'http://localhost:3000/auth/login/'
+  awsconfig.oauth.redirectSignOut = 'http://localhost:3000/auth/login/'
+} else {
+  awsconfig.oauth.redirectSignIn = 'https://subproject-auth.d1v9clx7hlm6ms.amplifyapp.com/auth/login/'
+  awsconfig.oauth.redirectSignOut = 'https://subproject-auth.d1v9clx7hlm6ms.amplifyapp.com/auth/login/'
+}
+Amplify.configure(awsconfig)
+Auth.configure(awsconfig)
 const mainStore = useMainStore()
 const styleStore = useStyleStore()
 const loading = ref(true)
