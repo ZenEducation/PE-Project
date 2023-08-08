@@ -1,18 +1,16 @@
 <template>
   <div class="p-3 mb-4 text-center md:text-left">
-    <h5 class="landingtext text-[13px] xl:text-[15px]">
+    <h5 class="landingtext text-[13px] xl:text-[15px] mb-3">
       Achieve Your Academic Goals with <br> Our World-Class Tutors
     </h5>
-    <h1 class="landingtext text-[40px] md:text-[48px] lg:text-[63px]">
+    <h1 class="landingtext text-[40px] md:text-[48px] lg:text-[63px] font-bold ">
       Personalized <br> One-to-One <br> Tutoring Services <br> for All Subjects
     </h1>
-    <p class="text-[16px] lg:text-[18px]">
+    <p class="text-[16px] lg:text-[18px] font-bold">
       Unlock your academic potential with our personalized  approach. <br> Tailored to your needs, our tutors bring out the best in you.
     </p>
-
-    <span>
-      <button>Download free guide</button>
-    </span>
+      <button class="">Download free guide</button>
+   
   </div>
 </template>
 
@@ -25,32 +23,31 @@ export default {
 <style scoped>
 h5 {
   font-weight: 700;
-  line-height: 2;
+  line-height: 1.5;
   display: block;
-  margin-bottom: 18px;
-  letter-spacing: 4px;
+  /* margin-bottom: 18px; */
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 h1 {
-  font-weight: 700;
-  line-height: 1.13;
-  margin-bottom: 8px;
+
+  line-height: 65px;
+  /* margin-bottom: 8px; */
 }
 
 p {
   color: #696969;
-  font-weight: 500;
   line-height: 1.67;
 }
 
 button {
   display: flex;
   background: #20ad96;
-  padding: 0px 20px;
+  padding: 0px 40px;
   color: white;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 50px;
   display: inline-flex;
   align-items: center;

@@ -6,7 +6,7 @@
       </div>
 
       <div id="space">
-        <div class="lg:ml-36 w-12/12">
+        <div class="lg:ml-36 w-12/12 mt-10">
           <h2
             class="
               text-[24px]
@@ -24,7 +24,7 @@
             <p
               class="
                 text-[24px] dark:text-[#dddddd] text-body
-                font-[500]
+                font-[600]
                 leading-[1.5]
                 lg:mr-10
               "
@@ -39,9 +39,11 @@
 
               <p
                 class="
-                  my-6
+                  my-3
                   uppercase
-                  text-[15px] dark:text-[#fff]
+                  text-[15px] 
+                 
+                  dark:text-[#fff]
                   font-[700]
                   tracking-[2px]
                 "
@@ -60,7 +62,7 @@
                 "
               >
                 Get Free Guide
-                <icon name="uil:arrow-right" />
+                <i class="fa-solid fa-arrow-right text-[#000] dark:text-[#fff] text-[17px] ml-3 text-gray-700"  style="line-height: 1;"></i>
               </button>
             </div>
           </div>
