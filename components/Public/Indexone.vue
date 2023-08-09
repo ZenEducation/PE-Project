@@ -30,7 +30,7 @@
                   type="text" placeholder="Enter Mobile No" id="" v-model="registration.subject" />
               </div>
               <div class="w-full flex justify-center">
-                <button class="text-[14px] text-white font-bold px-12 py-2 bg-[#20ad96] rounded-md mt-8">
+                <button class="text-[14px] text-white font-bold px-12 py-2 bg-[#20ad96] rounded-md mt-8 w-full font-bold">
                   Book Now
                 </button>
               </div>
@@ -39,12 +39,12 @@
         </div>
       </div>
     </div>
-    <span>
+    <div class=" svgSection">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" height="100"
         class="rot text-[#161821] w-full bg-[#EAE1D6] dark:fill-[#161821] fill-white">
         <path d="M 0 0 L100 0 Q 50 200 0 0"></path>
       </svg>
-    </span>
+    </div>
   </div>
 </template>
 <script>
@@ -71,8 +71,10 @@ export default {
 .background {
   background-image: url("@/public/images/intro/intro1/bg-1.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  /* object-fit: cover; */
+
 }
 
 .rot {
@@ -82,4 +84,10 @@ export default {
 svg {
   color: #161821;
 }
+
+.svgSection{
+  position: relative;
+margin-top: -10px;
+}
+
 </style>

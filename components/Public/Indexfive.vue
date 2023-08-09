@@ -7,27 +7,37 @@
 
     <div class="public-container">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-4">
-        <indexfivecard>
+        <indexfivecard class="hoverItem">
           <template v-slot:img>
             <img src="/images/blog/blog-images-grid/blog-2.jpg" class="w-full lg:w-full h-[229px]" />
           </template>
-          <template v-slot:date>August 7, 2022</template>
-          <template v-slot:title><NuxtLink to="/blog/the-top-three-types-of-exam-mistakes-students-make-and-how-to-avoid-them" class="hover:text-[#20ad96]">The Top Three Types of Exam Mistakes Students Make and How to Avoid Them</NuxtLink></template>
+          <template v-slot:date> <div class="tracking-widest	 uppercase"> Aug 7, 2022</div></template>
+          <template v-slot:title><NuxtLink to="/blog/the-top-three-types-of-exam-mistakes-students-make-and-how-to-avoid-them" class=" text-[#3E3B64] hover:text-[#20ad96] mt-2">
+            The Top Three Types of Exam Mistakes Students Make and How to Avoid Them
+          </NuxtLink></template>
         </indexfivecard>
-        <indexfivecard>
+        <indexfivecard class="hoverItem">
           <template v-slot:img>
             <img src="/images/blog/blog-images-grid/blog-1.jpg" class="w-full lg:w-full h-[229px] relative" />
           </template>
 
-          <template v-slot:date>June 21, 2022</template>
-          <template v-slot:title> <NuxtLink to="/blog/maximizing-exam-success-with-personalized-learning" class="hover:text-[#20ad96]">Maximizing Exam Success with Personalized Learning: A Guide</NuxtLink> </template>
+          <template v-slot:date><div class="tracking-widest	 uppercase"> Jun 21, 2022</div></template>
+          <template v-slot:title> <NuxtLink to="/blog/maximizing-exam-success-with-personalized-learning" class=" text-[#3E3B64] hover:text-[#20ad96] mt-2">
+            Maximizing Exam Success with Personalized Learning: A Guide
+          <br/>
+          <br/>
+          </NuxtLink> </template>
         </indexfivecard>
-        <indexfivecard>
+        <indexfivecard class="hoverItem">
           <template v-slot:img>
             <img src="/images/blog/blog-images-grid/blog-3.jpg" class="w-full lg:w-full h-[229px]" />
           </template>
-          <template v-slot:date>September 15, 2022</template>
-          <template v-slot:title> <NuxtLink to="/blog/ace-your-exams-how-to-memorize-different-formula-like-a-pro" class="hover:text-[#20ad96]">Ace Your Exams: How to Memorize Different Formulae Like a Pro</NuxtLink> </template>
+          <template v-slot:date><div class="tracking-widest	 uppercase">Sep 15, 2022</div></template>
+          <template v-slot:title> <NuxtLink to="/blog/ace-your-exams-how-to-memorize-different-formula-like-a-pro" class=" text-[#3E3B64] hover:text-[#20ad96] mt-2">
+            Ace Your Exams: How to Memorize Different Formulae Like a Pro
+            <br/>
+          <br/>
+          </NuxtLink> </template>
         </indexfivecard>
       </div>
     </div>
@@ -54,3 +64,18 @@
     </div>
   </div>
 </template>
+
+
+<style scoped>
+
+.hoverItem{
+transition-delay: 0.2s;
+
+}
+.hoverItem:hover {
+  -webkit-box-shadow: -1px 2px 27px 0px rgba(224, 224, 224, 0.767);
+-moz-box-shadow: -1px 2px 27px 0px rgba(224,224,224,0.767);
+box-shadow: -1px 2px 27px 0px rgba(224,224,224,0.767);
+transition-delay: 0.2s;
+}
+</style>

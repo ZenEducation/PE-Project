@@ -1,108 +1,132 @@
 <template>
-    <div class="w-full dark:bg-gray-700">
+    <div class="w-full bg-gray-200 bg-g dark:bg-gray-800 pb-10">
         <div
-            class="flex flex-col lg:grid lg:gap-4 2xl:gap-6 lg:grid-cols-4 2xl:row-span-2 2xl:pb-8 ml-2 pt-4 px-6 max-w-[1720px]">
+            class="flex flex-col lg:grid lg:gap-4 2xl:gap-6 lg:grid-cols-4 2xl:row-span-2 2xl:pb-8 pt-4 max-w-[1720px] mx-auto w-11/12">
             <!-- Beginning of the component about Daniel Clifford -->
             <div
-                class=" bg-white text-black dark:bg-gray-900 dark:text-white lg:order-1 lg:row-span-1 2xl:row-span-1 lg:col-span-2 rounded-lg shadow-xl dark:shadow-none mb-5 lg:mb-0">
-                <div class="mx-6 my-8 2xl:mx-10">
-                    <img class="w-8 md:w-9 lg:w-10 2xl:w-20 h-8 md:h-9 lg:h-10 2xl:h-20 rounded-full border-2 ml-1 lg:ml-3 2xl:ml-0 md:-mt-1 2xl:-mt-4"
+                class=" bg-white text-black dark:bg-gray-900 dark:text-white lg:order-1 lg:row-span-1 2xl:row-span-1 lg:col-span-2 rounded  shadow-lg shadow-indigo-500/50 dark:shadow-none mb-5 lg:mb-0 p-4">
+                <div class=" 2xl:mx-10 flex items-center">
+                    <img class=" rounded-full border-2 w-14 h-14"
                         src="https://images.pexels.com/photos/3775534/pexels-photo-3775534.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-                    <h1
-                        class="text-xs md:text-base    pl-12 lg:pl-16 2xl:pl-20 -mt-8 md:-mt-10 lg:-mt-11 2xl:-mt-20 2xl:mx-8">
-                        Aadya Deshpande
-                    </h1>
-                    <h2 class="text-opacity-50 text-xs md:text-base    pl-12 lg:pl-16 2xl:pl-20 2xl:my-2 2xl:mx-8">
-                        NEET All India Rank | 355
-                    </h2>
+                  
+                    <div class="pl-3">
+                        <div class="text-xl font-bold text-[#20AD96]">  Aadya Deshpande </div>
+                         <div class=" font-bold text-sm text-[#a1a1a1]">
+                            NEET All India Rank | 355
+
+                         </div>
+                    </div>
+                  
                 </div>
-                <div class="-mt-6 relative">
-                    <p class="text-xl   font-bold px-7 lg:px-9 2xl:pt-6 2xl:mx-2">
+                <div class="mt-4 ">
+                    <div class="text-lg font-bold text-[#3F3A64]">
                         My NEET performance would not have been possible without them!
-                    </p>
-                    <br />
-                    <!-- 390 length -->
-                    <p class=" text-opacity-50 font-medium md:text-sm  px-7 lg:px-9 mb-3 2xl:pb-8 2xl:mx-2">
+                    </div>
+                   
+                 
+                 <div class=" text-opacity-50 font-medium mt-4">
                         My NEET performance would not have been possible without them! Their Early Completion of Syllabus
                         Strategy enabled me to revise the entire syllabus more than 5 to 6 times, which was not possible for
                         other students that I know from other institutes, as their syllabus was completed just 3 to 4 months
                         before the NEET exam, in which case revision would not at all be possible for any student.See
-                        More... </p>
+                        More... </div>
                 </div>
             </div>
             <!-- Ending of the component about Daniel Clifford -->
 
             <!-- Beginning of the component about Jonathan Walters -->
             <div
-                class="bg-white text-black dark:bg-gray-900 dark:text-white lg:order-2 lg:row-span-1 2xl:row-span-1 lg:col-span-1 rounded-lg shadow-xl dark:shadow-none pb-4 mb-5 lg:mb-0">
-                <div class="mx-8 2xl:mx-10 my-10">
-                    <img class="w-8 md:w-9 2xl:w-20 h-8 md:h-9 2xl:h-20 rounded-full border-2 -ml-1 -mt-2 lg:-mt-4"
+                class="bg-white text-black dark:bg-gray-900 dark:text-white lg:order-2 lg:row-span-1 2xl:row-span-1 lg:col-span-1  rounded  shadow-lg shadow-indigo-500/50 dark:shadow-none pb-4 mb-5 lg:mb-0 p-4">
+             
+
+                <div class=" 2xl:mx-10 flex items-center">
+                    <img class=" rounded-full border-2 w-14 h-14"
                         src="https://images.pexels.com/photos/634021/pexels-photo-634021.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-                    <h1 class=" text-xs md:text-base    pl-11 md:pl-12 2xl:pl-24 -mt-8 md:-mt-10 2xl:-mt-16">
-                        Saurabh Parekh
-                    </h1>
-                    <h2 class="text-xs md:text-base    text-opacity-50 pl-11 md:pl-12 2xl:pl-24">
-                        B-TECH | IIT BOMBAY</h2>
+                  
+                    <div class="pl-3">
+                        <div class="text-xl font-bold text-[#20AD96]">       Saurabh Parekh </div>
+                         <div class=" font-bold text-sm text-[#a1a1a1]">
+                            B-TECH | IIT BOMBAY
+
+                         </div>
+                    </div>
+                  
                 </div>
-                <div class="-mt-8 mx-1 lg:mx-2">
-                    <p class=" text-lg lg:text-xl   font-semibold pt-1 px-6 2xl:px-8 lg:pl-5 lg:pr-8">
+                <div class="mt-4">
+                    <div class="text-lg font-bold text-[#3F3A64]">
                         My experience was very wonderful.
-                    </p>
+                    </div>
                     <br />
                     <!-- 347 length -->
-                    <p class=" text-opacity-50 font-medium md:text-sm  pl-6 lg:pl-5 pr-4 -mt-1  2xl:px-8">
+            
+                    <div class=" text-opacity-50 font-medium ">
                         “ My experience was very wonderful. I have learnt a lot here. The professors at are very helpful.
                         Due to the personalized teaching mode, I was able to clear all my doubts effectively. Getting my
                         doubts clarified on time improved my practice test scores. I would strongly recommend JEE Advanced
-                        and JEE Main aspirants to enroll with them.See More... ”</p>
+                        and JEE Main aspirants to enroll with them.See More... ”</div>
                 </div>
             </div>
             <!-- Ending of the component about Jonathan Walters -->
 
             <!-- Beginning of the component about Jeanette Harmon -->
             <div
-                class="bg-white text-black dark:bg-gray-900 dark:text-white lg:order-3 lg:row-span-2 2xl:row-span-1 lg:col-span-1 rounded-lg shadow-xl dark:shadow-none mb-5 lg:mb-0 ">
-                <div class="mx-8 my-10 lg:my-8">
-                    <img class="w-8 md:w-9 lg:w-11 2xl:w-20 h-8 md:h-9 lg:h-11 2xl:h-20 rounded-full border-2 -mt-3 -ml-1 lg:-ml-0"
+                class="bg-white text-black dark:bg-gray-900 dark:text-white lg:order-3 lg:row-span-2 2xl:row-span-1 lg:col-span-1  rounded  shadow-lg shadow-indigo-500/50 dark:shadow-none mb-5 lg:mb-0 p-4">
+              
+                <div class=" 2xl:mx-10 flex items-center">
+                    <img class=" rounded-full border-2 w-14 h-14"
                         src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-                    <h1
-                        class=" text-xs md:text-base    pl-11 md:pl-12 lg:pl-14 2xl:pl-24 -mt-8 md:-mt-10 lg:-mt-11 2xl:-mt-16">
-                        Owais Chunawala </h1>
-                    <h2 class=" text-xs md:text-base    pl-11 md:pl-12 lg:pl-14 2xl:pl-24">
-                        B-TECH | IIT BOMBAY</h2>
+                  
+                    <div class="pl-3">
+                        <div class="text-xl font-bold text-[#20AD96]">   Owais Chunawala </div>
+                         <div class=" font-bold text-sm text-[#a1a1a1]">
+                            B-TECH | IIT BOMBAY
+
+                         </div>
+                    </div>
+                  
                 </div>
-                <div class="-mt-4 ml-5 mr-11">
-                    <p class=" text-xl   font-bold px-2 lg:px-3 -mt-6 lg:-mt-5 2xl:mt-12 2xl:pb-6">
-                        I was guided every step of the way by the professors and mentors.</p>
-                    <br />
+                <div class="mt-4 ">
+                    <div class="text-lg font-bold text-[#3F3A64]">
+                        I was guided every step of the way by the professors and mentors.</div>
+                    
                     <!-- 399 length -->
-                    <p class=" font-medium md:text-sm  pl-2 lg:pl-3 lg:pr-4 mb-6 2xl:pt-2 -mt-3">
+                    <div class=" text-opacity-50 font-medium mt-4">
                         “ I was guided every step of the way by the professors and mentors. All my doubts were cleared very
                         effectively and on-time. I was given numerous tips, tricks and techniques for efficient preparation,
                         fast problem-solving and was made to solve 100s of questions from the learning sources, in a
                         structured and systematic manner, and that greatly impacted my test scores and helped me gain
-                        confidence.See More... ”</p>
+                        confidence.See More... ”</div>
                 </div>
             </div>
             <!-- Ending of the component about Jeanette Harmon -->
 
             <!-- Beginning of the component about Patrick Abrams -->
             <div
-                class="bg-white text-black dark:bg-gray-900 dark:text-white lg:order-4 lg:row-span-2 2xl:row-span-1 col-span-2 rounded-lg shadow-xl dark:shadow-none mb-5 lg:mb-0 lg:pb-14">
-                <div class="mx-8 my-8">
-                    <img class="w-8 md:w-9 lg:w-10 2xl:w-20 h-8 md:h-9 lg:h-10 2xl:h-20 rounded-full border-2 lg:-mt-3"
+                class="bg-white text-black dark:bg-gray-900 dark:text-white lg:order-4 lg:row-span-2 2xl:row-span-1 col-span-2  rounded  shadow-lg shadow-indigo-500/50 dark:shadow-none mb-5 lg:mb-0 lg:pb-14 p-4">
+             
+
+                <div class=" 2xl:mx-10 flex items-center">
+                    <img class=" rounded-full border-2 w-14 h-14"
                         src="https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-                    <h1 class="text-xs md:text-base    pl-12 md:pl-14 2xl:pl-24 -mt-8 md:-mt-10 lg:-mt-11 2xl:-mt-16">
-                        Ojas Deshpande </h1>
-                    <h2 class="text-xs md:text-base    text-opacity-50 pl-12 md:pl-14 2xl:pl-24">
-                        M.B.B.S | KING EDWARD MEMORIAL HOSPITAL AND SETH GORDHANDAS SUNDERDAS MEDICAL COLLEGE, MUMBAI</h2>
+                  
+                    <div class="pl-3">
+                        <div class="text-xl font-bold text-[#20AD96]">   Ojas Deshpande </div>
+                         <div class=" font-bold text-sm text-[#a1a1a1]">
+                            M.B.B.S | KING EDWARD MEMORIAL HOSPITAL AND SETH GORDHANDAS SUNDERDAS MEDICAL COLLEGE, MUMBAI
+
+                         </div>
+                    </div>
+                  
                 </div>
-                <div class="px-3 -mt-3 mb-5 lg:mb-0">
-                    <p class="text-lg   font-semibold px-4 -mt-3 lg:-mt-6 2xl:mt-8">
+
+
+
+                <div class="mt-4">
+                    <div class="text-lg font-bold text-[#3F3A64]">
                         The one to one teaching and mentoring methodology helped me in a great way.
-                    </p>
-                    <br />
-                    <p class="text-opacity-50 font-medium md:text-sm  px-4 mt-1 lg:-mt-3 2xl:mt-6">
+                    </div>
+              
+                    <div class=" text-opacity-50 font-medium mt-4">
                         “
                         <span class="text-black  dark:text-white">I would like to extend my thanks to Paathshala for my NEET
                             score. Paathshala’s one to one
@@ -132,27 +156,34 @@
                             I would recommend Paathshala’s Educational services to all future aspirants. The personal
                             attention
                             Paathshala delivers is the key to success in competitive entrance exams </span>”
-                    </p>
+                    </div>
                 </div>
             </div>
             <!-- Ending of the component about Patrick Abrams -->
 
             <!-- Beginning of the component about Kira Whittle -->
             <div
-                class="bg-white text-black dark:bg-gray-900 dark:text-white lg:order-2 lg:row-span-3 xl:row-span-3  2xl:row-span-2 mb-4 xl:mb-0 lg:col-span-1 rounded-lg shadow-xl dark:shadow-none">
-                <div class="mx-8 my-8 lg:pl-1">
-                    <img class="w-8 md:w-9 lg:w-12 2xl:w-20 h-8 md:h-9 lg:h-12 2xl:h-20 rounded-full border-2 lg:-mt-4 -ml-1 lg:-ml-4"
+                class="bg-white text-black dark:bg-gray-900 dark:text-white lg:order-2 lg:row-span-3 xl:row-span-3  2xl:row-span-2 mb-4 xl:mb-0 lg:col-span-1  rounded  shadow-lg shadow-indigo-500/50 dark:shadow-none p-4">
+             
+
+                <div class=" 2xl:mx-10 flex items-center">
+                    <img class=" rounded-full border-2 w-14 h-14"
                         src="https://images.pexels.com/photos/3762804/pexels-photo-3762804.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-                    <h1 class=" text-xs md:text-base    pl-10 md:pl-12 2xl:pl-24 -mt-8 md:-mt-10 lg:-mt-12 2xl:-mt-16">
-                        Nihar Mhapankar</h1>
-                    <h2 class=" text-xs md:text-base    pl-10 md:pl-12 2xl:pl-24">
-                        M.B.B.S | LOKMANYA TILAK GENERAL MEDICAL COLLEGE</h2>
+                  
+                    <div class="pl-3">
+                        <div class="text-xl font-bold text-[#20AD96]">  Nihar Mhapankar</div>
+                         <div class=" font-bold text-sm text-[#a1a1a1]">
+                            M.B.B.S | LOKMANYA TILAK GENERAL MEDICAL COLLEGE
+
+                         </div>
+                    </div>
+                  
                 </div>
-                <div class="px-3 lg:px-5 lg:-mt-4 mb-5 lg:mb-0">
-                    <p class=" text-xl   font-semibold px-4 lg:px-0 -mt-2 lg:-mt-0">
-                        To merely explain my experience and emotions with Paathshala with a few words? </p>
-                    <br />
-                    <p class=" font-medium md:text-sm  px-4 lg:px-0 2xl:px-4 lg:pr-3 mt-2 lg:-mt-1 2xl:mt-2 2xl:pb-64">
+                <div class="mt-4 ">
+                    <div class="text-lg font-bold text-[#3F3A64]">
+                        To merely explain my experience and emotions with Paathshala with a few words? </div>
+                
+                        <div class=" text-opacity-50 font-medium mt-4">
                         “ To merely explain my experience and emotions with Paathshala with a few words? Oh Boy! It’s going
                         to be a task between the Devil and the Deep Blue Sea. My 2-year experience here was an adventure.
                         Professors here helped me a lot in teaching, doubts, and concept clarification. I would say that
@@ -163,10 +194,22 @@
                         mighty class in our 11 Standard. I was also given the right guidance about the books to be referred
                         to, in addition to the study materials provided. I would rest my case on a final note that, if
                         Paathshala is given the opportunity to compete at the higher level, it would gain all the honors and
-                        respect it truly deserves!! ”</p>
+                        respect it truly deserves!! ”</div>
                 </div>
             </div>
             <!-- Ending of the component about Kira Whittle -->
         </div>
     </div>
 </template>
+
+
+<style scoped>
+.hoverItem {
+  -webkit-box-shadow: -1px 2px 27px 0px rgba(224, 224, 224, 0.767);
+-moz-box-shadow: -1px 2px 27px 0px rgba(224,224,224,0.767);
+box-shadow: -1px 2px 27px 0px rgba(224,224,224,0.767);
+transition-delay: 0.3s;
+
+
+
+}</style>
