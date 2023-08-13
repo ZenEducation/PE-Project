@@ -1,7 +1,7 @@
 <template>
-  <div class="pt-[70px] pb-[50px] dark:bg-black bg-[#f8f8f8]">
-    <div class="flex justify-center items-start">
-      <div class="mb-8 w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2">
+  <div class="pt-[70px] pb-[50px] dark:bg-black bg-[#ebebeb]">
+    <div class="flex justify-center items-start ">
+      <div class="mb-8 w-full px-10 grid grid-cols-1 md:grid-cols-2 ">
         <div class="flex flex-col ">
           <div class="">
             <img src="/images/logo/light-logo-footer.png" width="200" alt="">
@@ -67,6 +67,10 @@
 
 .icon {
   margin-right: 24px;
-  color: #8c89a2;
+  color: #837ea1;
+  /* color:#ebebeb; */
+}
+p,li,a{
+  font-family: Poppins,sans-serif;
 }
 </style>
