@@ -1,5 +1,5 @@
 <template>
-  <div class="public-container py-16  w-full">
+  <div class="public-container py-16  w-full ">
     <div>
       <headers class="mb-[60px]">
         <template v-slot:headerone>What does it mean when we say we are giving you</template>
@@ -22,7 +22,7 @@
         imgSrc="/images/shape-animation/shape-1.png" />
     </div>
 
-    <div class="relative   w-full">
+    <div class="relative  h-[560px] w-[970px] overflow-hidden mx-auto ">
       <div
         class="relative overflow-hidden group z-20 rounded shadow-xxl shadow-black/[22%] max-w-[970px] mx-auto -bottom-[140px] -mt-[140px] videoSec  
         h-[560px] w-[970px] flex justify-center items-center cursor-pointer
@@ -68,6 +68,12 @@ const video = ref(false)
   background-image: url('@/assets/images/poster.png');
   background-position: center;
   background-repeat: no-repeat;
+  transition-duration: 1s;
+
+}
+.videoSec:hover{
+  transform: scale(1.08);
+  transition-duration: 1s;
 
 }
 .videoSection{
