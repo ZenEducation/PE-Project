@@ -24,18 +24,61 @@
 
     <div class="relative   w-full">
       <div
-        class="relative overflow-hidden group z-20 rounded shadow-xxl shadow-black/[22%] max-w-[970px] mx-auto -bottom-[140px] -mt-[140px]">
-        <!-- <img
-          src="/images/about/about-me/about-me-popup-video-poster.jpeg"
-          class="w-full transition-transform duration-1500 group-hover:scale-110"
-          alt=""
-        /> -->
-        <iframe class="transition-transform duration-1500 group-hover:scale-105" width="970" height="570"
-          :src="'https://www.youtube.com/embed/JWoWfzHowjI'" frameborder="0" allow="autoplay; encrypted-media"
-          allowfullscreen></iframe>
+        class="relative overflow-hidden group z-20 rounded shadow-xxl shadow-black/[22%] max-w-[970px] mx-auto -bottom-[140px] -mt-[140px] videoSec  
+        h-[560px] w-[970px] flex justify-center items-center cursor-pointer
+         "
+         @click="video=true"
+         >
+     
+      <i class="fa-brands fa-youtube text-[70px] text-red-600" ></i>
+
+    
+
+
       </div>
 
       
     </div>
+    <div class="">
+  
+    </div>
   </div>
+  <div class=" w-screen h-screen  videoSection" v-if="video">
+    <div class=" w-full h-full flex justify-center items-center cover backgropund">
+      <div class="">
+        <div class="text-right"  @click="video=false">
+          <i class="fa-sharp fa-regular fa-circle-xmark text-white cursor-pointer"></i>
+        </div>
+        <iframe class="transition-transform duration-1500 group-hover:scale-105" width="970" height="570"
+          :src="'https://www.youtube.com/embed/JWoWfzHowjI'" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+          </div>
+    </div>
+   </div>
 </template>
+
+<script setup>
+const video = ref(false)
+
+</script>
+
+
+<style scoped>
+.videoSec{
+  background-image: url('@/assets/images/poster.png');
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.videoSection{
+  z-index: 500000000000;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed;
+}
+.backgropund{
+  background: rgba(0, 0, 0, 0.705);
+}
+</style>
