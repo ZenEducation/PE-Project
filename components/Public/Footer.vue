@@ -7,26 +7,26 @@
             <img src="/images/logo/light-logo-footer.png" width="200" alt="">
           </div>
           <div class="mb-[10px] flex flex-col justify-start items-start ml-4">
-            <p class="dark:text-[#ddddd] text-[#696969] text-[14px] hover:text-[#20ad96] font-medium mb-[11px]"> <i class="fa-solid fa-phone"></i> &nbsp; +91 77962 69677 </p>
-            <p class="dark:text-[#ddddd] text-[#696969] text-[14px] hover:text-[#20ad96] font-medium mb-[11px]"> <i class="fa-solid fa-envelope"></i> &nbsp; photon@paathshala.world </p>
+            <p class="dark:text-[#ddddd] text-[#696969] text-[14px] hover:text-[#20ad96] font-medium mb-[11px] font-semibold"> <i class="fa-solid fa-phone"></i> &nbsp; +91 77962 69677 </p>
+            <p class="dark:text-[#ddddd] text-[#696969] text-[14px] hover:text-[#20ad96] font-medium mb-[11px] font-semibold"> <i class="fa-solid fa-envelope"></i> &nbsp; photon@paathshala.world </p>
             
           </div>
           
           <div class="flex justify-start items-center ml-4">
             
             <NuxtLink to="https://www.facebook.com/paathshalafortheworld" target="_blank">
-              <i class="fa-brands fa-facebook mr-[24px] text-[#8c89a2] w-6 h-6 text-[25px]"></i>
+              <i class="fa-brands fa-facebook mr-[24px] text-[#8c89a2] text-[18px]"></i>
             </NuxtLink>
             
             <NuxtLink to="https://www.youtube.com/c/PaathshalaEducation" target="_blank">
-              <i class="fa-brands fa-youtube mr-[24px] text-[#8c89a2] w-6 h-6 text-[25px]"></i>
+              <i class="fa-brands fa-youtube mr-[24px] text-[#8c89a2]  text-[18px]"></i>
             </NuxtLink>
             
             
             <!-- <i class="fa-brands fa-instagram mr-[24px] text-[#8c89a2] w-6 h-6 text-[25px]"></i> -->
             
             <NuxtLink to="https://www.linkedin.com/company/paathshala-ascension" target="_blank">
-              <i class="fa-brands fa-linkedin mr-[24px] text-[#8c89a2] w-6 h-6 text-[25px]"></i>
+              <i class="fa-brands fa-linkedin mr-[24px] text-[#8c89a2]  text-[18px]"></i>
             </NuxtLink>
           </div>
         </div>
@@ -38,17 +38,17 @@
             </footerheader>
 
             <div class="my-[17px] flex flex-col justify-start items-start">
-              <p class="dark:text-[#ddddd] text-[#696969] text-[14px] hover:text-[#20ad96] font-medium mb-[11px]"> <NuxtLink to="/#home">Start here</NuxtLink> </p>
-              <p class="dark:text-[#ddddd] text-[#696969] text-[14px] hover:text-[#20ad96] font-medium mb-[11px]"> <NuxtLink to="/blog/bloggrid">Blog</NuxtLink> </p>
-              <p class="dark:text-[#ddddd] text-[#696969] text-[14px] hover:text-[#20ad96] font-medium mb-[11px]"> <NuxtLink to="/about/Aboutus">About us</NuxtLink> </p>
-              <p class="dark:text-[#ddddd] text-[#696969] text-[14px] hover:text-[#20ad96] font-medium mb-[11px]"> <NuxtLink to="/about/why_choose_us">Why Choose Us</NuxtLink> </p>
+              <p class="dark:text-[#ddddd] text-[#696969] text-[15px] hover:text-[#20ad96] font-semibold mb-[11px]"> <NuxtLink to="/blog/bloggrid">Start here</NuxtLink> </p>
+              <p class="dark:text-[#ddddd] text-[#696969] text-[15px] hover:text-[#20ad96] font-semibold mb-[11px]"> <NuxtLink to="/blog/bloggrid">Blog</NuxtLink> </p>
+              <p class="dark:text-[#ddddd] text-[#696969] text-[15px] hover:text-[#20ad96] font-semibold mb-[11px]"> <NuxtLink to="/about/Aboutus">About us</NuxtLink> </p>
+              <p class="dark:text-[#ddddd] text-[#696969] text-[15px] hover:text-[#20ad96] font-semibold mb-[11px]"> <NuxtLink to="/about/why_choose_us">Why Choose Us</NuxtLink> </p>
             </div>
           </div>
           <div>
             <div class="mt-[49px] flex flex-col justify-start items-start">
-              <p class="dark:text-[#ddddd] text-[#696969] text-[14px] hover:text-[#20ad96] font-medium mb-[11px]"> <NuxtLink to="/about/faq">FAQs</NuxtLink> </p>
-              <p class="dark:text-[#ddddd] text-[#696969] text-[14px] hover:text-[#20ad96] font-medium mb-[11px]"> <NuxtLink to="/about/testimonials">Testimonials</NuxtLink> </p>
-              <p class="dark:text-[#ddddd] text-[#696969] text-[14px] hover:text-[#20ad96] font-medium mb-[11px]"> <NuxtLink to="/about/enquire_with_us">Contact us</NuxtLink> </p>
+              <p class="dark:text-[#ddddd] text-[#696969] text-[15px] hover:text-[#20ad96] font-semibold mb-[11px]"> <NuxtLink to="/about/faq">FAQs</NuxtLink> </p>
+              <p class="dark:text-[#ddddd] text-[#696969] text-[15px] hover:text-[#20ad96] font-semibold mb-[11px]"> <NuxtLink to="/about/testimonials">Testimonials</NuxtLink> </p>
+              <p class="dark:text-[#ddddd] text-[#696969] text-[15px] hover:text-[#20ad96] font-semibold mb-[11px]"> <NuxtLink to="/about/enquire_with_us">Contact us</NuxtLink> </p>
             </div>
           </div>
           

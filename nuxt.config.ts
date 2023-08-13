@@ -1,20 +1,17 @@
 export default defineNuxtConfig({
   sourcemap: {
     client: true,
-    server: false
+    server: false,
   },
   ssr: false,
   srcDir: './',
   css: [
-    "@/assets/css/main.css",
-    "@/assets/css/font-awesome-pro.min.css",
-    "@/assets/css/vue-multiselect.css",
-    "@/assets/css/v-calendar.css",
+    '@/assets/css/main.css',
+    '@/assets/css/font-awesome-pro.min.css',
+    '@/assets/css/vue-multiselect.css',
+    '@/assets/css/v-calendar.css',
     '@fortawesome/fontawesome-free/css/all.css',
-    
   ],
-  
-  
 
   experimental: { payloadExtraction: false },
 
@@ -61,6 +58,7 @@ export default defineNuxtConfig({
   plugins: [
     { src: '@/plugins/amplify.ts', mode: 'client' },
     { src: '@/plugins/v-calendar.ts', mode: 'client' },
+    { src: '~/plugins/aos', mode: 'client' },
   ],
   vite: {
     // temp-fix for dev, it breaks build for now (see: https://github.com/nuxt/framework/issues/4916)
@@ -69,7 +67,7 @@ export default defineNuxtConfig({
       'window.global': {},
     },
     build: {
-      chunkSizeWarningLimit: 2000
+      chunkSizeWarningLimit: 2000,
     },
   },
 
@@ -80,11 +78,5 @@ export default defineNuxtConfig({
     },
   },
 
-
-  
-
   // target: "static"
-
-  
-});
-
+})

@@ -1,11 +1,11 @@
 <template>
   <div class="py-[100px] bg-[#f5f5f5] dark:bg-[#111]">
-    <headers>
+    <headers data-aos="fade-up" data-aos-duration="2000">
       <template v-slot:headerone>Study with your favorite tutors</template>
       <template v-slot:headertwo>Secrete of learning revealed in blogs</template>
     </headers>
 
-    <div class="public-container">
+    <div class="public-container" data-aos="fade-up" data-aos-duration="2000">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-4">
         <indexfivecard class="hoverItem">
           <template v-slot:img>
@@ -42,7 +42,7 @@
       </div>
     </div>
 
-    <div class="w-full flex justify-center items-center mt-14">
+    <div class="w-full flex justify-center items-center mt-14" data-aos="fade-up" data-aos-duration="2000">
       <p class="
                 w-10/12
                 md:w-6/12

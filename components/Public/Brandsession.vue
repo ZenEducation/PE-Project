@@ -1,6 +1,6 @@
 <template>
-  <div class="py-[100px] bg-gray-200 ">
-    <div class=" w-10/12 mx-auto">
+  <div class="py-[100px] bg-gray-200 "  >
+    <div class=" w-10/12 mx-auto" data-aos="fade-up" data-aos-duration="2000">
       <div class="flex justify-between">
         <img src="https://maxcoach-react.pages.dev/images/brand/client-logo-01.png" alt="">
         <img src="https://maxcoach-react.pages.dev/images/brand/client-logo-02.png" alt="">

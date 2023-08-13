@@ -6,12 +6,14 @@
     <!-- <indexfour /> -->
     <indexfive />
     <brandsession />
-    <testimonials />
+    <testimonials data-aos="fade-up" data-aos-duration="2000" />
   </div>
 </template>
 
-<script setup>
-definePageMeta({
-  layout: 'frontend',
-})
+<script setup lang="ts">
+  import AOS from 'aos'
+  definePageMeta({
+    layout: 'frontend',
+  })
+  onMounted(() => AOS.init())
 </script>

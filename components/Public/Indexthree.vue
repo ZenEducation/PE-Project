@@ -3,7 +3,7 @@
 <template>
   <div class="w-full m-0 bg-[#F4F0ED] dark:bg-[#111] py-16 flex justify-center items-center relative">
     <div class="w-11/12 flex flex-col justify-center items-center">
-      <div class="w-8/12 md:w-6/12 mb-[60px]">
+      <div class="w-8/12 md:w-6/12 mb-[60px]" data-aos="fade-up" data-aos-duration="2000">
         <headers>
           <template v-slot:headerone
             >Maximize Your Potentials and Possibilities</template
@@ -15,12 +15,12 @@
         </headers>
       </div>
 
-      <Rates />
-      <TestimonialSection />
-      <Senses />
+      <Rates data-aos="fade-up" data-aos-duration="2000" />
+      <TestimonialSection data-aos="fade-up" data-aos-duration="2000" class="z-[1000]" />
+      <Senses data-aos="fade-up" data-aos-duration="2000" />
     </div>
         <div
-      class="bottom-shape absolute -bottom-px left-0 w-full h-[70px] z-1"
+      class="bottom-shape absolute -bottom-px left-0 w-full h-[70px] z-1 "
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

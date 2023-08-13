@@ -23,6 +23,7 @@
     "@nuxtjs/tailwindcss": "^5.3.3",
     "@pinia/nuxt": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
+    "@types/aos": "^3.0.4",
     "@types/chart.js": "^2.9.37",
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@vueuse/core": "^9.9.0",
@@ -61,6 +62,7 @@
     "@rollup/plugin-inject": "^5.0.3",
     "@rollup/plugin-terser": "^0.4.0",
     "@vueup/vue-quill": "^1.0.1",
+    "aos": "^3.0.0-beta.6",
     "aws-amplify": "^5.0.5",
     "chart.js": "^3.9.1",
     "countup.js": "^2.6.0",
@@ -83,6 +85,7 @@
     "vue-countup-v2": "^4.0.0",
     "vue-kinesis": "^2.0.5",
     "vue-multiselect": "^3.0.0-beta.1",
+    "vue-number-animation": "^1.1.2",
     "vue-split-carousel": "^2.2.3",
     "vuejs-paginate": "^2.1.0"
   }
