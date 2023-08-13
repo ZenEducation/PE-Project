@@ -3,7 +3,7 @@
     <div
       class="bg-[#EAE1D6] h-auto w-12/12 flex justify-center content-center items-center p-2 md:p-10 xl:p-20 background"
       id="home">
-      <div class="w-12/12 grid grid-cols-1 md:grid-cols-2">
+      <div class="w-12/12 grid grid-cols-1 md:grid-cols-2"  data-aos="fade-up" data-aos-duration="2000">
         <div>
           <gridone />
         </div>

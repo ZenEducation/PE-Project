@@ -5,7 +5,7 @@
   <div class="dark:bg-[#161821] pb-14">
     <!-- <div class="bg-white"> -->
     <div class="mx-6 md:mx-[100px]">
-      <headers>
+      <headers data-aos="fade-up" data-aos-duration="2000">
         <template v-slot:headerone>Education for everyone</template>
         <template v-slot:headertwo>
           Online
@@ -14,7 +14,7 @@
         </template>
       </headers>
 
-      <div class="w-12/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mt-5">
+      <div class="w-12/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mt-5" data-aos="fade-up" data-aos-duration="2000">
 
         <!-- 1 -->
         <div class="hoverItem rounded px-4 py-5 cursor-pointer">
@@ -136,8 +136,8 @@
  
       </div>
 
-      <div class="w-full ">
-        <oldschool />
+      <div class="w-full " >
+        <oldschool data-aos="fade-up" data-aos-duration="2000" />
       </div>
     </div>
   </div>
@@ -160,14 +160,14 @@ img {
   stroke-width: 5px;
 }
 .hoverItem{
-transition-delay: 0.3s;
+  transition-duration: 0.8s;
 
 }
 .hoverItem:hover {
   -webkit-box-shadow: -1px 2px 27px 0px rgba(224, 224, 224, 0.767);
 -moz-box-shadow: -1px 2px 27px 0px rgba(224,224,224,0.767);
 box-shadow: -1px 2px 27px 0px rgba(224,224,224,0.767);
-transition-delay: 0.3s;
+transition-duration: 0.8s;
 
 }
 
