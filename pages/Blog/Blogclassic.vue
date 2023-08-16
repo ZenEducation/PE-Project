@@ -1,9 +1,13 @@
 <template>
   <div class="font-body dark:bg-[#161821] w-12/12 px-24">
     <div class="public-container">
-      <div class="py-[100px]">
+      <div class="py-[50px]">
         <courseheader>
-          <template #title>Blog Classic</template>
+          <template #title>
+            <div class="font-black text-[#323332] dark:text-white">
+              Blog Classic
+            </div>
+          </template>
         </courseheader>
       </div>
 
@@ -20,7 +24,7 @@
 </template>
 
 <script setup>
-definePageMeta({
-  layout: 'frontend',
-})
+  definePageMeta({
+    layout: 'frontend',
+  })
 </script>
