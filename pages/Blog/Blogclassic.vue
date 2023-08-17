@@ -12,7 +12,7 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3">
-        <div class="min-w-[376px] pr-[30px] col-span-1">
+        <div class="min-w-[376px] pr-[40px] col-span-1">
           <blogclassicsidebar />
         </div>
         <div class="col-span-2">

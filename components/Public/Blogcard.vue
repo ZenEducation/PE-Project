@@ -8,7 +8,8 @@
       <div class="">
         <div class="h-[229px] rounded-md overflow-hidden">
           <div class="thumbnail ">
-            <a href="blog/12-essential-bodyweight-exercises" class="image"><img class="rounded-md object-contain group-hover:scale-[1.10] transition-all ease-in-out duration-1000 "
+            <a href="blog/12-essential-bodyweight-exercises" class="image">
+              <img class="rounded-md object-contain group-hover:scale-[1.10] transition-all ease-in-out duration-1000 "
                 :src="course.image" width="370" height="277.5" /></a>
           </div>
         </div>
