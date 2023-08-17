@@ -1,5 +1,5 @@
 <template>
-  <div class="w-auto min-w-[376px] ">
+  <div class="w-auto min-w-[376px]  mr-8">
     <div>
       <h3 class="text-2xl font-black leading-[1.3] mt-0 mb-[30px] text-[#323332] dark:text-white">Search</h3>
       <div

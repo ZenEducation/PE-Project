@@ -1,4 +1,5 @@
 <template>
+  <div class=""   data-aos="fade-up" data-aos-duration="2000">
   <div
     v-for="blog in blogs"
     :key="blog.id"
@@ -7,13 +8,16 @@
     data-aos-duration="2000"
   >
     <div
-      class="w-12/12 pb-10 border-b border-b-1 border-[#555] overflow-hidden"
+      class="w-12/12 pb-10  overflow-hidden"
     >
+    <div class="thumbnail group w-full h-[400px] bg-red-500 rounded-md overflow-hidden">
+      <NuxtLink :to="`/blog/${blog.link}`">
       <img
-        class="w-full hover:scale-[1.05] transition-all ease-in-out duration-1000 h-5/6 rounded-md"
+        class="rounded-md object-contain group-hover:scale-[1.10] transition-all ease-in-out duration-1000"
         :src="blog.image"
         alt="Connection Between Self-Portraits and Identity"
-      />
+      /></NuxtLink>
+    </div>
 
       <div>
         <div class="p-8 pl-0 pb-10 dark:blue rounded-b-md">
@@ -118,6 +122,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
