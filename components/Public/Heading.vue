@@ -2,7 +2,9 @@
   <header class="header relative">
     <div
       class="header-inner flex items-center py-[19px] xl:py-0 z-50 transition-all left-0 top-0 w-full h-auto absolute bg-white dark:bg-[#161821]">
-      <div class="container grid grid-flow-col xl:grid-cols-[22%_minmax(56%,_1fr)_22%] items-center px-3.8 3xl:px-37">
+      <div class="container grid grid-flow-col xl:grid-cols-[22%_minmax(56%,_1fr)_22%] items-center px-3.8 3xl:px-37
+        mx-auto
+      ">
         <NuxtLink to="/">
           <img class="w-full h-auto max-h-20" :src="
             darkMode

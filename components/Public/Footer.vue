@@ -1,10 +1,15 @@
 <template>
   <div class="pt-[70px] pb-[50px] dark:bg-black bg-[#ebebeb]">
-    <div class="flex justify-center items-start ">
-      <div class="mb-8 w-full px-10 grid grid-cols-1 md:grid-cols-2 ">
+    <div class="flex justify-center items-start w-11/12  mx-auto">
+      <div class="mb-8 w-full  grid grid-cols-1 md:grid-cols-2 ">
         <div class="flex flex-col ">
           <div class="">
-            <img src="/images/logo/light-logo-footer.png" width="200" alt="">
+           
+            <img class="mb-1" :src="
+            darkMode
+              ? '/images/logo/dark-logo.png'
+              : '/images/logo/light-logo-footer.png'
+          " alt="Logo" width="200" />
           </div>
           <div class="mb-[10px] flex flex-col justify-start items-start ml-4">
             <p class="dark:text-[#ddddd] text-[#696969] text-[14px] hover:text-[#20ad96] font-medium mb-[11px] font-semibold"> <i class="fa-solid fa-phone"></i> &nbsp; +91 77962 69677 </p>
@@ -56,11 +61,21 @@
       </div>
     </div>
 
-    <div class="w-full">
-      <copyright />
+    <div class="w-full text-center font-semibold text-gray-400">
+      <a href="mailto:mailto:copyright2023@photonecademy.com">  <i class="fa-regular fa-copyright mr-[4px]  text-[13px]"></i>copyright2023@photonecademy.com</a>
     </div>
   </div>
 </template>
+
+
+<script setup>
+import { useStyleStore } from "@/stores/style";
+import { storeToRefs } from "pinia";
+const styleStore = useStyleStore();
+const { darkMode } = storeToRefs(styleStore);
+const { setDarkMode } = styleStore;
+</script>
+
 
 <style scoped>
 

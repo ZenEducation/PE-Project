@@ -25,7 +25,7 @@
   })
   useHead({
     titleTemplate: (titleChunk) => {
-      const titleBase = 'Zen Nuxt'
+      const titleBase = 'Photon Ecademy'
 
       return titleChunk ? `${titleChunk} - ${titleBase}` : titleBase
     },
