@@ -136,7 +136,7 @@
  
       </div>
 
-      <div class="w-full " >
+      <div class="w-full  xl:w-10/12 2xl:10/12 mx-auto" >
         <oldschool data-aos="fade-up" data-aos-duration="2000" />
       </div>
     </div>

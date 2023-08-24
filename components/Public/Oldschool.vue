@@ -1,12 +1,12 @@
 <template>
-  <div class="flex justify-end lg:py-24">
-    <div class="relative dark:bg-black w-full lg:w-10/12 flex flex-col lg:flex-row">
-      <div class="hidden lg:block lg:absolute lg:left-[-134px] lg:top-[60px]">
-        <img src="@/assets/images/teracher-quote-1.png" alt="image" />
+  <div class="flex justify-end lg:py-24   mx-auto ">
+    <div class="relative dark:bg-black w-full lg:w-full flex flex-col lg:flex-row  mx-auto ">
+      <div class=" lg:left-[-134px] lg:top-[60px] pt-[70px]">
+        <img src="@/assets/images/teracher-quote-1.png" alt="image" class="w-[35rem]" />
       </div>
 
       <div id="space">
-        <div class="lg:ml-36 w-12/12 mt-10">
+        <div class=" w-12/12 mt-10">
           <h2
             class="
               text-[24px]
@@ -20,19 +20,21 @@
           >
           The New Way of <span class="font-[400]">Learning in The 21st Centaury</span>
           </h2>
-          <div class="flex flex-col md:flex-row w-12/12">
+          <div class="flex flex-col md:flex-row ">
             <p
               class="
                 text-[24px] dark:text-[#dddddd] text-body
                 font-[600]
                 leading-[1.5]
                 lg:mr-10
+                w-9/12 
+            
               "
             >
             We assist students from all walks of life with our learning methodologies and kickstart the process of achieving your goals and upgrading to be a better you.
             </p>
 
-            <div class="h-full w-full mt-10 md:mt-0 md:ml-4">
+            <div class="h-full w-3/12 mt-10 md:mt-0  ">
               <h2 class="text-[24px] text-[#20ad96] font-[800] leading-[1.3]">
                 <span class="text-[48px] mr-[5px]">15</span>years
               </h2>
@@ -80,11 +82,11 @@ span {
 
 @media only screen and (min-width: 400px) {
   #space {
-    padding: 70px 30px 70px 50px;
+    /* padding: 70px 0px 70px 0px; */
   }
 }
 
 #space {
-  padding: 40px;
+  padding: 40px 0px 40px 40px;
 }
 </style>
