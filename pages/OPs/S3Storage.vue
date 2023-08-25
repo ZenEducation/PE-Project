@@ -53,9 +53,6 @@ const submitPass = () => {
           <BaseButton href="https://justboil.me/tailwind-admin-templates/vue-dashboard/" label="Buy dashboard"
             :icon="mdiCreditCardOutline" color="contrast" rounded-full small />
         </SectionTitleLineWithButton>
-
-        <UserCard class="mb-6" />
-
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <CardBox is-form @submit.prevent="submitProfile">
             <FormField label="My Avatar" help="Max 500kb">

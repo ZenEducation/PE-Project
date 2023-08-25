@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col bg-white dark:bg-black md:flex-row justify-start p-[40px] rounded-md m-4">
+  <div :id="id" class="flex flex-col bg-white dark:bg-black md:flex-row justify-start p-[40px] rounded-md m-4">
     <div style="flex: 1 0 auto; width: 70px">
       <img
         :src="imageSrc"
@@ -25,5 +25,5 @@
 </template>
 
 <script setup>
-const props = defineProps(["imageSrc"]);
+const props = defineProps(["imageSrc", "id"]);
 </script>

@@ -4,17 +4,17 @@
         <div class="container px-6 mx-auto bg-white dark:bg-black">
 
             <!-- <h1 class="text-[#161821] dark:text-[#fff] text-3xl text-center py-6 relative ">TESTIMONIAL</h1> -->
-            <courseheader>
-                <template v-slot:title>Testimonial</template>
-            </courseheader>
+            <!-- <courseheader>
+                <template v-slot:title>Testimonials</template>
+            </courseheader> -->
 
             <!-- Section: Design Block -->
-            <section class=" text-center md:text-left my-3" v-for="item in testimonials">
+            <section :id="item.id" class=" text-center md:text-left my-3" v-for="item in testimonials">
 
                 <div class="block rounded-lg bg-gray-200 dark:bg-gray-900">
                     <div class="flex flex-wrap items-start dark:bg-gray-900 bg-gray-200 p-5 ">
                         <div class="grow-0 shrink-0 basis-auto block lg:flex justify-center  w-full lg:w-6/12 xl:w-4/12 ">
-                            <img :src="item.profile" alt="aadya deshpande" class="  pt-10"
+                            <img :src="item.imgSrc" alt="aadya deshpande" class="  pt-10"
                                 width="200" style="border-radius: 800%;" />
                         </div>
                         <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12 dark:bg-gray-900 bg-gray-200">
@@ -88,6 +88,8 @@ export default {
     return {
       testimonials: [
         {
+          imgSrc:'/images/testimonial/70/aadya-deshpande.jpg',
+          id:'aadya',
           "name": "Aadya Deshpande",
           "college": "M.B.B.S | GRANT MEDICAL COLLEGE AND SIR J. J. GROUP OF HOSPITALS, MUMBAI",
           "ranks": `NEET | 692 / 720 <br> NEET All India Rank | 355 <br> XII Boards | 99.33 %`,
@@ -100,6 +102,8 @@ export default {
           "video": "https://www.youtube.com/embed/8GmVNb_6Ckk"
         },
         {
+          imgSrc:'/images/testimonial/70/ojas-deshpande.jpg',
+          id:'ojas',
           "name": "Ojas Deshpande",
           "college": "M.B.B.S | KING EDWARD MEMORIAL HOSPITAL AND SETH GORDHANDAS SUNDERDAS MEDICAL COLLEGE, MUMBAI",
           "ranks": `NEET | 680 / 720 <br> NEET All India Rank 892 <br> JEE Main | 98.62 Percentile <br> KVPY SX All India Rank 198 <br> XII Boards 98.83% <br> Qualified for AIIMS, Rishikesh`,
@@ -112,6 +116,8 @@ export default {
           "video": "https://www.youtube.com/embed/zPMn_QZb7jE"
         },
         {
+          imgSrc:'/images/testimonial/70/saurabh-parekh.jpg',
+          id:'saurabh',
           "name": "Saurabh Parekh",
           "college": "B-TECH | IIT BOMBAY",
           "ranks": `JEE Advanced All India Rank 674 <br> JEE Advanced 273/366 <br> JEE Main Score 276 <br> JEE Main All India  Rank 2067 <br> BITSAT 390 <br> MHTCET 179 <br> Boards 89% Eligible for Admission at – All the Top 7 IITs, Top 3 NITs, BITS Pilani <br> Secured Admission at IIT Bombay for B-Tech in Mechanical Engineering`,
@@ -128,6 +134,8 @@ export default {
           "video": "https://www.youtube.com/embed/hGLVnI7766c"
         },
         {
+          imgSrc:'',
+          id:'',
           "name": "Mr. Jayesh Parekh | Father of Saurabh Parekh",
           "college": "B-TECH | IIT BOMBAY",
           
@@ -145,6 +153,8 @@ export default {
         },
         
         {
+          imgSrc:'',
+          id:'',
           "name": "Nihar Mhapankar",
           "college": "M.B.B.S | LOKMANYA TILAK GENERAL MEDICAL COLLEGE",
           
@@ -156,6 +166,8 @@ export default {
           "video": "https://www.youtube.com/embed/qIJripnZVig"
         },
         {
+          imgSrc:'',
+          id:'',
           "name": "Dr. Tushar Mhapankar | ENT Surgeon | Father of Nihar Mhapankar",
           "college": "M.B.B.S | LOKMANYA TILAK GENERAL MEDICAL COLLEGE",
           
@@ -167,6 +179,8 @@ export default {
           "video": "https://www.youtube.com/embed/qIJripnZVig"
         },
         {
+          imgSrc:'',
+          id:'',
           "name": "Sachit Shanbhag",
           "college": "B-TECH | IIT BOMBAY",
           
@@ -190,6 +204,8 @@ export default {
           "video": "https://www.youtube.com/embed/qBxlFrOsGQo"
         },
         {
+          imgSrc:'',
+          id:'',
           "name": "Mr. Subhash Shanbhag | IIT BHU Alumnus | Father of Sachit Shanbhag",
           "college": "B-TECH | IIT BOMBAY",
           
@@ -203,6 +219,8 @@ export default {
           "video": "https://www.youtube.com/embed/qBxlFrOsGQo"
         },
         {
+          imgSrc:'',
+          id:'',
           "name": "Rijushree Saha",
           "college": "M.B.B.S | KASTURBA MEDICAL COLLEGE, MANIPAL UNIVERSITY",
           
@@ -221,6 +239,8 @@ export default {
           "video": "https://www.youtube.com/embed/erfVT0l2AjE"
         },
         {
+          imgSrc:'/images/testimonial/70/owais-chunawala.jpg',
+          id:'owais',
           "name": "Owais Chunawala",
           "college": "B-TECH | IIT BOMBAY",
           "ranks": `JEE Advanced AIR 2636* <br> BITSAT 330 <br> MHTCET 177 <br> Eligible for Admission at – All the Top 7 IITs, Top 10 NITs, BITS Pilani`,
@@ -239,7 +259,9 @@ export default {
           
         },
         {
-            "name": "Dhwani Kakkad",
+          imgSrc:'',
+          id:'',  
+          "name": "Dhwani Kakkad",
             "profile": "/images/testimonial/70/dhwani-kakkad.png",
             "college": "M.B.B.S | HBT MEDICAL COLLEGE AND DR. R N COOPER MUNICIPAL GENERAL HOSPITAL, MUMBAI",
             "paragraph1": "I have given approximately 100 Full Syllabus Tests and have assessed my tests using the <b>Paathshala and Photon Ecademy Mistakes Analysis Model.</b> The reports help us understand what we do not know and hence where we need to focus our efforts",
@@ -252,7 +274,9 @@ export default {
 
         },
         {
-            "name": "Devansh B",
+          imgSrc:'',
+          id:'',  
+          "name": "Devansh B",
             "profile": "/images/testimonial/70/devansh-b.jpg",
             "college": "B-TECH | IIT BOMBAY",
             "paragraph1": "Irrespective of the exam I was preparing for, be it JEE Main, JEE Advanced, BITSAT, I was mentored and guided by the Paathshala and Photon Ecademy’s professors about how I can crack the exam with ease. They taught me how to manage time effectively while solving questions. The professors cleared all my conceptual doubts in such a way that I could apply the concepts effectively while solving numericals",
@@ -266,7 +290,9 @@ export default {
 
         },
         {
-            "name": "Mr Prashant B | Father of Devansh B",
+          imgSrc:'',
+          id:'',  
+          "name": "Mr Prashant B | Father of Devansh B",
             "profile": "/images/testimonial/70/devansh-b.jpg",
             "college": "B-TECH | IIT BOMBAY",
             "paragraph1": "We had a wonderful and happy experience at Paathshala and Photon Ecademy. (Professor) SPP Sir taught and guided Devansh and us, parents with utmost dedication. Because of his and Paathshala and Photon Ecademy’s efforts, Devansh could achieve the desired result in JEE Advanced. JEE Main and Advanced being exams with negative markings, it is important for the student to know what questions to solve and what questions to leave, and when to leave. Devansh was extensively guided about such exam strategies by professionals at Paathshala and Photon Ecademy. The executives at Paathshala and Photon Ecademy had many sessions with us, where we were explained in-depth and in detail about what topics to study, how to study, how to practice problems, how to give the Paathshala and Photon Ecademy Test Series and how to analyze the mistakes in the Exams. Because of such expert guidance from Paathshala and Photon Ecademy, Devansh was able to score minimum negative marks in his JEE Main and JEE Advanced Exams. We express our deepest gratitude to Paathshala and Photon Ecademy for being an incredible part of Devansh’s JEE journey and for him getting into IIT Bombay",
@@ -279,7 +305,9 @@ export default {
 
         },
         {
-            "name": "Mrs Padmapriya B | Mother of Devansh B",
+          imgSrc:'',
+          id:'',  
+          "name": "Mrs Padmapriya B | Mother of Devansh B",
             "profile": "/images/testimonial/70/devansh-b.jpg",
             "college": "B-TECH | IIT BOMBAY",
             "paragraph1": "At every step, all the professors of Paathshala and Photon Ecademy especially (Professor) SPP Sir and PDC Ma’am have helped and guided us throughout the course. This played a crucial role in Devansh achieving his success in JEE Advanced. After gauging Devansh’s potential, (Professor) SPP Sir guided us strategically about how to study and practice more in less time. It is very important for any student to be thorough with concepts, definitions, and formulae and Paathshala and Photon Ecademy ensured that. We would like to thank Paathshala and Photon Ecademy for being a part of Devansh’s journey and the academic milestone of getting into IIT Bombay, that he has accomplished",
@@ -292,7 +320,9 @@ export default {
 
         },
         {
-            "name": "Soumil Kelkar",
+          imgSrc:'',
+          id:'',  
+          "name": "Soumil Kelkar",
             "profile": "/images/testimonial/70/soumil-kelkar.jpg",
             "college": "BSMS | IISER (INDIAN INSTITUTE OF SCIENCE EDUCATION AND RESEARCH), PUNE",
             "paragraph1": "The professors at Paathshala and Photon Ecademy were very good; they helped me in learning the concepts really well. The classrooms and infrastructure radiate the concept of education and that kept us focused on our studies all the time. The Academics and the Test modules were very helpful. I had no idea of what type of questions would be asked. These modules helped me focus not only on how to solve the paper but also on time management. The Academics modules helped me understand the concepts well for my college exams as well",
@@ -303,7 +333,9 @@ export default {
             "video": "https://www.youtube.com/embed/Nl_h7ACy6As"
         },
         {
-            "name": "Aditi Goyal",
+          imgSrc:'',
+          id:'',  
+          "name": "Aditi Goyal",
             "profile": "/images/testimonial/70/aditi-goyal.jpg",
             "college": "B-TECH | INSTITUTE OF CHEMICAL TECHNOLOGY (ICT) MATUNGA",
             "paragraph1": "At college, I was not able to understand the concepts clearly and I used to have a lot of doubts, which went uncleared. After joining Paathshala and Photon Ecademy, I got personalized attention from the Professors here and I got all the concepts cleared. The professors had great command over the subject and were able to make me understand all the topics. I found myself in a stronger position academically. I wish I had joined Paathshala and Photon Ecademy earlier",
@@ -317,7 +349,9 @@ export default {
             
         },
         {
-            "name": "Mr and Mrs Koparkar | Chartered Accountants | Parents of Advait Koparkar",
+          imgSrc:'',
+          id:'',  
+          "name": "Mr and Mrs Koparkar | Chartered Accountants | Parents of Advait Koparkar",
             "profile": "/images/testimonial/70/mr-and-mrs-koparkar.jpg",
             "college": "BE | BITS PILANI GOA",
             "paragraph1": "The most striking thing you experience with the professors of Paathshala and Photon Ecademy is their passion for teaching and the mastery over the subject that makes a huge difference from the perspective of a student. They are very interactive with the students. The professors could clear the conceptual doubts of each student. They connect well with the students in solving their doubts. The Professors are also very frank in their feedback without mincing words – Mr. and Mrs. Koparkar",

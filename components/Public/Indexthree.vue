@@ -1,3 +1,5 @@
+
+
 <template>
   <div class="w-full m-0 bg-[#EAE1D6] dark:bg-[#111] py-16 flex justify-center items-center relative">
     <div class="w-11/12 flex flex-col justify-center items-center">
@@ -14,7 +16,7 @@
       </div>
 
       <Rates />
-      <Tutors />
+      <testimonials />
       <Senses />
     </div>
         <div
@@ -33,6 +35,8 @@
   </div>
 </template>
 
+<script setup>
+</script>
 
 <style>
 </style>

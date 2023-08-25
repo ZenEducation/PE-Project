@@ -6,7 +6,7 @@
     <!-- <indexfour /> -->
     <indexfive />
     <brandsession />
-    <testimonials />
+    
   </div>
 </template>
 
