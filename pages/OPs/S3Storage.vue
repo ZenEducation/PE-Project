@@ -54,7 +54,6 @@ const submitPass = () => {
             :icon="mdiCreditCardOutline" color="contrast" rounded-full small />
         </SectionTitleLineWithButton>
 
-        <UserCard class="mb-6" />
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <CardBox is-form @submit.prevent="submitProfile">
