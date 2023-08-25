@@ -7,7 +7,7 @@
                 class=" bg-white text-black dark:bg-gray-900 dark:text-white lg:order-1 lg:row-span-1 2xl:row-span-1 lg:col-span-2 rounded-lg shadow-xl dark:shadow-none mb-5 lg:mb-0">
                 <div class="mx-6 my-8 2xl:mx-10">
                     <img class="w-8 md:w-9 lg:w-10 2xl:w-20 h-8 md:h-9 lg:h-10 2xl:h-20 rounded-full border-2 ml-1 lg:ml-3 2xl:ml-0 md:-mt-1 2xl:-mt-4"
-                        src="https://images.pexels.com/photos/3775534/pexels-photo-3775534.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                        src="/images/testimonial/70/aadya-deshpande.jpg" />
                     <h1
                         class="text-xs md:text-base    pl-12 lg:pl-16 2xl:pl-20 -mt-8 md:-mt-10 lg:-mt-11 2xl:-mt-20 2xl:mx-8">
                         Aadya Deshpande
@@ -37,7 +37,7 @@
                 class="bg-white text-black dark:bg-gray-900 dark:text-white lg:order-2 lg:row-span-1 2xl:row-span-1 lg:col-span-1 rounded-lg shadow-xl dark:shadow-none pb-4 mb-5 lg:mb-0">
                 <div class="mx-8 2xl:mx-10 my-10">
                     <img class="w-8 md:w-9 2xl:w-20 h-8 md:h-9 2xl:h-20 rounded-full border-2 -ml-1 -mt-2 lg:-mt-4"
-                        src="https://images.pexels.com/photos/634021/pexels-photo-634021.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                        src="/images/testimonial/70/saurabh-parekh.jpg" />
                     <h1 class=" text-xs md:text-base    pl-11 md:pl-12 2xl:pl-24 -mt-8 md:-mt-10 2xl:-mt-16">
                         Saurabh Parekh
                     </h1>
@@ -64,7 +64,7 @@
                 class="bg-white text-black dark:bg-gray-900 dark:text-white lg:order-3 lg:row-span-2 2xl:row-span-1 lg:col-span-1 rounded-lg shadow-xl dark:shadow-none mb-5 lg:mb-0 ">
                 <div class="mx-8 my-10 lg:my-8">
                     <img class="w-8 md:w-9 lg:w-11 2xl:w-20 h-8 md:h-9 lg:h-11 2xl:h-20 rounded-full border-2 -mt-3 -ml-1 lg:-ml-0"
-                        src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                        src="/images/testimonial/70/owais-chunawala.jpg" />
                     <h1
                         class=" text-xs md:text-base    pl-11 md:pl-12 lg:pl-14 2xl:pl-24 -mt-8 md:-mt-10 lg:-mt-11 2xl:-mt-16">
                         Owais Chunawala </h1>
@@ -91,7 +91,7 @@
                 class="bg-white text-black dark:bg-gray-900 dark:text-white lg:order-4 lg:row-span-2 2xl:row-span-1 col-span-2 rounded-lg shadow-xl dark:shadow-none mb-5 lg:mb-0 lg:pb-14">
                 <div class="mx-8 my-8">
                     <img class="w-8 md:w-9 lg:w-10 2xl:w-20 h-8 md:h-9 lg:h-10 2xl:h-20 rounded-full border-2 lg:-mt-3"
-                        src="https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                        src="/images/testimonial/70/ojas-deshpande.jpg" />
                     <h1 class="text-xs md:text-base    pl-12 md:pl-14 2xl:pl-24 -mt-8 md:-mt-10 lg:-mt-11 2xl:-mt-16">
                         Ojas Deshpande </h1>
                     <h2 class="text-xs md:text-base    text-opacity-50 pl-12 md:pl-14 2xl:pl-24">
@@ -142,7 +142,7 @@
                 class="bg-white text-black dark:bg-gray-900 dark:text-white lg:order-2 lg:row-span-3 xl:row-span-3  2xl:row-span-2 mb-4 xl:mb-0 lg:col-span-1 rounded-lg shadow-xl dark:shadow-none">
                 <div class="mx-8 my-8 lg:pl-1">
                     <img class="w-8 md:w-9 lg:w-12 2xl:w-20 h-8 md:h-9 lg:h-12 2xl:h-20 rounded-full border-2 lg:-mt-4 -ml-1 lg:-ml-4"
-                        src="https://images.pexels.com/photos/3762804/pexels-photo-3762804.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                        src="" />
                     <h1 class=" text-xs md:text-base    pl-10 md:pl-12 2xl:pl-24 -mt-8 md:-mt-10 lg:-mt-12 2xl:-mt-16">
                         Nihar Mhapankar</h1>
                     <h2 class=" text-xs md:text-base    pl-10 md:pl-12 2xl:pl-24">
