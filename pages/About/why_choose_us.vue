@@ -5,7 +5,7 @@
         <template v-slot:title>Why Choose Us?</template>
       </courseheader>
       <div
-        class="container flex flex-col justify-center items-center w-10/12 mx-auto "
+        class="container flex flex-col justify-center items-center w-10/12 mx-auto"
       >
         <div class="flex justify-center flex-col self-center w-full">
           <div
@@ -59,7 +59,7 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-center flex-col  self-center w-full">
+        <div class="flex justify-center flex-col self-center w-full">
           <div
             class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300 p-3"
             @click="setActiveData(2)"
@@ -121,7 +121,7 @@
             <img src="/images/about/why-choose-us/img2.jpg" alt="img1" />
           </div>
         </div>
-        <div class="flex justify-center flex-col   self-center w-full">
+        <div class="flex justify-center flex-col self-center w-full">
           <div
             class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300 p-3"
             @click="setActiveData(3)"
@@ -179,7 +179,7 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-center flex-col   self-center w-full">
+        <div class="flex justify-center flex-col self-center w-full">
           <div
             class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300 p-3"
             @click="setActiveData(4)"
@@ -223,7 +223,7 @@
             <img src="/images/about/why-choose-us/img4.jpg" alt="img1" />
           </div>
         </div>
-        <div class="flex justify-center flex-col   self-center w-full">
+        <div class="flex justify-center flex-col self-center w-full">
           <div
             class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300 p-3"
             @click="setActiveData(5)"
@@ -279,7 +279,7 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-center flex-col   self-center w-full">
+        <div class="flex justify-center flex-col self-center w-full">
           <div
             class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300 p-3"
             @click="setActiveData(6)"
@@ -337,7 +337,7 @@
             <img src="/images/about/why-choose-us/img6.png" alt="img6" />
           </div>
         </div>
-        <div class="flex justify-center flex-col   self-center w-full">
+        <div class="flex justify-center flex-col self-center w-full">
           <div
             class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300 p-3"
             @click="setActiveData(7)"
@@ -399,7 +399,7 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-center flex-col   self-center w-full">
+        <div class="flex justify-center flex-col self-center w-full">
           <div
             class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300 p-3"
             @click="setActiveData(8)"
@@ -439,7 +439,7 @@
             <img src="/images/about/why-choose-us/img8.jpg" alt="img8" />
           </div>
         </div>
-        <div class="flex justify-center flex-col   self-center w-full">
+        <div class="flex justify-center flex-col self-center w-full">
           <div
             class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300 p-3"
             @click="setActiveData(9)"
@@ -493,7 +493,7 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-center flex-col   self-center w-full">
+        <div class="flex justify-center flex-col self-center w-full">
           <div
             class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300 p-3"
             @click="setActiveData(10)"
@@ -563,7 +563,7 @@
             <img src="/images/about/why-choose-us/img10.png" alt="img10" />
           </div>
         </div>
-        <div class="flex justify-center flex-col   self-center w-full">
+        <div class="flex justify-center flex-col self-center w-full">
           <div
             class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300 p-3"
             @click="setActiveData(11)"
@@ -609,7 +609,7 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-center flex-col   self-center w-full">
+        <div class="flex justify-center flex-col self-center w-full">
           <div
             class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300 p-3"
             @click="setActiveData(12)"
@@ -653,7 +653,7 @@
             <img src="/images/about/why-choose-us/img12.jpg" alt="img12" />
           </div>
         </div>
-        <div class="flex justify-center flex-col   self-center w-full">
+        <div class="flex justify-center flex-col self-center w-full">
           <div
             class="container border flex justify-between items-center text-black bg-[#f8f8f8] dark:bg-[#161821] dark:text-white dark:border-none dark:hover:bg-[#20ad96] hover:cursor-pointer hover:bg-[#20ad96] hover:text-white transition-all ease-in-out duration-300 p-3"
             @click="setActiveData(13)"
@@ -730,7 +730,7 @@
   export default {
     data() {
       return {
-        Data1: true,
+        Data1: false,
         Data2: false,
         Data3: false,
         Data4: false,
@@ -748,9 +748,17 @@
     methods: {
       setActiveData(num) {
         for (let i = 1; i <= 13; i++) {
-          this[`Data${i}`] = false
+          // this[`Data${i}`] = false
+          // eslint-disable-next-line eqeqeq
+          if (this[`Data${num}`] === false) {
+            this[`Data${num}`] = true
+          } else {
+            this[`Data${num}`] = false
+          }
+          if (i !== num) {
+            this[`Data${i}`] = false
+          }
         }
-        this[`Data${num}`] = true
       },
     },
   }
