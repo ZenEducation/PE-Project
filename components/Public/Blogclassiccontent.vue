@@ -37,7 +37,7 @@
           >
             <div class="flex justify-start items-center">
               <img
-                src="../../public/images/logo/photon-logo-earth.png"
+                src="../../public/images/logo/Photon-Logo-Earth.png"
                 alt="image"
                 class="rounded-[50%] mr-2 w-[32px] h-[32px]"
               />
