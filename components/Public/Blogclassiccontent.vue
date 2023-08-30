@@ -1,5 +1,4 @@
 <template>
-  HELL0
   <div class=""   data-aos="fade-up" data-aos-duration="2000">
   <div
     v-for="blog in blogs"
@@ -38,7 +37,7 @@
           >
             <div class="flex justify-start items-center">
               <img
-                src="/images/logo/photon-logo-earth.png"
+                src="../../public/images/logo/photon-logo-earth.png"
                 alt="image"
                 class="rounded-[50%] mr-2 w-[32px] h-[32px]"
               />
